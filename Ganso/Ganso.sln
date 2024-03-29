@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ganso", "Ganso\Ganso\Ganso.csproj", "{F4BC41A7-4C35-4779-8510-83A6B55CDBC9}"
+EndProject
+Project("{96E2B04D-8817-42C6-938A-82C39BA4D311}") = "GansoContent", "Ganso\GansoContent\GansoContent.contentproj", "{C92B3EFD-40D3-4CBF-8FEB-133BB2A7A5D4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F4BC41A7-4C35-4779-8510-83A6B55CDBC9}.Debug|x86.ActiveCfg = Debug|x86
+		{F4BC41A7-4C35-4779-8510-83A6B55CDBC9}.Debug|x86.Build.0 = Debug|x86
+		{F4BC41A7-4C35-4779-8510-83A6B55CDBC9}.Release|x86.ActiveCfg = Release|x86
+		{F4BC41A7-4C35-4779-8510-83A6B55CDBC9}.Release|x86.Build.0 = Release|x86
+		{C92B3EFD-40D3-4CBF-8FEB-133BB2A7A5D4}.Debug|x86.ActiveCfg = Debug|x86
+		{C92B3EFD-40D3-4CBF-8FEB-133BB2A7A5D4}.Release|x86.ActiveCfg = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,7 @@
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\Meus Projetos\Ganso\Ganso\Ganso\bin\x86\Debug\Content\Content\Ganso.xnb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\Meus Projetos\Ganso\Ganso\Ganso\bin\x86\Debug\Ganso.exe
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\Meus Projetos\Ganso\Ganso\Ganso\bin\x86\Debug\Ganso.pdb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\Meus Projetos\Ganso\Ganso\Ganso\obj\x86\Debug\Ganso.csprojResolveAssemblyReference.cache
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\Meus Projetos\Ganso\Ganso\Ganso\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\Meus Projetos\Ganso\Ganso\Ganso\obj\x86\Debug\Ganso.exe
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\Meus Projetos\Ganso\Ganso\Ganso\obj\x86\Debug\Ganso.pdb
