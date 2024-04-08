@@ -1,5 +1,0 @@
-C:\Users\ferna\OneDrive\Desktop\J3DE 2024\Meus Projetos\Mundo02\Mundo02\Mundo02Content\obj\x86\Debug\Mundo02Content.contentprojResolveAssemblyReference.cache
-C:\Users\ferna\OneDrive\Desktop\J3DE 2024\Livros XNA\Mundo02\Mundo02\Mundo02Content\obj\x86\Debug\Mundo02Content.contentprojResolveAssemblyReference.cache
-C:\Users\ferna\OneDrive\Desktop\J3DE 2024\Meus Projetos\MUNDO 02\Mundo02 - Herança\Mundo02\Mundo02Content\obj\x86\Debug\Mundo02Content.contentprojResolveAssemblyReference.cache
-C:\Users\ferna\OneDrive\Desktop\J3DE 2024\Meus Projetos\MUNDO 02\Mundo02 - Herança - Copia\Mundo02\Mundo02Content\obj\x86\Debug\Mundo02Content.contentprojResolveAssemblyReference.cache
-C:\Users\ferna\OneDrive\Desktop\J3DE 2024\Meus Projetos\MUNDO 02\3. Mundo02 - Herança e Moinho nao e GameObject\Mundo02\Mundo02Content\obj\x86\Debug\Mundo02Content.contentprojResolveAssemblyReference.cache
