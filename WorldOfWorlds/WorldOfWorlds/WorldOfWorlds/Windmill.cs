@@ -53,12 +53,16 @@ namespace WorldOfWorlds
             propellers[3].Translation(new Vector3(1, 0, 0));
 
             foreach (PropellerWorld p in propellers)
-            {
                 p.RotationZ(rotationAngle);
-            }
 
+            propellers[0].Angle = -rotationAngle + 0;
+            propellers[1].Angle = -rotationAngle + 270;
+            propellers[2].Angle = -rotationAngle + 180;
+            propellers[3].Angle = -rotationAngle + 90;
+
+            
             foreach (PropellerWorld p in propellers)
-                p.Translation(new Vector3(0, 1, 3.5f));
+                p.Translation(new Vector3(0, 1, 3.5f));        
         }
 
         public void Draw(Camera camera)

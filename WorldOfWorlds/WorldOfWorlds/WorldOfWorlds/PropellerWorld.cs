@@ -14,6 +14,8 @@ namespace WorldOfWorlds
         Propeller propeller;
         World world;
 
+        public float Angle { get; set; }
+
         public PropellerWorld(Game1 game, GraphicsDevice device)
         {
             propeller = new Propeller(game, device);
@@ -33,6 +35,7 @@ namespace WorldOfWorlds
                 world.SetIdentity();
                 world.Update(gameTime);
                 world.Scale(new Vector3(.1f,.1f,.1f));
+                world.RotationZ(Angle);
                 world.Translation(new Vector3(0, 2, 1));
             }
         }

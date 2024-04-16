@@ -21,8 +21,8 @@ namespace WorldOfWorlds
             {
                 new Quad(game, device),
                 new Cube(game, device),
-                new Windmill(game, device, random.Next(5,300)),
-                new Windmill(game, device, random.Next(5,300)),
+                new Windmill(game, device, random.Next(5,100)),
+                new Windmill(game, device, random.Next(5,100)),
             };
 
             if (Game1.DEPTH >= 0)
@@ -37,15 +37,15 @@ namespace WorldOfWorlds
                 g.Update(gameTime);            
             }
 
-            gameObjects[0].Scale(new Vector3(10, 0, 10));
+            gameObjects[0].Scale(new Vector3(15, 0, 10));
 
             gameObjects[2].RotationY(45);
             gameObjects[3].RotationY(-45);
 
             gameObjects[1].Translation(new Vector3(0, 1, 0));
 
-            gameObjects[2].Translation(new Vector3(-6, 2, 0));
-            gameObjects[3].Translation(new Vector3(6, 2, 0));
+            gameObjects[2].Translation(new Vector3(-8, 2, 0));
+            gameObjects[3].Translation(new Vector3(8, 2, 0));
         }
 
         public void Draw(Camera camera)

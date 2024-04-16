@@ -55,8 +55,7 @@ namespace WorldOfWorlds
             camera = new Camera();
 
             world = new World(this, GraphicsDevice);
-
-
+            
             base.Initialize();
         }
 
@@ -96,8 +95,7 @@ namespace WorldOfWorlds
             camera.Update(gameTime);
 
             world.SetIdentity();
-            world.Update(gameTime);
-            
+            world.Update(gameTime);            
 
             base.Update(gameTime);
         }

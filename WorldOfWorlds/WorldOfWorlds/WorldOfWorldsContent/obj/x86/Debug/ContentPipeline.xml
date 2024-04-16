@@ -7,8 +7,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\WorldOfWorlds\WorldOfWorlds\WorldOfWorlds\bin\x86\Debug\Content\Images\bricks.xnb</Output>
-      <Time>2024-04-12T15:45:57.4834001-03:00</Time>
+      <Output>C:\Users\ferna\OneDrive\Documents\J3DE\WorldOfWorlds\WorldOfWorlds\WorldOfWorlds\bin\x86\Debug\Content\Images\bricks.xnb</Output>
+      <Time>2024-04-16T09:50:16.0220149-03:00</Time>
     </Item>
     <Item>
       <Source>Images\grass.jpg</Source>
@@ -16,8 +16,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\WorldOfWorlds\WorldOfWorlds\WorldOfWorlds\bin\x86\Debug\Content\Images\grass.xnb</Output>
-      <Time>2024-04-12T15:45:57.4984398-03:00</Time>
+      <Output>C:\Users\ferna\OneDrive\Documents\J3DE\WorldOfWorlds\WorldOfWorlds\WorldOfWorlds\bin\x86\Debug\Content\Images\grass.xnb</Output>
+      <Time>2024-04-16T09:50:16.0220149-03:00</Time>
     </Item>
     <Item>
       <Source>Images\rocks.jpg</Source>
@@ -25,8 +25,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\WorldOfWorlds\WorldOfWorlds\WorldOfWorlds\bin\x86\Debug\Content\Images\rocks.xnb</Output>
-      <Time>2024-04-12T15:45:57.5033961-03:00</Time>
+      <Output>C:\Users\ferna\OneDrive\Documents\J3DE\WorldOfWorlds\WorldOfWorlds\WorldOfWorlds\bin\x86\Debug\Content\Images\rocks.xnb</Output>
+      <Time>2024-04-16T09:50:16.0220149-03:00</Time>
     </Item>
     <Item>
       <Source>Images\wood.png</Source>
@@ -34,8 +34,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\WorldOfWorlds\WorldOfWorlds\WorldOfWorlds\bin\x86\Debug\Content\Images\wood.xnb</Output>
-      <Time>2024-04-12T15:45:57.5084016-03:00</Time>
+      <Output>C:\Users\ferna\OneDrive\Documents\J3DE\WorldOfWorlds\WorldOfWorlds\WorldOfWorlds\bin\x86\Debug\Content\Images\wood.xnb</Output>
+      <Time>2024-04-16T09:50:16.0376441-03:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -43,10 +43,10 @@
       <TargetProfile>HiDef</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\WorldOfWorlds\WorldOfWorlds\WorldOfWorldsContent\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\WorldOfWorlds\WorldOfWorlds\WorldOfWorlds\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\WorldOfWorlds\WorldOfWorlds\WorldOfWorldsContent\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\WorldOfWorlds\WorldOfWorlds\WorldOfWorlds\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\ferna\OneDrive\Documents\J3DE\WorldOfWorlds\WorldOfWorlds\WorldOfWorldsContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\ferna\OneDrive\Documents\J3DE\WorldOfWorlds\WorldOfWorlds\WorldOfWorlds\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\ferna\OneDrive\Documents\J3DE\WorldOfWorlds\WorldOfWorlds\WorldOfWorldsContent\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\ferna\OneDrive\Documents\J3DE\WorldOfWorlds\WorldOfWorlds\WorldOfWorlds\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
@@ -75,7 +75,7 @@
       </Assembly>
       <Assembly>
         <Key>C:\WINDOWS\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
-        <Value>2023-12-16T18:46:09.1672477-03:00</Value>
+        <Value>2024-04-16T10:07:08.4397406-03:00</Value>
       </Assembly>
     </Assemblies>
   </Asset>
