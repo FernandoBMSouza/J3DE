@@ -23,6 +23,7 @@ namespace HelicopterWorld
         float moveSpeed;
         float rotateSpeed;
         bool arrived;
+        bool isFlying;
         float currentTime;
         const float GAP = 1f;
 
@@ -44,8 +45,9 @@ namespace HelicopterWorld
             moveSpeed = 10;
             rotateSpeed = 100;
             arrived = true;
+            isFlying = false;
 
-            propRotationSpeed = 300;
+            propRotationSpeed = 400;
             propRotationAngle = 0;
 
             for (int i = 0; i < cubes.Length; i++) cubes[i] = new Cube(device);
@@ -96,7 +98,8 @@ namespace HelicopterWorld
             for (int i = 8; i < 12; i++) propellers[i].RotationX(propRotationAngle);
             for (int i = 8; i < 12; i++) propellers[i].Translation(new Vector3(.6f, 0, -4.5f));
 
-            propRotationAngle += propRotationSpeed * gameTime.ElapsedGameTime.Milliseconds * 0.001f;
+            if(isFlying)
+                propRotationAngle += propRotationSpeed * gameTime.ElapsedGameTime.Milliseconds * 0.001f;
 
 
             UpdateState(gameTime);
@@ -152,8 +155,10 @@ namespace HelicopterWorld
                         case (STATE.IDLE):
                         case (STATE.DOWN):
                             currentTime += gameTime.ElapsedGameTime.Milliseconds * 0.001f;
+                            isFlying = false;
                             if (currentTime >= GAP)
                             {
+                                isFlying = true;
                                 previousState = STATE.IDLE;
                                 arrived = !arrived;
                                 state = STATE.UP;
