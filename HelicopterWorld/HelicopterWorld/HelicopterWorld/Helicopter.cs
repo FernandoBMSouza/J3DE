@@ -4,7 +4,7 @@ using Microsoft.Xna.Framework;
 namespace HelicopterWorld
 {
     public enum STATE
-    { 
+    {
         IDLE,
         UP,
         DOWN,
@@ -14,15 +14,17 @@ namespace HelicopterWorld
         ROTATE_LEFT,
     };
 
-
     class Helicopter : ITransform
     {
         Cube[] cubes;
         Propeller[] propellers;
         STATE state;
+        STATE previousState;
         float moveSpeed;
         float rotateSpeed;
         bool arrived;
+        float currentTime;
+        const float GAP = 1f;
 
         float propRotationAngle;
         float propRotationSpeed;
@@ -33,12 +35,15 @@ namespace HelicopterWorld
         public Helicopter(GraphicsDevice device)
         {
             state = STATE.IDLE;
+            previousState = state;
+            currentTime = 0f;
+
             cubes = new Cube[2];
             propellers = new Propeller[12];
 
-            moveSpeed = 3;
-            rotateSpeed = 30;
-            arrived = false;
+            moveSpeed = 10;
+            rotateSpeed = 100;
+            arrived = true;
 
             propRotationSpeed = 300;
             propRotationAngle = 0;
@@ -95,15 +100,15 @@ namespace HelicopterWorld
 
 
             UpdateState(gameTime);
-            ChangeState();
+            ChangeState(gameTime);
             RotationY(Angle.Y);
             Translation(Position);
         }
 
         public void Draw(Camera camera)
         {
-            foreach(Cube c in cubes) c.Draw(camera);
-            foreach(Propeller p in propellers) p.Draw(camera);
+            foreach (Cube c in cubes) c.Draw(camera);
+            foreach (Propeller p in propellers) p.Draw(camera);
         }
 
         private void UpdateState(GameTime gameTime)
@@ -137,45 +142,156 @@ namespace HelicopterWorld
         }
 
 
-        private void ChangeState()
+        private void ChangeState(GameTime gameTime)
         {
             switch (state)
             {
                 case STATE.IDLE:
-                    arrived = !arrived;
-                    state = STATE.UP;
+                    switch (previousState)
+                    {
+                        case (STATE.IDLE):
+                        case (STATE.DOWN):
+                            currentTime += gameTime.ElapsedGameTime.Milliseconds * 0.001f;
+                            if (currentTime >= GAP)
+                            {
+                                previousState = STATE.IDLE;
+                                arrived = !arrived;
+                                state = STATE.UP;
+                                currentTime = 0;
+                            }
+                            break;
+                        case (STATE.UP): break;
+                        case (STATE.RIGHT): break;
+                        case (STATE.LEFT): break;
+                        case (STATE.ROTATE_RIGHT): break;
+                        case (STATE.ROTATE_LEFT): break;
+                    }
                     break;
                 case STATE.UP:
-                    if (Position.Y >= 8)
-                        state = arrived ? STATE.ROTATE_RIGHT : STATE.ROTATE_LEFT;
+                    switch (previousState)
+                    {
+                        case (STATE.IDLE):
+                            if (Position.Y >= 8) 
+                            {
+                                previousState = STATE.UP;
+                                state = arrived ? STATE.ROTATE_LEFT : STATE.ROTATE_RIGHT;
+                            }
+                            break;
+                        case (STATE.DOWN):break;
+                        case (STATE.UP): break;
+                        case (STATE.RIGHT): break;
+                        case (STATE.LEFT): break;
+                        case (STATE.ROTATE_RIGHT): break;
+                        case (STATE.ROTATE_LEFT): break;
+                    }
+                    break;
+                case STATE.ROTATE_RIGHT:
+                    switch (previousState)
+                    {
+                        case (STATE.IDLE): break;
+                        case (STATE.DOWN): break;
+                        case (STATE.UP):
+                            if (Angle.Y >= 90)
+                            {
+                                previousState = STATE.ROTATE_RIGHT;
+                                state = STATE.RIGHT;
+                            }
+                            break;
+                        case (STATE.RIGHT): break;
+                        case (STATE.LEFT):
+                            if (Angle.Y >= 0)
+                            {
+                                previousState = STATE.ROTATE_RIGHT;
+                                state = STATE.DOWN;
+                            }
+                            break;
+                        case (STATE.ROTATE_RIGHT): break;
+                        case (STATE.ROTATE_LEFT): break;
+                    }
                     break;
                 case STATE.RIGHT:
-                    if (Position.X >= 7)
-                        state = STATE.DOWN;
+                    switch (previousState)
+                    {
+                        case (STATE.IDLE): break;
+                        case (STATE.DOWN): break;
+                        case (STATE.UP): break;
+                        case (STATE.RIGHT): break;
+                        case (STATE.LEFT): break;
+                        case (STATE.ROTATE_RIGHT):
+                            if (Position.X >= 7)
+                            {
+                                previousState = STATE.RIGHT;
+                                state = STATE.ROTATE_LEFT;
+                            }
+                            break;
+                        case (STATE.ROTATE_LEFT): break;
+                    }
+                    break;
+                case STATE.ROTATE_LEFT:
+                    switch (previousState)
+                    {
+                        case (STATE.IDLE): break;
+                        case (STATE.DOWN): break;
+                        case (STATE.UP): 
+                            if (Angle.Y <= -90)
+                            {
+                                previousState = STATE.ROTATE_LEFT;
+                                state = STATE.LEFT;
+                            }
+                            break;
+                        case (STATE.RIGHT):
+                            if (Angle.Y <= 0)
+                            {
+                                previousState = STATE.ROTATE_LEFT;
+                                state = STATE.DOWN;
+                            }
+                            break;
+                        case (STATE.LEFT): break;
+                        case (STATE.ROTATE_RIGHT): break;
+                        case (STATE.ROTATE_LEFT): break;
+                    }
                     break;
                 case STATE.DOWN:
-                    if (arrived)
+                    switch (previousState)
                     {
-                        if (Position.Y <= 5)
-                            state = STATE.IDLE;
-                    }
-                    else
-                    {
-                        if (Position.Y <= 3)
-                            state = STATE.IDLE;
+                        case (STATE.IDLE): break;
+                        case (STATE.DOWN): break;
+                        case (STATE.UP): break;
+                        case (STATE.RIGHT): break;
+                        case (STATE.LEFT): break;
+                        case (STATE.ROTATE_RIGHT): 
+                            if (Position.Y <= 3)
+                            {
+                                previousState = STATE.DOWN;
+                                state = STATE.IDLE;
+                            }
+                            break;
+                        case (STATE.ROTATE_LEFT):
+                            if (Position.Y <= 5)
+                            {
+                                previousState = STATE.DOWN;
+                                state = STATE.IDLE;
+                            }
+                            break;
                     }
                     break;
                 case STATE.LEFT:
-                    if (Position.X <= -7)
-                        state = STATE.DOWN;
-                    break;
-                case STATE.ROTATE_RIGHT:
-                    if (Angle.Y >= 90)
-                        state = STATE.RIGHT;
-                    break;
-                case STATE.ROTATE_LEFT:
-                    if (Angle.Y <= -90)
-                        state = STATE.LEFT;
+                    switch (previousState)
+                    {
+                        case (STATE.IDLE): break;
+                        case (STATE.DOWN): break;
+                        case (STATE.UP): break;
+                        case (STATE.RIGHT): break;
+                        case (STATE.LEFT): break;
+                        case (STATE.ROTATE_RIGHT): break;
+                        case (STATE.ROTATE_LEFT): 
+                            if (Position.X <= -7)
+                            {
+                                previousState = STATE.LEFT;
+                                state = STATE.ROTATE_RIGHT;
+                            }
+                            break;
+                    }
                     break;
             }
         }
