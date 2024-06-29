@@ -1,0 +1,6 @@
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\HelicopterWorld\HelicopterWorld\HelicopterWorld\obj\x86\Debug\HelicopterWorld.csprojResolveAssemblyReference.cache
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\HelicopterWorld\HelicopterWorld\HelicopterWorld\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\HelicopterWorld\HelicopterWorld\HelicopterWorld\bin\x86\Debug\HelicopterWorld.exe
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\HelicopterWorld\HelicopterWorld\HelicopterWorld\bin\x86\Debug\HelicopterWorld.pdb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\HelicopterWorld\HelicopterWorld\HelicopterWorld\obj\x86\Debug\HelicopterWorld.exe
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\HelicopterWorld\HelicopterWorld\HelicopterWorld\obj\x86\Debug\HelicopterWorld.pdb
