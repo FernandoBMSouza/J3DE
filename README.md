@@ -14,6 +14,6 @@ Repositório para armazenar os exercicios de reforco da materia de programacao d
 2. Falta colocar a camera acoplada ao player
 3. Falta colisao
 4. Falta o shader vermelho ao colidir com zombie
-5. Falta checagem de limites do chao para andar e para instanciar eles num local que tenha chao (acho que na aula de colisao vai ter alguma dica boa sobre como puxar o size dos shapes que criei)
+5. Falta checagem de limites do chao para andar e para instanciar eles num local que tenha chao, por enquanto esta hardcoded (acho que na aula de colisao vai ter alguma dica boa sobre como puxar o size dos shapes que criei)
 
 + Proximo Mundo
