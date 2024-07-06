@@ -1,6 +1,12 @@
 # J3DE
 Repositório para armazenar os exercicios de reforco da materia de programacao de jogos 3d com engines
 
+# CONTEUDO
++ Os mundos novos estou usando um logica que separa as matrizes e passa varias multiplicando no metodo draw, dessa forma consigo organizar melhor a ordem que cada operacao vai ser realizada. Isso e importante pra conseguir guardar informacoes de escala, posicao e angulo do objeto ou composicao, nos mundos antigos estou usando somente uma matriz world e dessa forma perco o controle sendo obrigado a fazer todas as atualizacoes dentro do metodo update, os mundos novos trazem uma complexidade a mais, o uso de uma auxWorld, ela e util nas composicoes para criar outras modificacoes numa matriz que ja foi modificada, dando mais liberdade para diferentes combinacoes das matrizes
++ Provas, sao as provas que ja vi e tentei replicar, ainda nao coloquei esse sistema que usei nos mundos novos nela, mas pretendo atualizar posteriormente
++ Optei por nao sobreescrever os mundos antigos, pois a logica deles e bem mais simples e podem ser uteis para fazer algo rapido durante a prova, mas pretendo usar a logica nova a partir de agora
++ Os mundos auxiliares, sao projetos bem simples que foram exemplos dados em aula para aprender uma funcionalidade espeifica por exemplo: colisao 
+
 # MELHORIAS
 
 + Helicopter World
@@ -17,3 +23,8 @@ Repositório para armazenar os exercicios de reforco da materia de programacao d
 5. Falta checagem de limites do chao para andar e para instanciar eles num local que tenha chao, por enquanto esta hardcoded (acho que na aula de colisao vai ter alguma dica boa sobre como puxar o size dos shapes que criei)
 
 + Proximo Mundo
+
+# Ordem Ideal das Transformacoes (altere para obter outros resultados):
+- Scale
+- Rotation
+- Translation
