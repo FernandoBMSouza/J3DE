@@ -58,10 +58,11 @@ namespace Mundo01
             house = new Cube(this, GraphicsDevice);
 
             plane.Scale(new Vector3(10, 0, 10));
-            //house.Rotation('X', 45);
+            //house.Scale(new Vector3(1, 1, 1));
             house.Rotation('Y', 45);
+            //house.Rotation('X', 45);
             //house.Rotation('Z', 45);
-            house.Translation(new Vector3(0, 1, 0));
+            house.Translation(new Vector3(0, .5f, 0));
 
 
             colliders = new List<ICollider>() { plane, house };

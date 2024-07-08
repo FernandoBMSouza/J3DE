@@ -9,9 +9,11 @@ namespace Mundo01
 {
     public class LineBox
     {
-        Matrix world;
+        Matrix worldScale;
+        Matrix worldRotation;
+        Matrix worldTranslation;
         Vector3 position;
-        Vector3 scale;
+        public Vector3 scale;
         Vector3 angle;
         VertexPositionColor[] vertices;
         VertexBuffer vBuffer;
@@ -28,21 +30,11 @@ namespace Mundo01
             this.angle = angle;
             this.color = color;
 
-            CreateMatrix();
+            SetIdentity();
             CreateVertex();
             CreateVBuffer();
             CreateIndexes();
             CreateIBuffer();
-        }
-
-        private void CreateMatrix()
-        {
-            world = Matrix.Identity;
-            world *= Matrix.CreateScale(scale);
-            world *= Matrix.CreateRotationX(angle.X);
-            world *= Matrix.CreateRotationY(angle.Y);
-            world *= Matrix.CreateRotationZ(angle.Z);
-            world *= Matrix.CreateTranslation(position);
         }
 
         private void CreateVertex()
@@ -108,7 +100,7 @@ namespace Mundo01
 
         public void Draw(BasicEffect e)
         {
-            e.World = world;
+            e.World = worldScale * worldRotation * worldTranslation;
             e.VertexColorEnabled = true;
             game.GraphicsDevice.SetVertexBuffer(vBuffer);
             game.GraphicsDevice.Indices = iBuffer;
@@ -129,34 +121,45 @@ namespace Mundo01
             e.VertexColorEnabled = false;
         }
 
+        public void SetIdentity()
+        {
+            position = Vector3.Zero;
+            angle = Vector3.Zero;
+            scale = Vector3.One;
+
+            worldScale = Matrix.Identity;
+            worldRotation = Matrix.Identity;
+            worldTranslation = Matrix.Identity;
+        }
+
         public void SetPosition(Vector3 position)
         {
             this.position = position;
-            CreateMatrix();
+            worldTranslation *= Matrix.CreateTranslation(position);
         }
 
         public void SetScale(Vector3 scale)
         {
             this.scale = scale;
-            CreateMatrix();
+            worldScale *= Matrix.CreateScale(scale);
         }
 
         public void SetAngleX(float angle)
         {
             this.angle.X = angle;
-            CreateMatrix();
+            worldRotation *= Matrix.CreateRotationX(angle);
         }
 
         public void SetAngleY(float angle)
         {
             this.angle.Y = angle;
-            CreateMatrix();
+            worldRotation *= Matrix.CreateRotationY(angle);
         }
 
         public void SetAngleZ(float angle)
         {
             this.angle.Z = angle;
-            CreateMatrix();
+            worldRotation *= Matrix.CreateRotationZ(angle);
         }
 
         public void SetColor(Color color)

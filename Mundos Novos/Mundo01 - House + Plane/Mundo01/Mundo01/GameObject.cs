@@ -88,6 +88,15 @@ namespace Mundo01
             if (lineBoxVisible) LBox.Draw(effect);
         }
 
+        public void UpdateLineBox()
+        {
+            LBox.SetScale(Size);
+            LBox.SetAngleX(Angle.X);
+            LBox.SetAngleY(Angle.Y);
+            LBox.SetAngleZ(Angle.Z);
+            LBox.SetPosition(Position);
+        }
+
         public void UpdateBoundingBox()
         {
             BBox = new BoundingBox(Position - (Size / 2f),
