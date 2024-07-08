@@ -16,3 +16,9 @@ C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos Novos\Mundo01 - House + Pl
 C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos Novos\Mundo01 - House + Plane\Mundo01\Mundo01\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos Novos\Mundo01 - House + Plane\Mundo01\Mundo01\obj\x86\Debug\Mundo01.exe
 C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos Novos\Mundo01 - House + Plane\Mundo01\Mundo01\obj\x86\Debug\Mundo01.pdb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundo01 - House + Plane + Colisao\Mundo01\Mundo01\bin\x86\Debug\Mundo01.exe
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundo01 - House + Plane + Colisao\Mundo01\Mundo01\bin\x86\Debug\Mundo01.pdb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundo01 - House + Plane + Colisao\Mundo01\Mundo01\obj\x86\Debug\Mundo01.csprojResolveAssemblyReference.cache
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundo01 - House + Plane + Colisao\Mundo01\Mundo01\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundo01 - House + Plane + Colisao\Mundo01\Mundo01\obj\x86\Debug\Mundo01.exe
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundo01 - House + Plane + Colisao\Mundo01\Mundo01\obj\x86\Debug\Mundo01.pdb

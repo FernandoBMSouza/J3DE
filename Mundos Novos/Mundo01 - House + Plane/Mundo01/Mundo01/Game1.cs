@@ -25,6 +25,8 @@ namespace Mundo01
         Quad plane;
         Cube house;
 
+        List<ICollider> colliders;
+
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
@@ -50,13 +52,15 @@ namespace Mundo01
             screen.Width = graphics.PreferredBackBufferWidth;
             screen.Height = graphics.PreferredBackBufferHeight;
 
-            camera = new Camera();
+            camera = new Camera(this);
 
-            plane = new Quad(GraphicsDevice);
-            house = new Cube(GraphicsDevice);
+            plane = new Quad(this, GraphicsDevice);
+            house = new Cube(this, GraphicsDevice);
 
             plane.Scale(new Vector3(10, 0, 10));
             house.Translation(new Vector3(0, 1, 0));
+
+            colliders = new List<ICollider>() { plane, house };
 
             base.Initialize();
         }
@@ -94,8 +98,22 @@ namespace Mundo01
                 this.Exit();
 
             // TODO: Add your update logic here
-            Window.Title = "Position: " + house.Position + " - Size: " + house.Size + " - Angle: " + house.Angle;
+
             camera.Update(gameTime);
+
+            foreach (ICollider c in colliders)
+            { 
+                if (camera.IsColliding(c.BBox))
+                {
+                    camera.RestorePosition();
+                    c.LBox.SetColor(Color.Red);
+                }
+                else
+                {
+                    c.LBox.SetColor(Color.Green);
+                }
+            }
+
             base.Update(gameTime);
         }
 
@@ -105,7 +123,7 @@ namespace Mundo01
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Draw(GameTime gameTime)
         {
-            GraphicsDevice.Clear(Color.CornflowerBlue);
+            GraphicsDevice.Clear(Color.Black);
 
             // TODO: Add your drawing code here
 

@@ -7,11 +7,14 @@ using Microsoft.Xna.Framework.Input;
 
 namespace Mundo01
 {
-    public class Camera
+    public class Camera : ICollider
     {
         Vector3 position;
         Vector3 target;
         Vector3 up;
+
+        Vector3 size;
+        Vector3 oldPosition;
 
         float translationSpeed;
         float rotationSpeed;
@@ -20,9 +23,13 @@ namespace Mundo01
         public Matrix View { get; private set; }
         public Matrix Projection { get; private set; }
 
-        public Camera()
+        public BoundingBox BBox { get; private set; }
+        public LineBox LBox { get; private set; }
+
+        public Camera(Game game)
         {
             position = new Vector3(0, 5, 25);
+            oldPosition = position;
             target = Vector3.Zero;
             up = Vector3.Up;
 
@@ -36,10 +43,15 @@ namespace Mundo01
             Projection = Matrix.CreatePerspectiveFieldOfView(MathHelper.PiOver4,
                                                              Screen.GetInstance().Width / (float)Screen.GetInstance().Height,
                                                              .1f, 1000);
+
+            size = Vector3.One;
+            this.LBox = new LineBox(game, position, size, Color.Green);
+            UpdateBoundingBox();
         }
 
         public void Update(GameTime gameTime)
         {
+            oldPosition = position;
             Rotation(gameTime);
             Translation(gameTime);
 
@@ -48,6 +60,8 @@ namespace Mundo01
             View *= Matrix.CreateRotationX(MathHelper.ToRadians(angle.X));
             View *= Matrix.CreateTranslation(position);
             View = Matrix.Invert(View);
+
+            UpdateBoundingBox();
         }
 
         private void Rotation(GameTime gameTime)
@@ -91,6 +105,9 @@ namespace Mundo01
             if (Keyboard.GetState().IsKeyDown(Keys.LeftShift))
                 position.Y -= gameTime.ElapsedGameTime.Milliseconds * 0.001f * translationSpeed;
 
+            LBox.SetPosition(position);
+            UpdateBoundingBox();
+
             //if (Keyboard.GetState().IsKeyDown(Keys.Space))
             //{
             //    position.Y += (float)Math.Sin(MathHelper.ToRadians(angle.X)) * gameTime.ElapsedGameTime.Milliseconds * 0.001f * translationSpeed;
@@ -101,6 +118,23 @@ namespace Mundo01
             //    position.Y -= (float)Math.Sin(MathHelper.ToRadians(angle.X)) * gameTime.ElapsedGameTime.Milliseconds * 0.001f * translationSpeed;
             //    position.Y -= (float)Math.Cos(MathHelper.ToRadians(angle.X)) * gameTime.ElapsedGameTime.Milliseconds * 0.001f * translationSpeed;
             //}
+        }
+
+        public void UpdateBoundingBox()
+        {
+            BBox = new BoundingBox(position - size,
+                                   position + size);
+
+        }
+
+        public bool IsColliding(BoundingBox other)
+        {
+            return BBox.Intersects(other);
+        }
+
+        public void RestorePosition()
+        {
+            position = oldPosition;
         }
     }
 }

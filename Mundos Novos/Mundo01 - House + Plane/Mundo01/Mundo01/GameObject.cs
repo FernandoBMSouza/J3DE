@@ -7,7 +7,7 @@ using Microsoft.Xna.Framework;
 
 namespace Mundo01
 {
-    public abstract class GameObject
+    public abstract class GameObject : ICollider
     {
         GraphicsDevice device;
         VertexBuffer buffer;
@@ -16,8 +16,11 @@ namespace Mundo01
         Matrix worldRotation;
         Matrix worldTranslation;
 
-        protected VertexPositionColor[] Vertices { get; set; }
+        public LineBox LBox { get; private set; }
+        bool lineBoxVisible;
 
+        protected VertexPositionColor[] Vertices { get; set; }
+        public BoundingBox BBox { get; private set; }
         public Vector3 Position { get; protected set; }
         public Vector3 Size { get; protected set; }
 
@@ -35,7 +38,7 @@ namespace Mundo01
         }
 
 
-        public GameObject(GraphicsDevice device)
+        public GameObject(Game game, GraphicsDevice device, bool lineBoxVisible = true)
         {
             this.device = device;
             Vertices = null;
@@ -52,6 +55,11 @@ namespace Mundo01
 
             effect = new BasicEffect(device);
             SetIdentity();
+
+            this.lineBoxVisible = lineBoxVisible;
+            this.LBox = new LineBox(game, Position, Size, Color.Green);
+
+            UpdateBoundingBox();
         }
 
         public void Update(GameTime gameTime) { }
@@ -76,6 +84,20 @@ namespace Mundo01
                                                                    0,
                                                                    Vertices.Length / 3);
             }
+
+            if (lineBoxVisible) LBox.Draw(effect);
+        }
+
+        public void UpdateBoundingBox()
+        {
+            BBox = new BoundingBox(Position - (Size / 2f),
+                                   Position + (Size / 2f));
+
+        }
+
+        public bool IsColliding(BoundingBox other)
+        {
+            return BBox.Intersects(other);
         }
 
         public void SetIdentity()
@@ -87,18 +109,24 @@ namespace Mundo01
             worldScale = Matrix.Identity;
             worldRotation = Matrix.Identity;
             worldTranslation = Matrix.Identity;
+
+            UpdateBoundingBox();
         }
 
         public void Translation(Vector3 position)
         {
             Position = position;
             worldTranslation *= Matrix.CreateTranslation(position);
+            LBox.SetPosition(Position);
+            UpdateBoundingBox();
         }
 
         public void Scale(Vector3 scale)
         {
             Size *= scale;
             worldScale *= Matrix.CreateScale(scale);
+            LBox.SetScale(Size);
+            UpdateBoundingBox();
         }
 
         public void Rotation(char axis, float angle)

@@ -4,3 +4,9 @@ C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\CollisionLecture.cs\CollisionLect
 C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\CollisionLecture.cs\CollisionLecture.cs\CollisionLecture.cs\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\CollisionLecture.cs\CollisionLecture.cs\CollisionLecture.cs\obj\x86\Debug\CollisionLecture.cs.exe
 C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\CollisionLecture.cs\CollisionLecture.cs\CollisionLecture.cs\obj\x86\Debug\CollisionLecture.cs.pdb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos Auxilares\CollisionLecture.cs\CollisionLecture.cs\CollisionLecture.cs\bin\x86\Debug\CollisionLecture.cs.exe
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos Auxilares\CollisionLecture.cs\CollisionLecture.cs\CollisionLecture.cs\bin\x86\Debug\CollisionLecture.cs.pdb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos Auxilares\CollisionLecture.cs\CollisionLecture.cs\CollisionLecture.cs\obj\x86\Debug\CollisionLecture.cs.csprojResolveAssemblyReference.cache
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos Auxilares\CollisionLecture.cs\CollisionLecture.cs\CollisionLecture.cs\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos Auxilares\CollisionLecture.cs\CollisionLecture.cs\CollisionLecture.cs\obj\x86\Debug\CollisionLecture.cs.exe
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos Auxilares\CollisionLecture.cs\CollisionLecture.cs\CollisionLecture.cs\obj\x86\Debug\CollisionLecture.cs.pdb
