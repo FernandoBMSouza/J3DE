@@ -65,8 +65,11 @@ namespace Mundo01
                 new VertexPositionColor(new Vector3( 1, 1,-1), Color.Blue),
                 new VertexPositionColor(new Vector3( 1, 1, 1), Color.Green),
             };
-            LBox.SetPosition(Position);
             LBox.SetScale(Size);
+            LBox.SetAngleX(Angle.X);
+            LBox.SetAngleY(Angle.Y);
+            LBox.SetAngleZ(Angle.Z);
+            LBox.SetPosition(Position);
             UpdateBoundingBox();
         }
     }

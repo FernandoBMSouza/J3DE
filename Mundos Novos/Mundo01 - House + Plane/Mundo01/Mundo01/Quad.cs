@@ -25,6 +25,9 @@ namespace Mundo01
             };
             LBox.SetPosition(Position);
             LBox.SetScale(Size);
+            LBox.SetAngleX(Angle.X);
+            LBox.SetAngleY(Angle.Y);
+            LBox.SetAngleZ(Angle.Z);
             UpdateBoundingBox();
         }
     }

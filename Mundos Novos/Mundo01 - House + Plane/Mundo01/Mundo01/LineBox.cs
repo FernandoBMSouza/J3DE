@@ -12,6 +12,7 @@ namespace Mundo01
         Matrix world;
         Vector3 position;
         Vector3 scale;
+        Vector3 angle;
         VertexPositionColor[] vertices;
         VertexBuffer vBuffer;
         short[] indexes;
@@ -19,11 +20,12 @@ namespace Mundo01
         Color color;
         Game game;
 
-        public LineBox(Game game, Vector3 position, Vector3 scale, Color color)
+        public LineBox(Game game, Vector3 position, Vector3 scale, Vector3 angle, Color color)
         {
             this.game = game;
             this.position = position;
             this.scale = scale;
+            this.angle = angle;
             this.color = color;
 
             CreateMatrix();
@@ -37,6 +39,9 @@ namespace Mundo01
         {
             world = Matrix.Identity;
             world *= Matrix.CreateScale(scale);
+            world *= Matrix.CreateRotationX(angle.X);
+            world *= Matrix.CreateRotationY(angle.Y);
+            world *= Matrix.CreateRotationZ(angle.Z);
             world *= Matrix.CreateTranslation(position);
         }
 
@@ -133,6 +138,24 @@ namespace Mundo01
         public void SetScale(Vector3 scale)
         {
             this.scale = scale;
+            CreateMatrix();
+        }
+
+        public void SetAngleX(float angle)
+        {
+            this.angle.X = angle;
+            CreateMatrix();
+        }
+
+        public void SetAngleY(float angle)
+        {
+            this.angle.Y = angle;
+            CreateMatrix();
+        }
+
+        public void SetAngleZ(float angle)
+        {
+            this.angle.Z = angle;
             CreateMatrix();
         }
 

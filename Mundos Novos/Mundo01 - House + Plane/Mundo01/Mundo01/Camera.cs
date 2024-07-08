@@ -45,7 +45,7 @@ namespace Mundo01
                                                              .1f, 1000);
 
             size = Vector3.One;
-            this.LBox = new LineBox(game, position, size, Color.Green);
+            this.LBox = new LineBox(game, position, size, angle, Color.Green);
             UpdateBoundingBox();
         }
 
@@ -75,6 +75,10 @@ namespace Mundo01
                 angle.X += rotationSpeed * gameTime.ElapsedGameTime.Milliseconds * 0.001f;
             if (Keyboard.GetState().IsKeyDown(Keys.Down))
                 angle.X -= rotationSpeed * gameTime.ElapsedGameTime.Milliseconds * 0.001f;
+
+            LBox.SetAngleX(angle.X);
+            LBox.SetAngleY(angle.Y);
+            LBox.SetAngleZ(angle.Z);
         }
 
         private void Translation(GameTime gameTime)

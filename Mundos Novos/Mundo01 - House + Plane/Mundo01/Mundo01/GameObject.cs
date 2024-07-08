@@ -57,7 +57,7 @@ namespace Mundo01
             SetIdentity();
 
             this.lineBoxVisible = lineBoxVisible;
-            this.LBox = new LineBox(game, Position, Size, Color.Green);
+            this.LBox = new LineBox(game, Position, Size, Angle, Color.Green);
 
             UpdateBoundingBox();
         }
@@ -138,16 +138,19 @@ namespace Mundo01
                 case 'x':
                     Angle += new Vector3(angle, 0, 0);
                     worldRotation *= Matrix.CreateRotationX(radians);
+                    LBox.SetAngleX(radians);
                     break;
                 case 'Y':
                 case 'y':
                     Angle += new Vector3(0, angle, 0);
                     worldRotation *= Matrix.CreateRotationY(radians);
+                    LBox.SetAngleY(radians);
                     break;
                 case 'Z':
                 case 'z':
                     Angle += new Vector3(0, 0, angle);
                     worldRotation *= Matrix.CreateRotationZ(radians);
+                    LBox.SetAngleZ(radians);
                     break;
                 default:
                     break;
