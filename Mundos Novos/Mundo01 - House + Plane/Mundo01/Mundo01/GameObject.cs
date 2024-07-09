@@ -17,11 +17,11 @@ namespace Mundo01
         Matrix worldRotation;
         Matrix worldTranslation;
 
-        public LineBox LBox { get; private set; }
+        public BoundingBox BBox { get; private set; }
+        public LineBox LBox { get; protected set; }
         bool lineBoxVisible;
 
         protected VertexPositionColor[] Vertices { get; set; }
-        public BoundingBox BBox { get; private set; }
 
         public Vector3 Position { get; protected set; }
         public Vector3 Size { get; protected set; }
@@ -58,8 +58,6 @@ namespace Mundo01
             SetIdentity();
 
             this.lineBoxVisible = lineBoxVisible;
-            this.LBox = new LineBox(game, Size, Color.Green);
-
             UpdateBoundingBox();
         }
 
@@ -151,6 +149,7 @@ namespace Mundo01
                 default:
                     break;
             }
+            UpdateBoundingBox();
         }
     }
 }

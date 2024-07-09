@@ -111,6 +111,7 @@
     <Compile Include="Camera.cs" />
     <Compile Include="Cube.cs" />
     <Compile Include="Game1.cs" />
+    <Compile Include="ICollider.cs" />
     <Compile Include="ITransform.cs" />
     <Compile Include="LineBox.cs" />
     <Compile Include="Propeller.cs" />

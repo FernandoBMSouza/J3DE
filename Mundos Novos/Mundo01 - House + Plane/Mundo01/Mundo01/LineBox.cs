@@ -30,7 +30,7 @@ namespace Mundo01
         private void CreateVertex(Vector3 scale)
         {
             //float v = .5f;
-            Vector3 v = scale;
+            Vector3 v = scale/2;
             vertices = new VertexPositionColor[]
             {
                 //SUPERIOR

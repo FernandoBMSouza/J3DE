@@ -9,15 +9,18 @@ namespace Mundo02
 {
     public class Building : GameObject
     {
-        public Building(GraphicsDevice device)
-            : base(device)
+        public Building(Game game, GraphicsDevice device)
+            : base(game, device, true)
         {
             Size = new Vector3(2, 4, 6);
+            LBox = new LineBox(game, Size, Color.Green);
+            UpdateBoundingBox();
+            
             Vertices = new VertexPositionColor[]
             {
                 //Dimensões do Prédio:
                 //Largura: 2
-                //Alutra: 4
+                //Altura: 4
                 //Profundidade: 6
 
                 //BASE

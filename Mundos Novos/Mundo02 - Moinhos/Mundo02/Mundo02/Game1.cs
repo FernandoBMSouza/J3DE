@@ -25,6 +25,7 @@ namespace Mundo02
         Quad plane;
         Cube house;
         Windmill[] windmills;
+        List<ICollider> colliders;
 
         Random random;
 
@@ -53,20 +54,21 @@ namespace Mundo02
             screen.Width = graphics.PreferredBackBufferWidth;
             screen.Height = graphics.PreferredBackBufferHeight;
 
-            camera = new Camera();
+            camera = new Camera(this);
             int seed = (int)DateTime.Now.Ticks % int.MaxValue;
             random = new Random(seed);
 
-            plane = new Quad(GraphicsDevice);
-            house = new Cube(GraphicsDevice);
+            plane = new Quad(this, GraphicsDevice);
+            house = new Cube(this, GraphicsDevice);
             windmills = new Windmill[]
             {
-                new Windmill(GraphicsDevice, random.Next(50,800)),
-                new Windmill(GraphicsDevice, random.Next(50,800)),
+                new Windmill(this, GraphicsDevice, random.Next(50,800), false),
+                new Windmill(this, GraphicsDevice, random.Next(50,800)),
             };
+            colliders = new List<ICollider>() { plane, house };
 
             //TRANSFORMATIONS
-            plane.Scale(new Vector3(10, 1, 10));
+            plane.Scale(new Vector3(10, 0, 10));
             house.Translation(new Vector3(0, 1, 0));
 
             windmills[0].Rotation('Y', 45, true);
@@ -112,6 +114,20 @@ namespace Mundo02
             // TODO: Add your update logic here
             camera.Update(gameTime);
             foreach (Windmill w in windmills) w.Update(gameTime);
+
+            foreach (ICollider c in colliders)
+            {
+                if (camera.IsColliding(c.BBox))
+                {
+                    camera.RestorePosition();
+                    c.LBox.SetColor(Color.Red);
+                }
+                else
+                {
+                    c.LBox.SetColor(Color.Green);
+                }
+            }
+            
             base.Update(gameTime);
         }
 
@@ -125,10 +141,10 @@ namespace Mundo02
 
             // TODO: Add your drawing code here
 
-            //RasterizerState rs = new RasterizerState();
+            RasterizerState rs = new RasterizerState();
             //rs.CullMode = CullMode.None;
             //rs.FillMode = FillMode.WireFrame;
-            //GraphicsDevice.RasterizerState = rs;
+            GraphicsDevice.RasterizerState = rs;
 
             plane.Draw(camera);
             house.Draw(camera);

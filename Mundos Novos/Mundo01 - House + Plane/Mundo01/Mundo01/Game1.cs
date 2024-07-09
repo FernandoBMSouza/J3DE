@@ -91,10 +91,10 @@ namespace Mundo01
         {
             GraphicsDevice.Clear(Color.Black);
 
-            RasterizerState rs = new RasterizerState();
+            //RasterizerState rs = new RasterizerState();
             //rs.CullMode = CullMode.None;
-            rs.FillMode = FillMode.WireFrame;
-            GraphicsDevice.RasterizerState = rs;
+            //rs.FillMode = FillMode.WireFrame;
+            //GraphicsDevice.RasterizerState = rs;
 
             plane.Draw(camera);
             house.Draw(camera);

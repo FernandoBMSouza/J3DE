@@ -18,7 +18,6 @@ namespace Mundo02
 
         public Vector3 Position { get; protected set; }
         public Vector3 Size { get; protected set; }
-
         private Vector3 angle;
         public Vector3 Angle
         {
@@ -32,13 +31,13 @@ namespace Mundo02
             }
         }
 
-        public Windmill(GraphicsDevice device, float speed, bool isWorking = true)
+        public Windmill(Game game, GraphicsDevice device, float speed, bool isWorking = true)
         {
-            building = new Building(device);
+            building = new Building(game, device);
             this.isWorking = isWorking;
 
             propellers = new Propeller[PROPELLERS_NUMBER];
-            for (int i = 0; i < propellers.Length; i++) propellers[i] = new Propeller(device);
+            for (int i = 0; i < propellers.Length; i++) propellers[i] = new Propeller(game, device);
 
             rotationAngle = 0;
             this.speed = speed;
@@ -68,16 +67,15 @@ namespace Mundo02
             Angle = Vector3.Zero;
             Size = Vector3.One;
 
-            building.SetIdentity();
             foreach (Propeller p in propellers)
             {
-                p.SetIdentity();
-                p.Scale(new Vector3(.4f, .5f, 1));
+                p.Scale(new Vector3(.4f, .5f, 0));
             } 
             propellers[0].Rotation('Z', 0);
             propellers[1].Rotation('Z', 90);
             propellers[2].Rotation('Z', 180);
             propellers[3].Rotation('Z', 270);
+
             foreach (Propeller p in propellers) p.Translation(new Vector3(0, 1, 3.5f));
         }
 

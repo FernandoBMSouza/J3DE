@@ -9,6 +9,9 @@ namespace Mundo01
             : base(game, device, true)
         {
             Size = new Vector3(2, 2, 2);
+            LBox = new LineBox(game, Size, Color.Green);
+            UpdateBoundingBox();
+
             Vertices = new VertexPositionColor[]
             {
                 // RIGHT
@@ -65,7 +68,6 @@ namespace Mundo01
                 new VertexPositionColor(new Vector3( 1, 1,-1), Color.Blue),
                 new VertexPositionColor(new Vector3( 1, 1, 1), Color.Green),
             };
-            UpdateBoundingBox();
         }
     }
 }

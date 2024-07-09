@@ -5,10 +5,13 @@ namespace Mundo02
 {
     public class Cube : GameObject
     {
-        public Cube(GraphicsDevice device)
-            : base(device)
+        public Cube(Game game, GraphicsDevice device)
+            : base(game, device, true)
         {
             Size = new Vector3(2,2,2);
+            LBox = new LineBox(game, Size, Color.Green);
+            UpdateBoundingBox();
+            
             Vertices = new VertexPositionColor[]
             {
                 // RIGHT

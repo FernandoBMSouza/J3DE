@@ -7,11 +7,8 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace Mundo02
 {
-    class LineBox
+    public class LineBox
     {
-        Matrix world;
-        Vector3 position;
-        Vector3 scale;
         VertexPositionColor[] vertices;
         VertexBuffer vBuffer;
         short[] indexes;
@@ -19,42 +16,33 @@ namespace Mundo02
         Color color;
         Game game;
 
-        public LineBox(Game game, Vector3 position, Vector3 scale, Color color)
+        public LineBox(Game game, Vector3 scale, Color color)
         {
             this.game = game;
-            this.position = position;
-            this.scale = scale;
             this.color = color;
 
-            CreateMatrix();
-            CreateVertex();
+            CreateVertex(scale);
             CreateVBuffer();
             CreateIndexes();
             CreateIBuffer();
         }
 
-        private void CreateMatrix()
+        private void CreateVertex(Vector3 scale)
         {
-            world = Matrix.Identity;
-            world *= Matrix.CreateScale(scale);
-            world *= Matrix.CreateTranslation(position);
-        }
-
-        private void CreateVertex()
-        {
-            float v = .5f;
+            //float v = .5f;
+            Vector3 v = scale/2;
             vertices = new VertexPositionColor[]
             {
                 //SUPERIOR
-                new VertexPositionColor(new Vector3(-v, v,-v), color), //0 - ESQUERDA E TRASEIRA
-                new VertexPositionColor(new Vector3( v, v,-v), color), //1 - DIREITA  E TRASEIRA
-                new VertexPositionColor(new Vector3(-v, v, v), color), //2 - ESQUERDA E FRENTE
-                new VertexPositionColor(new Vector3( v, v, v), color), //3 - DIREITA  E FRENTE
+                new VertexPositionColor(new Vector3(-v.X, v.Y,-v.Z), color), //0 - ESQUERDA E TRASEIRA
+                new VertexPositionColor(new Vector3( v.X, v.Y,-v.Z), color), //1 - DIREITA  E TRASEIRA
+                new VertexPositionColor(new Vector3(-v.X, v.Y, v.Z), color), //2 - ESQUERDA E FRENTE
+                new VertexPositionColor(new Vector3( v.X, v.Y, v.Z), color), //3 - DIREITA  E FRENTE
                 //INFERIOR
-                new VertexPositionColor(new Vector3(-v,-v,-v), color), //4 - ESQUERDA E TRASEIRA
-                new VertexPositionColor(new Vector3( v,-v,-v), color), //5 - DIREITA  E TRASEIRA
-                new VertexPositionColor(new Vector3(-v,-v, v), color), //6 - ESQUERDA E FRENTE
-                new VertexPositionColor(new Vector3( v,-v, v), color), //7 - DIREITA  E FRENTE
+                new VertexPositionColor(new Vector3(-v.X,-v.Y,-v.Z), color), //4 - ESQUERDA E TRASEIRA
+                new VertexPositionColor(new Vector3( v.X,-v.Y,-v.Z), color), //5 - DIREITA  E TRASEIRA
+                new VertexPositionColor(new Vector3(-v.X,-v.Y, v.Z), color), //6 - ESQUERDA E FRENTE
+                new VertexPositionColor(new Vector3( v.X,-v.Y, v.Z), color), //7 - DIREITA  E FRENTE
             };
         }
 
@@ -101,7 +89,14 @@ namespace Mundo02
             iBuffer.SetData<short>(indexes);
         }
 
-        public void Draw(BasicEffect e)
+        public void SetColor(Color color)
+        {
+            this.color = color;
+            for (int i = 0; i < vertices.Length; i++)
+                vertices[i].Color = this.color;
+        }
+
+        public void Draw(BasicEffect e, Matrix world)
         {
             e.World = world;
             e.VertexColorEnabled = true;
@@ -122,19 +117,6 @@ namespace Mundo02
 
             }
             e.VertexColorEnabled = false;
-        }
-
-        public void SetPosition(Vector3 position)
-        {
-            this.position = position;
-            CreateMatrix();
-        }
-
-        public void SetColor(Color color)
-        {
-            this.color = color;
-            for (int i = 0; i < vertices.Length; i++)
-                vertices[i].Color = this.color;
         }
     }
 }
