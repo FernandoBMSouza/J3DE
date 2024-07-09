@@ -9,8 +9,8 @@ namespace Mundo02
 {
     public class Building : GameObject
     {
-        public Building(Game game, GraphicsDevice device)
-            : base(game, device, true)
+        public Building(Game game, GraphicsDevice device, bool lineBoxVisible = false)
+            : base(game, device, lineBoxVisible)
         {
             Size = new Vector3(2, 4, 6);
             LBox = new LineBox(game, Size, Color.Green);

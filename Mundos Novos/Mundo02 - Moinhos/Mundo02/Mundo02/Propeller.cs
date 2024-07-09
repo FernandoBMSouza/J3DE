@@ -9,8 +9,8 @@ namespace Mundo02
 {
     public class Propeller : GameObject
     {
-        public Propeller(Game game, GraphicsDevice device)
-            : base(game, device, true)
+        public Propeller(Game game, GraphicsDevice device, bool lineBoxVisible = false)
+            : base(game, device, lineBoxVisible)
         {
             //Tem uma gambiarra nesse size, o Y certo seria 4, mas pra fazer o linebox ficar certo preciso deixar 8, 
             //no jogo não vai mudar nada, isso acontece porque o pivot da forma esta na parte inferior e não centralizado

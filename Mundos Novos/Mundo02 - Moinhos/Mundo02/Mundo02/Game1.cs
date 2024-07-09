@@ -29,6 +29,8 @@ namespace Mundo02
 
         Random random;
 
+        const bool SHOW_COLLIDERS = true;
+
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
@@ -58,14 +60,14 @@ namespace Mundo02
             int seed = (int)DateTime.Now.Ticks % int.MaxValue;
             random = new Random(seed);
 
-            plane = new Quad(this, GraphicsDevice);
-            house = new Cube(this, GraphicsDevice);
+            plane = new Quad(this, GraphicsDevice, SHOW_COLLIDERS);
+            house = new Cube(this, GraphicsDevice, SHOW_COLLIDERS);
             windmills = new Windmill[]
             {
-                new Windmill(this, GraphicsDevice, random.Next(50,800), false),
-                new Windmill(this, GraphicsDevice, random.Next(50,800)),
+                new Windmill(this, GraphicsDevice, random.Next(50,800), true, SHOW_COLLIDERS),
+                new Windmill(this, GraphicsDevice, random.Next(50,800), true, SHOW_COLLIDERS),
             };
-            colliders = new List<ICollider>() { plane, house };
+            colliders = new List<ICollider>() { plane, house, windmills[0], windmills[1] };
 
             //TRANSFORMATIONS
             plane.Scale(new Vector3(10, 0, 10));
@@ -120,11 +122,11 @@ namespace Mundo02
                 if (camera.IsColliding(c.BBox))
                 {
                     camera.RestorePosition();
-                    c.LBox.SetColor(Color.Red);
+                    c.SetColliderColor(Color.Red);
                 }
                 else
                 {
-                    c.LBox.SetColor(Color.Green);
+                    c.SetColliderColor(Color.Green);
                 }
             }
             
@@ -141,10 +143,10 @@ namespace Mundo02
 
             // TODO: Add your drawing code here
 
-            RasterizerState rs = new RasterizerState();
+            //RasterizerState rs = new RasterizerState();
             //rs.CullMode = CullMode.None;
             //rs.FillMode = FillMode.WireFrame;
-            GraphicsDevice.RasterizerState = rs;
+            //GraphicsDevice.RasterizerState = rs;
 
             plane.Draw(camera);
             house.Draw(camera);

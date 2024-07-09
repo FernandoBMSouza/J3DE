@@ -7,7 +7,7 @@ using Microsoft.Xna.Framework;
 
 namespace Mundo02
 {
-    class Windmill : ITransform
+    class Windmill : ITransform, ICollider
     {
         Building building;
         Propeller[] propellers;
@@ -15,6 +15,10 @@ namespace Mundo02
         float rotationAngle;
         float speed;
         bool isWorking;
+
+        public BoundingBox BBox { get; private set; }
+        public LineBox LBox { get { return building.LBox; } private set { } }
+        bool lineBoxVisible;
 
         public Vector3 Position { get; protected set; }
         public Vector3 Size { get; protected set; }
@@ -31,17 +35,20 @@ namespace Mundo02
             }
         }
 
-        public Windmill(Game game, GraphicsDevice device, float speed, bool isWorking = true)
+        public Windmill(Game game, GraphicsDevice device, float speed, bool isWorking = true, bool lineBoxVisible = false)
         {
-            building = new Building(game, device);
+            this.lineBoxVisible = lineBoxVisible;
+            building = new Building(game, device, lineBoxVisible);
             this.isWorking = isWorking;
 
             propellers = new Propeller[PROPELLERS_NUMBER];
-            for (int i = 0; i < propellers.Length; i++) propellers[i] = new Propeller(game, device);
+            for (int i = 0; i < propellers.Length; i++) propellers[i] = new Propeller(game, device, lineBoxVisible);
 
             rotationAngle = 0;
             this.speed = speed;
             SetIdentity();
+
+            UpdateBoundingBox();
         }
 
         public void Update(GameTime gameTime)
@@ -51,6 +58,7 @@ namespace Mundo02
                 rotationAngle = -speed * gameTime.ElapsedGameTime.Milliseconds * 0.001f;
                 foreach (Propeller p in propellers)
                     p.Rotation('Z', rotationAngle);
+                UpdateBoundingBox();
             }
         }
 
@@ -59,6 +67,36 @@ namespace Mundo02
             building.Draw(camera);
             foreach (Propeller p in propellers)
                 p.Draw(camera);
+        }
+
+        public void UpdateBoundingBox()
+        {
+            BoundingBox combinedBBox = building.BBox;
+
+            foreach (Propeller p in propellers)
+                combinedBBox = BoundingBox.CreateMerged(combinedBBox, p.BBox);
+
+            BBox = combinedBBox;
+        }
+
+        public bool IsColliding(BoundingBox other)
+        {
+            if (building.IsColliding(other)) 
+                return true;
+
+            foreach (Propeller p in propellers)
+            {
+                if (p.IsColliding(other))
+                    return true;
+            }
+
+            return false;
+        }
+
+        public void SetColliderColor(Color color)
+        {
+            building.LBox.SetColor(color);
+            foreach (Propeller p in propellers) p.LBox.SetColor(color);
         }
 
         public void SetIdentity()
@@ -77,6 +115,7 @@ namespace Mundo02
             propellers[3].Rotation('Z', 270);
 
             foreach (Propeller p in propellers) p.Translation(new Vector3(0, 1, 3.5f));
+            UpdateBoundingBox();
         }
 
         public void Translation(Vector3 position, bool aux = false)
@@ -94,6 +133,7 @@ namespace Mundo02
                 foreach (Propeller p in propellers)
                     p.Translation(position);
             }
+            UpdateBoundingBox();
         }
 
         public void Scale(Vector3 scale, bool aux = false)
@@ -111,6 +151,7 @@ namespace Mundo02
                 foreach (Propeller p in propellers)
                     p.Scale(scale);
             }
+            UpdateBoundingBox();
         }
 
         public void Rotation(char axis, float angle, bool aux = false)
@@ -162,6 +203,7 @@ namespace Mundo02
                 default:
                     break;
             }
+            UpdateBoundingBox();
         }
     }
 }

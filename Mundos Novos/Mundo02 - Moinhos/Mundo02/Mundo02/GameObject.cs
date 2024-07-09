@@ -36,7 +36,7 @@ namespace Mundo02
             }
         }
 
-        public GameObject(Game game, GraphicsDevice device, bool lineBoxVisible = true)
+        public GameObject(Game game, GraphicsDevice device, bool lineBoxVisible = false)
         {
             this.device = device;
             Vertices = null;
@@ -93,6 +93,11 @@ namespace Mundo02
         public bool IsColliding(BoundingBox other)
         {
             return BBox.Intersects(other);
+        }
+
+        public void SetColliderColor(Color color)
+        {
+            LBox.SetColor(color);
         }
 
         public void SetIdentity()
