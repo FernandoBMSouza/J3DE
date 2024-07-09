@@ -65,7 +65,6 @@ namespace Mundo01
                 new VertexPositionColor(new Vector3( 1, 1,-1), Color.Blue),
                 new VertexPositionColor(new Vector3( 1, 1, 1), Color.Green),
             };
-            UpdateLineBox();
             UpdateBoundingBox();
         }
     }

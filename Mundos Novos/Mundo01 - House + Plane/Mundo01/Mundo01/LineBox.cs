@@ -9,12 +9,6 @@ namespace Mundo01
 {
     public class LineBox
     {
-        Matrix worldScale;
-        Matrix worldRotation;
-        Matrix worldTranslation;
-        Vector3 position;
-        public Vector3 scale;
-        Vector3 angle;
         VertexPositionColor[] vertices;
         VertexBuffer vBuffer;
         short[] indexes;
@@ -22,25 +16,21 @@ namespace Mundo01
         Color color;
         Game game;
 
-        public LineBox(Game game, Vector3 position, Vector3 scale, Vector3 angle, Color color)
+        public LineBox(Game game, Vector3 scale, Color color)
         {
             this.game = game;
-            this.position = position;
-            this.scale = scale;
-            this.angle = angle;
             this.color = color;
 
-            SetIdentity();
-            CreateVertex();
+            CreateVertex(scale);
             CreateVBuffer();
             CreateIndexes();
             CreateIBuffer();
         }
 
-        private void CreateVertex()
+        private void CreateVertex(Vector3 scale)
         {
             //float v = .5f;
-            Vector3 v = scale/2;
+            Vector3 v = scale;
             vertices = new VertexPositionColor[]
             {
                 //SUPERIOR
@@ -99,9 +89,16 @@ namespace Mundo01
             iBuffer.SetData<short>(indexes);
         }
 
-        public void Draw(BasicEffect e)
+        public void SetColor(Color color)
         {
-            e.World = worldScale * worldRotation * worldTranslation;
+            this.color = color;
+            for (int i = 0; i < vertices.Length; i++)
+                vertices[i].Color = this.color;
+        }
+
+        public void Draw(BasicEffect e, Matrix world)
+        {
+            e.World = world;
             e.VertexColorEnabled = true;
             game.GraphicsDevice.SetVertexBuffer(vBuffer);
             game.GraphicsDevice.Indices = iBuffer;
@@ -120,54 +117,6 @@ namespace Mundo01
 
             }
             e.VertexColorEnabled = false;
-        }
-
-        public void SetIdentity()
-        {
-            position = Vector3.Zero;
-            angle = Vector3.Zero;
-            scale = Vector3.One;
-
-            worldScale = Matrix.Identity;
-            worldRotation = Matrix.Identity;
-            worldTranslation = Matrix.Identity;
-        }
-
-        public void SetPosition(Vector3 position)
-        {
-            this.position = position;
-            worldTranslation *= Matrix.CreateTranslation(position);
-        }
-
-        public void SetScale(Vector3 scale)
-        {
-            this.scale = scale;
-            worldScale = Matrix.CreateScale(scale);
-        }
-
-        public void SetAngleX(float angle)
-        {
-            this.angle.X = angle;
-            worldRotation *= Matrix.CreateRotationX(angle);
-        }
-
-        public void SetAngleY(float angle)
-        {
-            this.angle.Y = angle;
-            worldRotation *= Matrix.CreateRotationY(angle);
-        }
-
-        public void SetAngleZ(float angle)
-        {
-            this.angle.Z = angle;
-            worldRotation *= Matrix.CreateRotationZ(angle);
-        }
-
-        public void SetColor(Color color)
-        {
-            this.color = color;
-            for (int i = 0; i < vertices.Length; i++)
-                vertices[i].Color = this.color;
         }
     }
 }

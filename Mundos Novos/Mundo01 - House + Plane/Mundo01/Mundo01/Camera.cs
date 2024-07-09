@@ -7,7 +7,7 @@ using Microsoft.Xna.Framework.Input;
 
 namespace Mundo01
 {
-    public class Camera : ICollider
+    public class Camera
     {
         Vector3 position;
         Vector3 target;
@@ -24,7 +24,6 @@ namespace Mundo01
         public Matrix Projection { get; private set; }
 
         public BoundingBox BBox { get; private set; }
-        public LineBox LBox { get; private set; }
 
         public Camera(Game game)
         {
@@ -43,9 +42,7 @@ namespace Mundo01
             Projection = Matrix.CreatePerspectiveFieldOfView(MathHelper.PiOver4,
                                                              Screen.GetInstance().Width / (float)Screen.GetInstance().Height,
                                                              .1f, 1000);
-
             size = Vector3.One;
-            this.LBox = new LineBox(game, position, size, angle, Color.Green);
             UpdateBoundingBox();
         }
 
@@ -75,10 +72,6 @@ namespace Mundo01
                 angle.X += rotationSpeed * gameTime.ElapsedGameTime.Milliseconds * 0.001f;
             if (Keyboard.GetState().IsKeyDown(Keys.Down))
                 angle.X -= rotationSpeed * gameTime.ElapsedGameTime.Milliseconds * 0.001f;
-
-            LBox.SetAngleX(angle.X);
-            LBox.SetAngleY(angle.Y);
-            LBox.SetAngleZ(angle.Z);
         }
 
         private void Translation(GameTime gameTime)
@@ -108,9 +101,6 @@ namespace Mundo01
                 position.Y += gameTime.ElapsedGameTime.Milliseconds * 0.001f * translationSpeed;
             if (Keyboard.GetState().IsKeyDown(Keys.LeftShift))
                 position.Y -= gameTime.ElapsedGameTime.Milliseconds * 0.001f * translationSpeed;
-
-            LBox.SetPosition(position);
-            UpdateBoundingBox();
 
             //if (Keyboard.GetState().IsKeyDown(Keys.Space))
             //{

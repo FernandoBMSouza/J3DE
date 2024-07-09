@@ -12,6 +12,7 @@ namespace Mundo01
         GraphicsDevice device;
         VertexBuffer buffer;
         BasicEffect effect;
+
         Matrix worldScale;
         Matrix worldRotation;
         Matrix worldTranslation;
@@ -21,9 +22,9 @@ namespace Mundo01
 
         protected VertexPositionColor[] Vertices { get; set; }
         public BoundingBox BBox { get; private set; }
+
         public Vector3 Position { get; protected set; }
         public Vector3 Size { get; protected set; }
-
         private Vector3 angle;
         public Vector3 Angle
         {
@@ -57,7 +58,7 @@ namespace Mundo01
             SetIdentity();
 
             this.lineBoxVisible = lineBoxVisible;
-            this.LBox = new LineBox(game, Position, Size, Angle, Color.Green);
+            this.LBox = new LineBox(game, Size, Color.Green);
 
             UpdateBoundingBox();
         }
@@ -85,16 +86,7 @@ namespace Mundo01
                                                                    Vertices.Length / 3);
             }
 
-            if (lineBoxVisible) LBox.Draw(effect);
-        }
-
-        public void UpdateLineBox()
-        {
-            LBox.SetScale(Size);
-            LBox.SetAngleX(Angle.X);
-            LBox.SetAngleY(Angle.Y);
-            LBox.SetAngleZ(Angle.Z);
-            LBox.SetPosition(Position);
+            if (lineBoxVisible) LBox.Draw(effect, effect.World);
         }
 
         public void UpdateBoundingBox()
@@ -126,7 +118,6 @@ namespace Mundo01
         {
             Position = position;
             worldTranslation *= Matrix.CreateTranslation(position);
-            LBox.SetPosition(Position);
             UpdateBoundingBox();
         }
 
@@ -134,7 +125,6 @@ namespace Mundo01
         {
             Size *= scale;
             worldScale *= Matrix.CreateScale(scale);
-            LBox.SetScale(Size);
             UpdateBoundingBox();
         }
 
@@ -145,21 +135,18 @@ namespace Mundo01
             {
                 case 'X':
                 case 'x':
-                    Angle += new Vector3(angle, 0, 0);
+                    Angle += new Vector3(radians, 0, 0);
                     worldRotation *= Matrix.CreateRotationX(radians);
-                    LBox.SetAngleX(radians);
                     break;
                 case 'Y':
                 case 'y':
-                    Angle += new Vector3(0, angle, 0);
+                    Angle += new Vector3(0, radians, 0);
                     worldRotation *= Matrix.CreateRotationY(radians);
-                    LBox.SetAngleY(radians);
                     break;
                 case 'Z':
                 case 'z':
-                    Angle += new Vector3(0, 0, angle);
+                    Angle += new Vector3(0, 0, radians);
                     worldRotation *= Matrix.CreateRotationZ(radians);
-                    LBox.SetAngleZ(radians);
                     break;
                 default:
                     break;
