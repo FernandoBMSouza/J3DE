@@ -39,19 +39,20 @@ namespace Mundo01
 
         private void CreateVertex()
         {
-            float v = .5f;
+            //float v = .5f;
+            Vector3 v = scale/2;
             vertices = new VertexPositionColor[]
             {
                 //SUPERIOR
-                new VertexPositionColor(new Vector3(-v, v,-v), color), //0 - ESQUERDA E TRASEIRA
-                new VertexPositionColor(new Vector3( v, v,-v), color), //1 - DIREITA  E TRASEIRA
-                new VertexPositionColor(new Vector3(-v, v, v), color), //2 - ESQUERDA E FRENTE
-                new VertexPositionColor(new Vector3( v, v, v), color), //3 - DIREITA  E FRENTE
+                new VertexPositionColor(new Vector3(-v.X, v.Y,-v.Z), color), //0 - ESQUERDA E TRASEIRA
+                new VertexPositionColor(new Vector3( v.X, v.Y,-v.Z), color), //1 - DIREITA  E TRASEIRA
+                new VertexPositionColor(new Vector3(-v.X, v.Y, v.Z), color), //2 - ESQUERDA E FRENTE
+                new VertexPositionColor(new Vector3( v.X, v.Y, v.Z), color), //3 - DIREITA  E FRENTE
                 //INFERIOR
-                new VertexPositionColor(new Vector3(-v,-v,-v), color), //4 - ESQUERDA E TRASEIRA
-                new VertexPositionColor(new Vector3( v,-v,-v), color), //5 - DIREITA  E TRASEIRA
-                new VertexPositionColor(new Vector3(-v,-v, v), color), //6 - ESQUERDA E FRENTE
-                new VertexPositionColor(new Vector3( v,-v, v), color), //7 - DIREITA  E FRENTE
+                new VertexPositionColor(new Vector3(-v.X,-v.Y,-v.Z), color), //4 - ESQUERDA E TRASEIRA
+                new VertexPositionColor(new Vector3( v.X,-v.Y,-v.Z), color), //5 - DIREITA  E TRASEIRA
+                new VertexPositionColor(new Vector3(-v.X,-v.Y, v.Z), color), //6 - ESQUERDA E FRENTE
+                new VertexPositionColor(new Vector3( v.X,-v.Y, v.Z), color), //7 - DIREITA  E FRENTE
             };
         }
 
@@ -141,7 +142,7 @@ namespace Mundo01
         public void SetScale(Vector3 scale)
         {
             this.scale = scale;
-            worldScale *= Matrix.CreateScale(scale);
+            worldScale = Matrix.CreateScale(scale);
         }
 
         public void SetAngleX(float angle)
