@@ -4,7 +4,7 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace Mundo02
 {
-    public abstract class GameObject : ITransform, ICollider
+    public abstract class GameObject : ICollider
     {
         GraphicsDevice device;
         VertexBuffer buffer;

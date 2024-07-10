@@ -23,6 +23,7 @@ namespace Mundo01
         Cube house;
 
         List<ICollider> colliders;
+        const bool SHOW_COLLIDERS = false;
 
         public Game1()
         {
@@ -44,13 +45,13 @@ namespace Mundo01
 
             camera = new Camera(this);
 
-            plane = new Quad(this, GraphicsDevice);
-            house = new Cube(this, GraphicsDevice);
+            plane = new Quad(this, GraphicsDevice, SHOW_COLLIDERS);
+            house = new Cube(this, GraphicsDevice, SHOW_COLLIDERS);
+            
+            colliders = new List<ICollider>() { plane, house };
 
             plane.Scale(new Vector3(10, 0, 10));
             house.Translation(new Vector3(0, 1, 0));
-
-            colliders = new List<ICollider>() { plane, house };
 
             base.Initialize();
         }
@@ -72,15 +73,15 @@ namespace Mundo01
             camera.Update(gameTime);
 
             foreach (ICollider c in colliders)
-            { 
+            {
                 if (camera.IsColliding(c.BBox))
                 {
                     camera.RestorePosition();
-                    c.LBox.SetColor(Color.Red);
+                    c.SetColliderColor(Color.Red);
                 }
                 else
                 {
-                    c.LBox.SetColor(Color.Green);
+                    c.SetColliderColor(Color.Green);
                 }
             }
 
@@ -89,7 +90,7 @@ namespace Mundo01
 
         protected override void Draw(GameTime gameTime)
         {
-            GraphicsDevice.Clear(Color.Black);
+            GraphicsDevice.Clear(Color.CornflowerBlue);
 
             //RasterizerState rs = new RasterizerState();
             //rs.CullMode = CullMode.None;

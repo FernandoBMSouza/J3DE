@@ -7,7 +7,7 @@ using Microsoft.Xna.Framework;
 
 namespace Mundo02
 {
-    class Windmill : ITransform, ICollider
+    class Windmill : ICollider
     {
         Building building;
         Propeller[] propellers;

@@ -9,8 +9,8 @@ namespace Mundo01
 {
     public class Quad : GameObject
     {
-        public Quad(Game game, GraphicsDevice device)
-            : base(game, device, true)
+        public Quad(Game game, GraphicsDevice device, bool lineBoxVisible = false)
+            : base(game, device, lineBoxVisible)
         {
             Size = new Vector3(2, 0, 2);
             LBox = new LineBox(game, Size, Color.Green);
@@ -26,7 +26,6 @@ namespace Mundo01
                 new VertexPositionColor(new Vector3( 1, 0,-1), Color.Green),
                 new VertexPositionColor(new Vector3( 1, 0, 1), Color.Yellow), 
             };
-            UpdateBoundingBox();
         }
     }
 }

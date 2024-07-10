@@ -8,9 +8,9 @@ namespace Mundo01
 {
     interface ICollider
     {
-        LineBox LBox { get; }
         BoundingBox BBox { get; }
         void UpdateBoundingBox();
         bool IsColliding(BoundingBox other);
+        void SetColliderColor(Color color);
     }
 }

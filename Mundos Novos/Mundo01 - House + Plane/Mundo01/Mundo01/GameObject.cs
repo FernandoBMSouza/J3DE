@@ -1,9 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Graphics;
 
 namespace Mundo01
 {
@@ -13,9 +10,7 @@ namespace Mundo01
         VertexBuffer buffer;
         BasicEffect effect;
 
-        Matrix worldScale;
-        Matrix worldRotation;
-        Matrix worldTranslation;
+        Matrix world;
 
         public BoundingBox BBox { get; private set; }
         public LineBox LBox { get; protected set; }
@@ -38,8 +33,7 @@ namespace Mundo01
             }
         }
 
-
-        public GameObject(Game game, GraphicsDevice device, bool lineBoxVisible = true)
+        public GameObject(Game game, GraphicsDevice device, bool lineBoxVisible = false)
         {
             this.device = device;
             Vertices = null;
@@ -68,7 +62,7 @@ namespace Mundo01
             if (Vertices != null)
                 device.SetVertexBuffer(buffer);
 
-            effect.World = worldScale * worldRotation * worldTranslation;
+            effect.World = world;
             effect.View = camera.View;
             effect.Projection = camera.Projection;
 
@@ -83,7 +77,6 @@ namespace Mundo01
                                                                    0,
                                                                    Vertices.Length / 3);
             }
-
             if (lineBoxVisible) LBox.Draw(effect, effect.World);
         }
 
@@ -99,15 +92,18 @@ namespace Mundo01
             return BBox.Intersects(other);
         }
 
+        public void SetColliderColor(Color color)
+        {
+            LBox.SetColor(color);
+        }
+
         public void SetIdentity()
         {
             Position = Vector3.Zero;
             Angle = Vector3.Zero;
             Size = Vector3.One;
 
-            worldScale = Matrix.Identity;
-            worldRotation = Matrix.Identity;
-            worldTranslation = Matrix.Identity;
+            world = Matrix.Identity;
 
             UpdateBoundingBox();
         }
@@ -115,14 +111,14 @@ namespace Mundo01
         public void Translation(Vector3 position)
         {
             Position = position;
-            worldTranslation *= Matrix.CreateTranslation(position);
+            world *= Matrix.CreateTranslation(position);
             UpdateBoundingBox();
         }
 
         public void Scale(Vector3 scale)
         {
             Size *= scale;
-            worldScale *= Matrix.CreateScale(scale);
+            world *= Matrix.CreateScale(scale);
             UpdateBoundingBox();
         }
 
@@ -133,18 +129,18 @@ namespace Mundo01
             {
                 case 'X':
                 case 'x':
-                    Angle += new Vector3(radians, 0, 0);
-                    worldRotation *= Matrix.CreateRotationX(radians);
+                    Angle += new Vector3(angle, 0, 0);
+                    world *= Matrix.CreateRotationX(radians);
                     break;
                 case 'Y':
                 case 'y':
-                    Angle += new Vector3(0, radians, 0);
-                    worldRotation *= Matrix.CreateRotationY(radians);
+                    Angle += new Vector3(0, angle, 0);
+                    world *= Matrix.CreateRotationY(radians);
                     break;
                 case 'Z':
                 case 'z':
-                    Angle += new Vector3(0, 0, radians);
-                    worldRotation *= Matrix.CreateRotationZ(radians);
+                    Angle += new Vector3(0, 0, angle);
+                    world *= Matrix.CreateRotationZ(radians);
                     break;
                 default:
                     break;
