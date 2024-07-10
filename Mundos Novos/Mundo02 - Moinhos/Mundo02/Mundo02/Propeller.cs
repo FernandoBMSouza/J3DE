@@ -9,7 +9,7 @@ namespace Mundo02
 {
     public class Propeller : GameObject
     {
-        public Propeller(Game game, GraphicsDevice device, bool lineBoxVisible = false)
+        public Propeller(Game1 game, GraphicsDevice device, bool lineBoxVisible = false)
             : base(game, device, lineBoxVisible)
         {
             //Tem uma gambiarra nesse size, o Y certo seria 4, mas pra fazer o linebox ficar certo preciso deixar 8, 

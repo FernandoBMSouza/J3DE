@@ -36,7 +36,7 @@ namespace Mundo02
             }
         }
 
-        public GameObject(Game game, GraphicsDevice device, bool lineBoxVisible = false)
+        public GameObject(Game1 game, GraphicsDevice device, bool lineBoxVisible = false)
         {
             this.device = device;
             Vertices = null;

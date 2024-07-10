@@ -5,7 +5,7 @@ namespace Mundo02
 {
     public class Cube : GameObject
     {
-        public Cube(Game game, GraphicsDevice device, bool lineBoxVisible = false)
+        public Cube(Game1 game, GraphicsDevice device, bool lineBoxVisible = false)
             : base(game, device, lineBoxVisible)
         {
             Size = new Vector3(2,2,2);

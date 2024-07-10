@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Mundo02
 {
-    class Screen
+    public class Screen
     {
         static Screen instance;
         public int Width { get; set; }

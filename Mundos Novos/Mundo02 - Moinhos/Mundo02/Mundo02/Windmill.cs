@@ -7,7 +7,7 @@ using Microsoft.Xna.Framework;
 
 namespace Mundo02
 {
-    class Windmill : ICollider
+    public class Windmill : ICollider
     {
         Building building;
         Propeller[] propellers;
@@ -35,11 +35,12 @@ namespace Mundo02
             }
         }
 
-        public Windmill(Game game, GraphicsDevice device, float speed, bool isWorking = true, bool lineBoxVisible = false)
+        public Windmill(Game1 game, GraphicsDevice device, float speed, bool isWorking = true, bool lineBoxVisible = false)
         {
             this.lineBoxVisible = lineBoxVisible;
-            building = new Building(game, device, lineBoxVisible);
             this.isWorking = isWorking;
+            
+            building = new Building(game, device, lineBoxVisible);
 
             propellers = new Propeller[PROPELLERS_NUMBER];
             for (int i = 0; i < propellers.Length; i++) propellers[i] = new Propeller(game, device, lineBoxVisible);

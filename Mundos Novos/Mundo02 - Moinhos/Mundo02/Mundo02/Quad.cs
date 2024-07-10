@@ -9,7 +9,7 @@ namespace Mundo02
 {
     public class Quad : GameObject
     {
-        public Quad(Game game, GraphicsDevice device, bool lineBoxVisible = false)
+        public Quad(Game1 game, GraphicsDevice device, bool lineBoxVisible = false)
             : base(game, device, lineBoxVisible)
         {
             Size = new Vector3(2, 0, 2);
