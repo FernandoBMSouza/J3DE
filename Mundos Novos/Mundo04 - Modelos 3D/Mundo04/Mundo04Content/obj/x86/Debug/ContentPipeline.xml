@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
+  <Asset Type="Pipeline:BuildItemCollection">
+    <Item>
+      <Source>Images\bricks.png</Source>
+      <Name>Images\bricks</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos Novos\Mundo04 - Modelos 3D\Mundo04\Mundo04\bin\x86\Debug\Content\Images\bricks.xnb</Output>
+      <Time>2024-07-10T08:17:10.6431728-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Images\grass.jpg</Source>
+      <Name>Images\grass</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos Novos\Mundo04 - Modelos 3D\Mundo04\Mundo04\bin\x86\Debug\Content\Images\grass.xnb</Output>
+      <Time>2024-07-10T08:17:10.6511743-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Images\rocks.jpg</Source>
+      <Name>Images\rocks</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos Novos\Mundo04 - Modelos 3D\Mundo04\Mundo04\bin\x86\Debug\Content\Images\rocks.xnb</Output>
+      <Time>2024-07-10T08:17:10.6531741-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Images\wood.png</Source>
+      <Name>Images\wood</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos Novos\Mundo04 - Modelos 3D\Mundo04\Mundo04\bin\x86\Debug\Content\Images\wood.xnb</Output>
+      <Time>2024-07-10T08:17:10.6551739-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\hero.x</Source>
+      <Name>Models\hero</Name>
+      <Importer>XImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos Novos\Mundo04 - Modelos 3D\Mundo04\Mundo04\bin\x86\Debug\Content\Models\hero.xnb</Output>
+      <Time>2024-07-10T08:28:15.3542384-03:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug\Models\hero_0.xml</Key>
+        <Value>2024-07-10T08:34:00.3885508-03:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>Models\hero.x</Source>
+      <Importer>XImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug\Models\hero_0.xml</Output>
+      <Time>2024-07-10T08:28:15.3542384-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\tower.x</Source>
+      <Name>Models\tower</Name>
+      <Importer>XImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos Novos\Mundo04 - Modelos 3D\Mundo04\Mundo04\bin\x86\Debug\Content\Models\tower.xnb</Output>
+      <Time>2024-07-10T09:23:06.2413445-03:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug\Models\tower_0.xml</Key>
+        <Value>2024-07-10T09:23:11.4371976-03:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>Models\tower.x</Source>
+      <Importer>XImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug\Models\tower_0.xml</Output>
+      <Time>2024-07-10T09:23:06.2413445-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\building.x</Source>
+      <Name>Models\building</Name>
+      <Importer>XImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos Novos\Mundo04 - Modelos 3D\Mundo04\Mundo04\bin\x86\Debug\Content\Models\building.xnb</Output>
+      <Time>2024-07-10T09:42:10.267132-03:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug\Models\building_0.xml</Key>
+        <Value>2024-07-10T09:44:35.7374087-03:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>Models\propeller.x</Source>
+      <Name>Models\propeller</Name>
+      <Importer>XImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos Novos\Mundo04 - Modelos 3D\Mundo04\Mundo04\bin\x86\Debug\Content\Models\propeller.xnb</Output>
+      <Time>2024-07-10T09:42:10.2781338-03:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug\Models\propeller_0.xml</Key>
+        <Value>2024-07-10T09:44:35.7970514-03:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>Models\building.x</Source>
+      <Importer>XImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug\Models\building_0.xml</Output>
+      <Time>2024-07-10T09:42:10.267132-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\propeller.x</Source>
+      <Importer>XImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug\Models\propeller_0.xml</Output>
+      <Time>2024-07-10T09:42:10.2781338-03:00</Time>
+    </Item>
+    <BuildSuccessful>true</BuildSuccessful>
+    <Settings>
+      <TargetPlatform>Windows</TargetPlatform>
+      <TargetProfile>HiDef</TargetProfile>
+      <BuildConfiguration>Debug</BuildConfiguration>
+      <CompressContent>false</CompressContent>
+      <RootDirectory>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos Novos\Mundo04 - Modelos 3D\Mundo04\Mundo04Content\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos Novos\Mundo04 - Modelos 3D\Mundo04\Mundo04\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos Novos\Mundo04 - Modelos 3D\Mundo04\Mundo04Content\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos Novos\Mundo04 - Modelos 3D\Mundo04\Mundo04\bin\x86\Debug\Content\</OutputDirectory>
+    </Settings>
+    <Assemblies>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
+        <Value>2010-08-23T12:41:18-03:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
+        <Value>2010-08-23T12:41:18-03:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
+        <Value>2010-08-23T12:41:18-03:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
+        <Value>2010-08-23T12:41:18-03:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
+        <Value>2010-08-23T12:41:18-03:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
+        <Value>2010-08-23T12:41:18-03:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\WINDOWS\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2023-12-16T18:46:09.1672477-03:00</Value>
+      </Assembly>
+    </Assemblies>
+  </Asset>
+</XnaContent>

@@ -3,7 +3,7 @@
   <Asset Type="Graphics:NodeContent">
     <Name>DXCC_ROOT</Name>
     <Identity>
-      <SourceFilename>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundo04 - Modelos 3D\Mundo04\Mundo04Content\Models\propeller.x</SourceFilename>
+      <SourceFilename>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos Antigos\Mundo04 - Modelos 3D\Mundo04\Mundo04Content\Models\propeller.x</SourceFilename>
       <SourceTool>XImporter</SourceTool>
     </Identity>
     <Transform>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</Transform>
@@ -43,7 +43,7 @@
   <Resources>
     <Resource ID="#Resource1" Type="Graphics:BasicMaterialContent">
       <Identity>
-        <SourceFilename>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundo04 - Modelos 3D\Mundo04\Mundo04Content\Models\propeller.x</SourceFilename>
+        <SourceFilename>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos Antigos\Mundo04 - Modelos 3D\Mundo04\Mundo04Content\Models\propeller.x</SourceFilename>
         <SourceTool>XImporter</SourceTool>
       </Identity>
       <OpaqueData>

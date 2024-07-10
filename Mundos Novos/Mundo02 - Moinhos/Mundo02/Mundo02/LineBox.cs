@@ -16,7 +16,7 @@ namespace Mundo02
         Color color;
         Game game;
 
-        public LineBox(Game game, Vector3 scale, Color color)
+        public LineBox(Game1 game, Vector3 scale, Color color)
         {
             this.game = game;
             this.color = color;
