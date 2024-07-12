@@ -1,0 +1,5 @@
+O boundingbox e o linebox funcionam quando os vértices são criados em volta do 0,0,0 do mundo, e esse é o pivot, mas se eu crio um objeto em que o pivot não está centralizado, por exemplo está abaixo ou acima, o linebox e boundingbox não funcionam mais, eu acredito que isso acontece pela forma que foi feita a conta nos métodos:
+
+UpdateBoundingBox() no GameObject
+E/OU
+CreateVertex() no LineBox

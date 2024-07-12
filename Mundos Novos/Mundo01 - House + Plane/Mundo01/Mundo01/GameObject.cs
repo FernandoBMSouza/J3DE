@@ -4,37 +4,66 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace Mundo01
 {
-    public abstract class GameObject : ICollider
+    public abstract class GameObject
     {
-        GraphicsDevice device;
-        VertexBuffer buffer;
-        BasicEffect effect;
+        private GraphicsDevice device;
+        private VertexBuffer buffer;
+        private BasicEffect effect;
+        private Game game;
 
-        Matrix world;
+        private Vector3 size;
+        private Vector3 position;
+        private Vector3 rotation;
+        private Vector3 scale;
 
-        public BoundingBox BBox { get; private set; }
-        public LineBox LBox { get; protected set; }
-        bool lineBoxVisible;
-
-        protected VertexPositionColor[] Vertices { get; set; }
-
-        public Vector3 Position { get; protected set; }
-        public Vector3 Size { get; protected set; }
-        private Vector3 angle;
-        public Vector3 Angle
+        public Vector3 Size 
         {
-            get { return angle; }
-            protected set
+            get { return size; }
+            protected set 
             {
-                angle = new Vector3(
-                (value.X % 360 + 360) % 360,
-                (value.Y % 360 + 360) % 360,
-                (value.Z % 360 + 360) % 360);
+                size = value;
+                LBox = new LineBox(game, size/scale, Color.Green);
+                UpdateBoundingBox();
+            }
+        }
+        public Vector3 Position
+        {
+            get { return position; }
+            set
+            {
+                position = value;
+                UpdateBoundingBox();
+            }
+        }
+        public Vector3 Rotation
+        {
+            get { return rotation; }
+            set
+            {
+                rotation = value;
+                rotation = new Vector3(MathHelper.ToRadians(rotation.X),
+                                       MathHelper.ToRadians(rotation.Y),
+                                       MathHelper.ToRadians(rotation.Z));
+                                                        
+            }
+        }
+        public Vector3 Scale
+        {
+            get { return scale; }
+            set
+            {
+                scale = value;
+                Size *= scale;
             }
         }
 
-        public GameObject(Game game, GraphicsDevice device, bool lineBoxVisible = false)
+        public LineBox LBox { get; protected set; }
+        public BoundingBox BBox { get; private set; }
+        protected VertexPositionColor[] Vertices { get; set; }
+
+        public GameObject(Game game, GraphicsDevice device)
         {
+            this.game = game;
             this.device = device;
             Vertices = null;
 
@@ -49,20 +78,29 @@ namespace Mundo01
             }
 
             effect = new BasicEffect(device);
-            SetIdentity();
 
-            this.lineBoxVisible = lineBoxVisible;
-            UpdateBoundingBox();
+            Scale = Vector3.One;
+            Rotation = Vector3.Zero;
+            Position = Vector3.Zero;
+
+            Size = Vector3.One;
+            LBox = new LineBox(game, Size, Color.Green);
         }
 
-        public void Update(GameTime gameTime) { }
+        public void Update(GameTime gameTime) 
+        {
+            
+        }
 
         public void Draw(Camera camera)
         {
             if (Vertices != null)
                 device.SetVertexBuffer(buffer);
 
-            effect.World = world;
+            effect.World = Matrix.CreateFromYawPitchRoll(Rotation.Y, Rotation.X, Rotation.Z) *
+                           Matrix.CreateScale(Scale) *
+                           Matrix.CreateTranslation(Position);
+
             effect.View = camera.View;
             effect.Projection = camera.Projection;
 
@@ -77,75 +115,18 @@ namespace Mundo01
                                                                    0,
                                                                    Vertices.Length / 3);
             }
-            if (lineBoxVisible) LBox.Draw(effect, effect.World);
+            LBox.Draw(effect);
         }
 
         public void UpdateBoundingBox()
         {
             BBox = new BoundingBox(Position - (Size / 2f),
                                    Position + (Size / 2f));
-
         }
 
         public bool IsColliding(BoundingBox other)
         {
             return BBox.Intersects(other);
-        }
-
-        public void SetColliderColor(Color color)
-        {
-            LBox.SetColor(color);
-        }
-
-        public void SetIdentity()
-        {
-            Position = Vector3.Zero;
-            Angle = Vector3.Zero;
-            Size = Vector3.One;
-
-            world = Matrix.Identity;
-
-            UpdateBoundingBox();
-        }
-
-        public void Translation(Vector3 position)
-        {
-            Position = position;
-            world *= Matrix.CreateTranslation(position);
-            UpdateBoundingBox();
-        }
-
-        public void Scale(Vector3 scale)
-        {
-            Size *= scale;
-            world *= Matrix.CreateScale(scale);
-            UpdateBoundingBox();
-        }
-
-        public void Rotation(char axis, float angle)
-        {
-            float radians = MathHelper.ToRadians(angle);
-            switch (axis)
-            {
-                case 'X':
-                case 'x':
-                    Angle += new Vector3(angle, 0, 0);
-                    world *= Matrix.CreateRotationX(radians);
-                    break;
-                case 'Y':
-                case 'y':
-                    Angle += new Vector3(0, angle, 0);
-                    world *= Matrix.CreateRotationY(radians);
-                    break;
-                case 'Z':
-                case 'z':
-                    Angle += new Vector3(0, 0, angle);
-                    world *= Matrix.CreateRotationZ(radians);
-                    break;
-                default:
-                    break;
-            }
-            UpdateBoundingBox();
         }
     }
 }

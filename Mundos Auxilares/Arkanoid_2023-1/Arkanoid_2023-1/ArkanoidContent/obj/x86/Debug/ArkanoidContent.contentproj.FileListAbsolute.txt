@@ -1,0 +1,9 @@
+c:\users\fabio\documents\visual studio 2010\Projects\Arkanoid\ArkanoidContent\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Juliana\Documents\Visual Studio 2010\Projects\Arkanoid\ArkanoidContent\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Juliana\Documents\Visual Studio 2010\Projects\Arkanoid_v02\ArkanoidContent\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Juliana\Documents\Visual Studio 2010\Projects\Arkanoid_v03\ArkanoidContent\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Juliana\Documents\Visual Studio 2010\Projects\Arkanoid_v03_aula_GService\ArkanoidContent\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Juliana\Documents\Visual Studio 2010\Projects\Arkanoid_Exemplo\ArkanoidContent\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\sabio\Documents\Visual Studio 2010\Projects\Arkanoid_Exemplo\ArkanoidContent\obj\x86\Debug\ArkanoidContent.contentprojResolveAssemblyReference.cache
+D:\Backup_HPPavilion14_220308\Documentos\Visual Studio 2010\Projects\Arkanoid\ArkanoidContent\obj\x86\Debug\ArkanoidContent.contentprojResolveAssemblyReference.cache
+Z:\Users\Aluno\Downloads\Arkanoid_2023\ArkanoidContent\obj\x86\Debug\ArkanoidContent.contentprojResolveAssemblyReference.cache

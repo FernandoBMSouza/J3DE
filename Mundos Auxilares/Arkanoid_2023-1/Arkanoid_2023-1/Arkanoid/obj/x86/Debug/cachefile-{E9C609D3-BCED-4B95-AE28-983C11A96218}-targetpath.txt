@@ -1,0 +1,10 @@
+Content\Images\bgOpening.xnb
+Content\Images\bgGameOver.xnb
+Content\Images\amarelo.xnb
+Content\Images\azul.xnb
+Content\Images\background.xnb
+Content\Images\ball.xnb
+Content\Images\barra.xnb
+Content\Images\verde.xnb
+Content\Images\vermelho.xnb
+Content\Images\bgCongrats.xnb

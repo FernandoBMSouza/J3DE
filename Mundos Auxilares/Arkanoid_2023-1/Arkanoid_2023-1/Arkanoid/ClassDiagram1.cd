@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Arkanoid.Game1" Collapsed="true">
+    <Position X="9.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAQAAAAAAAAAAAAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>Game1.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Arkanoid.Ball" Collapsed="true">
+    <Position X="5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameObjects\Ball.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Arkanoid.GameObject" Collapsed="true">
+    <Position X="3.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAIAAAgAgAAAAAAAAAAAgAAAAAAIAAAAAAAA=</HashCode>
+      <FileName>GameObjects\GameObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Arkanoid.Player" Collapsed="true">
+    <Position X="7.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAACAAAAAAAAABEAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameObjects\Player.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Arkanoid.Rect" Collapsed="true">
+    <Position X="0.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameObjects\Rect.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Arkanoid.SceneManager" Collapsed="true">
+    <Position X="9.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAAgAAAAAAIAAAAAAAAAAAAQAAAAAAgA=</HashCode>
+      <FileName>Manager\SceneManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Arkanoid.Program" Collapsed="true">
+    <Position X="11.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Arkanoid.Background" Collapsed="true">
+    <Position X="2.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Scenes\Background.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Arkanoid.Congrats" Collapsed="true">
+    <Position X="0.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAABAAAAAAAgAABAAAAAAAAAAAAAAAAAAAAAAAIAA=</HashCode>
+      <FileName>Scenes\Congrats.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Arkanoid.GameOver" Collapsed="true">
+    <Position X="5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAABAAAAAAAgAABAAAAAAAAAAAAAAAAAAAAAAAIAA=</HashCode>
+      <FileName>Scenes\GameOver.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Arkanoid.BaseLevel" Collapsed="true">
+    <Position X="7.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAQAAAIA=</HashCode>
+      <FileName>Scenes\Level\BaseLevel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Arkanoid.Level05" Collapsed="true">
+    <Position X="7.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAQAAAgAAAAABAAAAgAAgAAAAAAAAQAAAIAA=</HashCode>
+      <FileName>Scenes\Level\Level05.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Arkanoid.Opening" Collapsed="true">
+    <Position X="2.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAABAAAAAAAgAABAAAAAAAAAAAAAAAAAAAAAAAIAA=</HashCode>
+      <FileName>Scenes\Opening.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Arkanoid.Scene" Collapsed="true">
+    <Position X="3.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Scenes\Scene.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="Arkanoid.SCENE" Collapsed="true">
+    <Position X="9.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABAAAAAAACACAEAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Manager\SceneManager.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

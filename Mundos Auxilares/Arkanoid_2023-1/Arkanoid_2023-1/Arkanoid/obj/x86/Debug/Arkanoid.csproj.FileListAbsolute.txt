@@ -1,0 +1,143 @@
+c:\users\fabio\documents\visual studio 2010\Projects\Arkanoid\Arkanoid\bin\x86\Debug\Arkanoid.exe
+c:\users\fabio\documents\visual studio 2010\Projects\Arkanoid\Arkanoid\bin\x86\Debug\Arkanoid.pdb
+c:\users\fabio\documents\visual studio 2010\Projects\Arkanoid\Arkanoid\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\users\fabio\documents\visual studio 2010\Projects\Arkanoid\Arkanoid\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+c:\users\fabio\documents\visual studio 2010\Projects\Arkanoid\Arkanoid\obj\x86\Debug\Arkanoid.exe
+c:\users\fabio\documents\visual studio 2010\Projects\Arkanoid\Arkanoid\obj\x86\Debug\Arkanoid.pdb
+c:\users\fabio\documents\visual studio 2010\Projects\Arkanoid\Arkanoid\bin\x86\Debug\Content\Images\bgOpening.xnb
+C:\Users\Fabio\documents\visual studio 2010\Projects\Arkanoid\Arkanoid\bin\x86\Debug\Content\Images\bgGameOver.xnb
+C:\Users\Fabio\documents\visual studio 2010\Projects\Arkanoid\Arkanoid\bin\x86\Debug\Content\Images\amarelo.xnb
+C:\Users\Fabio\documents\visual studio 2010\Projects\Arkanoid\Arkanoid\bin\x86\Debug\Content\Images\azul.xnb
+C:\Users\Fabio\documents\visual studio 2010\Projects\Arkanoid\Arkanoid\bin\x86\Debug\Content\Images\background.xnb
+C:\Users\Fabio\documents\visual studio 2010\Projects\Arkanoid\Arkanoid\bin\x86\Debug\Content\Images\ball.xnb
+C:\Users\Fabio\documents\visual studio 2010\Projects\Arkanoid\Arkanoid\bin\x86\Debug\Content\Images\barra.xnb
+C:\Users\Fabio\documents\visual studio 2010\Projects\Arkanoid\Arkanoid\bin\x86\Debug\Content\Images\verde.xnb
+C:\Users\Fabio\documents\visual studio 2010\Projects\Arkanoid\Arkanoid\bin\x86\Debug\Content\Images\vermelho.xnb
+C:\Users\Juliana\Documents\Visual Studio 2010\Projects\Arkanoid\Arkanoid\bin\x86\Debug\Content\Images\bgOpening.xnb
+C:\Users\Juliana\Documents\Visual Studio 2010\Projects\Arkanoid\Arkanoid\bin\x86\Debug\Content\Images\bgGameOver.xnb
+C:\Users\Juliana\Documents\Visual Studio 2010\Projects\Arkanoid\Arkanoid\bin\x86\Debug\Content\Images\amarelo.xnb
+C:\Users\Juliana\Documents\Visual Studio 2010\Projects\Arkanoid\Arkanoid\bin\x86\Debug\Content\Images\azul.xnb
+C:\Users\Juliana\Documents\Visual Studio 2010\Projects\Arkanoid\Arkanoid\bin\x86\Debug\Content\Images\background.xnb
+C:\Users\Juliana\Documents\Visual Studio 2010\Projects\Arkanoid\Arkanoid\bin\x86\Debug\Content\Images\ball.xnb
+C:\Users\Juliana\Documents\Visual Studio 2010\Projects\Arkanoid\Arkanoid\bin\x86\Debug\Content\Images\barra.xnb
+C:\Users\Juliana\Documents\Visual Studio 2010\Projects\Arkanoid\Arkanoid\bin\x86\Debug\Content\Images\verde.xnb
+C:\Users\Juliana\Documents\Visual Studio 2010\Projects\Arkanoid\Arkanoid\bin\x86\Debug\Content\Images\vermelho.xnb
+C:\Users\Juliana\Documents\Visual Studio 2010\Projects\Arkanoid\Arkanoid\bin\x86\Debug\Arkanoid.exe
+C:\Users\Juliana\Documents\Visual Studio 2010\Projects\Arkanoid\Arkanoid\bin\x86\Debug\Arkanoid.pdb
+C:\Users\Juliana\Documents\Visual Studio 2010\Projects\Arkanoid\Arkanoid\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Juliana\Documents\Visual Studio 2010\Projects\Arkanoid\Arkanoid\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Juliana\Documents\Visual Studio 2010\Projects\Arkanoid\Arkanoid\obj\x86\Debug\Arkanoid.exe
+C:\Users\Juliana\Documents\Visual Studio 2010\Projects\Arkanoid\Arkanoid\obj\x86\Debug\Arkanoid.pdb
+C:\Users\Juliana\Documents\Visual Studio 2010\Projects\Arkanoid\Arkanoid\bin\x86\Debug\Content\Images\bgCongratulations.xnb
+C:\Users\Juliana\Documents\Visual Studio 2010\Projects\Arkanoid_v02\Arkanoid\bin\x86\Debug\Content\Images\bgOpening.xnb
+C:\Users\Juliana\Documents\Visual Studio 2010\Projects\Arkanoid_v02\Arkanoid\bin\x86\Debug\Content\Images\bgGameOver.xnb
+C:\Users\Juliana\Documents\Visual Studio 2010\Projects\Arkanoid_v02\Arkanoid\bin\x86\Debug\Content\Images\amarelo.xnb
+C:\Users\Juliana\Documents\Visual Studio 2010\Projects\Arkanoid_v02\Arkanoid\bin\x86\Debug\Content\Images\azul.xnb
+C:\Users\Juliana\Documents\Visual Studio 2010\Projects\Arkanoid_v02\Arkanoid\bin\x86\Debug\Content\Images\background.xnb
+C:\Users\Juliana\Documents\Visual Studio 2010\Projects\Arkanoid_v02\Arkanoid\bin\x86\Debug\Content\Images\ball.xnb
+C:\Users\Juliana\Documents\Visual Studio 2010\Projects\Arkanoid_v02\Arkanoid\bin\x86\Debug\Content\Images\barra.xnb
+C:\Users\Juliana\Documents\Visual Studio 2010\Projects\Arkanoid_v02\Arkanoid\bin\x86\Debug\Content\Images\verde.xnb
+C:\Users\Juliana\Documents\Visual Studio 2010\Projects\Arkanoid_v02\Arkanoid\bin\x86\Debug\Content\Images\vermelho.xnb
+C:\Users\Juliana\Documents\Visual Studio 2010\Projects\Arkanoid_v02\Arkanoid\bin\x86\Debug\Content\Images\bgCongratulations.xnb
+C:\Users\Juliana\Documents\Visual Studio 2010\Projects\Arkanoid_v02\Arkanoid\bin\x86\Debug\Arkanoid.exe
+C:\Users\Juliana\Documents\Visual Studio 2010\Projects\Arkanoid_v02\Arkanoid\bin\x86\Debug\Arkanoid.pdb
+C:\Users\Juliana\Documents\Visual Studio 2010\Projects\Arkanoid_v02\Arkanoid\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Juliana\Documents\Visual Studio 2010\Projects\Arkanoid_v02\Arkanoid\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Juliana\Documents\Visual Studio 2010\Projects\Arkanoid_v02\Arkanoid\obj\x86\Debug\Arkanoid.exe
+C:\Users\Juliana\Documents\Visual Studio 2010\Projects\Arkanoid_v02\Arkanoid\obj\x86\Debug\Arkanoid.pdb
+C:\Users\Juliana\Documents\Visual Studio 2010\Projects\Arkanoid_v03\Arkanoid\bin\x86\Debug\Content\Images\bgOpening.xnb
+C:\Users\Juliana\Documents\Visual Studio 2010\Projects\Arkanoid_v03\Arkanoid\bin\x86\Debug\Content\Images\bgGameOver.xnb
+C:\Users\Juliana\Documents\Visual Studio 2010\Projects\Arkanoid_v03\Arkanoid\bin\x86\Debug\Content\Images\amarelo.xnb
+C:\Users\Juliana\Documents\Visual Studio 2010\Projects\Arkanoid_v03\Arkanoid\bin\x86\Debug\Content\Images\azul.xnb
+C:\Users\Juliana\Documents\Visual Studio 2010\Projects\Arkanoid_v03\Arkanoid\bin\x86\Debug\Content\Images\background.xnb
+C:\Users\Juliana\Documents\Visual Studio 2010\Projects\Arkanoid_v03\Arkanoid\bin\x86\Debug\Content\Images\ball.xnb
+C:\Users\Juliana\Documents\Visual Studio 2010\Projects\Arkanoid_v03\Arkanoid\bin\x86\Debug\Content\Images\barra.xnb
+C:\Users\Juliana\Documents\Visual Studio 2010\Projects\Arkanoid_v03\Arkanoid\bin\x86\Debug\Content\Images\verde.xnb
+C:\Users\Juliana\Documents\Visual Studio 2010\Projects\Arkanoid_v03\Arkanoid\bin\x86\Debug\Content\Images\vermelho.xnb
+C:\Users\Juliana\Documents\Visual Studio 2010\Projects\Arkanoid_v03\Arkanoid\bin\x86\Debug\Content\Images\bgCongratulations.xnb
+C:\Users\Juliana\Documents\Visual Studio 2010\Projects\Arkanoid_v03\Arkanoid\bin\x86\Debug\Arkanoid.exe
+C:\Users\Juliana\Documents\Visual Studio 2010\Projects\Arkanoid_v03\Arkanoid\bin\x86\Debug\Arkanoid.pdb
+C:\Users\Juliana\Documents\Visual Studio 2010\Projects\Arkanoid_v03\Arkanoid\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Juliana\Documents\Visual Studio 2010\Projects\Arkanoid_v03\Arkanoid\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Juliana\Documents\Visual Studio 2010\Projects\Arkanoid_v03\Arkanoid\obj\x86\Debug\Arkanoid.exe
+C:\Users\Juliana\Documents\Visual Studio 2010\Projects\Arkanoid_v03\Arkanoid\obj\x86\Debug\Arkanoid.pdb
+C:\Users\Juliana\Documents\Visual Studio 2010\Projects\Arkanoid_v03_aula_GService\Arkanoid\bin\x86\Debug\Content\Images\bgOpening.xnb
+C:\Users\Juliana\Documents\Visual Studio 2010\Projects\Arkanoid_v03_aula_GService\Arkanoid\bin\x86\Debug\Content\Images\bgGameOver.xnb
+C:\Users\Juliana\Documents\Visual Studio 2010\Projects\Arkanoid_v03_aula_GService\Arkanoid\bin\x86\Debug\Content\Images\amarelo.xnb
+C:\Users\Juliana\Documents\Visual Studio 2010\Projects\Arkanoid_v03_aula_GService\Arkanoid\bin\x86\Debug\Content\Images\azul.xnb
+C:\Users\Juliana\Documents\Visual Studio 2010\Projects\Arkanoid_v03_aula_GService\Arkanoid\bin\x86\Debug\Content\Images\background.xnb
+C:\Users\Juliana\Documents\Visual Studio 2010\Projects\Arkanoid_v03_aula_GService\Arkanoid\bin\x86\Debug\Content\Images\ball.xnb
+C:\Users\Juliana\Documents\Visual Studio 2010\Projects\Arkanoid_v03_aula_GService\Arkanoid\bin\x86\Debug\Content\Images\barra.xnb
+C:\Users\Juliana\Documents\Visual Studio 2010\Projects\Arkanoid_v03_aula_GService\Arkanoid\bin\x86\Debug\Content\Images\verde.xnb
+C:\Users\Juliana\Documents\Visual Studio 2010\Projects\Arkanoid_v03_aula_GService\Arkanoid\bin\x86\Debug\Content\Images\vermelho.xnb
+C:\Users\Juliana\Documents\Visual Studio 2010\Projects\Arkanoid_v03_aula_GService\Arkanoid\bin\x86\Debug\Content\Images\bgCongratulations.xnb
+C:\Users\Juliana\Documents\Visual Studio 2010\Projects\Arkanoid_v03_aula_GService\Arkanoid\bin\x86\Debug\Arkanoid.exe
+C:\Users\Juliana\Documents\Visual Studio 2010\Projects\Arkanoid_v03_aula_GService\Arkanoid\bin\x86\Debug\Arkanoid.pdb
+C:\Users\Juliana\Documents\Visual Studio 2010\Projects\Arkanoid_v03_aula_GService\Arkanoid\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Juliana\Documents\Visual Studio 2010\Projects\Arkanoid_v03_aula_GService\Arkanoid\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Juliana\Documents\Visual Studio 2010\Projects\Arkanoid_v03_aula_GService\Arkanoid\obj\x86\Debug\Arkanoid.exe
+C:\Users\Juliana\Documents\Visual Studio 2010\Projects\Arkanoid_v03_aula_GService\Arkanoid\obj\x86\Debug\Arkanoid.pdb
+C:\Users\Juliana\Documents\Visual Studio 2010\Projects\Arkanoid_Exemplo\Arkanoid\bin\x86\Debug\Content\Images\bgOpening.xnb
+C:\Users\Juliana\Documents\Visual Studio 2010\Projects\Arkanoid_Exemplo\Arkanoid\bin\x86\Debug\Content\Images\bgGameOver.xnb
+C:\Users\Juliana\Documents\Visual Studio 2010\Projects\Arkanoid_Exemplo\Arkanoid\bin\x86\Debug\Content\Images\amarelo.xnb
+C:\Users\Juliana\Documents\Visual Studio 2010\Projects\Arkanoid_Exemplo\Arkanoid\bin\x86\Debug\Content\Images\azul.xnb
+C:\Users\Juliana\Documents\Visual Studio 2010\Projects\Arkanoid_Exemplo\Arkanoid\bin\x86\Debug\Content\Images\background.xnb
+C:\Users\Juliana\Documents\Visual Studio 2010\Projects\Arkanoid_Exemplo\Arkanoid\bin\x86\Debug\Content\Images\ball.xnb
+C:\Users\Juliana\Documents\Visual Studio 2010\Projects\Arkanoid_Exemplo\Arkanoid\bin\x86\Debug\Content\Images\barra.xnb
+C:\Users\Juliana\Documents\Visual Studio 2010\Projects\Arkanoid_Exemplo\Arkanoid\bin\x86\Debug\Content\Images\verde.xnb
+C:\Users\Juliana\Documents\Visual Studio 2010\Projects\Arkanoid_Exemplo\Arkanoid\bin\x86\Debug\Content\Images\vermelho.xnb
+C:\Users\Juliana\Documents\Visual Studio 2010\Projects\Arkanoid_Exemplo\Arkanoid\bin\x86\Debug\Content\Images\bgCongrats.xnb
+C:\Users\Juliana\Documents\Visual Studio 2010\Projects\Arkanoid_Exemplo\Arkanoid\bin\x86\Debug\Arkanoid.exe
+C:\Users\Juliana\Documents\Visual Studio 2010\Projects\Arkanoid_Exemplo\Arkanoid\bin\x86\Debug\Arkanoid.pdb
+C:\Users\Juliana\Documents\Visual Studio 2010\Projects\Arkanoid_Exemplo\Arkanoid\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Juliana\Documents\Visual Studio 2010\Projects\Arkanoid_Exemplo\Arkanoid\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Juliana\Documents\Visual Studio 2010\Projects\Arkanoid_Exemplo\Arkanoid\obj\x86\Debug\Arkanoid.exe
+C:\Users\Juliana\Documents\Visual Studio 2010\Projects\Arkanoid_Exemplo\Arkanoid\obj\x86\Debug\Arkanoid.pdb
+C:\Users\sabio\Documents\Visual Studio 2010\Projects\Arkanoid_Exemplo\Arkanoid\bin\x86\Debug\Content\Images\bgOpening.xnb
+C:\Users\sabio\Documents\Visual Studio 2010\Projects\Arkanoid_Exemplo\Arkanoid\bin\x86\Debug\Content\Images\bgGameOver.xnb
+C:\Users\sabio\Documents\Visual Studio 2010\Projects\Arkanoid_Exemplo\Arkanoid\bin\x86\Debug\Content\Images\amarelo.xnb
+C:\Users\sabio\Documents\Visual Studio 2010\Projects\Arkanoid_Exemplo\Arkanoid\bin\x86\Debug\Content\Images\azul.xnb
+C:\Users\sabio\Documents\Visual Studio 2010\Projects\Arkanoid_Exemplo\Arkanoid\bin\x86\Debug\Content\Images\background.xnb
+C:\Users\sabio\Documents\Visual Studio 2010\Projects\Arkanoid_Exemplo\Arkanoid\bin\x86\Debug\Content\Images\ball.xnb
+C:\Users\sabio\Documents\Visual Studio 2010\Projects\Arkanoid_Exemplo\Arkanoid\bin\x86\Debug\Content\Images\barra.xnb
+C:\Users\sabio\Documents\Visual Studio 2010\Projects\Arkanoid_Exemplo\Arkanoid\bin\x86\Debug\Content\Images\verde.xnb
+C:\Users\sabio\Documents\Visual Studio 2010\Projects\Arkanoid_Exemplo\Arkanoid\bin\x86\Debug\Content\Images\vermelho.xnb
+C:\Users\sabio\Documents\Visual Studio 2010\Projects\Arkanoid_Exemplo\Arkanoid\bin\x86\Debug\Content\Images\bgCongrats.xnb
+C:\Users\sabio\Documents\Visual Studio 2010\Projects\Arkanoid_Exemplo\Arkanoid\bin\x86\Debug\Arkanoid.exe
+C:\Users\sabio\Documents\Visual Studio 2010\Projects\Arkanoid_Exemplo\Arkanoid\bin\x86\Debug\Arkanoid.pdb
+C:\Users\sabio\Documents\Visual Studio 2010\Projects\Arkanoid_Exemplo\Arkanoid\obj\x86\Debug\Arkanoid.csprojResolveAssemblyReference.cache
+C:\Users\sabio\Documents\Visual Studio 2010\Projects\Arkanoid_Exemplo\Arkanoid\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\sabio\Documents\Visual Studio 2010\Projects\Arkanoid_Exemplo\Arkanoid\obj\x86\Debug\Arkanoid.exe
+C:\Users\sabio\Documents\Visual Studio 2010\Projects\Arkanoid_Exemplo\Arkanoid\obj\x86\Debug\Arkanoid.pdb
+D:\Backup_HPPavilion14_220308\Documentos\Visual Studio 2010\Projects\Arkanoid\Arkanoid\bin\x86\Debug\Content\Images\bgOpening.xnb
+D:\Backup_HPPavilion14_220308\Documentos\Visual Studio 2010\Projects\Arkanoid\Arkanoid\bin\x86\Debug\Content\Images\bgGameOver.xnb
+D:\Backup_HPPavilion14_220308\Documentos\Visual Studio 2010\Projects\Arkanoid\Arkanoid\bin\x86\Debug\Content\Images\amarelo.xnb
+D:\Backup_HPPavilion14_220308\Documentos\Visual Studio 2010\Projects\Arkanoid\Arkanoid\bin\x86\Debug\Content\Images\azul.xnb
+D:\Backup_HPPavilion14_220308\Documentos\Visual Studio 2010\Projects\Arkanoid\Arkanoid\bin\x86\Debug\Content\Images\background.xnb
+D:\Backup_HPPavilion14_220308\Documentos\Visual Studio 2010\Projects\Arkanoid\Arkanoid\bin\x86\Debug\Content\Images\ball.xnb
+D:\Backup_HPPavilion14_220308\Documentos\Visual Studio 2010\Projects\Arkanoid\Arkanoid\bin\x86\Debug\Content\Images\barra.xnb
+D:\Backup_HPPavilion14_220308\Documentos\Visual Studio 2010\Projects\Arkanoid\Arkanoid\bin\x86\Debug\Content\Images\verde.xnb
+D:\Backup_HPPavilion14_220308\Documentos\Visual Studio 2010\Projects\Arkanoid\Arkanoid\bin\x86\Debug\Content\Images\vermelho.xnb
+D:\Backup_HPPavilion14_220308\Documentos\Visual Studio 2010\Projects\Arkanoid\Arkanoid\bin\x86\Debug\Content\Images\bgCongrats.xnb
+D:\Backup_HPPavilion14_220308\Documentos\Visual Studio 2010\Projects\Arkanoid\Arkanoid\bin\x86\Debug\Arkanoid.exe
+D:\Backup_HPPavilion14_220308\Documentos\Visual Studio 2010\Projects\Arkanoid\Arkanoid\bin\x86\Debug\Arkanoid.pdb
+D:\Backup_HPPavilion14_220308\Documentos\Visual Studio 2010\Projects\Arkanoid\Arkanoid\obj\x86\Debug\Arkanoid.csprojResolveAssemblyReference.cache
+D:\Backup_HPPavilion14_220308\Documentos\Visual Studio 2010\Projects\Arkanoid\Arkanoid\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+D:\Backup_HPPavilion14_220308\Documentos\Visual Studio 2010\Projects\Arkanoid\Arkanoid\obj\x86\Debug\Arkanoid.exe
+D:\Backup_HPPavilion14_220308\Documentos\Visual Studio 2010\Projects\Arkanoid\Arkanoid\obj\x86\Debug\Arkanoid.pdb
+Z:\Users\Aluno\Downloads\Arkanoid_2023\Arkanoid\bin\x86\Debug\Content\Images\bgOpening.xnb
+Z:\Users\Aluno\Downloads\Arkanoid_2023\Arkanoid\bin\x86\Debug\Content\Images\bgGameOver.xnb
+Z:\Users\Aluno\Downloads\Arkanoid_2023\Arkanoid\bin\x86\Debug\Content\Images\amarelo.xnb
+Z:\Users\Aluno\Downloads\Arkanoid_2023\Arkanoid\bin\x86\Debug\Content\Images\azul.xnb
+Z:\Users\Aluno\Downloads\Arkanoid_2023\Arkanoid\bin\x86\Debug\Content\Images\background.xnb
+Z:\Users\Aluno\Downloads\Arkanoid_2023\Arkanoid\bin\x86\Debug\Content\Images\ball.xnb
+Z:\Users\Aluno\Downloads\Arkanoid_2023\Arkanoid\bin\x86\Debug\Content\Images\barra.xnb
+Z:\Users\Aluno\Downloads\Arkanoid_2023\Arkanoid\bin\x86\Debug\Content\Images\verde.xnb
+Z:\Users\Aluno\Downloads\Arkanoid_2023\Arkanoid\bin\x86\Debug\Content\Images\vermelho.xnb
+Z:\Users\Aluno\Downloads\Arkanoid_2023\Arkanoid\bin\x86\Debug\Content\Images\bgCongrats.xnb
+Z:\Users\Aluno\Downloads\Arkanoid_2023\Arkanoid\bin\x86\Debug\Arkanoid.exe
+Z:\Users\Aluno\Downloads\Arkanoid_2023\Arkanoid\bin\x86\Debug\Arkanoid.pdb
+Z:\Users\Aluno\Downloads\Arkanoid_2023\Arkanoid\obj\x86\Debug\Arkanoid.csprojResolveAssemblyReference.cache
+Z:\Users\Aluno\Downloads\Arkanoid_2023\Arkanoid\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+Z:\Users\Aluno\Downloads\Arkanoid_2023\Arkanoid\obj\x86\Debug\Arkanoid.exe
+Z:\Users\Aluno\Downloads\Arkanoid_2023\Arkanoid\obj\x86\Debug\Arkanoid.pdb

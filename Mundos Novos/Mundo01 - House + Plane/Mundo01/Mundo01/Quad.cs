@@ -9,13 +9,10 @@ namespace Mundo01
 {
     public class Quad : GameObject
     {
-        public Quad(Game game, GraphicsDevice device, bool lineBoxVisible = false)
-            : base(game, device, lineBoxVisible)
+        public Quad(Game game, GraphicsDevice device)
+            : base(game, device)
         {
             Size = new Vector3(2, 0, 2);
-            LBox = new LineBox(game, Size, Color.Green);
-            UpdateBoundingBox();
-
             Vertices = new VertexPositionColor[]
             {
                 new VertexPositionColor(new Vector3(-1, 0, 1), Color.Green),

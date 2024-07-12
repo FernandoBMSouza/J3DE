@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+using Microsoft.Xna.Framework;
 
 namespace Mundo01
 {
@@ -16,21 +16,20 @@ namespace Mundo01
         Color color;
         Game game;
 
-        public LineBox(Game game, Vector3 scale, Color color)
+        public LineBox(Game game, Vector3 size, Color color)
         {
             this.game = game;
             this.color = color;
 
-            CreateVertex(scale);
+            CreateVertex(size);
             CreateVBuffer();
             CreateIndexes();
             CreateIBuffer();
         }
 
-        private void CreateVertex(Vector3 scale)
+        private void CreateVertex(Vector3 size)
         {
-            //float v = .5f;
-            Vector3 v = scale / 2;
+            Vector3 v = size/2f;
             vertices = new VertexPositionColor[]
             {
                 //SUPERIOR
@@ -96,9 +95,8 @@ namespace Mundo01
                 vertices[i].Color = this.color;
         }
 
-        public void Draw(BasicEffect e, Matrix world)
+        public void Draw(BasicEffect e)
         {
-            e.World = world;
             e.VertexColorEnabled = true;
             game.GraphicsDevice.SetVertexBuffer(vBuffer);
             game.GraphicsDevice.Indices = iBuffer;
