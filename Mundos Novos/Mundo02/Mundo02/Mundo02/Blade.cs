@@ -7,9 +7,9 @@ using Microsoft.Xna.Framework;
 
 namespace Mundo02
 {
-    class Shovel : GameObject
+    class Blade : GameObject
     {
-        public Shovel(Game1 game, GraphicsDevice device) 
+        public Blade(Game1 game, GraphicsDevice device) 
             : base(game, device)
         {
             Size = new Vector3(2, 8, 0);

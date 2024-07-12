@@ -40,10 +40,10 @@ namespace Mundo02
             get { return rotation; }
             set
             {
-                rotation = value;
-                rotation = new Vector3(MathHelper.ToRadians(rotation.X),
-                                       MathHelper.ToRadians(rotation.Y),
-                                       MathHelper.ToRadians(rotation.Z));
+                rotation = new Vector3(MathHelper.ToRadians(value.X),
+                                       MathHelper.ToRadians(value.Y),
+                                       MathHelper.ToRadians(value.Z));
+                UpdateBoundingBox();
                                                         
             }
         }
@@ -84,22 +84,16 @@ namespace Mundo02
             Position = Vector3.Zero;
 
             Size = Vector3.One;
-            LBox = new LineBox(game, Size, Color.Green);
         }
-
-        public void Update(GameTime gameTime) 
-        {
-            
-        }
-
+        
         public void Draw(Camera camera)
         {
             if (Vertices != null)
                 device.SetVertexBuffer(buffer);
 
-            effect.World = Matrix.CreateFromYawPitchRoll(Rotation.Y, Rotation.X, Rotation.Z) *
-                           Matrix.CreateScale(Scale) *
-                           Matrix.CreateTranslation(Position);
+            effect.World = Matrix.CreateScale(Scale)
+                         * Matrix.CreateFromYawPitchRoll(Rotation.Y, Rotation.X, Rotation.Z)
+                         * Matrix.CreateTranslation(Position);
 
             effect.View = camera.View;
             effect.Projection = camera.Projection;
@@ -124,9 +118,15 @@ namespace Mundo02
                                    Position + (Size / 2f));
         }
 
+
         public bool IsColliding(BoundingBox other)
         {
             return BBox.Intersects(other);
+        }
+
+        public void SetColliderColor(Color color)
+        {
+            LBox.SetColor(color);
         }
     }
 }

@@ -117,7 +117,7 @@
     <Compile Include="Game1.cs" />
     <Compile Include="Quad.cs" />
     <Compile Include="Screen.cs" />
-    <Compile Include="Shovel.cs" />
+    <Compile Include="Blade.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Game.ico" />

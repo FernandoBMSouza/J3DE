@@ -15,16 +15,15 @@ namespace Mundo02
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
+        Random random;
 
         Screen screen;
         Camera camera;
 
         Quad plane;
         Cube house;
-        List<GameObject> colliders;
 
-        Shovel shovel;
-        Building building;
+        List<GameObject> colliders;
 
         public Game1()
         {
@@ -35,7 +34,7 @@ namespace Mundo02
             graphics.PreferredBackBufferHeight = 600;
 
             IsMouseVisible = true;
-            Window.Title = "MUNDO 01";
+            Window.Title = "MUNDO 02";
         }
 
         protected override void Initialize()
@@ -44,22 +43,18 @@ namespace Mundo02
             screen.Width = graphics.PreferredBackBufferWidth;
             screen.Height = graphics.PreferredBackBufferHeight;
 
+            int seed = (int)DateTime.Now.Ticks % int.MaxValue;
+            random = new Random(seed);
+
             camera = new Camera(this);
 
             plane = new Quad(this, GraphicsDevice);
             house = new Cube(this, GraphicsDevice);
-
-            shovel = new Shovel(this, GraphicsDevice);
-            building = new Building(this, GraphicsDevice);
-
+           
             plane.Scale = new Vector3(20, 0, 20);
             house.Position = new Vector3(0, 1, 0);
-            house.Scale = new Vector3(2, 2, 2);
 
-            shovel.Position = new Vector3(10, 10, 0);
-            building.Position = new Vector3(-10, 10, 0);
-
-            colliders = new List<GameObject>() { plane, house, shovel, building };
+            colliders = new List<GameObject>() { plane, house };
 
             base.Initialize();
         }
@@ -85,9 +80,9 @@ namespace Mundo02
                 if (camera.IsColliding(obj.BBox))
                 {
                     camera.RestorePosition();
-                    obj.LBox.SetColor(Color.Red);
+                    obj.SetColliderColor(Color.Red);
                 }
-                else obj.LBox.SetColor(Color.Green);
+                else obj.SetColliderColor(Color.Green);
             }
 
             base.Update(gameTime);
@@ -104,9 +99,6 @@ namespace Mundo02
 
             plane.Draw(camera);
             house.Draw(camera);
-
-            shovel.Draw(camera);
-            building.Draw(camera);
 
             base.Draw(gameTime);
         }
