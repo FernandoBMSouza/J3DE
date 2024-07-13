@@ -6,66 +6,103 @@ namespace Mundo02
 {
     public abstract class GameObject : ICollider
     {
-        GraphicsDevice device;
-        VertexBuffer buffer;
-        BasicEffect effect;
+        private GraphicsDevice device;
+        private VertexBuffer buffer;
+        private BasicEffect effect;
+        private Game game;
+        private bool showColliders;
 
-        Matrix worldScale;
-        Matrix worldRotation;
-        Matrix worldTranslation;
-        Matrix auxWorld;
+        private Vector3 size;
+        private Vector3 position;
+        private Vector3 rotation;
+        private Vector3 scale;
 
-        public BoundingBox BBox { get; private set; }
-        public LineBox LBox { get; protected set; }
-        bool lineBoxVisible;
-
-        protected VertexPositionColor[] Vertices { get; set; }
-
-        public Vector3 Position { get; protected set; }
-        public Vector3 Size { get; protected set; }
-        private Vector3 angle;
-        public Vector3 Angle
+        public Vector3 Size
         {
-            get { return angle; }
-            protected set
+            get { return size; }
+            protected set 
             {
-                angle = new Vector3(
-                (value.X % 360 + 360) % 360,
-                (value.Y % 360 + 360) % 360,
-                (value.Z % 360 + 360) % 360);
+                size = value;
+                LBox = new LineBox(game, size/scale, Color.Green);
+                UpdateBoundingBox(Position, size);
+            }
+        }
+        public Vector3 Position
+        {
+            get { return position; }
+            set
+            {
+                position = value;
+                UpdateBoundingBox(position, Size);
+            }
+        }
+        public Vector3 Rotation
+        {
+            get { return rotation; }
+            set
+            {
+                rotation = new Vector3(MathHelper.ToRadians(value.X),
+                                       MathHelper.ToRadians(value.Y),
+                                       MathHelper.ToRadians(value.Z));
+                UpdateBoundingBox(Position, Size);                                      
+            }
+        }
+        public Vector3 Scale
+        {
+            get { return scale; }
+            set
+            {
+                scale = value;
+                Size *= scale;
             }
         }
 
-        public GameObject(Game1 game, GraphicsDevice device, bool lineBoxVisible = false)
+        public LineBox LBox { get; protected set; }
+        public BoundingBox BBox { get; private set; }
+        protected VertexPositionColor[] Vertices { get; set; }
+
+        public GameObject(Game game, GraphicsDevice device)
         {
+            this.game = game;
             this.device = device;
             Vertices = null;
 
             if (Vertices != null)
             {
-                buffer = new VertexBuffer(device, 
-                                          typeof(VertexPositionColor), 
-                                          Vertices.Length, 
+                buffer = new VertexBuffer(device,
+                                          typeof(VertexPositionColor),
+                                          Vertices.Length,
                                           BufferUsage.None);
 
                 buffer.SetData<VertexPositionColor>(Vertices);
             }
 
             effect = new BasicEffect(device);
-            SetIdentity();
 
-            this.lineBoxVisible = lineBoxVisible;
-            UpdateBoundingBox();
+            Scale = Vector3.One;
+            Rotation = Vector3.Zero;
+            Position = Vector3.Zero;
+
+            Size = Vector3.One;
+            showColliders = true;
         }
 
-        public void Update(GameTime gameTime) { }
-
         public void Draw(Camera camera)
+        {
+            Draw(camera, Matrix.Identity);
+        }
+        
+        public void Draw(Camera camera, Matrix parentWorld)
         {
             if (Vertices != null)
                 device.SetVertexBuffer(buffer);
 
-            effect.World = (worldScale * worldRotation * worldTranslation) * auxWorld;
+            Matrix localMatrix = Matrix.CreateScale(Scale)
+                                 * Matrix.CreateFromYawPitchRoll(Rotation.Y, Rotation.X, Rotation.Z)
+                                 * Matrix.CreateTranslation(Position);
+
+            effect.World = localMatrix * parentWorld;
+
             effect.View = camera.View;
             effect.Projection = camera.Projection;
 
@@ -80,14 +117,15 @@ namespace Mundo02
                                                                    0,
                                                                    Vertices.Length / 3);
             }
-            if (lineBoxVisible) LBox.Draw(effect, effect.World);
+
+            if (showColliders) 
+                LBox.Draw(effect);
         }
 
-        public void UpdateBoundingBox()
+        public void UpdateBoundingBox(Vector3 position, Vector3 size)
         {
-            BBox = new BoundingBox(Position - (Size / 2f),
-                                   Position + (Size / 2f));
-
+            BBox = new BoundingBox(position - (size / 2f),
+                                   position + (size / 2f));
         }
 
         public bool IsColliding(BoundingBox other)
@@ -98,65 +136,6 @@ namespace Mundo02
         public void SetColliderColor(Color color)
         {
             LBox.SetColor(color);
-        }
-
-        public void SetIdentity()
-        {
-            Position = Vector3.Zero;
-            Angle = Vector3.Zero;
-            Size = Vector3.One;
-
-            worldScale = Matrix.Identity;
-            worldRotation = Matrix.Identity;
-            worldTranslation = Matrix.Identity;
-            auxWorld = Matrix.Identity;
-
-            UpdateBoundingBox();
-        }
-
-        public void Translation(Vector3 position, bool aux = false)
-        {
-            Position = position;
-            if (aux) auxWorld *= Matrix.CreateTranslation(position);
-            else worldTranslation *= Matrix.CreateTranslation(position);
-            UpdateBoundingBox();
-        }
-
-        public void Scale(Vector3 scale, bool aux = false)
-        {
-            Size *= scale;
-            if (aux) auxWorld *= Matrix.CreateScale(scale);
-            else worldScale *= Matrix.CreateScale(scale);
-            UpdateBoundingBox();
-        }
-
-        public void Rotation(char axis, float angle, bool aux = false)
-        {
-            float radians = MathHelper.ToRadians(angle);
-            switch (axis)
-            {
-                case 'X':
-                case 'x':
-                    Angle += new Vector3(angle, 0, 0);
-                    if (aux) auxWorld *= Matrix.CreateRotationX(radians);
-                    else worldRotation *= Matrix.CreateRotationX(radians);
-                    break;
-                case 'Y':
-                case 'y':
-                    Angle += new Vector3(0, angle, 0);
-                    if (aux) auxWorld *= Matrix.CreateRotationY(radians);
-                    else worldRotation *= Matrix.CreateRotationY(radians);
-                    break;
-                case 'Z':
-                case 'z':
-                    Angle += new Vector3(0, 0, angle);
-                    if (aux) auxWorld *= Matrix.CreateRotationZ(radians);
-                    else worldRotation *= Matrix.CreateRotationZ(radians);
-                    break;
-                default:
-                    break;
-            }
-            UpdateBoundingBox();
         }
     }
 }

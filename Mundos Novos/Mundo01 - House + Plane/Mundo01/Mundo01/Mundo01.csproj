@@ -109,6 +109,7 @@
   <ItemGroup>
     <Compile Include="Camera.cs" />
     <Compile Include="Cube.cs" />
+    <Compile Include="ICollider.cs" />
     <Compile Include="LineBox.cs" />
     <Compile Include="Quad.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

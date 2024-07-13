@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <ProjectGuid>{99DCEE19-84B0-4C5F-AE25-46072E9D4267}</ProjectGuid>
+    <ProjectGuid>{AFEA6930-041A-4D51-B2F3-D973EDB81E16}</ProjectGuid>
     <ProjectTypeGuids>{6D335F3A-9D43-41b4-9D22-F6F17C4BE596};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
@@ -14,7 +14,7 @@
     <XnaFrameworkVersion>v4.0</XnaFrameworkVersion>
     <XnaPlatform>Windows</XnaPlatform>
     <XnaProfile>HiDef</XnaProfile>
-    <XnaCrossPlatformGroupID>ba8687ad-0042-4fa1-a531-5f89f95d56d2</XnaCrossPlatformGroupID>
+    <XnaCrossPlatformGroupID>42ac57af-9bad-4dc9-bcbb-6ad794959c62</XnaCrossPlatformGroupID>
     <XnaOutputType>Game</XnaOutputType>
     <ApplicationIcon>Game.ico</ApplicationIcon>
     <Thumbnail>GameThumbnail.png</Thumbnail>
@@ -110,15 +110,15 @@
     <Compile Include="Building.cs" />
     <Compile Include="Camera.cs" />
     <Compile Include="Cube.cs" />
-    <Compile Include="Game1.cs" />
+    <Compile Include="GameObject.cs" />
     <Compile Include="ICollider.cs" />
     <Compile Include="LineBox.cs" />
-    <Compile Include="Propeller.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Program.cs" />
+    <Compile Include="Game1.cs" />
     <Compile Include="Quad.cs" />
     <Compile Include="Screen.cs" />
-    <Compile Include="GameObject.cs" />
+    <Compile Include="Blade.cs" />
     <Compile Include="Windmill.cs" />
   </ItemGroup>
   <ItemGroup>
