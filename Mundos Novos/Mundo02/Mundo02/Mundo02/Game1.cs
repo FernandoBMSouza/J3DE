@@ -23,7 +23,7 @@ namespace Mundo02
         Quad plane;
         Windmill windmill;
 
-        List<GameObject> colliders;
+        List<ICollider> colliders;
 
         public Game1()
         {
@@ -53,8 +53,8 @@ namespace Mundo02
 
             plane.Scale = new Vector3(20, 0, 20);
             windmill.Position = new Vector3(0, 2, 0);
-
-            colliders = new List<GameObject>() { plane };
+            windmill.Scale = new Vector3(1, 1, 1);
+            colliders = new List<ICollider>() { plane, windmill };
 
             base.Initialize();
         }
@@ -75,7 +75,7 @@ namespace Mundo02
 
             camera.Update(gameTime);
 
-            foreach (GameObject obj in colliders)
+            foreach (ICollider obj in colliders)
             {
                 if (camera.IsColliding(obj.BBox))
                 {
@@ -85,7 +85,7 @@ namespace Mundo02
                 else obj.SetColliderColor(Color.Green);
             }
 
-            Window.Title = "Posicao do Moinho: " + windmill.Position + " || Posicao do Building: " + windmill.building.Position;
+            Window.Title = "BoundingBox Tests: " + windmill.BBox.Contains(camera.BBox);
 
             base.Update(gameTime);
         }

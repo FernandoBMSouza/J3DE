@@ -4,7 +4,7 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace Mundo02
 {
-    public abstract class GameObject
+    public abstract class GameObject : ICollider
     {
         private GraphicsDevice device;
         private VertexBuffer buffer;
@@ -23,7 +23,7 @@ namespace Mundo02
             {
                 size = value;
                 LBox = new LineBox(game, size/scale, Color.Green);
-                UpdateBoundingBox();
+                UpdateBoundingBox(Position, size);
             }
         }
         public Vector3 Position
@@ -32,7 +32,7 @@ namespace Mundo02
             set
             {
                 position = value;
-                UpdateBoundingBox();
+                UpdateBoundingBox(position, Size);
             }
         }
         public Vector3 Rotation
@@ -43,7 +43,7 @@ namespace Mundo02
                 rotation = new Vector3(MathHelper.ToRadians(value.X),
                                        MathHelper.ToRadians(value.Y),
                                        MathHelper.ToRadians(value.Z));
-                UpdateBoundingBox();                                      
+                UpdateBoundingBox(Position, Size);                                      
             }
         }
         public Vector3 Scale
@@ -118,12 +118,11 @@ namespace Mundo02
             LBox.Draw(effect);
         }
 
-        public void UpdateBoundingBox()
+        public void UpdateBoundingBox(Vector3 position, Vector3 size)
         {
-            BBox = new BoundingBox(Position - (Size / 2f),
-                                   Position + (Size / 2f));
+            BBox = new BoundingBox(position - (size / 2f),
+                                   position + (size / 2f));
         }
-
 
         public bool IsColliding(BoundingBox other)
         {
