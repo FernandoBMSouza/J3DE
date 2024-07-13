@@ -118,6 +118,7 @@
     <Compile Include="Quad.cs" />
     <Compile Include="Screen.cs" />
     <Compile Include="Blade.cs" />
+    <Compile Include="Windmill.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Game.ico" />

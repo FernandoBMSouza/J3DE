@@ -16,7 +16,7 @@ namespace Mundo02
         private Vector3 rotation;
         private Vector3 scale;
 
-        public Vector3 Size 
+        public Vector3 Size
         {
             get { return size; }
             protected set 
@@ -43,8 +43,7 @@ namespace Mundo02
                 rotation = new Vector3(MathHelper.ToRadians(value.X),
                                        MathHelper.ToRadians(value.Y),
                                        MathHelper.ToRadians(value.Z));
-                UpdateBoundingBox();
-                                                        
+                UpdateBoundingBox();                                      
             }
         }
         public Vector3 Scale
@@ -85,15 +84,22 @@ namespace Mundo02
 
             Size = Vector3.One;
         }
-        
+
         public void Draw(Camera camera)
+        {
+            Draw(camera, Matrix.Identity);
+        }
+        
+        public void Draw(Camera camera, Matrix parentWorld)
         {
             if (Vertices != null)
                 device.SetVertexBuffer(buffer);
 
-            effect.World = Matrix.CreateScale(Scale)
-                         * Matrix.CreateFromYawPitchRoll(Rotation.Y, Rotation.X, Rotation.Z)
-                         * Matrix.CreateTranslation(Position);
+            Matrix localMatrix = Matrix.CreateScale(Scale)
+                                 * Matrix.CreateFromYawPitchRoll(Rotation.Y, Rotation.X, Rotation.Z)
+                                 * Matrix.CreateTranslation(Position);
+
+            effect.World = localMatrix * parentWorld;
 
             effect.View = camera.View;
             effect.Projection = camera.Projection;

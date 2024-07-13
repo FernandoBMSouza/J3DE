@@ -21,7 +21,7 @@ namespace Mundo02
         Camera camera;
 
         Quad plane;
-        Cube house;
+        Windmill windmill;
 
         List<GameObject> colliders;
 
@@ -49,12 +49,12 @@ namespace Mundo02
             camera = new Camera(this);
 
             plane = new Quad(this, GraphicsDevice);
-            house = new Cube(this, GraphicsDevice);
-           
-            plane.Scale = new Vector3(20, 0, 20);
-            house.Position = new Vector3(0, 1, 0);
+            windmill = new Windmill(this, GraphicsDevice);
 
-            colliders = new List<GameObject>() { plane, house };
+            plane.Scale = new Vector3(20, 0, 20);
+            windmill.Position = new Vector3(0, 2, 0);
+
+            colliders = new List<GameObject>() { plane };
 
             base.Initialize();
         }
@@ -85,6 +85,8 @@ namespace Mundo02
                 else obj.SetColliderColor(Color.Green);
             }
 
+            Window.Title = "Posicao do Moinho: " + windmill.Position + " || Posicao do Building: " + windmill.building.Position;
+
             base.Update(gameTime);
         }
 
@@ -98,8 +100,7 @@ namespace Mundo02
             GraphicsDevice.RasterizerState = rs;
 
             plane.Draw(camera);
-            house.Draw(camera);
-
+            windmill.Draw(camera);
             base.Draw(gameTime);
         }
     }
