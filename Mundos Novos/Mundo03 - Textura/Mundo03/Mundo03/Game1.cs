@@ -9,7 +9,7 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
 
-namespace Mundo02
+namespace Mundo03
 {
     public class Game1 : Microsoft.Xna.Framework.Game
     {
@@ -54,7 +54,7 @@ namespace Mundo02
             windmills = new Windmill[]
             {
                 new Windmill(this, GraphicsDevice, random.Next(50,800), false),
-                new Windmill(this, GraphicsDevice, random.Next(50,800)),
+                new Windmill(this, GraphicsDevice, random.Next(50,800), false),
             };
 
             plane.Scale = new Vector3(20, 1, 20);

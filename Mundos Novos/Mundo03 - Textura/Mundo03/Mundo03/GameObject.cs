@@ -1,8 +1,10 @@
-﻿using System;
+﻿#define USE_TEXTURE
+
+using System;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
-namespace Mundo02
+namespace Mundo03
 {
     public abstract class GameObject : ICollider
     {
@@ -59,23 +61,39 @@ namespace Mundo02
 
         public LineBox LBox { get; protected set; }
         public BoundingBox BBox { get; private set; }
+
+#if USE_TEXTURE
+        protected Texture2D Texture { get; set; }
+        protected VertexPositionTexture[] Vertices { get; set; }
+#else
         protected VertexPositionColor[] Vertices { get; set; }
+#endif
 
         public GameObject(Game game, GraphicsDevice device)
         {
-            this.game = game;
-            this.device = device;
-            Vertices = null;
-
+#if USE_TEXTURE
+            Texture = null;
             if (Vertices != null)
             {
                 buffer = new VertexBuffer(device,
-                                          typeof(VertexPositionColor),
+                                          typeof(VertexPositionTexture),
                                           Vertices.Length,
                                           BufferUsage.None);
-
+                buffer.SetData<VertexPositionTexture>(Vertices);
+            }
+#else
+            Vertices = null;
+            if (Vertices != null)
+            {
+                buffer = new VertexBuffer(device, 
+                                          typeof(VertexPositionColor), 
+                                          Vertices.Length, 
+                                          BufferUsage.None);
                 buffer.SetData<VertexPositionColor>(Vertices);
             }
+#endif
+            this.game = game;
+            this.device = device;
 
             effect = new BasicEffect(device);
 
@@ -106,8 +124,22 @@ namespace Mundo02
             effect.View = camera.View;
             effect.Projection = camera.Projection;
 
-            effect.VertexColorEnabled = true;
+#if USE_TEXTURE
+            effect.TextureEnabled = true;
+            effect.Texture = Texture;
 
+            foreach (EffectPass pass in effect.CurrentTechnique.Passes)
+            {
+                pass.Apply();
+                if (Vertices != null)
+                    device.DrawUserPrimitives<VertexPositionTexture>(PrimitiveType.TriangleList,
+                                                                   Vertices,
+                                                                   0,
+                                                                   Vertices.Length / 3);
+            }
+            effect.TextureEnabled = false;
+#else
+            effect.VertexColorEnabled = true;
             foreach (EffectPass pass in effect.CurrentTechnique.Passes)
             {
                 pass.Apply();
@@ -118,7 +150,7 @@ namespace Mundo02
                                                                    Vertices.Length / 3);
             }
             effect.VertexColorEnabled = false;
-
+#endif
             if (showColliders) 
                 LBox.Draw(effect);
         }
