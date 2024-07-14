@@ -35,7 +35,7 @@ namespace Mundo03
             graphics.PreferredBackBufferHeight = 600;
 
             IsMouseVisible = true;
-            Window.Title = "MUNDO 02";
+            Window.Title = "MUNDO 03";
         }
 
         protected override void Initialize()
@@ -53,8 +53,8 @@ namespace Mundo03
             house = new Cube(this, GraphicsDevice);
             windmills = new Windmill[]
             {
-                new Windmill(this, GraphicsDevice, random.Next(50,800), false),
-                new Windmill(this, GraphicsDevice, random.Next(50,800), false),
+                new Windmill(this, GraphicsDevice, random.Next(50,800), true),
+                new Windmill(this, GraphicsDevice, random.Next(50,800), true),
             };
 
             plane.Scale = new Vector3(20, 1, 20);

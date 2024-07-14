@@ -1,0 +1,14 @@
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos Novos\Mundo04\Mundo04\Mundo04\bin\x86\Debug\Content\Images\bricks.xnb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos Novos\Mundo04\Mundo04\Mundo04\bin\x86\Debug\Content\Images\grass.xnb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos Novos\Mundo04\Mundo04\Mundo04\bin\x86\Debug\Content\Images\rocks.xnb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos Novos\Mundo04\Mundo04\Mundo04\bin\x86\Debug\Content\Images\wood.xnb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos Novos\Mundo04\Mundo04\Mundo04\bin\x86\Debug\Mundo04.exe
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos Novos\Mundo04\Mundo04\Mundo04\bin\x86\Debug\Mundo04.pdb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos Novos\Mundo04\Mundo04\Mundo04\obj\x86\Debug\Mundo04.csprojResolveAssemblyReference.cache
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos Novos\Mundo04\Mundo04\Mundo04\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos Novos\Mundo04\Mundo04\Mundo04\obj\x86\Debug\Mundo04.exe
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos Novos\Mundo04\Mundo04\Mundo04\obj\x86\Debug\Mundo04.pdb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos Novos\Mundo04\Mundo04\Mundo04\bin\x86\Debug\Content\Models\building.xnb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos Novos\Mundo04\Mundo04\Mundo04\bin\x86\Debug\Content\Models\hero.xnb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos Novos\Mundo04\Mundo04\Mundo04\bin\x86\Debug\Content\Models\propeller.xnb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos Novos\Mundo04\Mundo04\Mundo04\bin\x86\Debug\Content\Models\tower.xnb
