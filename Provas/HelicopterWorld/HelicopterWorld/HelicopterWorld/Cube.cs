@@ -3,12 +3,13 @@ using Microsoft.Xna.Framework;
 
 namespace HelicopterWorld
 {
-    class Cube : Shape
+    public class Cube : GameObject
     {
         public Cube(GraphicsDevice device)
             : base(device)
         {
-            Vertex = new VertexPositionColor[]
+            Size = new Vector3(2, 2, 2);
+            Vertices = new VertexPositionColor[]
             {
                 // RIGHT
                 new VertexPositionColor(new Vector3(1, 1, 1), Color.Green),

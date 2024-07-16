@@ -1,5 +1,6 @@
 ﻿using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework;
+using System;
 
 namespace HelicopterWorld
 {
@@ -14,104 +15,143 @@ namespace HelicopterWorld
         ROTATE_LEFT,
     };
 
-    class Helicopter : ITransform
+    class Helicopter
     {
         Cube[] cubes;
-        Propeller[] propellers;
+        Blade[] blades;
+
+        bool isFlying;
+        float propRotationSpeed;
+
         STATE state;
         STATE previousState;
         float moveSpeed;
         float rotateSpeed;
         bool arrived;
-        bool isFlying;
         float currentTime;
         const float GAP = 1f;
+        Cube initialLocation;
+        Cube destinationLocation;
+        int altitude;
 
-        float propRotationAngle;
-        float propRotationSpeed;
+        Vector3 scale;
+        Vector3 rotation;
+        Vector3 position;
 
-        public Vector3 Position { get; private set; }
-        public Vector3 Angle { get; private set; }
-
-        public Helicopter(GraphicsDevice device)
+        public Vector3 Size { get; private set; }
+        public Vector3 Scale
         {
+            get { return scale; }
+            set 
+            {
+                scale = value;
+                Size *= scale;
+            }
+        }
+        public Vector3 Rotation
+        {
+            get 
+            { 
+                return new Vector3(MathHelper.ToDegrees(rotation.X),
+                                   MathHelper.ToDegrees(rotation.Y),
+                                   MathHelper.ToDegrees(rotation.Z)); 
+            }
+            set
+            {
+                rotation = new Vector3(MathHelper.ToRadians(value.X),
+                                       MathHelper.ToRadians(value.Y),
+                                       MathHelper.ToRadians(value.Z));
+            }
+        }
+        public Vector3 Position
+        {
+            get { return position; }
+            set { position = value; }
+        }
+
+        public Helicopter(GraphicsDevice device, Cube initialLocation, Cube destinationLocation)
+        {
+            cubes = new Cube[2];
+            for (int i = 0; i < cubes.Length; i++)
+                cubes[i] = new Cube(device);
+
+            blades = new Blade[6];
+            for (int i = 0; i < blades.Length; i++)
+                blades[i] = new Blade(device);
+
+            Size = cubes[0].Size;
+            Scale = Vector3.One;
+            Rotation = Vector3.Zero;
+            Position = Vector3.Zero;
+
+            isFlying = false;
+            propRotationSpeed = 400;
+
             state = STATE.IDLE;
             previousState = state;
             currentTime = 0f;
-
-            cubes = new Cube[2];
-            propellers = new Propeller[12];
-
             moveSpeed = 10;
-            rotateSpeed = 100;
+            rotateSpeed = 1;
             arrived = true;
-            isFlying = false;
+            this.initialLocation = initialLocation;
+            this.destinationLocation = destinationLocation;
+            altitude = 3;
 
-            propRotationSpeed = 400;
-            propRotationAngle = 0;
+            // SETUP
 
-            for (int i = 0; i < cubes.Length; i++) cubes[i] = new Cube(device);
-            for (int i = 0; i < propellers.Length; i++) propellers[i] = new Propeller(device);
+            // Cubes
+            cubes[1].Scale = new Vector3(.5f, .5f, 2f);
+            cubes[1].Position = new Vector3(0, 0, -3);
 
-            Translation(new Vector3(-7, 3, 0));
+            // Blades 0 and 1
+            for (int i = 0; i < 2; i++)
+            {
+                blades[i].Scale = new Vector3(.6f, .7f, 1);
+                blades[i].Position = new Vector3(0, 1.2f, 0);
+                blades[i].Rotation = new Vector3(-90, 0, 0);
+            }
+
+            blades[1].Rotation = new Vector3(blades[1].Rotation.X, blades[1].Rotation.Y, blades[1].Rotation.Z + 90);
+
+            // Blades 2 and 3
+            for (int i = 2; i < 4; i++)
+            {
+                blades[i].Scale = new Vector3(.2f, .3f, 1);
+                blades[i].Position = new Vector3(-0.6f, 0, -4.5f);
+                blades[i].Rotation = new Vector3(0, 270, 0);
+            }
+            blades[3].Rotation = new Vector3(blades[3].Rotation.X, blades[3].Rotation.Y, blades[3].Rotation.Z + 90);
+
+            // Blades 4 and 5
+            for (int i = 4; i < 6; i++)
+            {
+                blades[i].Scale = new Vector3(.2f, .3f, 1);
+                blades[i].Position = new Vector3(0.6f, 0, -4.5f);
+                blades[i].Rotation = new Vector3(0, 90, 0);
+            }
+            blades[5].Rotation = new Vector3(blades[5].Rotation.X, blades[5].Rotation.Y, blades[5].Rotation.Z + 90);
         }
 
         public void Update(GameTime gameTime)
         {
-            SetIdentity();
-
-            cubes[1].Scale(new Vector3(.5f, .5f, 2f));
-            cubes[1].Translation(new Vector3(0, 0, -3));
-
-            for (int i = 0; i < 4; i++) propellers[i].Scale(new Vector3(.6f, .7f, 1));
-
-            propellers[0].RotationZ(0);
-            propellers[1].RotationZ(90);
-            propellers[2].RotationZ(180);
-            propellers[3].RotationZ(270);
-
-            for (int i = 0; i < 4; i++) propellers[i].RotationX(-90);
-            for (int i = 0; i < 4; i++) propellers[i].RotationY(propRotationAngle);
-            for (int i = 0; i < 4; i++) propellers[i].Translation(new Vector3(0, 1.2f, 0)); //HELICE 1
-
-            //HELICE 2
-            for (int i = 4; i < 8; i++) propellers[i].Scale(new Vector3(.2f, .3f, 1));
-
-            propellers[4].RotationZ(0);
-            propellers[5].RotationZ(90);
-            propellers[6].RotationZ(180);
-            propellers[7].RotationZ(270);
-
-            for (int i = 4; i < 8; i++) propellers[i].RotationY(-90);
-            for (int i = 4; i < 8; i++) propellers[i].RotationX(propRotationAngle);
-            for (int i = 4; i < 8; i++) propellers[i].Translation(new Vector3(-.6f, 0, -4.5f));
-
-            //HELICE 3
-            for (int i = 8; i < 12; i++) propellers[i].Scale(new Vector3(.2f, .3f, 1));
-
-            propellers[8].RotationZ(0);
-            propellers[9].RotationZ(90);
-            propellers[10].RotationZ(180);
-            propellers[11].RotationZ(270);
-
-            for (int i = 8; i < 12; i++) propellers[i].RotationY(90);
-            for (int i = 8; i < 12; i++) propellers[i].RotationX(propRotationAngle);
-            for (int i = 8; i < 12; i++) propellers[i].Translation(new Vector3(.6f, 0, -4.5f));
-
-            if(isFlying)
-                propRotationAngle += propRotationSpeed * gameTime.ElapsedGameTime.Milliseconds * 0.001f;
-
-
+            if (isFlying)
+            {
+                float propRotationAngle = propRotationSpeed * gameTime.ElapsedGameTime.Milliseconds * 0.001f;
+                foreach (Blade blade in blades)
+                    blade.Rotation = new Vector3(blade.Rotation.X, blade.Rotation.Y, blade.Rotation.Z + propRotationAngle);
+            }
             UpdateState(gameTime);
             ChangeState(gameTime);
-            RotationY(Angle.Y);
-            Translation(Position);
         }
 
         public void Draw(Camera camera)
         {
-            foreach (Cube c in cubes) c.Draw(camera);
-            foreach (Propeller p in propellers) p.Draw(camera);
+            Matrix world = Matrix.CreateScale(Scale)
+                         * Matrix.CreateFromYawPitchRoll(Rotation.Y, Rotation.X, Rotation.Z)
+                         * Matrix.CreateTranslation(Position);
+
+            foreach (Cube cube in cubes) cube.Draw(camera, world);
+            foreach (Blade blade in blades) blade.Draw(camera, world);
         }
 
         private void UpdateState(GameTime gameTime)
@@ -136,14 +176,13 @@ namespace HelicopterWorld
                     Position += new Vector3(-moveOffset, 0, 0);
                     break;
                 case STATE.ROTATE_RIGHT:
-                    Angle += new Vector3(0, rotateOffset, 0);
+                    Rotation += new Vector3(0, rotateOffset, 0);
                     break;
                 case STATE.ROTATE_LEFT:
-                    Angle += new Vector3(0, -rotateOffset, 0);
+                    Rotation += new Vector3(0, -rotateOffset, 0);
                     break;
             }
         }
-
 
         private void ChangeState(GameTime gameTime)
         {
@@ -176,13 +215,13 @@ namespace HelicopterWorld
                     switch (previousState)
                     {
                         case (STATE.IDLE):
-                            if (Position.Y >= 8) 
+                            if (Position.Y >= destinationLocation.Size.Y + Size.Y + altitude)
                             {
                                 previousState = STATE.UP;
                                 state = arrived ? STATE.ROTATE_LEFT : STATE.ROTATE_RIGHT;
                             }
                             break;
-                        case (STATE.DOWN):break;
+                        case (STATE.DOWN): break;
                         case (STATE.UP): break;
                         case (STATE.RIGHT): break;
                         case (STATE.LEFT): break;
@@ -196,7 +235,7 @@ namespace HelicopterWorld
                         case (STATE.IDLE): break;
                         case (STATE.DOWN): break;
                         case (STATE.UP):
-                            if (Angle.Y >= 90)
+                            if (Rotation.Y >= MathHelper.ToRadians(90))
                             {
                                 previousState = STATE.ROTATE_RIGHT;
                                 state = STATE.RIGHT;
@@ -204,7 +243,7 @@ namespace HelicopterWorld
                             break;
                         case (STATE.RIGHT): break;
                         case (STATE.LEFT):
-                            if (Angle.Y >= 0)
+                            if (Rotation.Y >= MathHelper.ToRadians(0))
                             {
                                 previousState = STATE.ROTATE_RIGHT;
                                 state = STATE.DOWN;
@@ -223,7 +262,7 @@ namespace HelicopterWorld
                         case (STATE.RIGHT): break;
                         case (STATE.LEFT): break;
                         case (STATE.ROTATE_RIGHT):
-                            if (Position.X >= 7)
+                            if (Position.X >= destinationLocation.Position.X)
                             {
                                 previousState = STATE.RIGHT;
                                 state = STATE.ROTATE_LEFT;
@@ -237,15 +276,15 @@ namespace HelicopterWorld
                     {
                         case (STATE.IDLE): break;
                         case (STATE.DOWN): break;
-                        case (STATE.UP): 
-                            if (Angle.Y <= -90)
+                        case (STATE.UP):
+                            if (Rotation.Y <= MathHelper.ToRadians(-90))
                             {
                                 previousState = STATE.ROTATE_LEFT;
                                 state = STATE.LEFT;
                             }
                             break;
                         case (STATE.RIGHT):
-                            if (Angle.Y <= 0)
+                            if (Rotation.Y <= MathHelper.ToRadians(0))
                             {
                                 previousState = STATE.ROTATE_LEFT;
                                 state = STATE.DOWN;
@@ -264,15 +303,15 @@ namespace HelicopterWorld
                         case (STATE.UP): break;
                         case (STATE.RIGHT): break;
                         case (STATE.LEFT): break;
-                        case (STATE.ROTATE_RIGHT): 
-                            if (Position.Y <= 3)
+                        case (STATE.ROTATE_RIGHT):
+                            if (Position.Y <= initialLocation.Size.Y + Size.Y/2)
                             {
                                 previousState = STATE.DOWN;
                                 state = STATE.IDLE;
                             }
                             break;
                         case (STATE.ROTATE_LEFT):
-                            if (Position.Y <= 5)
+                            if (Position.Y <= destinationLocation.Size.Y + Size.Y/2)
                             {
                                 previousState = STATE.DOWN;
                                 state = STATE.IDLE;
@@ -289,8 +328,8 @@ namespace HelicopterWorld
                         case (STATE.RIGHT): break;
                         case (STATE.LEFT): break;
                         case (STATE.ROTATE_RIGHT): break;
-                        case (STATE.ROTATE_LEFT): 
-                            if (Position.X <= -7)
+                        case (STATE.ROTATE_LEFT):
+                            if (Position.X <= initialLocation.Position.X)
                             {
                                 previousState = STATE.LEFT;
                                 state = STATE.ROTATE_RIGHT;
@@ -299,46 +338,6 @@ namespace HelicopterWorld
                     }
                     break;
             }
-        }
-
-        public void SetIdentity()
-        {
-            foreach (Cube c in cubes) c.SetIdentity();
-            foreach (Propeller p in propellers) p.SetIdentity();
-        }
-
-        public void Translation(Vector3 position)
-        {
-            Position = position;
-            foreach (Cube c in cubes) c.Translation(position);
-            foreach (Propeller p in propellers) p.Translation(position);
-        }
-
-        public void Scale(Vector3 scale)
-        {
-            foreach (Cube c in cubes) c.Scale(scale);
-            foreach (Propeller p in propellers) p.Scale(scale);
-        }
-
-        public void RotationX(float angle)
-        {
-            Angle = new Vector3(angle, Angle.Y, Angle.Z);
-            foreach (Cube c in cubes) c.RotationX(angle);
-            foreach (Propeller p in propellers) p.RotationX(angle);
-        }
-
-        public void RotationY(float angle)
-        {
-            Angle = new Vector3(Angle.X, angle, Angle.Z);
-            foreach (Cube c in cubes) c.RotationY(angle);
-            foreach (Propeller p in propellers) p.RotationY(angle);
-        }
-
-        public void RotationZ(float angle)
-        {
-            Angle = new Vector3(Angle.X, Angle.Y, angle);
-            foreach (Cube c in cubes) c.RotationZ(angle);
-            foreach (Propeller p in propellers) p.RotationZ(angle);
         }
     }
 }

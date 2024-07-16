@@ -20,7 +20,8 @@ namespace HelicopterWorld
         Camera camera;
 
         Quad plane;
-        Cube[] cubes;
+        Cube[] buildings;
+
         Helicopter helicopter;
 
         public Game1()
@@ -32,12 +33,11 @@ namespace HelicopterWorld
             graphics.PreferredBackBufferHeight = 600;
 
             IsMouseVisible = true;
-            Window.Title = "MUNDO HELICOPTERO";
+            Window.Title = "Helicopter World";
         }
 
         protected override void Initialize()
         {
-            // TODO: Add your initialization logic here
             screen = Screen.GetInstance();
             screen.Width = graphics.PreferredBackBufferWidth;
             screen.Height = graphics.PreferredBackBufferHeight;
@@ -46,46 +46,40 @@ namespace HelicopterWorld
 
             plane = new Quad(GraphicsDevice);
 
-            cubes = new Cube[2];
-            for (int i = 0; i < cubes.Length; i++) cubes[i] = new Cube(GraphicsDevice);
+            buildings = new Cube[2];
+            for (int i = 0; i < buildings.Length; i++) 
+                buildings[i] = new Cube(GraphicsDevice);
 
-            helicopter = new Helicopter(GraphicsDevice);
+            helicopter = new Helicopter(GraphicsDevice, buildings[0], buildings[1]);
+
+            plane.Scale = new Vector3(20, 1, 20);
+            buildings[0].Position = new Vector3(-10, 1, 0);
+            buildings[1].Position = new Vector3( 10, 2, 0);
+
+            buildings[1].Scale = new Vector3(1, 2, 1);
+            helicopter.Position = new Vector3(buildings[0].Position.X,
+                                              buildings[0].Position.Y + helicopter.Size.Y,
+                                              buildings[0].Position.Z);
 
             base.Initialize();
         }
 
         protected override void LoadContent()
         {
-            // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
-
-            // TODO: use this.Content to load your game content here
         }
 
         protected override void UnloadContent()
         {
-            // TODO: Unload any non ContentManager content here
         }
 
         protected override void Update(GameTime gameTime)
         {
-            // Allows the game to exit
             if (Keyboard.GetState().IsKeyDown(Keys.Escape))
                 this.Exit();
 
-            // TODO: Add your update logic here
             camera.Update(gameTime);
-
-            plane.SetIdentity();
-            plane.Scale(new Vector3(10, 0, 10));
-
-            foreach (Cube c in cubes) c.SetIdentity();
-            cubes[1].Scale(new Vector3(1, 2, 1));
-            cubes[0].Translation(new Vector3(-7, 1, 0));
-            cubes[1].Translation(new Vector3( 7, 2, 0));
-
             helicopter.Update(gameTime);
-
             base.Update(gameTime);
         }
 
@@ -93,15 +87,16 @@ namespace HelicopterWorld
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
-            // TODO: Add your drawing code here
-
-            //RasterizerState rs = new RasterizerState();
-            //rs.CullMode = CullMode.None;
-            //rs.FillMode = FillMode.WireFrame;
-            //GraphicsDevice.RasterizerState = rs;
+            RasterizerState rs = new RasterizerState();
+            // rs.CullMode = CullMode.None;
+            // rs.FillMode = FillMode.WireFrame;
+            GraphicsDevice.RasterizerState = rs;
 
             plane.Draw(camera);
-            foreach (Cube c in cubes) c.Draw(camera);
+
+            foreach (Cube building in buildings)
+                building.Draw(camera);
+
             helicopter.Draw(camera);
 
             base.Draw(gameTime);

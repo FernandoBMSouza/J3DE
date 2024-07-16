@@ -1,25 +1,28 @@
-﻿using Microsoft.Xna.Framework;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Input;
-using System;
 
 namespace HelicopterWorld
 {
-    class Camera
+    public class Camera
     {
         Vector3 position;
         Vector3 target;
         Vector3 up;
-        Vector3 angle;
 
         float translationSpeed;
         float rotationSpeed;
+        Vector3 angle;
 
         public Matrix View { get; private set; }
         public Matrix Projection { get; private set; }
-        
+
         public Camera()
         {
-            position = new Vector3(0, 12, 40);
+            position = new Vector3(0, 5, 25);
             target = Vector3.Zero;
             up = Vector3.Up;
 
@@ -32,7 +35,7 @@ namespace HelicopterWorld
             View = Matrix.CreateLookAt(position, target, up);
             Projection = Matrix.CreatePerspectiveFieldOfView(MathHelper.PiOver4,
                                                              Screen.GetInstance().Width / (float)Screen.GetInstance().Height,
-                                                             .1f, 1000);
+                                                             .001f, 1000);
         }
 
         public void Update(GameTime gameTime)
@@ -99,6 +102,5 @@ namespace HelicopterWorld
             //    position.Y -= (float)Math.Cos(MathHelper.ToRadians(angle.X)) * gameTime.ElapsedGameTime.Milliseconds * 0.001f * translationSpeed;
             //}
         }
-
     }
 }

@@ -27,7 +27,10 @@ namespace Mundo04
         }
         public Vector3 Rotation
         {
-            get { return rotation; }
+            get
+            {
+                return rotation;
+            }
             set
             {
                 rotation = new Vector3(MathHelper.ToRadians(value.X),

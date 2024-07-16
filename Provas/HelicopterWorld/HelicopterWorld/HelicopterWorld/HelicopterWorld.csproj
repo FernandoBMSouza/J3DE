@@ -107,17 +107,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Blade.cs" />
     <Compile Include="Camera.cs" />
     <Compile Include="Cube.cs" />
+    <Compile Include="GameObject.cs" />
     <Compile Include="Helicopter.cs" />
-    <Compile Include="ITransform.cs" />
-    <Compile Include="Propeller.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Game1.cs" />
     <Compile Include="Quad.cs" />
     <Compile Include="Screen.cs" />
-    <Compile Include="Shape.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Game.ico" />
