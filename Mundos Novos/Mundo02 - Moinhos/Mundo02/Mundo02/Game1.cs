@@ -53,7 +53,7 @@ namespace Mundo02
             house = new Cube(this, GraphicsDevice);
             windmills = new Windmill[]
             {
-                new Windmill(this, GraphicsDevice, random.Next(50,800), false),
+                new Windmill(this, GraphicsDevice, random.Next(50,800)),
                 new Windmill(this, GraphicsDevice, random.Next(50,800)),
             };
 
@@ -65,7 +65,7 @@ namespace Mundo02
 
             windmills[0].Rotation = new Vector3(0, 45, 0);
             windmills[1].Rotation = new Vector3(0,-45, 0);
-            
+
             colliders = new List<ICollider>() { plane, house, windmills[0], windmills[1] };
 
             base.Initialize();
@@ -107,15 +107,15 @@ namespace Mundo02
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
-            RasterizerState rs = new RasterizerState();
+            // RasterizerState rs = new RasterizerState();
             //rs.CullMode = CullMode.None;
             //rs.FillMode = FillMode.WireFrame;
-            GraphicsDevice.RasterizerState = rs;
+            // GraphicsDevice.RasterizerState = rs;
 
-            plane.Draw(camera);
-            house.Draw(camera);
-            foreach (Windmill windmill in windmills) 
-                windmill.Draw(camera);
+            plane.Draw(camera, Matrix.Identity, true);
+            house.Draw(camera, Matrix.Identity, true);
+            foreach (Windmill windmill in windmills)
+                windmill.Draw(camera, Matrix.Identity, true);
 
             base.Draw(gameTime);
         }

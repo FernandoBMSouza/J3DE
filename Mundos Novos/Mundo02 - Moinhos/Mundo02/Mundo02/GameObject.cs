@@ -8,9 +8,8 @@ namespace Mundo02
     {
         private GraphicsDevice device;
         private VertexBuffer buffer;
-        private BasicEffect effect;
+        protected BasicEffect effect;
         private Game game;
-        private bool showColliders;
 
         private Vector3 size;
         private Vector3 position;
@@ -84,15 +83,14 @@ namespace Mundo02
             Position = Vector3.Zero;
 
             Size = Vector3.One;
-            showColliders = true;
         }
 
-        public void Draw(Camera camera)
-        {
-            Draw(camera, Matrix.Identity);
+        public virtual void Update(GameTime gameTime)
+        { 
+            
         }
         
-        public void Draw(Camera camera, Matrix parentWorld)
+        public virtual void Draw(Camera camera, Matrix parentWorld, bool showColliders = false)
         {
             if (Vertices != null)
                 device.SetVertexBuffer(buffer);
@@ -119,8 +117,7 @@ namespace Mundo02
             }
             effect.VertexColorEnabled = false;
 
-            if (showColliders) 
-                LBox.Draw(effect);
+            if (showColliders) LBox.Draw(effect);
         }
 
         public void UpdateBoundingBox(Vector3 position, Vector3 size)
