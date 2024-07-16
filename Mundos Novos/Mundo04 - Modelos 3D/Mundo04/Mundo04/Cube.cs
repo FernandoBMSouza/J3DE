@@ -7,13 +7,10 @@ namespace Mundo04
 {
     public class Cube : GameObject
     {
-        public Cube(Game1 game, GraphicsDevice device, bool lineBoxVisible = false)
-            : base(game, device, lineBoxVisible)
+        public Cube(Game game, GraphicsDevice device)
+            : base(game, device)
         {
             Size = new Vector3(2, 2, 2);
-            LBox = new LineBox(game, Size, Color.Green);
-            UpdateBoundingBox();
-
 #if USE_TEXTURE
             Texture = game.Content.Load<Texture2D>(@"Images\bricks");
             Vertices = new VertexPositionTexture[] 

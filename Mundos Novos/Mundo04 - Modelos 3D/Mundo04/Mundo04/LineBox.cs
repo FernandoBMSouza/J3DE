@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+using Microsoft.Xna.Framework;
 
 namespace Mundo04
 {
@@ -16,21 +16,20 @@ namespace Mundo04
         Color color;
         Game game;
 
-        public LineBox(Game1 game, Vector3 scale, Color color)
+        public LineBox(Game game, Vector3 size, Color color)
         {
             this.game = game;
             this.color = color;
 
-            CreateVertex(scale);
+            CreateVertex(size);
             CreateVBuffer();
             CreateIndexes();
             CreateIBuffer();
         }
 
-        private void CreateVertex(Vector3 scale)
+        private void CreateVertex(Vector3 size)
         {
-            //float v = .5f;
-            Vector3 v = scale / 2;
+            Vector3 v = size/2f;
             vertices = new VertexPositionColor[]
             {
                 //SUPERIOR
@@ -96,13 +95,9 @@ namespace Mundo04
                 vertices[i].Color = this.color;
         }
 
-        public void Draw(BasicEffect e, Matrix world)
+        public void Draw(BasicEffect e)
         {
-            e.World = world;
             e.VertexColorEnabled = true;
-            // Desativei a luz porque se ficar ativado, da erro ao desenhar pois falta informacao de normais do modelo
-            // Parece que o VertexPositionColor nao tem essa parte de normais, eu teria que criar uma struct VertexPositionColorNormal
-            // O modelo ficou todo branco, muito feio, mas quando aprender a parte de shader eu volto aqui e arrumo isso
             e.LightingEnabled = false;
             game.GraphicsDevice.SetVertexBuffer(vBuffer);
             game.GraphicsDevice.Indices = iBuffer;

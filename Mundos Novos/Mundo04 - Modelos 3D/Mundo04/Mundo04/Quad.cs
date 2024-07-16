@@ -11,13 +11,10 @@ namespace Mundo04
 {
     public class Quad : GameObject
     {
-        public Quad(Game1 game, GraphicsDevice device, bool lineBoxVisible = false)
-            : base(game, device, lineBoxVisible)
+        public Quad(Game game, GraphicsDevice device)
+            : base(game, device)
         {
             Size = new Vector3(2, 0, 2);
-            LBox = new LineBox(game, Size, Color.Green);
-            UpdateBoundingBox();
-
 #if USE_TEXTURE
             Texture = game.Content.Load<Texture2D>(@"Images\grass");
             Vertices = new VertexPositionTexture[]

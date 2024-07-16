@@ -10,201 +10,130 @@ namespace Mundo04
     public class WindmillModel : ICollider
     {
         BuildingModel building;
-        PropellerModel[] propellers;
-        const int PROPELLERS_NUMBER = 4;
-        float rotationAngle;
-        float speed;
-        bool isWorking;
+        BladeModel[] blades;
 
-        public BoundingBox BBox { get; private set; }
-        public LineBox LBox { get { return building.LBox; } private set { } }
-        bool lineBoxVisible;
+        Vector3 scale;
+        Vector3 rotation;
+        Vector3 position;
 
-        public Vector3 Position { get; protected set; }
-        public Vector3 Size { get; protected set; }
-        private Vector3 angle;
-        public Vector3 Angle
+        public Vector3 Scale
         {
-            get { return angle; }
-            protected set
+            get { return scale; }
+            set
             {
-                angle = new Vector3(
-                (value.X % 360 + 360) % 360,
-                (value.Y % 360 + 360) % 360,
-                (value.Z % 360 + 360) % 360);
+                scale = value;
+                UpdateComponentsBoundingBox();
+            }
+        }
+        public Vector3 Rotation
+        {
+            get { return rotation; }
+            set
+            {
+                rotation = new Vector3(MathHelper.ToRadians(value.X),
+                                       MathHelper.ToRadians(value.Y),
+                                       MathHelper.ToRadians(value.Z));
+                UpdateComponentsBoundingBox();
+            }
+        }
+        public Vector3 Position
+        {
+            get { return position; }
+            set
+            {
+                position = value;
+                UpdateComponentsBoundingBox();
             }
         }
 
-        public WindmillModel(Game1 game, GraphicsDevice device, float speed, bool isWorking = true, bool lineBoxVisible = false)
+        bool isWorking;
+        float speed;
+        float rotationAngle;
+
+        public WindmillModel(Game1 game, GraphicsDevice device, float speed, bool isWorking = true)
         {
-            this.lineBoxVisible = lineBoxVisible;
+            building = new BuildingModel(game, device);
+            blades = new BladeModel[4];
+
+            for (int i = 0; i < blades.Length; i++)
+                blades[i] = new BladeModel(game, device);
+
+            foreach (BladeModel blade in blades)
+            {
+                blade.Position = new Vector3(0, 1, 1.5f);
+                blade.Scale = new Vector3(.4f, .5f, 1); 
+            }
+            building.Position = new Vector3(0, -0.6f, 0);
+
+            blades[0].Rotation = new Vector3(0, 0, 0);
+            blades[1].Rotation = new Vector3(0, 0, 90);
+            blades[2].Rotation = new Vector3(0, 0, 180);
+            blades[3].Rotation = new Vector3(0, 0, 270);
+
+            Scale = Vector3.One;
+            Rotation = Vector3.Zero;
+            Position = Vector3.Zero;
+
             this.isWorking = isWorking;
-
-            building = new BuildingModel(game, device, lineBoxVisible);
-
-            propellers = new PropellerModel[PROPELLERS_NUMBER];
-            for (int i = 0; i < propellers.Length; i++) propellers[i] = new PropellerModel(game, device, lineBoxVisible);
-
-            rotationAngle = 0;
             this.speed = speed;
-            SetIdentity();
-
-            UpdateBoundingBox();
+            rotationAngle = 0;
         }
 
         public void Update(GameTime gameTime)
         {
             if (isWorking)
             {
-                rotationAngle = -speed * gameTime.ElapsedGameTime.Milliseconds * 0.001f;
-                foreach (PropellerModel p in propellers)
-                    p.Rotation('Z', rotationAngle);
-                UpdateBoundingBox();
+                rotationAngle += -speed * gameTime.ElapsedGameTime.Milliseconds * 0.001f;
+                blades[0].Rotation = new Vector3(blades[0].Rotation.X, blades[0].Rotation.Y, blades[0].Rotation.Z + rotationAngle);
+                blades[1].Rotation = new Vector3(blades[1].Rotation.X, blades[1].Rotation.Y, blades[1].Rotation.Z + rotationAngle + 90);
+                blades[2].Rotation = new Vector3(blades[1].Rotation.X, blades[1].Rotation.Y, blades[1].Rotation.Z + rotationAngle + 180);
+                blades[3].Rotation = new Vector3(blades[1].Rotation.X, blades[1].Rotation.Y, blades[1].Rotation.Z + rotationAngle + 270);
             }
         }
 
         public void Draw(Camera camera)
         {
-            building.Draw(camera);
-            foreach (PropellerModel p in propellers)
-                p.Draw(camera);
-        }
+            Matrix world = Matrix.CreateScale(Scale)
+                         * Matrix.CreateFromYawPitchRoll(Rotation.Y, Rotation.X, Rotation.Z)
+                         * Matrix.CreateTranslation(Position);
 
-        public void UpdateBoundingBox()
-        {
-            BoundingBox combinedBBox = building.BBox;
-
-            foreach (PropellerModel p in propellers)
-                combinedBBox = BoundingBox.CreateMerged(combinedBBox, p.BBox);
-
-            BBox = combinedBBox;
+            building.Draw(camera, world);
+            foreach (BladeModel blade in blades) blade.Draw(camera, world);
         }
 
         public bool IsColliding(BoundingBox other)
         {
-            if (building.IsColliding(other))
-                return true;
-
-            foreach (PropellerModel p in propellers)
-            {
-                if (p.IsColliding(other))
-                    return true;
-            }
-
-            return false;
+            return BBox.Intersects(other);
         }
 
         public void SetColliderColor(Color color)
         {
             building.LBox.SetColor(color);
-            foreach (PropellerModel p in propellers) p.LBox.SetColor(color);
+            foreach (BladeModel blade in blades) blade.LBox.SetColor(color);
         }
 
-        public void SetIdentity()
+        public BoundingBox BBox
         {
-            Position = Vector3.Zero;
-            Angle = Vector3.Zero;
-            Size = Vector3.One;
-
-            foreach (PropellerModel p in propellers)
+            get
             {
-                p.Scale(new Vector3(.4f, .4f, 1));
-            }
-            propellers[0].Rotation('Z', 0);
-            propellers[1].Rotation('Z', 90);
-            propellers[2].Rotation('Z', 180);
-            propellers[3].Rotation('Z', 270);
+                BoundingBox combined = building.BBox;
 
-            foreach (PropellerModel p in propellers) p.Translation(new Vector3(0, 1, 1.5f));
-            UpdateBoundingBox();
+                foreach (BladeModel blade in blades)
+                    combined = BoundingBox.CreateMerged(combined, blade.BBox);
+
+                return building.BBox;
+
+                // O certo seria retornar o combined, fica certo, mas se eu mover o windmill o BBox fica muito maior que deveria
+                // pelo que parece ele pega desde a posicao antiga e soma com a nova, faz o colisor ficar totalmente errado
+                // return combined;
+            }
         }
 
-        public void Translation(Vector3 position, bool aux = false)
+        public void UpdateComponentsBoundingBox()
         {
-            Position = position;
-            if (aux)
-            {
-                building.Translation(position, true);
-                foreach (PropellerModel p in propellers)
-                    p.Translation(position, true);
-            }
-            else
-            {
-                building.Translation(position);
-                foreach (PropellerModel p in propellers)
-                    p.Translation(position);
-            }
-            UpdateBoundingBox();
-        }
-
-        public void Scale(Vector3 scale, bool aux = false)
-        {
-            Size *= scale;
-            if (aux)
-            {
-                building.Scale(scale, true);
-                foreach (PropellerModel p in propellers)
-                    p.Scale(scale, true);
-            }
-            else
-            {
-                building.Scale(scale);
-                foreach (PropellerModel p in propellers)
-                    p.Scale(scale);
-            }
-            UpdateBoundingBox();
-        }
-
-        public void Rotation(char axis, float angle, bool aux = false)
-        {
-            switch (axis)
-            {
-                case 'X':
-                case 'x':
-                    Angle += new Vector3(angle, 0, 0);
-                    if (aux)
-                    {
-                        building.Rotation('X', angle, true);
-                        foreach (PropellerModel p in propellers) p.Rotation('X', angle, true);
-                    }
-                    else
-                    {
-                        building.Rotation('X', angle);
-                        foreach (PropellerModel p in propellers) p.Rotation('X', angle);
-                    }
-                    break;
-                case 'Y':
-                case 'y':
-                    Angle += new Vector3(0, angle, 0);
-                    if (aux)
-                    {
-                        building.Rotation('Y', angle, true);
-                        foreach (PropellerModel p in propellers) p.Rotation('Y', angle, true);
-                    }
-                    else
-                    {
-                        building.Rotation('Y', angle);
-                        foreach (PropellerModel p in propellers) p.Rotation('Y', angle);
-                    }
-                    break;
-                case 'Z':
-                case 'z':
-                    Angle += new Vector3(0, 0, angle);
-                    if (aux)
-                    {
-                        building.Rotation('Z', angle, true);
-                        foreach (PropellerModel p in propellers) p.Rotation('Z', angle, true);
-                    }
-                    else
-                    {
-                        building.Rotation('Z', angle);
-                        foreach (PropellerModel p in propellers) p.Rotation('Z', angle);
-                    }
-                    break;
-                default:
-                    break;
-            }
-            UpdateBoundingBox();
+            building.UpdateBoundingBox(building.Position + Position, building.Size);
+            foreach (BladeModel blade in blades)
+                blade.UpdateBoundingBox(blade.Position + Position, blade.Size);
         }
     }
 }

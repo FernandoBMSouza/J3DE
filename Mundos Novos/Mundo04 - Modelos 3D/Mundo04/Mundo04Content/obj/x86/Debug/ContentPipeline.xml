@@ -7,8 +7,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos Novos\Mundo04 - Modelos 3D\Mundo04\Mundo04\bin\x86\Debug\Content\Images\bricks.xnb</Output>
-      <Time>2024-07-10T08:17:10.6431728-03:00</Time>
+      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos Novos\Mundo04\Mundo04\Mundo04\bin\x86\Debug\Content\Images\bricks.xnb</Output>
+      <Time>2024-07-14T14:03:02.1830148-03:00</Time>
     </Item>
     <Item>
       <Source>Images\grass.jpg</Source>
@@ -16,8 +16,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos Novos\Mundo04 - Modelos 3D\Mundo04\Mundo04\bin\x86\Debug\Content\Images\grass.xnb</Output>
-      <Time>2024-07-10T08:17:10.6511743-03:00</Time>
+      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos Novos\Mundo04\Mundo04\Mundo04\bin\x86\Debug\Content\Images\grass.xnb</Output>
+      <Time>2024-07-14T14:03:02.1900173-03:00</Time>
     </Item>
     <Item>
       <Source>Images\rocks.jpg</Source>
@@ -25,8 +25,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos Novos\Mundo04 - Modelos 3D\Mundo04\Mundo04\bin\x86\Debug\Content\Images\rocks.xnb</Output>
-      <Time>2024-07-10T08:17:10.6531741-03:00</Time>
+      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos Novos\Mundo04\Mundo04\Mundo04\bin\x86\Debug\Content\Images\rocks.xnb</Output>
+      <Time>2024-07-14T14:03:02.1920152-03:00</Time>
     </Item>
     <Item>
       <Source>Images\wood.png</Source>
@@ -34,48 +34,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos Novos\Mundo04 - Modelos 3D\Mundo04\Mundo04\bin\x86\Debug\Content\Images\wood.xnb</Output>
-      <Time>2024-07-10T08:17:10.6551739-03:00</Time>
-    </Item>
-    <Item>
-      <Source>Models\hero.x</Source>
-      <Name>Models\hero</Name>
-      <Importer>XImporter</Importer>
-      <Processor>ModelProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos Novos\Mundo04 - Modelos 3D\Mundo04\Mundo04\bin\x86\Debug\Content\Models\hero.xnb</Output>
-      <Time>2024-07-10T08:28:15.3542384-03:00</Time>
-      <Dependency>
-        <Key>obj\x86\Debug\Models\hero_0.xml</Key>
-        <Value>2024-07-10T08:34:00.3885508-03:00</Value>
-      </Dependency>
-    </Item>
-    <Item>
-      <Source>Models\hero.x</Source>
-      <Importer>XImporter</Importer>
-      <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>obj\x86\Debug\Models\hero_0.xml</Output>
-      <Time>2024-07-10T08:28:15.3542384-03:00</Time>
-    </Item>
-    <Item>
-      <Source>Models\tower.x</Source>
-      <Name>Models\tower</Name>
-      <Importer>XImporter</Importer>
-      <Processor>ModelProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos Novos\Mundo04 - Modelos 3D\Mundo04\Mundo04\bin\x86\Debug\Content\Models\tower.xnb</Output>
-      <Time>2024-07-10T09:23:06.2413445-03:00</Time>
-      <Dependency>
-        <Key>obj\x86\Debug\Models\tower_0.xml</Key>
-        <Value>2024-07-10T09:23:11.4371976-03:00</Value>
-      </Dependency>
-    </Item>
-    <Item>
-      <Source>Models\tower.x</Source>
-      <Importer>XImporter</Importer>
-      <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>obj\x86\Debug\Models\tower_0.xml</Output>
-      <Time>2024-07-10T09:23:06.2413445-03:00</Time>
+      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos Novos\Mundo04\Mundo04\Mundo04\bin\x86\Debug\Content\Images\wood.xnb</Output>
+      <Time>2024-07-14T14:03:02.194017-03:00</Time>
     </Item>
     <Item>
       <Source>Models\building.x</Source>
@@ -83,24 +43,37 @@
       <Importer>XImporter</Importer>
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos Novos\Mundo04 - Modelos 3D\Mundo04\Mundo04\bin\x86\Debug\Content\Models\building.xnb</Output>
-      <Time>2024-07-10T09:42:10.267132-03:00</Time>
+      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos Novos\Mundo04\Mundo04\Mundo04\bin\x86\Debug\Content\Models\building.xnb</Output>
+      <Time>2024-07-14T14:05:48.8576361-03:00</Time>
       <Dependency>
         <Key>obj\x86\Debug\Models\building_0.xml</Key>
-        <Value>2024-07-10T09:44:35.7374087-03:00</Value>
+        <Value>2024-07-14T14:06:01.3274563-03:00</Value>
       </Dependency>
     </Item>
     <Item>
-      <Source>Models\propeller.x</Source>
-      <Name>Models\propeller</Name>
+      <Source>Models\hero.x</Source>
+      <Name>Models\hero</Name>
       <Importer>XImporter</Importer>
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos Novos\Mundo04 - Modelos 3D\Mundo04\Mundo04\bin\x86\Debug\Content\Models\propeller.xnb</Output>
-      <Time>2024-07-10T09:42:10.2781338-03:00</Time>
+      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos Novos\Mundo04\Mundo04\Mundo04\bin\x86\Debug\Content\Models\hero.xnb</Output>
+      <Time>2024-07-14T14:05:48.861633-03:00</Time>
       <Dependency>
-        <Key>obj\x86\Debug\Models\propeller_0.xml</Key>
-        <Value>2024-07-10T09:44:35.7970514-03:00</Value>
+        <Key>obj\x86\Debug\Models\hero_0.xml</Key>
+        <Value>2024-07-14T14:06:01.5764139-03:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>Models\tower.x</Source>
+      <Name>Models\tower</Name>
+      <Importer>XImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos Novos\Mundo04\Mundo04\Mundo04\bin\x86\Debug\Content\Models\tower.xnb</Output>
+      <Time>2024-07-14T14:05:48.8666532-03:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug\Models\tower_0.xml</Key>
+        <Value>2024-07-14T14:06:01.6848018-03:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -108,14 +81,41 @@
       <Importer>XImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
       <Output>obj\x86\Debug\Models\building_0.xml</Output>
-      <Time>2024-07-10T09:42:10.267132-03:00</Time>
+      <Time>2024-07-14T14:05:48.8576361-03:00</Time>
     </Item>
     <Item>
-      <Source>Models\propeller.x</Source>
+      <Source>Models\hero.x</Source>
       <Importer>XImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>obj\x86\Debug\Models\propeller_0.xml</Output>
-      <Time>2024-07-10T09:42:10.2781338-03:00</Time>
+      <Output>obj\x86\Debug\Models\hero_0.xml</Output>
+      <Time>2024-07-14T14:05:48.861633-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\tower.x</Source>
+      <Importer>XImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug\Models\tower_0.xml</Output>
+      <Time>2024-07-14T14:05:48.8666532-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\blade.x</Source>
+      <Name>Models\blade</Name>
+      <Importer>XImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos Novos\Mundo04\Mundo04\Mundo04\bin\x86\Debug\Content\Models\blade.xnb</Output>
+      <Time>2024-07-14T14:05:48.8636337-03:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug\Models\blade_0.xml</Key>
+        <Value>2024-07-16T13:50:41.8281679-03:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>Models\blade.x</Source>
+      <Importer>XImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug\Models\blade_0.xml</Output>
+      <Time>2024-07-14T14:05:48.8636337-03:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -123,10 +123,10 @@
       <TargetProfile>HiDef</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos Novos\Mundo04 - Modelos 3D\Mundo04\Mundo04Content\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos Novos\Mundo04 - Modelos 3D\Mundo04\Mundo04\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos Novos\Mundo04 - Modelos 3D\Mundo04\Mundo04Content\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos Novos\Mundo04 - Modelos 3D\Mundo04\Mundo04\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos Novos\Mundo04\Mundo04\Mundo04Content\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos Novos\Mundo04\Mundo04\Mundo04\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos Novos\Mundo04\Mundo04\Mundo04Content\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos Novos\Mundo04\Mundo04\Mundo04\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>

@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mundo04", "Mundo04\Mundo04\Mundo04.csproj", "{5E3EA671-0E22-4B99-8E35-32B2AD6DE08A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mundo04", "Mundo04\Mundo04\Mundo04.csproj", "{E5664E13-8514-4C7A-AAF5-3C0F8E3370FB}"
 EndProject
-Project("{96E2B04D-8817-42C6-938A-82C39BA4D311}") = "Mundo04Content", "Mundo04\Mundo04Content\Mundo04Content.contentproj", "{EEE64612-C3AE-43E7-AF66-9C214931E513}"
+Project("{96E2B04D-8817-42C6-938A-82C39BA4D311}") = "Mundo04Content", "Mundo04\Mundo04Content\Mundo04Content.contentproj", "{A879BA48-B813-4384-9A0A-931130D9E187}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,12 +11,12 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{5E3EA671-0E22-4B99-8E35-32B2AD6DE08A}.Debug|x86.ActiveCfg = Debug|x86
-		{5E3EA671-0E22-4B99-8E35-32B2AD6DE08A}.Debug|x86.Build.0 = Debug|x86
-		{5E3EA671-0E22-4B99-8E35-32B2AD6DE08A}.Release|x86.ActiveCfg = Release|x86
-		{5E3EA671-0E22-4B99-8E35-32B2AD6DE08A}.Release|x86.Build.0 = Release|x86
-		{EEE64612-C3AE-43E7-AF66-9C214931E513}.Debug|x86.ActiveCfg = Debug|x86
-		{EEE64612-C3AE-43E7-AF66-9C214931E513}.Release|x86.ActiveCfg = Release|x86
+		{E5664E13-8514-4C7A-AAF5-3C0F8E3370FB}.Debug|x86.ActiveCfg = Debug|x86
+		{E5664E13-8514-4C7A-AAF5-3C0F8E3370FB}.Debug|x86.Build.0 = Debug|x86
+		{E5664E13-8514-4C7A-AAF5-3C0F8E3370FB}.Release|x86.ActiveCfg = Release|x86
+		{E5664E13-8514-4C7A-AAF5-3C0F8E3370FB}.Release|x86.Build.0 = Release|x86
+		{A879BA48-B813-4384-9A0A-931130D9E187}.Debug|x86.ActiveCfg = Debug|x86
+		{A879BA48-B813-4384-9A0A-931130D9E187}.Release|x86.ActiveCfg = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

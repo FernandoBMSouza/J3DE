@@ -11,13 +11,10 @@ namespace Mundo04
 {
     public class Building : GameObject
     {
-        public Building(Game1 game, GraphicsDevice device, bool lineBoxVisible = false)
-            : base(game, device, lineBoxVisible)
+        public Building(Game1 game, GraphicsDevice device)
+            : base(game, device)
         {
-            Size = new Vector3(2, 4, 8);
-            LBox = new LineBox(game, Size, Color.Green);
-            UpdateBoundingBox();
-
+            Size = new Vector3(2, 4, 6);
 #if USE_TEXTURE
             Texture = game.Content.Load<Texture2D>(@"Images\rocks");
             Vertices = new VertexPositionTexture[]

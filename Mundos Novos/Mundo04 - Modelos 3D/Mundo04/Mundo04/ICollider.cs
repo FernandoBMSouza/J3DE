@@ -9,7 +9,6 @@ namespace Mundo04
     interface ICollider
     {
         BoundingBox BBox { get; }
-        void UpdateBoundingBox();
         bool IsColliding(BoundingBox other);
         void SetColliderColor(Color color);
     }

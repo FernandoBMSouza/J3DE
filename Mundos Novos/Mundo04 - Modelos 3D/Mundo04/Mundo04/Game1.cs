@@ -11,28 +11,24 @@ using Microsoft.Xna.Framework.Media;
 
 namespace Mundo04
 {
-    /// <summary>
-    /// This is the main type for your game
-    /// </summary>
     public class Game1 : Microsoft.Xna.Framework.Game
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
+        Random random;
 
         Screen screen;
         Camera camera;
-        Random random;
 
         Quad plane;
         Cube house;
         Windmill[] windmills;
         WindmillModel[] windmillModels;
 
-        List<ICollider> colliders;
-        const bool SHOW_COLLIDERS = false;
-
         Hero hero;
         Tower tower;
+
+        List<ICollider> colliders;
 
         public Game1()
         {
@@ -46,140 +42,116 @@ namespace Mundo04
             Window.Title = "MUNDO 04";
         }
 
-        /// <summary>
-        /// Allows the game to perform any initialization it needs to before starting to run.
-        /// This is where it can query for any required services and load any non-graphic
-        /// related content.  Calling base.Initialize will enumerate through any components
-        /// and initialize them as well.
-        /// </summary>
         protected override void Initialize()
         {
-            // TODO: Add your initialization logic here
             screen = Screen.GetInstance();
             screen.Width = graphics.PreferredBackBufferWidth;
             screen.Height = graphics.PreferredBackBufferHeight;
 
-            camera = new Camera(this);
             int seed = (int)DateTime.Now.Ticks % int.MaxValue;
             random = new Random(seed);
 
+            camera = new Camera(this);
 
-            plane = new Quad(this, GraphicsDevice, SHOW_COLLIDERS);
-            house = new Cube(this, GraphicsDevice, SHOW_COLLIDERS);
+            plane = new Quad(this, GraphicsDevice);
+            house = new Cube(this, GraphicsDevice);
             windmills = new Windmill[]
             {
-                new Windmill(this, GraphicsDevice, random.Next(50,1000), true, SHOW_COLLIDERS),
-                new Windmill(this, GraphicsDevice, random.Next(50,1000), true, SHOW_COLLIDERS),
+                new Windmill(this, GraphicsDevice, random.Next(50,800), true),
+                new Windmill(this, GraphicsDevice, random.Next(50,800), true),
             };
+
             windmillModels = new WindmillModel[]
             {
-                new WindmillModel(this, GraphicsDevice, random.Next(50,1000), true, SHOW_COLLIDERS),
-                new WindmillModel(this, GraphicsDevice, random.Next(50,1000), true, SHOW_COLLIDERS),
+                new WindmillModel(this, GraphicsDevice, random.Next(50,800), true),
+                new WindmillModel(this, GraphicsDevice, random.Next(50,800), true),
             };
-            hero = new Hero(this, GraphicsDevice, SHOW_COLLIDERS);
-            tower = new Tower(this, GraphicsDevice, SHOW_COLLIDERS);
 
-            colliders = new List<ICollider>() { plane, house, windmills[0], windmills[1], hero, tower, windmillModels[0], windmillModels[1], };
-            
-            //TRANSFORMATIONS
-            plane.Scale(new Vector3(20, 0, 20));
-            house.Translation(new Vector3(0, 1, 0));
+            hero = new Hero(this, GraphicsDevice);
+            tower = new Tower(this, GraphicsDevice);
 
-            windmills[0].Rotation('Y', 45, true);
-            windmills[1].Rotation('Y', -45, true);
-            windmills[0].Translation(new Vector3(-8, 2, -6), true);
-            windmills[1].Translation(new Vector3( 8, 2, -6), true);
 
-            windmillModels[0].Rotation('Y', 135, true);
-            windmillModels[1].Rotation('Y',-135, true);
-            windmillModels[0].Translation(new Vector3(-8, 1.5f, 6), true);
-            windmillModels[1].Translation(new Vector3( 8, 1.5f, 6), true);
+            plane.Scale = new Vector3(20, 1, 20);
+            house.Position = new Vector3(0, 1, 0);
 
-            hero.SetIdentity();
-            hero.Scale(new Vector3(.2f));
-            hero.Translation(new Vector3(0, 1.5f, 6));
+            windmills[0].Position = new Vector3(-8, 2,-8);
+            windmills[1].Position = new Vector3( 8, 2,-8);
 
-            tower.SetIdentity();
-            tower.Scale(new Vector3(1, 4, 1));
-            tower.Rotation('X', 0);
-            tower.Translation(new Vector3(0, 4, -8));
+            windmills[0].Rotation = new Vector3(0, 45, 0);
+            windmills[1].Rotation = new Vector3(0,-45, 0);
+
+            windmillModels[0].Position = new Vector3(-8, 2, 8);
+            windmillModels[1].Position = new Vector3( 8, 2, 8);
+
+            windmillModels[0].Rotation = new Vector3(0, 135, 0);
+            windmillModels[1].Rotation = new Vector3(0,-135, 0);
+
+            hero.Scale = new Vector3(.2f);
+            hero.Position = new Vector3(0, 1.5f, 6);
+
+            tower.Scale = new Vector3(1, 4, 1);
+            tower.Position = new Vector3(0, 4, -8);
+
+            colliders = new List<ICollider>() { plane, house, windmills[0], windmills[1], hero, tower, windmillModels[0], windmillModels[1] };
+
+            base.Initialize();
         }
 
-        /// <summary>
-        /// LoadContent will be called once per game and is the place to load
-        /// all of your content.
-        /// </summary>
         protected override void LoadContent()
         {
-            // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
-
-            // TODO: use this.Content to load your game content here
         }
 
-        /// <summary>
-        /// UnloadContent will be called once per game and is the place to unload
-        /// all content.
-        /// </summary>
         protected override void UnloadContent()
         {
-            // TODO: Unload any non ContentManager content here
         }
 
-        /// <summary>
-        /// Allows the game to run logic such as updating the world,
-        /// checking for collisions, gathering input, and playing audio.
-        /// </summary>
-        /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Update(GameTime gameTime)
         {
-            // Allows the game to exit
             if (Keyboard.GetState().IsKeyDown(Keys.Escape))
                 this.Exit();
 
-            // TODO: Add your update logic here
             camera.Update(gameTime);
-            foreach (Windmill w in windmills) w.Update(gameTime);
-            foreach (WindmillModel w in windmillModels) w.Update(gameTime);
 
-            foreach (ICollider c in colliders)
+            foreach(Windmill windmill in windmills) 
+                windmill.Update(gameTime);
+
+            foreach (WindmillModel windmillModel in windmillModels)
+                windmillModel.Update(gameTime);
+
+            foreach (ICollider obj in colliders)
             {
-                if (camera.IsColliding(c.BBox))
+                if (camera.IsColliding(obj.BBox))
                 {
+                    // string teste = obj.BBox.ToString();
+                    // Console.WriteLine("Colidi com " + obj.ToString() + " = " + teste);
+
                     camera.RestorePosition();
-                    c.SetColliderColor(Color.Red);
+                    obj.SetColliderColor(Color.Red);
                 }
-                else
-                {
-                    c.SetColliderColor(Color.Green);
-                }
+                else obj.SetColliderColor(Color.Green);
             }
+
             base.Update(gameTime);
         }
 
-        /// <summary>
-        /// This is called when the game should draw itself.
-        /// </summary>
-        /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Draw(GameTime gameTime)
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
-            // TODO: Add your drawing code here
-
-            //RasterizerState rs = new RasterizerState();
+            RasterizerState rs = new RasterizerState();
             //rs.CullMode = CullMode.None;
             //rs.FillMode = FillMode.WireFrame;
-            //GraphicsDevice.RasterizerState = rs;
+            GraphicsDevice.RasterizerState = rs;
 
             plane.Draw(camera);
             house.Draw(camera);
+            foreach (Windmill windmill in windmills) 
+                windmill.Draw(camera);
+            foreach (WindmillModel windmillModel in windmillModels)
+                windmillModel.Draw(camera);
             hero.Draw(camera);
             tower.Draw(camera);
-            foreach (Windmill w in windmills)
-                w.Draw(camera);
-            foreach (WindmillModel w in windmillModels)
-                  w.Draw(camera);
 
             base.Draw(gameTime);
         }
