@@ -35,7 +35,7 @@ namespace Mundo03
             graphics.PreferredBackBufferHeight = 600;
 
             IsMouseVisible = true;
-            Window.Title = "MUNDO 03";
+            Window.Title = "MUNDO 02";
         }
 
         protected override void Initialize()
@@ -53,8 +53,8 @@ namespace Mundo03
             house = new Cube(this, GraphicsDevice);
             windmills = new Windmill[]
             {
-                new Windmill(this, GraphicsDevice, random.Next(50,800), true),
-                new Windmill(this, GraphicsDevice, random.Next(50,800), true),
+                new Windmill(this, GraphicsDevice, random.Next(50,800)),
+                new Windmill(this, GraphicsDevice, random.Next(50,800)),
             };
 
             plane.Scale = new Vector3(20, 1, 20);
@@ -65,7 +65,7 @@ namespace Mundo03
 
             windmills[0].Rotation = new Vector3(0, 45, 0);
             windmills[1].Rotation = new Vector3(0,-45, 0);
-            
+
             colliders = new List<ICollider>() { plane, house, windmills[0], windmills[1] };
 
             base.Initialize();
@@ -107,14 +107,14 @@ namespace Mundo03
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
-            RasterizerState rs = new RasterizerState();
+            // RasterizerState rs = new RasterizerState();
             //rs.CullMode = CullMode.None;
             //rs.FillMode = FillMode.WireFrame;
-            GraphicsDevice.RasterizerState = rs;
+            // GraphicsDevice.RasterizerState = rs;
 
             plane.Draw(camera);
             house.Draw(camera);
-            foreach (Windmill windmill in windmills) 
+            foreach (Windmill windmill in windmills)
                 windmill.Draw(camera);
 
             base.Draw(gameTime);

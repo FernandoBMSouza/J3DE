@@ -1,2 +1,1 @@
-C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundo03\Mundo03\Mundo03Content\obj\x86\Debug\Mundo03Content.contentprojResolveAssemblyReference.cache
-C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos Novos\Mundo03 - Textura\Mundo03\Mundo03Content\obj\x86\Debug\Mundo03Content.contentprojResolveAssemblyReference.cache
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos Novos\Mundo03\Mundo03\Mundo03Content\obj\x86\Debug\Mundo03Content.contentprojResolveAssemblyReference.cache

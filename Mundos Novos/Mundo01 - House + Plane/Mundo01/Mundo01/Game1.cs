@@ -34,7 +34,7 @@ namespace Mundo01
             graphics.PreferredBackBufferHeight = 600;
 
             IsMouseVisible = true;
-            Window.Title = "MUNDO 02";
+            Window.Title = "MUNDO 01";
         }
 
         protected override void Initialize()
@@ -51,9 +51,9 @@ namespace Mundo01
             plane = new Quad(this, GraphicsDevice);
             house = new Cube(this, GraphicsDevice);
 
-            plane.Scale = new Vector3(10, 0, 10);
+            plane.Scale = new Vector3(10, 1, 10);
             house.Position = new Vector3(0, 1, 0);
-            
+
             colliders = new List<ICollider>() { plane, house };
 
             base.Initialize();
@@ -92,10 +92,10 @@ namespace Mundo01
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
-            RasterizerState rs = new RasterizerState();
+            // RasterizerState rs = new RasterizerState();
             //rs.CullMode = CullMode.None;
             //rs.FillMode = FillMode.WireFrame;
-            GraphicsDevice.RasterizerState = rs;
+            // GraphicsDevice.RasterizerState = rs;
 
             plane.Draw(camera);
             house.Draw(camera);

@@ -8,9 +8,8 @@ namespace Mundo01
     {
         private GraphicsDevice device;
         private VertexBuffer buffer;
-        private BasicEffect effect;
+        protected BasicEffect effect;
         private Game game;
-        private bool showColliders;
 
         private Vector3 size;
         private Vector3 position;
@@ -84,15 +83,20 @@ namespace Mundo01
             Position = Vector3.Zero;
 
             Size = Vector3.One;
-            showColliders = true;
+        }
+
+        public virtual void Update(GameTime gameTime)
+        { 
+            
         }
 
         public void Draw(Camera camera)
         {
-            Draw(camera, Matrix.Identity);
+            // Se quiser tirar os colisores, muda o terceiro argumento para false
+            Draw(camera, Matrix.Identity, true);
         }
         
-        public void Draw(Camera camera, Matrix parentWorld)
+        public virtual void Draw(Camera camera, Matrix parentWorld, bool showColliders = false)
         {
             if (Vertices != null)
                 device.SetVertexBuffer(buffer);
@@ -117,9 +121,9 @@ namespace Mundo01
                                                                    0,
                                                                    Vertices.Length / 3);
             }
+            effect.VertexColorEnabled = false;
 
-            if (showColliders) 
-                LBox.Draw(effect);
+            if (showColliders) LBox.Draw(effect);
         }
 
         public void UpdateBoundingBox(Vector3 position, Vector3 size)

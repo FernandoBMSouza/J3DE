@@ -11,7 +11,7 @@ namespace Mundo03
 {
     class Blade : GameObject
     {
-        public Blade(Game1 game, GraphicsDevice device) 
+        public Blade(Game1 game, GraphicsDevice device)
             : base(game, device)
         {
             Size = new Vector3(2, 8, 0);

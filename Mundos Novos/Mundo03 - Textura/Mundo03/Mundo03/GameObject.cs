@@ -1,5 +1,4 @@
 ﻿#define USE_TEXTURE
-
 using System;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
@@ -10,9 +9,8 @@ namespace Mundo03
     {
         private GraphicsDevice device;
         private VertexBuffer buffer;
-        private BasicEffect effect;
+        protected BasicEffect effect;
         private Game game;
-        private bool showColliders;
 
         private Vector3 size;
         private Vector3 position;
@@ -61,7 +59,6 @@ namespace Mundo03
 
         public LineBox LBox { get; protected set; }
         public BoundingBox BBox { get; private set; }
-
 #if USE_TEXTURE
         protected Texture2D Texture { get; set; }
         protected VertexPositionTexture[] Vertices { get; set; }
@@ -71,29 +68,27 @@ namespace Mundo03
 
         public GameObject(Game game, GraphicsDevice device)
         {
-#if USE_TEXTURE
+            this.game = game;
+            this.device = device;
+            Vertices = null;
             Texture = null;
+
             if (Vertices != null)
             {
+#if USE_TEXTURE
                 buffer = new VertexBuffer(device,
                                           typeof(VertexPositionTexture),
                                           Vertices.Length,
                                           BufferUsage.None);
                 buffer.SetData<VertexPositionTexture>(Vertices);
-            }
 #else
-            Vertices = null;
-            if (Vertices != null)
-            {
                 buffer = new VertexBuffer(device, 
                                           typeof(VertexPositionColor), 
                                           Vertices.Length, 
                                           BufferUsage.None);
                 buffer.SetData<VertexPositionColor>(Vertices);
-            }
 #endif
-            this.game = game;
-            this.device = device;
+            }
 
             effect = new BasicEffect(device);
 
@@ -102,15 +97,20 @@ namespace Mundo03
             Position = Vector3.Zero;
 
             Size = Vector3.One;
-            showColliders = true;
+        }
+
+        public virtual void Update(GameTime gameTime)
+        { 
+            
         }
 
         public void Draw(Camera camera)
         {
-            Draw(camera, Matrix.Identity);
+            // Se quiser tirar os colisores, muda o terceiro argumento para false
+            Draw(camera, Matrix.Identity, true);
         }
         
-        public void Draw(Camera camera, Matrix parentWorld)
+        public virtual void Draw(Camera camera, Matrix parentWorld, bool showColliders = false)
         {
             if (Vertices != null)
                 device.SetVertexBuffer(buffer);
@@ -151,8 +151,8 @@ namespace Mundo03
             }
             effect.VertexColorEnabled = false;
 #endif
-            if (showColliders) 
-                LBox.Draw(effect);
+
+            if (showColliders) LBox.Draw(effect);
         }
 
         public void UpdateBoundingBox(Vector3 position, Vector3 size)

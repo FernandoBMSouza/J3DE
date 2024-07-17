@@ -51,7 +51,6 @@ namespace Mundo02
 
         public override void Draw(Camera camera, Matrix parentWorld, bool showColliders = false)
         {
-
             Matrix localMatrix = Matrix.CreateScale(Scale)
                                  * Matrix.CreateFromYawPitchRoll(Rotation.Y, Rotation.X, Rotation.Z)
                                  * Matrix.CreateTranslation(Position);

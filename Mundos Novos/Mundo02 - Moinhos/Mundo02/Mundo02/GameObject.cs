@@ -89,6 +89,12 @@ namespace Mundo02
         { 
             
         }
+
+        public void Draw(Camera camera)
+        {
+            // Se quiser tirar os colisores, muda o terceiro argumento para false
+            Draw(camera, Matrix.Identity, true);
+        }
         
         public virtual void Draw(Camera camera, Matrix parentWorld, bool showColliders = false)
         {

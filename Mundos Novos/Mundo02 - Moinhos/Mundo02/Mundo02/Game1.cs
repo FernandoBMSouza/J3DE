@@ -112,10 +112,10 @@ namespace Mundo02
             //rs.FillMode = FillMode.WireFrame;
             // GraphicsDevice.RasterizerState = rs;
 
-            plane.Draw(camera, Matrix.Identity, true);
-            house.Draw(camera, Matrix.Identity, true);
+            plane.Draw(camera);
+            house.Draw(camera);
             foreach (Windmill windmill in windmills)
-                windmill.Draw(camera, Matrix.Identity, true);
+                windmill.Draw(camera);
 
             base.Draw(gameTime);
         }

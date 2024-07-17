@@ -80,7 +80,7 @@ namespace Mundo03
                 new VertexPositionTexture(new Vector3( 1,-2,-3), new Vector2(0,1)),
                 new VertexPositionTexture(new Vector3( 1, 2, 1), new Vector2(0,0)),
             };
-            
+
 #else
             Vertices = new VertexPositionColor[]
             {
