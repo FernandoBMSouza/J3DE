@@ -1,0 +1,8 @@
+Content\Images\bricks.xnb
+Content\Images\grass.xnb
+Content\Images\rocks.xnb
+Content\Images\wood.xnb
+Content\Models\blade.xnb
+Content\Models\building.xnb
+Content\Models\hero.xnb
+Content\Models\tower.xnb
