@@ -7,7 +7,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos Novos\Mundo03 - Textura\Mundo03\Mundo03\bin\x86\Debug\Content\Images\bricks.xnb</Output>
+      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos\Mundo03 - Textura\Mundo03\Mundo03\bin\x86\Debug\Content\Images\bricks.xnb</Output>
       <Time>2024-07-17T13:37:56.1386518-03:00</Time>
     </Item>
     <Item>
@@ -16,7 +16,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos Novos\Mundo03 - Textura\Mundo03\Mundo03\bin\x86\Debug\Content\Images\grass.xnb</Output>
+      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos\Mundo03 - Textura\Mundo03\Mundo03\bin\x86\Debug\Content\Images\grass.xnb</Output>
       <Time>2024-07-17T13:37:56.1386518-03:00</Time>
     </Item>
     <Item>
@@ -25,7 +25,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos Novos\Mundo03 - Textura\Mundo03\Mundo03\bin\x86\Debug\Content\Images\rocks.xnb</Output>
+      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos\Mundo03 - Textura\Mundo03\Mundo03\bin\x86\Debug\Content\Images\rocks.xnb</Output>
       <Time>2024-07-17T13:37:56.1386518-03:00</Time>
     </Item>
     <Item>
@@ -34,7 +34,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos Novos\Mundo03 - Textura\Mundo03\Mundo03\bin\x86\Debug\Content\Images\wood.xnb</Output>
+      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos\Mundo03 - Textura\Mundo03\Mundo03\bin\x86\Debug\Content\Images\wood.xnb</Output>
       <Time>2024-07-17T13:37:56.1386518-03:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
@@ -43,10 +43,10 @@
       <TargetProfile>HiDef</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos Novos\Mundo03 - Textura\Mundo03\Mundo03Content\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos Novos\Mundo03 - Textura\Mundo03\Mundo03\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos Novos\Mundo03 - Textura\Mundo03\Mundo03Content\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos Novos\Mundo03 - Textura\Mundo03\Mundo03\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos\Mundo03 - Textura\Mundo03\Mundo03Content\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos\Mundo03 - Textura\Mundo03\Mundo03\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos\Mundo03 - Textura\Mundo03\Mundo03Content\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos\Mundo03 - Textura\Mundo03\Mundo03\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>

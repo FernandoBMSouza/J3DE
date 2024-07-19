@@ -54,13 +54,14 @@ namespace Mundo03
             Matrix localMatrix = Matrix.CreateScale(Scale)
                                  * Matrix.CreateFromYawPitchRoll(Rotation.Y, Rotation.X, Rotation.Z)
                                  * Matrix.CreateTranslation(Position);
-
-            effect.World = localMatrix * parentWorld;
+            
+            Matrix result = localMatrix * parentWorld;
+            effect.World = result;
             effect.View = camera.View;
             effect.Projection = camera.Projection;
 
             building.Draw(camera, localMatrix, false);
-            foreach (Blade blade in blades) blade.Draw(camera, localMatrix, false);
+            foreach (Blade blade in blades) blade.Draw(camera, result, false);
             if (showColliders) LBox.Draw(effect);
         }
     }

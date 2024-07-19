@@ -105,8 +105,8 @@ namespace Mundo01
                                  * Matrix.CreateFromYawPitchRoll(Rotation.Y, Rotation.X, Rotation.Z)
                                  * Matrix.CreateTranslation(Position);
 
-            effect.World = localMatrix * parentWorld;
-
+            Matrix result = localMatrix * parentWorld;
+            effect.World = result;
             effect.View = camera.View;
             effect.Projection = camera.Projection;
 

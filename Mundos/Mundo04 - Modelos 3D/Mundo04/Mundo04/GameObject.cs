@@ -109,7 +109,7 @@ namespace Mundo04
         public void Draw(Camera camera)
         {
             // Se quiser tirar os colisores, muda o terceiro argumento para false
-            Draw(camera, Matrix.Identity, false);
+            Draw(camera, Matrix.Identity, true);
         }
         
         public virtual void Draw(Camera camera, Matrix parentWorld, bool showColliders = false)
@@ -121,8 +121,8 @@ namespace Mundo04
                                  * Matrix.CreateFromYawPitchRoll(Rotation.Y, Rotation.X, Rotation.Z)
                                  * Matrix.CreateTranslation(Position);
 
-            effect.World = localMatrix * parentWorld;
-
+            Matrix result = localMatrix * parentWorld;
+            effect.World = result;
             effect.View = camera.View;
             effect.Projection = camera.Projection;
 
