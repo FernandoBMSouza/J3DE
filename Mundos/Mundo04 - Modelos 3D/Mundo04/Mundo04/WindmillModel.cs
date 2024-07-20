@@ -14,7 +14,6 @@ namespace Mundo04
 
         bool isWorking;
         float speed;
-        float rotationAngle;
 
         public WindmillModel(Game1 game, GraphicsDevice device, float speed, bool isWorking = true)
             : base(game, device)
@@ -33,13 +32,12 @@ namespace Mundo04
             building.Position = new Vector3(0, -0.6f, 0);
 
             blades[0].Rotation = new Vector3(0, 0, 0);
-            blades[1].Rotation = new Vector3(0, 0, 90);
-            blades[2].Rotation = new Vector3(0, 0, 180);
-            blades[3].Rotation = new Vector3(0, 0, 270);
+            blades[1].Rotation = new Vector3(0, 0, MathHelper.ToRadians(90));
+            blades[2].Rotation = new Vector3(0, 0, MathHelper.ToRadians(180));
+            blades[3].Rotation = new Vector3(0, 0, MathHelper.ToRadians(270));
 
             this.isWorking = isWorking;
             this.speed = speed;
-            rotationAngle = 0;
             Size = new Vector3(2, 4, 4);
         }
 
@@ -47,11 +45,13 @@ namespace Mundo04
         {
             if (isWorking)
             {
-                rotationAngle += -speed * gameTime.ElapsedGameTime.Milliseconds * 0.001f;
-                blades[0].Rotation = new Vector3(blades[0].Rotation.X, blades[0].Rotation.Y, blades[0].Rotation.Z + rotationAngle);
-                blades[1].Rotation = new Vector3(blades[1].Rotation.X, blades[1].Rotation.Y, blades[1].Rotation.Z + rotationAngle + 90);
-                blades[2].Rotation = new Vector3(blades[2].Rotation.X, blades[2].Rotation.Y, blades[2].Rotation.Z + rotationAngle + 180);
-                blades[3].Rotation = new Vector3(blades[3].Rotation.X, blades[3].Rotation.Y, blades[3].Rotation.Z + rotationAngle + 270);
+                float rotationAngle = -speed * gameTime.ElapsedGameTime.Milliseconds * 0.001f;
+                foreach (BladeModel blade in blades)
+                {
+                    blade.Rotation = new Vector3(blade.Rotation.X,
+                                                 blade.Rotation.Y,
+                                                 blade.Rotation.Z + rotationAngle);
+                }
             }
         }
 

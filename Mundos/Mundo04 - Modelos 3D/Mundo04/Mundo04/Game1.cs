@@ -57,16 +57,16 @@ namespace Mundo04
             house = new Cube(this, GraphicsDevice);
             windmills = new Windmill[]
             {
-                new Windmill(this, GraphicsDevice, random.Next(50,800)),
-                new Windmill(this, GraphicsDevice, random.Next(50,800)),
+                new Windmill(this, GraphicsDevice, random.Next(1,10)),
+                new Windmill(this, GraphicsDevice, random.Next(1,10)),
             };
 
             hero = new Hero(this, GraphicsDevice);
             tower = new Tower(this, GraphicsDevice);
             windmillModels = new WindmillModel[]
             {
-                new WindmillModel(this, GraphicsDevice, random.Next(50,800)),
-                new WindmillModel(this, GraphicsDevice, random.Next(50,800)),
+                new WindmillModel(this, GraphicsDevice, random.Next(1,10)),
+                new WindmillModel(this, GraphicsDevice, random.Next(1,10)),
             };
 
             plane.Scale = new Vector3(20, 1, 20);
@@ -75,8 +75,8 @@ namespace Mundo04
             windmills[0].Position = new Vector3(-8, 2, -8);
             windmills[1].Position = new Vector3( 8, 2, -8);
 
-            windmills[0].Rotation = new Vector3(0, 45, 0);
-            windmills[1].Rotation = new Vector3(0,-45, 0);
+            windmills[0].Rotation = new Vector3(0, MathHelper.ToRadians(45), 0);
+            windmills[1].Rotation = new Vector3(0, MathHelper.ToRadians(-45), 0);
 
             hero.Scale = new Vector3(.2f);
             hero.Position = new Vector3(0, 1.5f, 6);
@@ -87,8 +87,8 @@ namespace Mundo04
             windmillModels[0].Position = new Vector3(-8, 2, 8);
             windmillModels[1].Position = new Vector3( 8, 2, 8);
 
-            windmillModels[0].Rotation = new Vector3(0, 135, 0);
-            windmillModels[1].Rotation = new Vector3(0,-135, 0);
+            windmillModels[0].Rotation = new Vector3(0, MathHelper.ToRadians(135), 0);
+            windmillModels[1].Rotation = new Vector3(0, MathHelper.ToRadians(-135), 0);
 
             colliders = new List<GameObject>() { plane, house, windmills[0], windmills[1], hero, tower, windmillModels[0], windmillModels[1] };
 
@@ -139,15 +139,15 @@ namespace Mundo04
             //rs.FillMode = FillMode.WireFrame;
             // GraphicsDevice.RasterizerState = rs;
 
-            plane.Draw(camera);
-            house.Draw(camera);
+            plane.Draw(camera, true);
+            house.Draw(camera, true);
             foreach (Windmill windmill in windmills)
-                windmill.Draw(camera);
+                windmill.Draw(camera, true);
 
-            hero.Draw(camera);
-            tower.Draw(camera);
+            hero.Draw(camera, true);
+            tower.Draw(camera, true);
             foreach (WindmillModel windmillModel in windmillModels)
-                windmillModel.Draw(camera);
+                windmillModel.Draw(camera, true);
 
             base.Draw(gameTime);
         }

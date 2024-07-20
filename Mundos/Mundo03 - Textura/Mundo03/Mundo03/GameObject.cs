@@ -41,9 +41,7 @@ namespace Mundo03
             get { return rotation; }
             set
             {
-                rotation = new Vector3(MathHelper.ToRadians(value.X),
-                                       MathHelper.ToRadians(value.Y),
-                                       MathHelper.ToRadians(value.Z));
+                rotation = value;
                 UpdateBoundingBox(Position, Size);                                      
             }
         }
@@ -104,10 +102,9 @@ namespace Mundo03
             
         }
 
-        public void Draw(Camera camera)
+        public void Draw(Camera camera, bool showColliders = false)
         {
-            // Se quiser tirar os colisores, muda o terceiro argumento para false
-            Draw(camera, Matrix.Identity, true);
+            Draw(camera, Matrix.Identity, showColliders);
         }
         
         public virtual void Draw(Camera camera, Matrix parentWorld, bool showColliders = false)

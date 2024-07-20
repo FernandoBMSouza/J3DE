@@ -53,8 +53,8 @@ namespace Mundo02
             house = new Cube(this, GraphicsDevice);
             windmills = new Windmill[]
             {
-                new Windmill(this, GraphicsDevice, random.Next(50,800)),
-                new Windmill(this, GraphicsDevice, random.Next(50,800)),
+                new Windmill(this, GraphicsDevice, random.Next(1,10)),
+                new Windmill(this, GraphicsDevice, random.Next(1,10)),
             };
 
             plane.Scale = new Vector3(20, 1, 20);
@@ -63,8 +63,8 @@ namespace Mundo02
             windmills[0].Position = new Vector3(-8, 2,0);
             windmills[1].Position = new Vector3( 8, 2,0);
 
-            windmills[0].Rotation = new Vector3(0, 45, 0);
-            windmills[1].Rotation = new Vector3(0,-45, 0);
+            windmills[0].Rotation = new Vector3(0, MathHelper.ToRadians(45), 0);
+            windmills[1].Rotation = new Vector3(0, MathHelper.ToRadians(-45), 0);
 
             colliders = new List<GameObject>() { plane, house, windmills[0], windmills[1] };
 
