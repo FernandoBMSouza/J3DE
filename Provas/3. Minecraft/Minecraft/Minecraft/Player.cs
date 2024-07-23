@@ -8,7 +8,7 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace Minecraft
 {
-    class Player : Character
+    public class Player : Character
     {
         public Player(Game1 game, GraphicsDevice device)
             : base(game, device, game.Content.Load<Texture2D>(@"Images\steve"))
@@ -18,19 +18,19 @@ namespace Minecraft
 
         protected override void ChangeState(GameTime gameTime)
         {
-            if (Keyboard.GetState().IsKeyDown(Keys.Up))
+            if (Keyboard.GetState().IsKeyDown(Keys.W) || Keyboard.GetState().IsKeyDown(Keys.Up))
             {
                 state = STATE.FRONT;
             }
-            else if (Keyboard.GetState().IsKeyDown(Keys.Down))
+            else if (Keyboard.GetState().IsKeyDown(Keys.S) || Keyboard.GetState().IsKeyDown(Keys.Down))
             {
                 state = STATE.BACK;
             }
-            else if (Keyboard.GetState().IsKeyDown(Keys.Left))
+            else if (Keyboard.GetState().IsKeyDown(Keys.D) || Keyboard.GetState().IsKeyDown(Keys.Right))
             {
                 state = STATE.LEFT;
             }
-            else if (Keyboard.GetState().IsKeyDown(Keys.Right))
+            else if (Keyboard.GetState().IsKeyDown(Keys.A) || Keyboard.GetState().IsKeyDown(Keys.Left))
             {
                 state = STATE.RIGHT;
             }

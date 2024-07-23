@@ -47,13 +47,14 @@ namespace Minecraft
             int seed = (int)DateTime.Now.Ticks % int.MaxValue;
             random = new Random(seed);
 
-            camera = new Camera(this);
 
             plane = new Quad(this, GraphicsDevice);
             plane.Scale = new Vector3(20, 1, 20);
 
             player = new Player(this, GraphicsDevice);
             player.Position = new Vector3(0, player.Size.Y / 2, 0);
+
+            camera = new Camera(this, player);
 
             characters = new List<Character>() { player };
 
@@ -86,7 +87,7 @@ namespace Minecraft
             if (Keyboard.GetState().IsKeyDown(Keys.Escape))
                 this.Exit();
 
-            camera.Update(gameTime);
+            camera.Update(gameTime, player);
             player.Update(gameTime);
             foreach (Enemy enemy in enemies) enemy.Update(gameTime);
             
