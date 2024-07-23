@@ -1,0 +1,9 @@
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Auxilares\SplitScreen\SplitScreen\SplitScreen\bin\x86\Debug\Content\Ship.xnb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Auxilares\SplitScreen\SplitScreen\SplitScreen\bin\x86\Debug\Content\ShipTexture.xnb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Auxilares\SplitScreen\SplitScreen\SplitScreen\bin\x86\Debug\Content\ShipTexture_0.xnb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Auxilares\SplitScreen\SplitScreen\SplitScreen\bin\x86\Debug\SplitScreen.exe
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Auxilares\SplitScreen\SplitScreen\SplitScreen\bin\x86\Debug\SplitScreen.pdb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Auxilares\SplitScreen\SplitScreen\SplitScreen\obj\x86\Debug\SplitScreen.csprojResolveAssemblyReference.cache
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Auxilares\SplitScreen\SplitScreen\SplitScreen\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Auxilares\SplitScreen\SplitScreen\SplitScreen\obj\x86\Debug\SplitScreen.exe
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Auxilares\SplitScreen\SplitScreen\SplitScreen\obj\x86\Debug\SplitScreen.pdb

@@ -1,20 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <ProjectGuid>{4A465BE7-3DCC-4BA3-8349-3F2EC29A1A33}</ProjectGuid>
+    <ProjectGuid>{DED0603D-B166-48AF-BDA1-D0546FFFAA86}</ProjectGuid>
     <ProjectTypeGuids>{6D335F3A-9D43-41b4-9D22-F6F17C4BE596};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Helicopter</RootNamespace>
-    <AssemblyName>Helicopter</AssemblyName>
+    <RootNamespace>SplitScreen</RootNamespace>
+    <AssemblyName>SplitScreen</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <TargetFrameworkProfile>Client</TargetFrameworkProfile>
     <XnaFrameworkVersion>v4.0</XnaFrameworkVersion>
     <XnaPlatform>Windows</XnaPlatform>
     <XnaProfile>HiDef</XnaProfile>
-    <XnaCrossPlatformGroupID>cb4c657c-aa90-476b-a92c-58b7d71f9ccf</XnaCrossPlatformGroupID>
+    <XnaCrossPlatformGroupID>8a4d2f67-71f6-47ce-a6ee-a3c1266d0fb4</XnaCrossPlatformGroupID>
     <XnaOutputType>Game</XnaOutputType>
     <ApplicationIcon>Game.ico</ApplicationIcon>
     <Thumbnail>GameThumbnail.png</Thumbnail>
@@ -107,25 +107,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Blade.cs" />
-    <Compile Include="Cube.cs" />
-    <Compile Include="GameObject.cs" />
-    <Compile Include="Helicopter.cs" />
-    <Compile Include="LineBox.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Game1.cs" />
-    <Compile Include="Quad.cs" />
-    <Compile Include="Screen.cs" />
-    <Compile Include="Camera.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Game.ico" />
     <Content Include="GameThumbnail.png" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\HelicopterContent\HelicopterContent.contentproj">
-      <Name>HelicopterContent</Name>
+    <ProjectReference Include="..\SplitScreenContent\SplitScreenContent.contentproj">
+      <Name>SplitScreenContent</Name>
       <XnaReferenceType>Content</XnaReferenceType>
     </ProjectReference>
   </ItemGroup>

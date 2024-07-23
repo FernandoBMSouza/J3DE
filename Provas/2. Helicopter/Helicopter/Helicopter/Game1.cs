@@ -18,7 +18,8 @@ namespace Helicopter
         Random random;
 
         Screen screen;
-        Camera camera;
+
+        Camera[] cameras;
 
         Quad plane;
         Cube[] cubes;
@@ -26,6 +27,11 @@ namespace Helicopter
         Helicopter helicopter;
 
         List<GameObject> colliders;
+
+        private Viewport topViewport;
+        private Viewport frontViewport;
+        private Viewport leftViewport;
+        private Viewport rightViewport;
 
         public Game1()
         {
@@ -48,8 +54,52 @@ namespace Helicopter
             int seed = (int)DateTime.Now.Ticks % int.MaxValue;
             random = new Random(seed);
 
-            camera = new Camera(this);
+            //camera = new Camera(this);
+            cameras = new Camera[4]
+            {
+                new Camera(),
+                new Camera(),
+                new Camera(),
+                new Camera(),
+            };
 
+            cameras[0].SetupView(new Vector3(0, 20, 28), new Vector3(0, 0, 0), Vector3.Up); //TOP VIEW
+            cameras[1].SetupView(new Vector3(0, 5, 30), new Vector3(0, 0, 0), Vector3.Up);  //FRONT VIEW
+            cameras[2].SetupView(new Vector3(-25, 7, 25), new Vector3(0, 0, 0), Vector3.Up);//LEFT VIEW
+            cameras[3].SetupView(new Vector3(25, 7, 25), new Vector3(0, 0, 0), Vector3.Up); //RIGHT VIEW
+
+            topViewport = new Viewport();
+            topViewport.X = 0;
+            topViewport.Y = 0;
+            topViewport.Width = screen.Width / 2;
+            topViewport.Height = screen.Height / 2;
+            topViewport.MinDepth = 0;
+            topViewport.MaxDepth = 1;
+
+            frontViewport = new Viewport();
+            frontViewport.X = 0;
+            frontViewport.Y = screen.Height / 2;
+            frontViewport.Width = screen.Width / 2;
+            frontViewport.Height = screen.Height / 2;
+            frontViewport.MinDepth = 0;
+            frontViewport.MaxDepth = 1;
+
+            leftViewport = new Viewport();
+            leftViewport.X = screen.Width / 2;
+            leftViewport.Y = 0;
+            leftViewport.Width = screen.Width / 2;
+            leftViewport.Height = screen.Height / 2;
+            leftViewport.MinDepth = 0;
+            leftViewport.MaxDepth = 1;
+
+            rightViewport = new Viewport();
+            rightViewport.X = screen.Width / 2;
+            rightViewport.Y = screen.Height / 2;
+            rightViewport.Width = screen.Width / 2;
+            rightViewport.Height = screen.Height / 2;
+            rightViewport.MinDepth = 0;
+            rightViewport.MaxDepth = 1;            
+            
             plane = new Quad(this, GraphicsDevice);
             cubes = new Cube[]
             {
@@ -84,20 +134,27 @@ namespace Helicopter
             if (Keyboard.GetState().IsKeyDown(Keys.Escape))
                 this.Exit();
 
-            camera.Update(gameTime);
+            //camera.Update(gameTime);
             helicopter.Update(gameTime);
 
-            foreach (GameObject obj in colliders)
-            {
-                if (camera.IsColliding(obj.BBox))
-                {
-                    camera.RestorePosition();
-                    obj.SetColliderColor(Color.Red);
-                }
-                else obj.SetColliderColor(Color.Green);
-            }
+            //foreach (GameObject obj in colliders)
+            //{
+            //    if (camera.IsColliding(obj.BBox))
+            //    {
+            //        camera.RestorePosition();
+            //        obj.SetColliderColor(Color.Red);
+            //    }
+            //    else obj.SetColliderColor(Color.Green);
+            //}
 
             base.Update(gameTime);
+        }
+
+        private Texture2D CreatePixelTexture(GraphicsDevice graphicsDevice)
+        {
+            Texture2D texture = new Texture2D(graphicsDevice, 1, 1);
+            texture.SetData(new[] { Color.White });
+            return texture;
         }
 
         protected override void Draw(GameTime gameTime)
@@ -109,10 +166,33 @@ namespace Helicopter
             //rs.FillMode = FillMode.WireFrame;
             // GraphicsDevice.RasterizerState = rs;
 
-            plane.Draw(camera);
-            helicopter.Draw(camera);
+            Viewport original = graphics.GraphicsDevice.Viewport;
+
+            graphics.GraphicsDevice.Viewport = topViewport;
+            plane.Draw(cameras[0]);
+            helicopter.Draw(cameras[0]);
             foreach (Cube cube in cubes)
-                cube.Draw(camera);
+                cube.Draw(cameras[0]);
+
+            graphics.GraphicsDevice.Viewport = leftViewport;
+            plane.Draw(cameras[1]);
+            helicopter.Draw(cameras[1]);
+            foreach (Cube cube in cubes)
+                cube.Draw(cameras[1]);
+
+            graphics.GraphicsDevice.Viewport = frontViewport;
+            plane.Draw(cameras[2]);
+            helicopter.Draw(cameras[2]);
+            foreach (Cube cube in cubes)
+                cube.Draw(cameras[2]);
+
+            graphics.GraphicsDevice.Viewport = rightViewport;
+            plane.Draw(cameras[3]);
+            helicopter.Draw(cameras[3]);
+            foreach (Cube cube in cubes)
+                cube.Draw(cameras[3]);
+
+            GraphicsDevice.Viewport = original;
 
             base.Draw(gameTime);
         }
