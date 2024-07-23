@@ -1,0 +1,2 @@
+Content\Textures\paisagem.xnb
+Content\Effects\Effect1.xnb

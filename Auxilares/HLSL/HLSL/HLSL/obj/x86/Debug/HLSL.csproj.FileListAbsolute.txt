@@ -1,0 +1,8 @@
+C:\Users\ferna\OneDrive\Documents\J3DE\Auxilares\HLSL\HLSL\HLSL\bin\x86\Debug\Content\Textures\paisagem.xnb
+C:\Users\ferna\OneDrive\Documents\J3DE\Auxilares\HLSL\HLSL\HLSL\bin\x86\Debug\Content\Effects\Effect1.xnb
+C:\Users\ferna\OneDrive\Documents\J3DE\Auxilares\HLSL\HLSL\HLSL\bin\x86\Debug\HLSL.exe
+C:\Users\ferna\OneDrive\Documents\J3DE\Auxilares\HLSL\HLSL\HLSL\bin\x86\Debug\HLSL.pdb
+C:\Users\ferna\OneDrive\Documents\J3DE\Auxilares\HLSL\HLSL\HLSL\obj\x86\Debug\HLSL.csprojResolveAssemblyReference.cache
+C:\Users\ferna\OneDrive\Documents\J3DE\Auxilares\HLSL\HLSL\HLSL\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\ferna\OneDrive\Documents\J3DE\Auxilares\HLSL\HLSL\HLSL\obj\x86\Debug\HLSL.exe
+C:\Users\ferna\OneDrive\Documents\J3DE\Auxilares\HLSL\HLSL\HLSL\obj\x86\Debug\HLSL.pdb
