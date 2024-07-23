@@ -1,2 +1,4 @@
+Content\Images\steve.xnb
 Content\Images\bricks.xnb
 Content\Images\grass.xnb
+Content\Images\zombie.xnb

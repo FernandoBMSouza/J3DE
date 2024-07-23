@@ -25,32 +25,39 @@ namespace Minecraft
         protected float moveSpeed;
         protected static Random random;
 
-        public Character(Game1 game, GraphicsDevice device)
+        public Character(Game1 game, GraphicsDevice device, Texture2D texture)
             : base(game, device)
         {
             state = STATE.IDLE;
             random = new Random();
             moveSpeed = 2;
-            Size = new Vector3(4, 7f, 2);
+            Size = new Vector3(4, 8, 2);
             oldPosition = Position;
 
-            cubes = new Cube[6];
-            for (int i = 0; i < cubes.Length; i++)
-                cubes[i] = new Cube(game, device);
+            cubes = new Cube[]
+            {
+                new Head(game, device, texture),             
+                new Body(game, device, texture),              
+                new Arm(game, device, texture),              
+                new Arm(game, device, texture),              
+                new Leg(game, device, texture),              
+                new Leg(game, device, texture),              
+            };
 
             //SETUP
-            cubes[0].Position = new Vector3( 0, 2.5f, 0);
-            cubes[1].Position = new Vector3( 0, 0, 0);
-            cubes[2].Position = new Vector3(-1.5f, 0, 0);
-            cubes[3].Position = new Vector3( 1.5f, 0, 0);
-            cubes[4].Position = new Vector3(-.5f,-3, 0);
-            cubes[5].Position = new Vector3( .5f,-3, 0);
+            cubes[0].Position = new Vector3( 0,  3, 0);
+            cubes[1].Position = new Vector3( 0,.5f, 0);
+            cubes[2].Position = new Vector3(-1.5f,.5f, 0);
+            cubes[3].Position = new Vector3( 1.5f,.5f, 0);
+            cubes[4].Position = new Vector3(-.5f,-2.5f, 0);
+            cubes[5].Position = new Vector3( .5f,-2.5f, 0);
 
-            cubes[1].Scale = new Vector3(  1, 1.5f,   1);
-            cubes[2].Scale = new Vector3(.5f, 1.5f, .5f);
-            cubes[3].Scale = new Vector3(.5f, 1.5f, .5f);
-            cubes[4].Scale = new Vector3(.5f, 2, 1);
-            cubes[5].Scale = new Vector3(.5f, 2, 1);
+            cubes[0].Scale = new Vector3(  1,    1, 1);
+            cubes[1].Scale = new Vector3(  1, 1.5f,.5f);
+            cubes[2].Scale = new Vector3(.5f, 1.5f,.5f);
+            cubes[3].Scale = new Vector3(.5f, 1.5f,.5f);
+            cubes[4].Scale = new Vector3(.5f, 1.5f,.5f);
+            cubes[5].Scale = new Vector3(.5f, 1.5f,.5f);
 
             Scale = new Vector3(.2f, .2f, .2f);
         }

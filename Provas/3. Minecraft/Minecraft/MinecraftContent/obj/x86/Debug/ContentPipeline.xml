@@ -2,12 +2,21 @@
 <XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
   <Asset Type="Pipeline:BuildItemCollection">
     <Item>
+      <Source>Images\steve.png</Source>
+      <Name>Images\steve</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Provas\3. Minecraft\Minecraft\Minecraft\bin\x86\Debug\Content\Images\steve.xnb</Output>
+      <Time>2024-07-23T08:11:55.1074375-03:00</Time>
+    </Item>
+    <Item>
       <Source>Images\bricks.png</Source>
       <Name>Images\bricks</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Provas\Minecraft\Minecraft\Minecraft\bin\x86\Debug\Content\Images\bricks.xnb</Output>
+      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Provas\3. Minecraft\Minecraft\Minecraft\bin\x86\Debug\Content\Images\bricks.xnb</Output>
       <Time>2024-07-22T15:29:40.0509162-03:00</Time>
     </Item>
     <Item>
@@ -16,8 +25,17 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Provas\Minecraft\Minecraft\Minecraft\bin\x86\Debug\Content\Images\grass.xnb</Output>
-      <Time>2024-07-22T15:29:40.0529165-03:00</Time>
+      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Provas\3. Minecraft\Minecraft\Minecraft\bin\x86\Debug\Content\Images\grass.xnb</Output>
+      <Time>2024-07-23T11:36:57.1956711-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Images\zombie.png</Source>
+      <Name>Images\zombie</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Provas\3. Minecraft\Minecraft\Minecraft\bin\x86\Debug\Content\Images\zombie.xnb</Output>
+      <Time>2024-07-23T10:47:16.1221365-03:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -25,10 +43,10 @@
       <TargetProfile>HiDef</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Provas\Minecraft\Minecraft\MinecraftContent\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Provas\Minecraft\Minecraft\Minecraft\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Provas\Minecraft\Minecraft\MinecraftContent\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Provas\Minecraft\Minecraft\Minecraft\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Provas\3. Minecraft\Minecraft\MinecraftContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Provas\3. Minecraft\Minecraft\Minecraft\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Provas\3. Minecraft\Minecraft\MinecraftContent\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Provas\3. Minecraft\Minecraft\Minecraft\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>

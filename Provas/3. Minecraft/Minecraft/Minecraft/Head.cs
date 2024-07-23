@@ -5,10 +5,10 @@ using Microsoft.Xna.Framework;
 
 namespace Minecraft
 {
-    public class Cube : GameObject
+    public class Head : Cube
     {
-        public Cube(Game game, GraphicsDevice device, Texture2D texture)
-            : base(game, device)
+        public Head(Game game, GraphicsDevice device, Texture2D texture)
+            : base(game, device, texture)
         {
             Size = new Vector3(2, 2, 2);
 #if USE_TEXTURE
@@ -16,58 +16,58 @@ namespace Minecraft
             Vertices = new VertexPositionTexture[] 
             {
                 //DIREITA
-                new VertexPositionTexture(new Vector3(1, 1, 1), new Vector2(0,0)),
-                new VertexPositionTexture(new Vector3(1, 1,-1), new Vector2(1,0)),
-                new VertexPositionTexture(new Vector3(1,-1, 1), new Vector2(0,1)),
+                new VertexPositionTexture(new Vector3(1, 1, 1), new Vector2(8,8) / 64f),
+                new VertexPositionTexture(new Vector3(1, 1,-1), new Vector2(0,8) / 64f),
+                new VertexPositionTexture(new Vector3(1,-1, 1), new Vector2(8,16) / 64f),
 
-                new VertexPositionTexture(new Vector3(1,-1, 1), new Vector2(0,1)),
-                new VertexPositionTexture(new Vector3(1, 1,-1), new Vector2(1,0)),
-                new VertexPositionTexture(new Vector3(1,-1,-1), new Vector2(1,1)),
+                new VertexPositionTexture(new Vector3(1,-1, 1), new Vector2(8,16) / 64f),
+                new VertexPositionTexture(new Vector3(1, 1,-1), new Vector2(0,8) / 64f),
+                new VertexPositionTexture(new Vector3(1,-1,-1), new Vector2(0,16) / 64f),
 
                 //ESQUERDA
-                new VertexPositionTexture(new Vector3(-1, 1, 1), new Vector2(1,0)),
-                new VertexPositionTexture(new Vector3(-1,-1, 1), new Vector2(1,1)),
-                new VertexPositionTexture(new Vector3(-1, 1,-1), new Vector2(0,0)),
+                new VertexPositionTexture(new Vector3(-1, 1, 1), new Vector2(16,8) / 64f),
+                new VertexPositionTexture(new Vector3(-1,-1, 1), new Vector2(16,16) / 64f),
+                new VertexPositionTexture(new Vector3(-1, 1,-1), new Vector2(24,8) / 64f),
 
-                new VertexPositionTexture(new Vector3(-1,-1, 1), new Vector2(1,1)),
-                new VertexPositionTexture(new Vector3(-1,-1,-1), new Vector2(0,1)),
-                new VertexPositionTexture(new Vector3(-1, 1,-1), new Vector2(0,0)),
+                new VertexPositionTexture(new Vector3(-1,-1, 1), new Vector2(16,16) / 64f),
+                new VertexPositionTexture(new Vector3(-1,-1,-1), new Vector2(24,16) / 64f),
+                new VertexPositionTexture(new Vector3(-1, 1,-1), new Vector2(24,8) / 64f),
 
                 //TRASEIRA
-                new VertexPositionTexture(new Vector3(-1,-1,-1), new Vector2(1,1)),
-                new VertexPositionTexture(new Vector3( 1,-1,-1), new Vector2(0,1)),
-                new VertexPositionTexture(new Vector3(-1, 1,-1), new Vector2(1,0)),
+                new VertexPositionTexture(new Vector3(-1,-1,-1), new Vector2(24,16) / 64f),
+                new VertexPositionTexture(new Vector3( 1,-1,-1), new Vector2(32,16) / 64f),
+                new VertexPositionTexture(new Vector3(-1, 1,-1), new Vector2(24,8) / 64f),
 
-                new VertexPositionTexture(new Vector3(-1, 1,-1), new Vector2(1,0)),
-                new VertexPositionTexture(new Vector3( 1,-1,-1), new Vector2(0,1)),
-                new VertexPositionTexture(new Vector3( 1, 1,-1), new Vector2(0,0)),
+                new VertexPositionTexture(new Vector3(-1, 1,-1), new Vector2(24,8) / 64f),
+                new VertexPositionTexture(new Vector3( 1,-1,-1), new Vector2(32,16) / 64f),
+                new VertexPositionTexture(new Vector3( 1, 1,-1), new Vector2(32,8) / 64f),
 
-                //FRENTE
-                new VertexPositionTexture(new Vector3(-1,-1, 1), new Vector2(0,1)),
-                new VertexPositionTexture(new Vector3(-1, 1, 1), new Vector2(0,0)),
-                new VertexPositionTexture(new Vector3( 1, 1, 1), new Vector2(1,0)),
+                // FRENTE
+                new VertexPositionTexture(new Vector3(-1,-1, 1), new Vector2(8, 16) / 64f),
+                new VertexPositionTexture(new Vector3(-1, 1, 1), new Vector2(8, 8) / 64f),
+                new VertexPositionTexture(new Vector3( 1, 1, 1), new Vector2(16, 8) / 64f),
 
-                new VertexPositionTexture(new Vector3(-1,-1, 1), new Vector2(0,1)),
-                new VertexPositionTexture(new Vector3( 1, 1, 1), new Vector2(1,0)),
-                new VertexPositionTexture(new Vector3( 1,-1, 1), new Vector2(1,1)),
+                new VertexPositionTexture(new Vector3(-1,-1, 1), new Vector2(8, 16) / 64f),
+                new VertexPositionTexture(new Vector3( 1, 1, 1), new Vector2(16, 8) / 64f),
+                new VertexPositionTexture(new Vector3( 1,-1, 1), new Vector2(16, 16) / 64f),
 
                 // BASE
-                new VertexPositionTexture(new Vector3(-1,-1, 1), new Vector2(0,0)),
-                new VertexPositionTexture(new Vector3( 1,-1,-1), new Vector2(1,1)),
-                new VertexPositionTexture(new Vector3(-1,-1,-1), new Vector2(0,1)),
+                new VertexPositionTexture(new Vector3(-1,-1, 1), new Vector2(16,8) / 64f),
+                new VertexPositionTexture(new Vector3( 1,-1,-1), new Vector2(24,0) / 64f),
+                new VertexPositionTexture(new Vector3(-1,-1,-1), new Vector2(16,0) / 64f),
 
-                new VertexPositionTexture(new Vector3(-1,-1, 1), new Vector2(0,0)),
-                new VertexPositionTexture(new Vector3( 1,-1, 1), new Vector2(1,0)),
-                new VertexPositionTexture(new Vector3( 1,-1,-1), new Vector2(1,1)),
+                new VertexPositionTexture(new Vector3(-1,-1, 1), new Vector2(16,8) / 64f),
+                new VertexPositionTexture(new Vector3( 1,-1, 1), new Vector2(24,8) / 64f),
+                new VertexPositionTexture(new Vector3( 1,-1,-1), new Vector2(24,0) / 64f),
 
                 //TOPO
-                new VertexPositionTexture(new Vector3(-1, 1, 1), new Vector2(0,1)),
-                new VertexPositionTexture(new Vector3(-1, 1,-1), new Vector2(0,0)),
-                new VertexPositionTexture(new Vector3( 1, 1,-1), new Vector2(1,0)),
+                new VertexPositionTexture(new Vector3(-1, 1, 1), new Vector2(8,8) / 64f),
+                new VertexPositionTexture(new Vector3(-1, 1,-1), new Vector2(8,0) / 64f),
+                new VertexPositionTexture(new Vector3( 1, 1,-1), new Vector2(16,0) / 64f),
 
-                new VertexPositionTexture(new Vector3(-1, 1, 1), new Vector2(0,1)),
-                new VertexPositionTexture(new Vector3( 1, 1,-1), new Vector2(1,0)),
-                new VertexPositionTexture(new Vector3( 1, 1, 1), new Vector2(1,1)),
+                new VertexPositionTexture(new Vector3(-1, 1, 1), new Vector2(8,8) / 64f),
+                new VertexPositionTexture(new Vector3( 1, 1,-1), new Vector2(16,0) / 64f),
+                new VertexPositionTexture(new Vector3( 1, 1, 1), new Vector2(16,8) / 64f),
             };
 #else
             Vertices = new VertexPositionColor[]

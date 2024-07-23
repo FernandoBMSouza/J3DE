@@ -6,3 +6,13 @@ C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Provas\Minecraft\Minecraft\Minecr
 C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Provas\Minecraft\Minecraft\Minecraft\obj\x86\Debug\Minecraft.pdb
 C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Provas\Minecraft\Minecraft\Minecraft\bin\x86\Debug\Content\Images\bricks.xnb
 C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Provas\Minecraft\Minecraft\Minecraft\bin\x86\Debug\Content\Images\grass.xnb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Provas\3. Minecraft\Minecraft\Minecraft\bin\x86\Debug\Content\Images\steve.xnb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Provas\3. Minecraft\Minecraft\Minecraft\bin\x86\Debug\Content\Images\bricks.xnb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Provas\3. Minecraft\Minecraft\Minecraft\bin\x86\Debug\Content\Images\grass.xnb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Provas\3. Minecraft\Minecraft\Minecraft\bin\x86\Debug\Minecraft.exe
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Provas\3. Minecraft\Minecraft\Minecraft\bin\x86\Debug\Minecraft.pdb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Provas\3. Minecraft\Minecraft\Minecraft\obj\x86\Debug\Minecraft.csprojResolveAssemblyReference.cache
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Provas\3. Minecraft\Minecraft\Minecraft\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Provas\3. Minecraft\Minecraft\Minecraft\obj\x86\Debug\Minecraft.exe
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Provas\3. Minecraft\Minecraft\Minecraft\obj\x86\Debug\Minecraft.pdb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Provas\3. Minecraft\Minecraft\Minecraft\bin\x86\Debug\Content\Images\zombie.xnb

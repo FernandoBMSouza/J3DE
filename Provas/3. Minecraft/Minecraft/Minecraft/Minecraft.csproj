@@ -107,11 +107,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Arm.cs" />
+    <Compile Include="Body.cs" />
     <Compile Include="Camera.cs" />
     <Compile Include="Character.cs" />
     <Compile Include="Cube.cs" />
     <Compile Include="Enemy.cs" />
     <Compile Include="GameObject.cs" />
+    <Compile Include="Head.cs" />
+    <Compile Include="Leg.cs" />
     <Compile Include="LineBox.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
