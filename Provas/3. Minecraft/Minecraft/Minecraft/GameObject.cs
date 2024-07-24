@@ -1,5 +1,4 @@
-﻿#define USE_TEXTURE
-using System;
+﻿using System;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
@@ -57,12 +56,8 @@ namespace Minecraft
 
         public LineBox LBox { get; protected set; }
         public BoundingBox BBox { get; private set; }
-#if USE_TEXTURE
         protected Texture2D Texture { get; set; }
         protected VertexPositionTexture[] Vertices { get; set; }
-#else
-        protected VertexPositionColor[] Vertices { get; set; }
-#endif
 
         public GameObject(Game game, GraphicsDevice device)
         {
@@ -73,19 +68,11 @@ namespace Minecraft
 
             if (Vertices != null)
             {
-#if USE_TEXTURE
                 buffer = new VertexBuffer(device,
                                           typeof(VertexPositionTexture),
                                           Vertices.Length,
                                           BufferUsage.None);
                 buffer.SetData<VertexPositionTexture>(Vertices);
-#else
-                buffer = new VertexBuffer(device, 
-                                          typeof(VertexPositionColor), 
-                                          Vertices.Length, 
-                                          BufferUsage.None);
-                buffer.SetData<VertexPositionColor>(Vertices);
-#endif
             }
 
             effect = new BasicEffect(device);
@@ -120,8 +107,6 @@ namespace Minecraft
             effect.World = result;
             effect.View = camera.View;
             effect.Projection = camera.Projection;
-
-#if USE_TEXTURE
             effect.TextureEnabled = true;
             effect.Texture = Texture;
 
@@ -135,19 +120,6 @@ namespace Minecraft
                                                                    Vertices.Length / 3);
             }
             effect.TextureEnabled = false;
-#else
-            effect.VertexColorEnabled = true;
-            foreach (EffectPass pass in effect.CurrentTechnique.Passes)
-            {
-                pass.Apply();
-                if (Vertices != null)
-                    device.DrawUserPrimitives<VertexPositionColor>(PrimitiveType.TriangleList,
-                                                                   Vertices,
-                                                                   0,
-                                                                   Vertices.Length / 3);
-            }
-            effect.VertexColorEnabled = false;
-#endif
 
             if (showColliders) LBox.Draw(effect);
         }
