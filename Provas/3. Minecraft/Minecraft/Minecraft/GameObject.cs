@@ -6,9 +6,7 @@ namespace Minecraft
 {
     public abstract class GameObject
     {
-        private GraphicsDevice device;
         private VertexBuffer buffer;
-        protected BasicEffect effect;
         private Game game;
 
         private Vector3 size;
@@ -58,30 +56,29 @@ namespace Minecraft
         public BoundingBox BBox { get; private set; }
         protected Texture2D Texture { get; set; }
         protected VertexPositionTexture[] Vertices { get; set; }
+        public BasicEffect effect { get; set; }
 
-        public GameObject(Game game, GraphicsDevice device)
+        public GameObject(Game game)
         {
             this.game = game;
-            this.device = device;
             Vertices = null;
             Texture = null;
 
-            if (Vertices != null)
-            {
-                buffer = new VertexBuffer(device,
-                                          typeof(VertexPositionTexture),
-                                          Vertices.Length,
-                                          BufferUsage.None);
-                buffer.SetData<VertexPositionTexture>(Vertices);
-            }
-
-            effect = new BasicEffect(device);
-
+            effect = new BasicEffect(game.GraphicsDevice);
             Scale = Vector3.One;
             Rotation = Vector3.Zero;
             Position = Vector3.Zero;
 
             Size = Vector3.One;
+
+            if (Vertices != null)
+            {
+                buffer = new VertexBuffer(game.GraphicsDevice,
+                                          typeof(VertexPositionTexture),
+                                          Vertices.Length,
+                                          BufferUsage.None);
+                buffer.SetData<VertexPositionTexture>(Vertices);
+            }
         }
 
         public virtual void Update(GameTime gameTime)
@@ -97,7 +94,7 @@ namespace Minecraft
         public virtual void Draw(Camera camera, Matrix parentWorld, bool showColliders = false)
         {
             if (Vertices != null)
-                device.SetVertexBuffer(buffer);
+                game.GraphicsDevice.SetVertexBuffer(buffer);
 
             Matrix localMatrix = Matrix.CreateScale(Scale)
                                  * Matrix.CreateFromYawPitchRoll(Rotation.Y, Rotation.X, Rotation.Z)
@@ -114,7 +111,7 @@ namespace Minecraft
             {
                 pass.Apply();
                 if (Vertices != null)
-                    device.DrawUserPrimitives<VertexPositionTexture>(PrimitiveType.TriangleList,
+                    game.GraphicsDevice.DrawUserPrimitives<VertexPositionTexture>(PrimitiveType.TriangleList,
                                                                    Vertices,
                                                                    0,
                                                                    Vertices.Length / 3);

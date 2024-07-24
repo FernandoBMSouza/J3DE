@@ -12,8 +12,8 @@ namespace Minecraft
         private float currentTime;
         private const float GAP = 1.0f;
 
-        public Enemy(Game1 game, GraphicsDevice device)
-            : base(game, device, game.Content.Load<Texture2D>(@"Images\zombie"))
+        public Enemy(Game1 game)
+            : base(game, game.Content.Load<Texture2D>(@"Images\zombie"))
         {
             currentTime = 0;
             state = (STATE)random.Next(1, 5);

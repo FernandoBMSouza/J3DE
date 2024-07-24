@@ -48,10 +48,10 @@ namespace Minecraft
             random = new Random(seed);
 
 
-            plane = new Quad(this, GraphicsDevice);
+            plane = new Quad(this);
             plane.Scale = new Vector3(20, 1, 20);
 
-            player = new Player(this, GraphicsDevice);
+            player = new Player(this);
             player.Position = new Vector3(0, player.Size.Y / 2, 0);
 
             camera = new Camera(this, player);
@@ -60,7 +60,7 @@ namespace Minecraft
 
             enemies = new Enemy[50];
             for (int i = 0; i < enemies.Length; i++)
-                enemies[i] = new Enemy(this, GraphicsDevice);
+                enemies[i] = new Enemy(this);
 
             foreach (Enemy enemy in enemies)
             {
@@ -101,7 +101,10 @@ namespace Minecraft
 
                     enemy.SetColliderColor(Color.Red);
                 }
-                else enemy.SetColliderColor(Color.Green);
+                else
+                {
+                    enemy.SetColliderColor(Color.Green);
+                }
             }
 
             // Checa se saiu do cenario
@@ -113,8 +116,6 @@ namespace Minecraft
                     character.RestorePosition();
                 }
             }
-
-            
 
             base.Update(gameTime);
         }

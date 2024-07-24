@@ -10,8 +10,8 @@ namespace Minecraft
 {
     public class Player : Character
     {
-        public Player(Game1 game, GraphicsDevice device)
-            : base(game, device, game.Content.Load<Texture2D>(@"Images\steve"))
+        public Player(Game1 game)
+            : base(game, game.Content.Load<Texture2D>(@"Images\steve"))
         {
             moveSpeed = 8;
         }

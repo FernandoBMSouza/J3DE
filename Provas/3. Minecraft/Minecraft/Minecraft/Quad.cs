@@ -9,8 +9,8 @@ namespace Minecraft
 {
     public class Quad : GameObject
     {
-        public Quad(Game game, GraphicsDevice device)
-            : base(game, device)
+        public Quad(Game game)
+            : base(game)
         {
             Size = new Vector3(2, 0, 2);
             Texture = game.Content.Load<Texture2D>(@"Images\grass");

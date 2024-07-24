@@ -25,8 +25,8 @@ namespace Minecraft
         protected float moveSpeed;
         protected static Random random;
 
-        public Character(Game1 game, GraphicsDevice device, Texture2D texture)
-            : base(game, device)
+        public Character(Game1 game, Texture2D texture)
+            : base(game)
         {
             state = STATE.IDLE;
             random = new Random();
@@ -36,12 +36,12 @@ namespace Minecraft
 
             cubes = new Cube[]
             {
-                new Head(game, device, texture),             
-                new Body(game, device, texture),              
-                new Arm(game, device, texture),              
-                new Arm(game, device, texture),              
-                new Leg(game, device, texture),              
-                new Leg(game, device, texture),              
+                new Head(game, texture),             
+                new Body(game, texture),              
+                new Arm(game, texture),              
+                new Arm(game, texture),              
+                new Leg(game, texture),              
+                new Leg(game, texture),              
             };
 
             //SETUP

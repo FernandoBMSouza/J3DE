@@ -5,8 +5,8 @@ namespace Minecraft
 {
     public class Body : Cube
     {
-        public Body(Game game, GraphicsDevice device, Texture2D texture)
-            : base(game, device, texture)
+        public Body(Game game, Texture2D texture)
+            : base(game, texture)
         {
             Size = new Vector3(2, 2, 2);
             Texture = texture;

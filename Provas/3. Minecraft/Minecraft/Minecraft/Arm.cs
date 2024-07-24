@@ -5,8 +5,8 @@ namespace Minecraft
 {
     public class Arm : Cube
     {
-        public Arm(Game game, GraphicsDevice device, Texture2D texture)
-            : base(game, device, texture)
+        public Arm(Game game, Texture2D texture)
+            : base(game, texture)
         {
             Size = new Vector3(2, 2, 2);
             Texture = texture;
