@@ -96,7 +96,7 @@ namespace Minecraft
                 if (player.IsColliding(enemy.BBox))
                 {
                     player.RestorePosition();
-                    enemy.RestorePosition();
+                    //enemy.RestorePosition();
                     player.HitEffect();
                     player.SetColliderColor(Color.Red);
                     enemy.SetColliderColor(Color.Red);

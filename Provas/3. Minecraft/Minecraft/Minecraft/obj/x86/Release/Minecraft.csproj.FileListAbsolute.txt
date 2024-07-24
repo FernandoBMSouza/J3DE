@@ -1,0 +1,11 @@
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Provas\3. Minecraft\Minecraft\Minecraft\bin\x86\Release\Content\Images\steve.xnb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Provas\3. Minecraft\Minecraft\Minecraft\bin\x86\Release\Content\Images\bricks.xnb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Provas\3. Minecraft\Minecraft\Minecraft\bin\x86\Release\Content\Images\zombie.xnb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Provas\3. Minecraft\Minecraft\Minecraft\bin\x86\Release\Content\Images\grass.xnb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Provas\3. Minecraft\Minecraft\Minecraft\bin\x86\Release\Content\Effects\Effect1.xnb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Provas\3. Minecraft\Minecraft\Minecraft\bin\x86\Release\Content\Effects\RedEffect.xnb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Provas\3. Minecraft\Minecraft\Minecraft\bin\x86\Release\Minecraft.exe
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Provas\3. Minecraft\Minecraft\Minecraft\bin\x86\Release\Minecraft.pdb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Provas\3. Minecraft\Minecraft\Minecraft\obj\x86\Release\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Provas\3. Minecraft\Minecraft\Minecraft\obj\x86\Release\Minecraft.exe
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Provas\3. Minecraft\Minecraft\Minecraft\obj\x86\Release\Minecraft.pdb
