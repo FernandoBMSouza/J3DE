@@ -69,7 +69,6 @@ namespace Minecraft
                                              enemy.Size.Y / 2,
                                              random.Next((int)-plane.Size.Z / 2, (int)plane.Size.Z / 2));
             }
-
             base.Initialize();
         }
 
@@ -98,11 +97,15 @@ namespace Minecraft
                 {
                     player.RestorePosition();
                     //enemy.RestorePosition();
-
+                    player.HitEffect();
+                    player.SetColliderColor(Color.Red);
                     enemy.SetColliderColor(Color.Red);
+                    return;
                 }
                 else
                 {
+                    player.RestoreEffect();
+                    player.SetColliderColor(Color.Green);
                     enemy.SetColliderColor(Color.Green);
                 }
             }
@@ -129,9 +132,9 @@ namespace Minecraft
             //rs.FillMode = FillMode.WireFrame;
             // GraphicsDevice.RasterizerState = rs;
 
-            GraphicsDevice.SamplerStates[0] = SamplerState.LinearClamp;
+            // GraphicsDevice.SamplerStates[0] = SamplerState.LinearClamp;
             plane.Draw(camera, false);
-            GraphicsDevice.SamplerStates[0] = SamplerState.PointClamp;
+            // GraphicsDevice.SamplerStates[0] = SamplerState.PointClamp;
             player.Draw(camera, false);
             foreach (Enemy enemy in enemies) enemy.Draw(camera, false);
 

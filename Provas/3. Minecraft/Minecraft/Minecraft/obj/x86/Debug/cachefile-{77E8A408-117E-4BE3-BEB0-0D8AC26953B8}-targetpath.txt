@@ -2,3 +2,5 @@ Content\Images\steve.xnb
 Content\Images\bricks.xnb
 Content\Images\grass.xnb
 Content\Images\zombie.xnb
+Content\Effects\Effect1.xnb
+Content\Effects\RedEffect.xnb

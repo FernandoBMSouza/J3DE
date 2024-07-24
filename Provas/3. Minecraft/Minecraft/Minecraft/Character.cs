@@ -25,6 +25,9 @@ namespace Minecraft
         protected float moveSpeed;
         protected static Random random;
 
+        Effect defaultEffect;
+        Effect redEffect;
+
         public Character(Game1 game, Texture2D texture)
             : base(game)
         {
@@ -33,6 +36,9 @@ namespace Minecraft
             moveSpeed = 2;
             Size = new Vector3(4, 8, 2);
             oldPosition = Position;
+
+            defaultEffect = game.Content.Load<Effect>(@"Effects\Effect1");
+            redEffect = game.Content.Load<Effect>(@"Effects\RedEffect");
 
             cubes = new Cube[]
             {
@@ -143,17 +149,30 @@ namespace Minecraft
                                  * Matrix.CreateTranslation(Position);
 
             Matrix result = localMatrix * parentWorld;
-            effect.World = result;
-            effect.View = camera.View;
-            effect.Projection = camera.Projection;
+
+            effect.CurrentTechnique = effect.Techniques["Technique1"];
+            effect.Parameters["World"].SetValue(result);
+            effect.Parameters["View"].SetValue(camera.View);
+            effect.Parameters["Projection"].SetValue(camera.Projection);
+            //effect.Parameters["colorTexture"].SetValue(texture);
 
             foreach (Cube cube in cubes) cube.Draw(camera, result, false);
-            if (showColliders) LBox.Draw(effect);
+            if (showColliders) LBox.Draw(result, camera);
         }
 
         public void RestorePosition()
         {
             Position = oldPosition;
+        }
+
+        public void RestoreEffect()
+        {
+            foreach (Cube c in cubes) c.effect = defaultEffect;           
+        }
+
+        public void HitEffect()
+        {
+            foreach (Cube c in cubes) c.effect = redEffect;
         }
     }
 }

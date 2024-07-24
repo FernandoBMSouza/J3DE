@@ -7,10 +7,10 @@
       <TargetProfile>HiDef</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos Auxilares\CollisionLecture.cs\CollisionLecture.cs\CollisionLecture.csContent\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos Auxilares\CollisionLecture.cs\CollisionLecture.cs\CollisionLecture.cs\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos Auxilares\CollisionLecture.cs\CollisionLecture.cs\CollisionLecture.csContent\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos Auxilares\CollisionLecture.cs\CollisionLecture.cs\CollisionLecture.cs\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Auxilares\CollisionLecture.cs\CollisionLecture.cs\CollisionLecture.csContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Auxilares\CollisionLecture.cs\CollisionLecture.cs\CollisionLecture.cs\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Auxilares\CollisionLecture.cs\CollisionLecture.cs\CollisionLecture.csContent\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Auxilares\CollisionLecture.cs\CollisionLecture.cs\CollisionLecture.cs\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>

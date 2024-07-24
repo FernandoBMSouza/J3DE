@@ -103,12 +103,14 @@ namespace CollisionLecture.cs
             {
                 if (c.IsColliding(player.GetBoundingBox()))
                 {
-                    player.RestorePosition();
+                    player.RestorePosition(); //tire essa linha caso queira fazer um trigger
                     c.GetLineBox().SetColor(Color.Red);
-                    //return;//Caso queira trigger tira a linha de cima e use essa
+                    Window.Title = "COLIDIU";
+                    return;
                 }
                 else
                 {
+                    Window.Title = "LIVRE";
                     c.GetLineBox().SetColor(Color.Green);
                 }
             }

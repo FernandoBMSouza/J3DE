@@ -52,11 +52,12 @@ namespace Minecraft
             }
         }
 
+        public Effect effect { get; set; }
         public LineBox LBox { get; protected set; }
         public BoundingBox BBox { get; private set; }
+
         protected Texture2D Texture { get; set; }
         protected VertexPositionTexture[] Vertices { get; set; }
-        public BasicEffect effect { get; set; }
 
         public GameObject(Game game)
         {
@@ -64,7 +65,8 @@ namespace Minecraft
             Vertices = null;
             Texture = null;
 
-            effect = new BasicEffect(game.GraphicsDevice);
+            effect = game.Content.Load<Effect>(@"Effects\Effect1");
+
             Scale = Vector3.One;
             Rotation = Vector3.Zero;
             Position = Vector3.Zero;
@@ -82,7 +84,7 @@ namespace Minecraft
         }
 
         public virtual void Update(GameTime gameTime)
-        { 
+        {
             
         }
 
@@ -101,11 +103,12 @@ namespace Minecraft
                                  * Matrix.CreateTranslation(Position);
 
             Matrix result = localMatrix * parentWorld;
-            effect.World = result;
-            effect.View = camera.View;
-            effect.Projection = camera.Projection;
-            effect.TextureEnabled = true;
-            effect.Texture = Texture;
+
+            effect.CurrentTechnique = effect.Techniques["Technique1"];
+            effect.Parameters["World"].SetValue(result);
+            effect.Parameters["View"].SetValue(camera.View);
+            effect.Parameters["Projection"].SetValue(camera.Projection);
+            effect.Parameters["colorTexture"].SetValue(Texture);
 
             foreach (EffectPass pass in effect.CurrentTechnique.Passes)
             {
@@ -116,9 +119,8 @@ namespace Minecraft
                                                                    0,
                                                                    Vertices.Length / 3);
             }
-            effect.TextureEnabled = false;
 
-            if (showColliders) LBox.Draw(effect);
+            if (showColliders) LBox.Draw(result, camera);
         }
 
         public void UpdateBoundingBox(Vector3 position, Vector3 size)

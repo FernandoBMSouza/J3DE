@@ -15,11 +15,13 @@ namespace Minecraft
         IndexBuffer iBuffer;
         Color color;
         Game game;
+        BasicEffect effect;
 
         public LineBox(Game game, Vector3 size, Color color)
         {
             this.game = game;
             this.color = color;
+            effect = new BasicEffect(game.GraphicsDevice);
 
             CreateVertex(size);
             CreateVBuffer();
@@ -95,13 +97,17 @@ namespace Minecraft
                 vertices[i].Color = this.color;
         }
 
-        public void Draw(BasicEffect e)
+        public void Draw(Matrix world, Camera camera)
         {
-            e.VertexColorEnabled = true;
+            effect.VertexColorEnabled = true;
+            effect.World = world;
+            effect.View = camera.View;
+            effect.Projection = camera.Projection;
+
             game.GraphicsDevice.SetVertexBuffer(vBuffer);
             game.GraphicsDevice.Indices = iBuffer;
 
-            foreach (EffectPass pass in e.CurrentTechnique.Passes)
+            foreach (EffectPass pass in effect.CurrentTechnique.Passes)
             {
                 pass.Apply();
                 game.GraphicsDevice.DrawUserIndexedPrimitives
@@ -114,7 +120,7 @@ namespace Minecraft
                                           indexes.Length / 2);
 
             }
-            e.VertexColorEnabled = false;
+            effect.VertexColorEnabled = false;
         }
     }
 }
