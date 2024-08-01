@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="WorldManager.Worlds.BasicWorld" Collapsed="true">
+    <Position X="12" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQACAAAAAAAAgAAAAAAAAAAAAAAAgAAAAQAEAACAAA=</HashCode>
+      <FileName>Worlds\BasicWorld.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WorldManager.GameObjects.BasicWorld.Blade" Collapsed="true">
+    <Position X="2.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameObjects\BasicWorld\Blade.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WorldManager.GameObjects.BasicWorld.Building" Collapsed="true">
+    <Position X="7.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameObjects\BasicWorld\Building.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WorldManager.Camera" Collapsed="true">
+    <Position X="13.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAQAAAAAgAAIACIIAAIAAAAAABAAABAABQAgJQAAA=</HashCode>
+      <FileName>Camera.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WorldManager.GameObjects.Cube" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameObjects\Cube.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WorldManager.Game1" Collapsed="true">
+    <Position X="15.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAEEAAAgAAAwAAAAAAAAQAAAAAAAgAAAAAAAAAAAQ=</HashCode>
+      <FileName>Game1.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WorldManager.GameObjects.GameObject" Collapsed="true">
+    <Position X="5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQASAAAAAgAgoAggJKAIAACAAAAAAAIEAJAAAIAAAA=</HashCode>
+      <FileName>GameObjects\GameObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WorldManager.GameObjects.LineBox" Collapsed="true">
+    <Position X="12" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAwAACAAQAAAAAAAQAACIAAgAIAAAEAI=</HashCode>
+      <FileName>GameObjects\LineBox.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WorldManager.Program" Collapsed="true">
+    <Position X="13.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WorldManager.GameObjects.Quad" Collapsed="true">
+    <Position X="5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameObjects\Quad.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WorldManager.Screen" Collapsed="true">
+    <Position X="15.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAAAAAAAAEAABABAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Screen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WorldManager.GameObjects.BasicWorld.Windmill" Collapsed="true">
+    <Position X="9.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EgQAAAAAAAAAAgAAAAAAAAAAAAAAAQAAAAAAEAAAAAA=</HashCode>
+      <FileName>GameObjects\BasicWorld\Windmill.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

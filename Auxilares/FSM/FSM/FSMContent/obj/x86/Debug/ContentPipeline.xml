@@ -7,8 +7,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\FSM\FSM\FSM\bin\x86\Debug\Content\Images\amarelo.xnb</Output>
-      <Time>2011-07-28T03:16:32-03:00</Time>
+      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Auxilares\FSM\FSM\FSM\bin\x86\Debug\Content\Images\amarelo.xnb</Output>
+      <Time>2024-07-24T08:57:47.8899505-03:00</Time>
     </Item>
     <Item>
       <Source>Images\azul.png</Source>
@@ -16,8 +16,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\FSM\FSM\FSM\bin\x86\Debug\Content\Images\azul.xnb</Output>
-      <Time>2011-07-28T02:28:02-03:00</Time>
+      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Auxilares\FSM\FSM\FSM\bin\x86\Debug\Content\Images\azul.xnb</Output>
+      <Time>2024-07-24T08:57:47.8899505-03:00</Time>
     </Item>
     <Item>
       <Source>Images\verde.png</Source>
@@ -25,8 +25,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\FSM\FSM\FSM\bin\x86\Debug\Content\Images\verde.xnb</Output>
-      <Time>2011-07-28T03:17:06-03:00</Time>
+      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Auxilares\FSM\FSM\FSM\bin\x86\Debug\Content\Images\verde.xnb</Output>
+      <Time>2024-07-24T08:57:47.8909517-03:00</Time>
     </Item>
     <Item>
       <Source>Images\vermelho.png</Source>
@@ -34,8 +34,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\FSM\FSM\FSM\bin\x86\Debug\Content\Images\vermelho.xnb</Output>
-      <Time>2011-07-28T02:58:34-03:00</Time>
+      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Auxilares\FSM\FSM\FSM\bin\x86\Debug\Content\Images\vermelho.xnb</Output>
+      <Time>2024-07-24T08:57:47.8909517-03:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -43,10 +43,10 @@
       <TargetProfile>HiDef</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\FSM\FSM\FSMContent\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\FSM\FSM\FSM\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\FSM\FSM\FSMContent\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\FSM\FSM\FSM\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Auxilares\FSM\FSM\FSMContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Auxilares\FSM\FSM\FSM\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Auxilares\FSM\FSM\FSMContent\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Auxilares\FSM\FSM\FSM\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>

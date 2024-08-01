@@ -26,6 +26,7 @@ namespace FSM
         static Random random;
         float currentTime;
         const float GAP = 0.005f;
+        //Color color;
 
         public _GameObject(Vector2 position, Point size, ref Texture2D texture)
         {
@@ -36,6 +37,7 @@ namespace FSM
             speed = new Vector2(100, 100);
             random = new Random();
             currentTime = 0;
+            //color = new Color(random.Next(256), random.Next(256), random.Next(256));
         }
 
         public void Update(GameTime gameTime)

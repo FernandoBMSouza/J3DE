@@ -141,3 +141,19 @@ Z:\Users\Aluno\Downloads\Arkanoid_2023\Arkanoid\obj\x86\Debug\Arkanoid.csprojRes
 Z:\Users\Aluno\Downloads\Arkanoid_2023\Arkanoid\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 Z:\Users\Aluno\Downloads\Arkanoid_2023\Arkanoid\obj\x86\Debug\Arkanoid.exe
 Z:\Users\Aluno\Downloads\Arkanoid_2023\Arkanoid\obj\x86\Debug\Arkanoid.pdb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Auxilares\Arkanoid_2023-1\Arkanoid_2023-1\Arkanoid\bin\x86\Debug\Content\Images\bgOpening.xnb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Auxilares\Arkanoid_2023-1\Arkanoid_2023-1\Arkanoid\bin\x86\Debug\Content\Images\bgGameOver.xnb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Auxilares\Arkanoid_2023-1\Arkanoid_2023-1\Arkanoid\bin\x86\Debug\Content\Images\amarelo.xnb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Auxilares\Arkanoid_2023-1\Arkanoid_2023-1\Arkanoid\bin\x86\Debug\Content\Images\azul.xnb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Auxilares\Arkanoid_2023-1\Arkanoid_2023-1\Arkanoid\bin\x86\Debug\Content\Images\background.xnb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Auxilares\Arkanoid_2023-1\Arkanoid_2023-1\Arkanoid\bin\x86\Debug\Content\Images\ball.xnb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Auxilares\Arkanoid_2023-1\Arkanoid_2023-1\Arkanoid\bin\x86\Debug\Content\Images\barra.xnb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Auxilares\Arkanoid_2023-1\Arkanoid_2023-1\Arkanoid\bin\x86\Debug\Content\Images\verde.xnb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Auxilares\Arkanoid_2023-1\Arkanoid_2023-1\Arkanoid\bin\x86\Debug\Content\Images\vermelho.xnb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Auxilares\Arkanoid_2023-1\Arkanoid_2023-1\Arkanoid\bin\x86\Debug\Content\Images\bgCongrats.xnb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Auxilares\Arkanoid_2023-1\Arkanoid_2023-1\Arkanoid\bin\x86\Debug\Arkanoid.exe
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Auxilares\Arkanoid_2023-1\Arkanoid_2023-1\Arkanoid\bin\x86\Debug\Arkanoid.pdb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Auxilares\Arkanoid_2023-1\Arkanoid_2023-1\Arkanoid\obj\x86\Debug\Arkanoid.csprojResolveAssemblyReference.cache
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Auxilares\Arkanoid_2023-1\Arkanoid_2023-1\Arkanoid\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Auxilares\Arkanoid_2023-1\Arkanoid_2023-1\Arkanoid\obj\x86\Debug\Arkanoid.exe
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Auxilares\Arkanoid_2023-1\Arkanoid_2023-1\Arkanoid\obj\x86\Debug\Arkanoid.pdb

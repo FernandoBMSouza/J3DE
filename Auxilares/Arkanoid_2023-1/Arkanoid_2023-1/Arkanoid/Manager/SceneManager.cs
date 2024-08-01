@@ -8,7 +8,7 @@ namespace Arkanoid
 {    
     public class SceneManager
     {
-        static SceneManager instance = null;         
+        static SceneManager instance = null;
         SCENE currentScene;
         Scene scene = null;
         Random random;

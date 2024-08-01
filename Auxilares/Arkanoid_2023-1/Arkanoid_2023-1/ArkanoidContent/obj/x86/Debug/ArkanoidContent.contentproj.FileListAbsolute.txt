@@ -7,3 +7,4 @@ C:\Users\Juliana\Documents\Visual Studio 2010\Projects\Arkanoid_Exemplo\Arkanoid
 C:\Users\sabio\Documents\Visual Studio 2010\Projects\Arkanoid_Exemplo\ArkanoidContent\obj\x86\Debug\ArkanoidContent.contentprojResolveAssemblyReference.cache
 D:\Backup_HPPavilion14_220308\Documentos\Visual Studio 2010\Projects\Arkanoid\ArkanoidContent\obj\x86\Debug\ArkanoidContent.contentprojResolveAssemblyReference.cache
 Z:\Users\Aluno\Downloads\Arkanoid_2023\ArkanoidContent\obj\x86\Debug\ArkanoidContent.contentprojResolveAssemblyReference.cache
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Auxilares\Arkanoid_2023-1\Arkanoid_2023-1\ArkanoidContent\obj\x86\Debug\ArkanoidContent.contentprojResolveAssemblyReference.cache
