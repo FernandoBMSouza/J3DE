@@ -1,0 +1,25 @@
+c:\users\juliana\documents\visual studio 2010\Projects\Heapsort\Heapsort\bin\Debug\Heapsort.exe
+c:\users\juliana\documents\visual studio 2010\Projects\Heapsort\Heapsort\bin\Debug\Heapsort.pdb
+c:\users\juliana\documents\visual studio 2010\Projects\Heapsort\Heapsort\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\users\juliana\documents\visual studio 2010\Projects\Heapsort\Heapsort\obj\x86\Debug\Heapsort.exe
+c:\users\juliana\documents\visual studio 2010\Projects\Heapsort\Heapsort\obj\x86\Debug\Heapsort.pdb
+C:\Fabio\NAVE\2013\00_AULAS\Aulas-3003-PJ2\3oBimestre\aula16_17_18\Sort\Heapsort\Heapsort\obj\x86\Debug\Heapsort.exe
+C:\Fabio\NAVE\2013\00_AULAS\Aulas-3003-PJ2\3oBimestre\aula16_17_18\Sort\Heapsort\Heapsort\obj\x86\Debug\Heapsort.pdb
+C:\Fabio\NAVE\2013\00_AULAS\Aulas-3003-PJ2\3oBimestre\aula16_17_18\Sort\Heapsort\Heapsort\bin\Debug\Heapsort.exe
+C:\Fabio\NAVE\2013\00_AULAS\Aulas-3003-PJ2\3oBimestre\aula16_17_18\Sort\Heapsort\Heapsort\bin\Debug\Heapsort.pdb
+C:\Fabio\NAVE\2013\00_AULAS\Aulas-3003-PJ2\3oBimestre\aula16_17_18\Sort\Heapsort\Heapsort\obj\x86\Debug\Heapsort.csprojResolveAssemblyReference.cache
+D:\estudos\IFRJ\Jogos Digitais - 4º Período\IA\Aulas\Aula 05 - Algoritmos de Ordenação\Exemplos\Sort\Heapsort\Heapsort\bin\Debug\Heapsort.exe
+D:\estudos\IFRJ\Jogos Digitais - 4º Período\IA\Aulas\Aula 05 - Algoritmos de Ordenação\Exemplos\Sort\Heapsort\Heapsort\bin\Debug\Heapsort.pdb
+D:\estudos\IFRJ\Jogos Digitais - 4º Período\IA\Aulas\Aula 05 - Algoritmos de Ordenação\Exemplos\Sort\Heapsort\Heapsort\obj\x86\Debug\Heapsort.csproj.AssemblyReference.cache
+D:\estudos\IFRJ\Jogos Digitais - 4º Período\IA\Aulas\Aula 05 - Algoritmos de Ordenação\Exemplos\Sort\Heapsort\Heapsort\obj\x86\Debug\Heapsort.csproj.CoreCompileInputs.cache
+D:\estudos\IFRJ\Jogos Digitais - 4º Período\IA\Aulas\Aula 05 - Algoritmos de Ordenação\Exemplos\Sort\Heapsort\Heapsort\obj\x86\Debug\Heapsort.exe
+D:\estudos\IFRJ\Jogos Digitais - 4º Período\IA\Aulas\Aula 05 - Algoritmos de Ordenação\Exemplos\Sort\Heapsort\Heapsort\obj\x86\Debug\Heapsort.pdb
+C:\Users\ferna\OneDrive\Documents\Jogos 3D com Engines\Aulas\Inteligencia Artificial Aplicada a Jogos\Aulas\Aula 05 - Algoritmos de Ordenação\Exemplos\Sort\Heapsort\Heapsort\obj\x86\Debug\Heapsort.exe
+C:\Users\ferna\OneDrive\Documents\Jogos 3D com Engines\Aulas\Inteligencia Artificial Aplicada a Jogos\Aulas\Aula 05 - Algoritmos de Ordenação\Exemplos\Sort\Heapsort\Heapsort\obj\x86\Debug\Heapsort.pdb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Auxilares\Sort\Heapsort\Heapsort\obj\x86\Debug\Heapsort.exe
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Auxilares\Sort\Heapsort\Heapsort\obj\x86\Debug\Heapsort.pdb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Auxilares\Sort - Fabio\Heapsort\Heapsort\obj\x86\Debug\Heapsort.exe
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Auxilares\Sort - Fabio\Heapsort\Heapsort\obj\x86\Debug\Heapsort.pdb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Auxilares\Sort - Fabio\Heapsort\Heapsort\bin\Debug\Heapsort.exe
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Auxilares\Sort - Fabio\Heapsort\Heapsort\bin\Debug\Heapsort.pdb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Auxilares\Sort - Fabio\Heapsort\Heapsort\obj\x86\Debug\Heapsort.csprojResolveAssemblyReference.cache

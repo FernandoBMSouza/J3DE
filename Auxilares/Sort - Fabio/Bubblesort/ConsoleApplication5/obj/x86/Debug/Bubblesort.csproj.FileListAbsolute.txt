@@ -1,0 +1,29 @@
+C:\Users\Juliana\Documents\Visual Studio 2010\Projects\ConsoleApplication5\ConsoleApplication5\obj\x86\Debug\ConsoleApplication5.exe
+C:\Users\Juliana\Documents\Visual Studio 2010\Projects\ConsoleApplication5\ConsoleApplication5\obj\x86\Debug\ConsoleApplication5.pdb
+C:\Users\Juliana\Documents\Visual Studio 2010\Projects\Bubblesort\ConsoleApplication5\obj\x86\Debug\ConsoleApplication5.exe
+C:\Users\Juliana\Documents\Visual Studio 2010\Projects\Bubblesort\ConsoleApplication5\obj\x86\Debug\ConsoleApplication5.pdb
+C:\Users\Juliana\Documents\Visual Studio 2010\Projects\Bubblesort\ConsoleApplication5\bin\Debug\ConsoleApplication5.exe
+C:\Users\Juliana\Documents\Visual Studio 2010\Projects\Bubblesort\ConsoleApplication5\bin\Debug\ConsoleApplication5.pdb
+C:\Users\Juliana\Documents\Visual Studio 2010\Projects\Bubblesort\ConsoleApplication5\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Fabio\NAVE\2013\00_AULAS\Aulas-3003-PJ2\3oBimestre\aula16\Sort\Bubblesort\ConsoleApplication5\obj\x86\Debug\ConsoleApplication5.exe
+C:\Fabio\NAVE\2013\00_AULAS\Aulas-3003-PJ2\3oBimestre\aula16\Sort\Bubblesort\ConsoleApplication5\obj\x86\Debug\ConsoleApplication5.pdb
+C:\Fabio\NAVE\2013\00_AULAS\Aulas-3003-PJ2\3oBimestre\aula16\Sort\Bubblesort\ConsoleApplication5\bin\Debug\ConsoleApplication5.exe
+C:\Fabio\NAVE\2013\00_AULAS\Aulas-3003-PJ2\3oBimestre\aula16\Sort\Bubblesort\ConsoleApplication5\bin\Debug\ConsoleApplication5.pdb
+C:\Fabio\NAVE\2013\00_AULAS\Aulas-3003-PJ2\3oBimestre\aula16\Sort\Bubblesort\ConsoleApplication5\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Fabio\NAVE\2013\00_AULAS\Aulas-3003-PJ2\3oBimestre\aula16_17_18\Sort\Bubblesort\ConsoleApplication5\obj\x86\Debug\ConsoleApplication5.exe
+C:\Fabio\NAVE\2013\00_AULAS\Aulas-3003-PJ2\3oBimestre\aula16_17_18\Sort\Bubblesort\ConsoleApplication5\obj\x86\Debug\ConsoleApplication5.pdb
+C:\Fabio\NAVE\2013\00_AULAS\Aulas-3003-PJ2\3oBimestre\aula16_17_18\Sort\Bubblesort\ConsoleApplication5\bin\Debug\ConsoleApplication5.exe
+C:\Fabio\NAVE\2013\00_AULAS\Aulas-3003-PJ2\3oBimestre\aula16_17_18\Sort\Bubblesort\ConsoleApplication5\bin\Debug\ConsoleApplication5.pdb
+C:\Fabio\NAVE\2013\00_AULAS\Aulas-3003-PJ2\3oBimestre\aula16_17_18\Sort\Bubblesort\ConsoleApplication5\obj\x86\Debug\Bubblesort.csprojResolveAssemblyReference.cache
+D:\estudos\IFRJ\Jogos Digitais - 4º Período\IA\Aulas\Aula 05 - Algoritmos de Ordenação\Exemplos\Sort\Bubblesort\ConsoleApplication5\obj\x86\Debug\ConsoleApplication5.exe
+D:\estudos\IFRJ\Jogos Digitais - 4º Período\IA\Aulas\Aula 05 - Algoritmos de Ordenação\Exemplos\Sort\Bubblesort\ConsoleApplication5\obj\x86\Debug\ConsoleApplication5.pdb
+D:\estudos\IFRJ\Jogos Digitais - 4º Período\IA\Aulas\Aula 05 - Algoritmos de Ordenação\Exemplos\Sort\Bubblesort\ConsoleApplication5\bin\Debug\ConsoleApplication5.exe
+D:\estudos\IFRJ\Jogos Digitais - 4º Período\IA\Aulas\Aula 05 - Algoritmos de Ordenação\Exemplos\Sort\Bubblesort\ConsoleApplication5\bin\Debug\ConsoleApplication5.pdb
+D:\estudos\IFRJ\Jogos Digitais - 4º Período\IA\Aulas\Aula 05 - Algoritmos de Ordenação\Exemplos\Sort\Bubblesort\ConsoleApplication5\obj\x86\Debug\Bubblesort.csprojResolveAssemblyReference.cache
+C:\Users\ferna\OneDrive\Documents\Jogos 3D com Engines\Aulas\Inteligencia Artificial Aplicada a Jogos\Aulas\Aula 05 - Algoritmos de Ordenação\Exemplos\Sort\Bubblesort\ConsoleApplication5\obj\x86\Debug\ConsoleApplication5.exe
+C:\Users\ferna\OneDrive\Documents\Jogos 3D com Engines\Aulas\Inteligencia Artificial Aplicada a Jogos\Aulas\Aula 05 - Algoritmos de Ordenação\Exemplos\Sort\Bubblesort\ConsoleApplication5\obj\x86\Debug\ConsoleApplication5.pdb
+C:\Users\ferna\OneDrive\Documents\Jogos 3D com Engines\Aulas\Inteligencia Artificial Aplicada a Jogos\Aulas\Aula 05 - Algoritmos de Ordenação\Exemplos\Sort\Bubblesort\ConsoleApplication5\bin\Debug\ConsoleApplication5.exe
+C:\Users\ferna\OneDrive\Documents\Jogos 3D com Engines\Aulas\Inteligencia Artificial Aplicada a Jogos\Aulas\Aula 05 - Algoritmos de Ordenação\Exemplos\Sort\Bubblesort\ConsoleApplication5\bin\Debug\ConsoleApplication5.pdb
+C:\Users\ferna\OneDrive\Documents\Jogos 3D com Engines\Aulas\Inteligencia Artificial Aplicada a Jogos\Aulas\Aula 05 - Algoritmos de Ordenação\Exemplos\Sort\Bubblesort\ConsoleApplication5\obj\x86\Debug\Bubblesort.csprojResolveAssemblyReference.cache
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Auxilares\Sort\Bubblesort\ConsoleApplication5\obj\x86\Debug\ConsoleApplication5.exe
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Auxilares\Sort\Bubblesort\ConsoleApplication5\obj\x86\Debug\ConsoleApplication5.pdb

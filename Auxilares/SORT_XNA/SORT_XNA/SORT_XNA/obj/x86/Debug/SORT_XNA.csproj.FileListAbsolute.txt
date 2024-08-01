@@ -1,0 +1,7 @@
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Auxilares\SORT_XNA\SORT_XNA\SORT_XNA\bin\x86\Debug\Content\Fonts\Arial.xnb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Auxilares\SORT_XNA\SORT_XNA\SORT_XNA\bin\x86\Debug\SORT_XNA.exe
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Auxilares\SORT_XNA\SORT_XNA\SORT_XNA\bin\x86\Debug\SORT_XNA.pdb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Auxilares\SORT_XNA\SORT_XNA\SORT_XNA\obj\x86\Debug\SORT_XNA.csprojResolveAssemblyReference.cache
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Auxilares\SORT_XNA\SORT_XNA\SORT_XNA\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Auxilares\SORT_XNA\SORT_XNA\SORT_XNA\obj\x86\Debug\SORT_XNA.exe
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Auxilares\SORT_XNA\SORT_XNA\SORT_XNA\obj\x86\Debug\SORT_XNA.pdb

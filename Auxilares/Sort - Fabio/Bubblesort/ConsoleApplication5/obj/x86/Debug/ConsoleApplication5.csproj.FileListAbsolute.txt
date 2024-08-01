@@ -1,0 +1,5 @@
+c:\users\juliana\documents\visual studio 2010\Projects\ConsoleApplication5\ConsoleApplication5\bin\Debug\ConsoleApplication5.exe
+c:\users\juliana\documents\visual studio 2010\Projects\ConsoleApplication5\ConsoleApplication5\bin\Debug\ConsoleApplication5.pdb
+c:\users\juliana\documents\visual studio 2010\Projects\ConsoleApplication5\ConsoleApplication5\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\users\juliana\documents\visual studio 2010\Projects\ConsoleApplication5\ConsoleApplication5\obj\x86\Debug\ConsoleApplication5.exe
+c:\users\juliana\documents\visual studio 2010\Projects\ConsoleApplication5\ConsoleApplication5\obj\x86\Debug\ConsoleApplication5.pdb

@@ -1,0 +1,12 @@
+c:\users\juliana\documents\visual studio 2010\Projects\Quicksort\Quicksort\bin\Debug\Quicksort.exe
+c:\users\juliana\documents\visual studio 2010\Projects\Quicksort\Quicksort\bin\Debug\Quicksort.pdb
+c:\users\juliana\documents\visual studio 2010\Projects\Quicksort\Quicksort\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\users\juliana\documents\visual studio 2010\Projects\Quicksort\Quicksort\obj\x86\Debug\Quicksort.exe
+c:\users\juliana\documents\visual studio 2010\Projects\Quicksort\Quicksort\obj\x86\Debug\Quicksort.pdb
+C:\Fabio\NAVE\2013\00_AULAS\Aulas-3003-PJ2\3oBimestre\aula16_17_18\Sort\Quicksort\Quicksort\obj\x86\Debug\Quicksort.exe
+C:\Fabio\NAVE\2013\00_AULAS\Aulas-3003-PJ2\3oBimestre\aula16_17_18\Sort\Quicksort\Quicksort\obj\x86\Debug\Quicksort.pdb
+C:\Fabio\NAVE\2013\00_AULAS\Aulas-3003-PJ2\3oBimestre\aula16_17_18\Sort\Quicksort\Quicksort\bin\Debug\Quicksort.exe
+C:\Fabio\NAVE\2013\00_AULAS\Aulas-3003-PJ2\3oBimestre\aula16_17_18\Sort\Quicksort\Quicksort\bin\Debug\Quicksort.pdb
+C:\Fabio\NAVE\2013\00_AULAS\Aulas-3003-PJ2\3oBimestre\aula16_17_18\Sort\Quicksort\Quicksort\obj\x86\Debug\Quicksort.csprojResolveAssemblyReference.cache
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Auxilares\Sort\Quicksort\Quicksort\obj\x86\Debug\Quicksort.exe
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Auxilares\Sort\Quicksort\Quicksort\obj\x86\Debug\Quicksort.pdb

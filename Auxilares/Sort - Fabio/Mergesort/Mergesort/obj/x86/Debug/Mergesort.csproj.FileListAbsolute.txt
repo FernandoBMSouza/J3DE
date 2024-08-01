@@ -1,0 +1,17 @@
+c:\users\juliana\documents\visual studio 2010\Projects\Mergesort\Mergesort\bin\Debug\Mergesort.exe
+c:\users\juliana\documents\visual studio 2010\Projects\Mergesort\Mergesort\bin\Debug\Mergesort.pdb
+c:\users\juliana\documents\visual studio 2010\Projects\Mergesort\Mergesort\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\users\juliana\documents\visual studio 2010\Projects\Mergesort\Mergesort\obj\x86\Debug\Mergesort.exe
+c:\users\juliana\documents\visual studio 2010\Projects\Mergesort\Mergesort\obj\x86\Debug\Mergesort.pdb
+C:\Fabio\NAVE\2013\00_AULAS\Aulas-3003-PJ2\3oBimestre\aula16\Sort\Mergesort\Mergesort\obj\x86\Debug\Mergesort.exe
+C:\Fabio\NAVE\2013\00_AULAS\Aulas-3003-PJ2\3oBimestre\aula16\Sort\Mergesort\Mergesort\obj\x86\Debug\Mergesort.pdb
+C:\Fabio\NAVE\2013\00_AULAS\Aulas-3003-PJ2\3oBimestre\aula16\Sort\Mergesort\Mergesort\bin\Debug\Mergesort.exe
+C:\Fabio\NAVE\2013\00_AULAS\Aulas-3003-PJ2\3oBimestre\aula16\Sort\Mergesort\Mergesort\bin\Debug\Mergesort.pdb
+C:\Fabio\NAVE\2013\00_AULAS\Aulas-3003-PJ2\3oBimestre\aula16\Sort\Mergesort\Mergesort\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Fabio\NAVE\2013\00_AULAS\Aulas-3003-PJ2\3oBimestre\aula16_17_18\Sort\Mergesort\Mergesort\obj\x86\Debug\Mergesort.exe
+C:\Fabio\NAVE\2013\00_AULAS\Aulas-3003-PJ2\3oBimestre\aula16_17_18\Sort\Mergesort\Mergesort\obj\x86\Debug\Mergesort.pdb
+C:\Fabio\NAVE\2013\00_AULAS\Aulas-3003-PJ2\3oBimestre\aula16_17_18\Sort\Mergesort\Mergesort\bin\Debug\Mergesort.exe
+C:\Fabio\NAVE\2013\00_AULAS\Aulas-3003-PJ2\3oBimestre\aula16_17_18\Sort\Mergesort\Mergesort\bin\Debug\Mergesort.pdb
+C:\Fabio\NAVE\2013\00_AULAS\Aulas-3003-PJ2\3oBimestre\aula16_17_18\Sort\Mergesort\Mergesort\obj\x86\Debug\Mergesort.csprojResolveAssemblyReference.cache
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Auxilares\Sort\Mergesort\Mergesort\obj\x86\Debug\Mergesort.exe
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Auxilares\Sort\Mergesort\Mergesort\obj\x86\Debug\Mergesort.pdb

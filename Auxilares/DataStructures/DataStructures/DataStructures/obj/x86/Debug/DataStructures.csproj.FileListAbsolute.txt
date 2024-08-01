@@ -1,0 +1,10 @@
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Auxilares\DataStructures\DataStructures\DataStructures\obj\x86\Debug\DataStructures.csprojResolveAssemblyReference.cache
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Auxilares\DataStructures\DataStructures\DataStructures\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Auxilares\DataStructures\DataStructures\DataStructures\bin\x86\Debug\DataStructures.exe
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Auxilares\DataStructures\DataStructures\DataStructures\bin\x86\Debug\DataStructures.pdb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Auxilares\DataStructures\DataStructures\DataStructures\obj\x86\Debug\DataStructures.exe
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Auxilares\DataStructures\DataStructures\DataStructures\obj\x86\Debug\DataStructures.pdb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Auxilares\DataStructures\DataStructures\DataStructures\bin\x86\Debug\Content\Images\amarelo.xnb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Auxilares\DataStructures\DataStructures\DataStructures\bin\x86\Debug\Content\Images\azul.xnb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Auxilares\DataStructures\DataStructures\DataStructures\bin\x86\Debug\Content\Images\verde.xnb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Auxilares\DataStructures\DataStructures\DataStructures\bin\x86\Debug\Content\Images\vermelho.xnb
