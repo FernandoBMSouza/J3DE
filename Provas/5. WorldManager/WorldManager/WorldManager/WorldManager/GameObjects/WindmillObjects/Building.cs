@@ -5,7 +5,7 @@ using System.Text;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework;
 
-namespace WorldManager.GameObjects.BasicWorld
+namespace WorldManager.GameObjects.WindmillObjects
 {
     public class Building : GameObject
     {

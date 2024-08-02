@@ -8,3 +8,7 @@ C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Provas\5. WorldManager\WorldManag
 C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Provas\5. WorldManager\WorldManager\WorldManager\WorldManager\bin\x86\Debug\Content\Images\grass.xnb
 C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Provas\5. WorldManager\WorldManager\WorldManager\WorldManager\bin\x86\Debug\Content\Images\rocks.xnb
 C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Provas\5. WorldManager\WorldManager\WorldManager\WorldManager\bin\x86\Debug\Content\Images\wood.xnb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Provas\5. WorldManager\WorldManager\WorldManager\WorldManager\bin\x86\Debug\Content\Models\blade.xnb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Provas\5. WorldManager\WorldManager\WorldManager\WorldManager\bin\x86\Debug\Content\Models\building.xnb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Provas\5. WorldManager\WorldManager\WorldManager\WorldManager\bin\x86\Debug\Content\Models\hero.xnb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Provas\5. WorldManager\WorldManager\WorldManager\WorldManager\bin\x86\Debug\Content\Models\tower.xnb

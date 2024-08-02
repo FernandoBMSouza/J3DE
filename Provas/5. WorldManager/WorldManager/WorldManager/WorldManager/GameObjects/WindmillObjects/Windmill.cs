@@ -5,7 +5,7 @@ using System.Text;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework;
 
-namespace WorldManager.GameObjects.BasicWorld
+namespace WorldManager.GameObjects.WindmillObjects
 {
     class Windmill : GameObject
     {
@@ -15,14 +15,14 @@ namespace WorldManager.GameObjects.BasicWorld
         bool isWorking;
         float speed;
 
-        public Windmill(Game1 game, float speed, bool isWorking = true, Texture2D buildingTexture = null, Texture2D bladesTexture = null)
+        public Windmill(Game1 game, float speed, bool isWorking = true)
             : base(game)
         {
-            building = new Building(game, buildingTexture);
+            building = new Building(game, game.Textures["rocks"]);
             blades = new Blade[2];
 
             for (int i = 0; i < blades.Length; i++)
-                blades[i] = new Blade(game, bladesTexture);
+                blades[i] = new Blade(game, game.Textures["wood"]);
 
             foreach (Blade blade in blades)
             {

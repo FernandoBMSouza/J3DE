@@ -107,9 +107,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Worlds\BasicWorld.cs" />
-    <Compile Include="GameObjects\BasicWorld\Blade.cs" />
-    <Compile Include="GameObjects\BasicWorld\Building.cs" />
+    <Compile Include="GameObjects\ModelObjects\BladeModel.cs" />
+    <Compile Include="GameObjects\ModelObjects\BuildingModel.cs" />
+    <Compile Include="GameObjects\ModelObjects\Hero.cs" />
+    <Compile Include="GameObjects\ModelObjects\Tower.cs" />
+    <Compile Include="GameObjects\ModelObjects\WindmillModel.cs" />
+    <Compile Include="Worlds\BaseWorld.cs" />
+    <Compile Include="Worlds\HouseWorld.cs" />
+    <Compile Include="GameObjects\WindmillObjects\Blade.cs" />
+    <Compile Include="GameObjects\WindmillObjects\Building.cs" />
     <Compile Include="Camera.cs" />
     <Compile Include="GameObjects\Cube.cs" />
     <Compile Include="GameObjects\GameObject.cs" />
@@ -119,7 +125,9 @@
     <Compile Include="Game1.cs" />
     <Compile Include="GameObjects\Quad.cs" />
     <Compile Include="Screen.cs" />
-    <Compile Include="GameObjects\BasicWorld\Windmill.cs" />
+    <Compile Include="GameObjects\WindmillObjects\Windmill.cs" />
+    <Compile Include="Worlds\ModelWorld.cs" />
+    <Compile Include="Worlds\WindmillWorld.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Game.ico" />

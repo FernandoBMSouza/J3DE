@@ -58,6 +58,7 @@ namespace WorldManager.GameObjects
         protected Texture2D Texture { get; set; }
         protected VertexPositionTexture[] TextureVertices { get; set; }
         protected VertexPositionColor[] Vertices { get; set; }
+        protected Model Model { get; set; }
 
         public GameObject(Game1 game)
         {
@@ -65,6 +66,7 @@ namespace WorldManager.GameObjects
             Vertices = null;
             TextureVertices = null;
             Texture = null;
+            Model = null;
 
             if (Vertices != null || TextureVertices != null)
             {
@@ -145,6 +147,21 @@ namespace WorldManager.GameObjects
 
             if (Texture == null) effect.VertexColorEnabled = false;
             else effect.TextureEnabled = false;
+
+            if (Model != null)
+            {
+                foreach (ModelMesh mesh in Model.Meshes)
+                {
+                    foreach (BasicEffect be in mesh.Effects)
+                    {
+                        be.EnableDefaultLighting();
+                        be.World = localMatrix * parentWorld;
+                        be.View = camera.View;
+                        be.Projection = camera.Projection;
+                    }
+                    mesh.Draw();
+                }
+            }
 
             if (showColliders) LBox.Draw(effect);
         }

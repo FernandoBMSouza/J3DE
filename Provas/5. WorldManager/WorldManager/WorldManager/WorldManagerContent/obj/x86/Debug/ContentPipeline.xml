@@ -37,6 +37,86 @@
       <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Provas\5. WorldManager\WorldManager\WorldManager\WorldManager\bin\x86\Debug\Content\Images\wood.xnb</Output>
       <Time>2024-08-01T14:06:28.5485589-03:00</Time>
     </Item>
+    <Item>
+      <Source>Models\blade.x</Source>
+      <Name>Models\blade</Name>
+      <Importer>XImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Provas\5. WorldManager\WorldManager\WorldManager\WorldManager\bin\x86\Debug\Content\Models\blade.xnb</Output>
+      <Time>2024-08-02T13:30:50.9870144-03:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug\Models\blade_0.xml</Key>
+        <Value>2024-08-02T13:46:46.9538063-03:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>Models\building.x</Source>
+      <Name>Models\building</Name>
+      <Importer>XImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Provas\5. WorldManager\WorldManager\WorldManager\WorldManager\bin\x86\Debug\Content\Models\building.xnb</Output>
+      <Time>2024-08-02T13:30:51.0026398-03:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug\Models\building_0.xml</Key>
+        <Value>2024-08-02T13:46:47.0631889-03:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>Models\hero.x</Source>
+      <Name>Models\hero</Name>
+      <Importer>XImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Provas\5. WorldManager\WorldManager\WorldManager\WorldManager\bin\x86\Debug\Content\Models\hero.xnb</Output>
+      <Time>2024-08-02T13:30:51.0026398-03:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug\Models\hero_0.xml</Key>
+        <Value>2024-08-02T13:46:47.2819348-03:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>Models\tower.x</Source>
+      <Name>Models\tower</Name>
+      <Importer>XImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Provas\5. WorldManager\WorldManager\WorldManager\WorldManager\bin\x86\Debug\Content\Models\tower.xnb</Output>
+      <Time>2024-08-02T13:30:51.0026398-03:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug\Models\tower_0.xml</Key>
+        <Value>2024-08-02T13:46:47.3600264-03:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>Models\blade.x</Source>
+      <Importer>XImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug\Models\blade_0.xml</Output>
+      <Time>2024-08-02T13:30:50.9870144-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\building.x</Source>
+      <Importer>XImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug\Models\building_0.xml</Output>
+      <Time>2024-08-02T13:30:51.0026398-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\hero.x</Source>
+      <Importer>XImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug\Models\hero_0.xml</Output>
+      <Time>2024-08-02T13:30:51.0026398-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\tower.x</Source>
+      <Importer>XImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug\Models\tower_0.xml</Output>
+      <Time>2024-08-02T13:30:51.0026398-03:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>
