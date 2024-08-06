@@ -1,10 +1,15 @@
-﻿#define USE_TEXTURE
-using System;
+﻿using System;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
 namespace PresentationWorld
 {
+    public enum ColliderType
+    {
+        BoundingBox,
+        BoundingSphere
+    }
+
     public abstract class GameObject
     {
         private GraphicsDevice device;
@@ -23,8 +28,16 @@ namespace PresentationWorld
             protected set 
             {
                 size = value;
-                LBox = new LineBox(game, size/scale, Color.Green);
-                UpdateBoundingBox(Position, size);
+                if(Collider == ColliderType.BoundingBox) LBox = new LineBox(game, size / scale, Color.Green);
+                else if (Collider == ColliderType.BoundingSphere)
+                {
+                    Vector3 realSize = new Vector3(size.X, size.Y, size.Z) / scale;
+                    float radius = Math.Max(realSize.X, Math.Max(realSize.Y, realSize.Z)) / 2f;
+
+                    LSphere = new LineSphere(game, radius, Color.Green);
+                }
+                
+                UpdateCollider();
             }
         }
         public Vector3 Position
@@ -33,7 +46,7 @@ namespace PresentationWorld
             set
             {
                 position = value;
-                UpdateBoundingBox(position, Size);
+                UpdateCollider();
             }
         }
         public Vector3 Rotation
@@ -42,7 +55,7 @@ namespace PresentationWorld
             set
             {
                 rotation = value;
-                UpdateBoundingBox(Position, Size);                                      
+                UpdateCollider();                                      
             }
         }
         public Vector3 Scale
@@ -52,18 +65,19 @@ namespace PresentationWorld
             {
                 scale = value;
                 Size *= scale;
+                UpdateCollider();
             }
         }
 
         public LineBox LBox { get; protected set; }
+        public LineSphere LSphere { get; protected set; }
         public BoundingBox BBox { get; private set; }
+        public BoundingSphere BSphere { get; private set; }
         protected Model Model { get; set; }
-#if USE_TEXTURE
         protected Texture2D Texture { get; set; }
         protected VertexPositionTexture[] Vertices { get; set; }
-#else
-        protected VertexPositionColor[] Vertices { get; set; }
-#endif
+
+        public ColliderType Collider { get; set; }
 
         public GameObject(Game game, GraphicsDevice device)
         {
@@ -72,22 +86,15 @@ namespace PresentationWorld
             Vertices = null;
             Texture = null;
             Model = null;
+            Collider = ColliderType.BoundingBox;
 
             if (Vertices != null)
             {
-#if USE_TEXTURE
                 buffer = new VertexBuffer(device,
                                           typeof(VertexPositionTexture),
                                           Vertices.Length,
                                           BufferUsage.None);
                 buffer.SetData<VertexPositionTexture>(Vertices);
-#else
-                buffer = new VertexBuffer(device, 
-                                          typeof(VertexPositionColor), 
-                                          Vertices.Length, 
-                                          BufferUsage.None);
-                buffer.SetData<VertexPositionColor>(Vertices);
-#endif
             }
 
             effect = new BasicEffect(device);
@@ -123,7 +130,6 @@ namespace PresentationWorld
             effect.View = camera.View;
             effect.Projection = camera.Projection;
 
-#if USE_TEXTURE
             effect.TextureEnabled = true;
             effect.Texture = Texture;
 
@@ -137,19 +143,7 @@ namespace PresentationWorld
                                                                    Vertices.Length / 3);
             }
             effect.TextureEnabled = false;
-#else
-            effect.VertexColorEnabled = true;
-            foreach (EffectPass pass in effect.CurrentTechnique.Passes)
-            {
-                pass.Apply();
-                if (Vertices != null)
-                    device.DrawUserPrimitives<VertexPositionColor>(PrimitiveType.TriangleList,
-                                                                   Vertices,
-                                                                   0,
-                                                                   Vertices.Length / 3);
-            }
-            effect.VertexColorEnabled = false;
-#endif
+
             if (Model != null)
             {
                 foreach (ModelMesh mesh in Model.Meshes)
@@ -166,23 +160,70 @@ namespace PresentationWorld
                     mesh.Draw();
                 }
             }
-            if (showColliders) LBox.Draw(effect);
+            if (showColliders)
+            {
+                if (Collider == ColliderType.BoundingBox)
+                {
+                    LBox.Draw(effect);
+                }
+                else if (Collider == ColliderType.BoundingSphere)
+                {
+                    LSphere.Draw(effect);
+                }
+            }
         }
 
-        public void UpdateBoundingBox(Vector3 position, Vector3 size)
+        private void UpdateCollider()
         {
-            BBox = new BoundingBox(position - (size / 2f),
-                                   position + (size / 2f));
+            if (Collider == ColliderType.BoundingBox)
+            {
+                BBox = new BoundingBox(Position - (Size / 2f),
+                                       Position + (Size / 2f));
+            }
+            else if (Collider == ColliderType.BoundingSphere)
+            {
+                float radius = Math.Max(Size.X, Math.Max(Size.Y, Size.Z)) / 2f;                
+                BSphere = new BoundingSphere(Position, radius);
+            }
         }
 
-        public bool IsColliding(BoundingBox other)
+        public virtual bool IsColliding(GameObject other)
         {
-            return BBox.Intersects(other);
+            if (Collider == ColliderType.BoundingBox)
+            {
+                if (other.Collider == ColliderType.BoundingBox)
+                {
+                    return BBox.Intersects(other.BBox);
+                }
+                else if (other.Collider == ColliderType.BoundingSphere)
+                {
+                    return BBox.Intersects(other.BSphere);
+                }
+            }
+            else if (Collider == ColliderType.BoundingSphere)
+            {
+                if (other.Collider == ColliderType.BoundingBox)
+                {
+                    return BSphere.Intersects(other.BBox);
+                }
+                else if (other.Collider == ColliderType.BoundingSphere)
+                {
+                    return BSphere.Intersects(other.BSphere);
+                }
+            }
+            return false;
         }
 
         public void SetColliderColor(Color color)
         {
-            LBox.SetColor(color);
+            if (Collider == ColliderType.BoundingBox)
+            {
+                LBox.SetColor(color);
+            }
+            else if (Collider == ColliderType.BoundingSphere)
+            {
+                LSphere.SetColor(color);
+            }
         }
     }
 }

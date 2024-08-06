@@ -126,6 +126,11 @@ namespace PresentationWorld
             return BBox.Intersects(other);
         }
 
+        public bool IsColliding(BoundingSphere other)
+        {
+            return BBox.Intersects(other);
+        }
+
         public void RestorePosition()
         {
             position = oldPosition;

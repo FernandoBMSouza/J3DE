@@ -12,6 +12,7 @@ namespace PresentationWorld
         public Ship(Game1 game, GraphicsDevice device)
             : base(game, device)
         {
+            Collider = ColliderType.BoundingSphere;
             Size = new Vector3(1, 1.5f, .3f);
             Model = game.Content.Load<Model>(@"Models\Ship");
             Texture = game.Content.Load<Texture2D>(@"Images\ShipTexture");

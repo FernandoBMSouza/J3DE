@@ -2,9 +2,9 @@ Content\Images\bricks.xnb
 Content\Images\grass.xnb
 Content\Images\rocks.xnb
 Content\Images\wood.xnb
+Content\Images\ShipTexture.xnb
+Content\Images\grass2.xnb
 Content\Models\blade.xnb
 Content\Models\building.xnb
 Content\Models\Ship.xnb
 Content\Models\ShipTexture_0.xnb
-Content\Images\ShipTexture.xnb
-Content\Images\grass2.xnb

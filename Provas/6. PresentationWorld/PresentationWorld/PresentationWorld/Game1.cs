@@ -73,7 +73,7 @@ namespace PresentationWorld
             windmillModels[0].Rotation = new Vector3(0, MathHelper.ToRadians(45), 0);
             windmillModels[1].Rotation = new Vector3(0, MathHelper.ToRadians(-45), 0);
 
-            colliders = new List<GameObject>() { plane, house, windmillModels[0], windmillModels[1] };
+            colliders = new List<GameObject>() { plane, house, ship, windmillModels[0], windmillModels[1] };
 
             base.Initialize();
         }
@@ -99,7 +99,7 @@ namespace PresentationWorld
 
             foreach (GameObject obj in colliders)
             {
-                if (camera.IsColliding(obj.BBox))
+                if (camera.IsColliding(obj.BBox) || camera.IsColliding(obj.BSphere))
                 {
                     camera.RestorePosition();
                     obj.SetColliderColor(Color.Red);
@@ -119,10 +119,10 @@ namespace PresentationWorld
             //rs.FillMode = FillMode.WireFrame;
             // GraphicsDevice.RasterizerState = rs;
             ship.Draw(camera, true);
-            plane.Draw(camera);
-            house.Draw(camera);
+            plane.Draw(camera, true);
+            house.Draw(camera, true);
             foreach (WindmillModel windmillModel in windmillModels)
-                windmillModel.Draw(camera);
+                windmillModel.Draw(camera, true);
 
             base.Draw(gameTime);
         }
