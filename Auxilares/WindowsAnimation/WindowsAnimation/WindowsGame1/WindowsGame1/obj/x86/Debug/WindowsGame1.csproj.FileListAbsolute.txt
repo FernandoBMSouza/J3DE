@@ -1,0 +1,50 @@
+Z:\Users\Aluno\Documents\Visual Studio 2010\Projects\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\WindowsGame1.exe
+Z:\Users\Aluno\Documents\Visual Studio 2010\Projects\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\WindowsGame1.pdb
+Z:\Users\Aluno\Documents\Visual Studio 2010\Projects\WindowsGame1\WindowsGame1\WindowsGame1\obj\x86\Debug\WindowsGame1.csprojResolveAssemblyReference.cache
+Z:\Users\Aluno\Documents\Visual Studio 2010\Projects\WindowsGame1\WindowsGame1\WindowsGame1\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+Z:\Users\Aluno\Documents\Visual Studio 2010\Projects\WindowsGame1\WindowsGame1\WindowsGame1\obj\x86\Debug\WindowsGame1.exe
+Z:\Users\Aluno\Documents\Visual Studio 2010\Projects\WindowsGame1\WindowsGame1\WindowsGame1\obj\x86\Debug\WindowsGame1.pdb
+Z:\Users\Aluno\Documents\Visual Studio 2010\Projects\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Images\ganso.xnb
+Z:\Users\Aluno\Downloads\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Images\ganso.xnb
+Z:\Users\Aluno\Downloads\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\WindowsGame1.exe
+Z:\Users\Aluno\Downloads\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\WindowsGame1.pdb
+Z:\Users\Aluno\Downloads\WindowsGame1\WindowsGame1\WindowsGame1\obj\x86\Debug\WindowsGame1.csprojResolveAssemblyReference.cache
+Z:\Users\Aluno\Downloads\WindowsGame1\WindowsGame1\WindowsGame1\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+Z:\Users\Aluno\Downloads\WindowsGame1\WindowsGame1\WindowsGame1\obj\x86\Debug\WindowsGame1.exe
+Z:\Users\Aluno\Downloads\WindowsGame1\WindowsGame1\WindowsGame1\obj\x86\Debug\WindowsGame1.pdb
+Z:\Users\Aluno\Downloads\WindowsClasseGanso\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Images\ganso.xnb
+Z:\Users\Aluno\Downloads\WindowsClasseGanso\WindowsGame1\WindowsGame1\bin\x86\Debug\WindowsGame1.exe
+Z:\Users\Aluno\Downloads\WindowsClasseGanso\WindowsGame1\WindowsGame1\bin\x86\Debug\WindowsGame1.pdb
+Z:\Users\Aluno\Downloads\WindowsClasseGanso\WindowsGame1\WindowsGame1\obj\x86\Debug\WindowsGame1.csprojResolveAssemblyReference.cache
+Z:\Users\Aluno\Downloads\WindowsClasseGanso\WindowsGame1\WindowsGame1\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+Z:\Users\Aluno\Downloads\WindowsClasseGanso\WindowsGame1\WindowsGame1\obj\x86\Debug\WindowsGame1.exe
+Z:\Users\Aluno\Downloads\WindowsClasseGanso\WindowsGame1\WindowsGame1\obj\x86\Debug\WindowsGame1.pdb
+Z:\Users\Aluno\Downloads\WindowsClasseGanso\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Images\ForestBackground.xnb
+Z:\Users\Aluno\Downloads\WindowsClasseGanso\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Animation\WalkCycle\walk0.xnb
+Z:\Users\Aluno\Downloads\WindowsClasseGanso\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Animation\WalkCycle\walk1.xnb
+Z:\Users\Aluno\Downloads\WindowsClasseGanso\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Animation\WalkCycle\walk2.xnb
+Z:\Users\Aluno\Downloads\WindowsClasseGanso\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Animation\WalkCycle\walk3.xnb
+C:\Users\fabio\Downloads\WindowsAnimationBaseGanso\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Images\ganso.xnb
+C:\Users\fabio\Downloads\WindowsAnimationBaseGanso\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Images\ForestBackground.xnb
+C:\Users\fabio\Downloads\WindowsAnimationBaseGanso\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Animation\WalkCycle\walk0.xnb
+C:\Users\fabio\Downloads\WindowsAnimationBaseGanso\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Animation\WalkCycle\walk1.xnb
+C:\Users\fabio\Downloads\WindowsAnimationBaseGanso\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Animation\WalkCycle\walk2.xnb
+C:\Users\fabio\Downloads\WindowsAnimationBaseGanso\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Animation\WalkCycle\walk3.xnb
+C:\Users\fabio\Downloads\WindowsAnimationBaseGanso\WindowsGame1\WindowsGame1\bin\x86\Debug\WindowsGame1.exe
+C:\Users\fabio\Downloads\WindowsAnimationBaseGanso\WindowsGame1\WindowsGame1\bin\x86\Debug\WindowsGame1.pdb
+C:\Users\fabio\Downloads\WindowsAnimationBaseGanso\WindowsGame1\WindowsGame1\obj\x86\Debug\WindowsGame1.csprojResolveAssemblyReference.cache
+C:\Users\fabio\Downloads\WindowsAnimationBaseGanso\WindowsGame1\WindowsGame1\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\fabio\Downloads\WindowsAnimationBaseGanso\WindowsGame1\WindowsGame1\obj\x86\Debug\WindowsGame1.exe
+C:\Users\fabio\Downloads\WindowsAnimationBaseGanso\WindowsGame1\WindowsGame1\obj\x86\Debug\WindowsGame1.pdb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Auxilares\WindowsAnimation\WindowsAnimation\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Images\ganso.xnb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Auxilares\WindowsAnimation\WindowsAnimation\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Images\ForestBackground.xnb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Auxilares\WindowsAnimation\WindowsAnimation\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Animation\WalkCycle\walk0.xnb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Auxilares\WindowsAnimation\WindowsAnimation\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Animation\WalkCycle\walk1.xnb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Auxilares\WindowsAnimation\WindowsAnimation\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Animation\WalkCycle\walk2.xnb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Auxilares\WindowsAnimation\WindowsAnimation\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Animation\WalkCycle\walk3.xnb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Auxilares\WindowsAnimation\WindowsAnimation\WindowsGame1\WindowsGame1\bin\x86\Debug\WindowsGame1.exe
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Auxilares\WindowsAnimation\WindowsAnimation\WindowsGame1\WindowsGame1\bin\x86\Debug\WindowsGame1.pdb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Auxilares\WindowsAnimation\WindowsAnimation\WindowsGame1\WindowsGame1\obj\x86\Debug\WindowsGame1.csprojResolveAssemblyReference.cache
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Auxilares\WindowsAnimation\WindowsAnimation\WindowsGame1\WindowsGame1\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Auxilares\WindowsAnimation\WindowsAnimation\WindowsGame1\WindowsGame1\obj\x86\Debug\WindowsGame1.exe
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Auxilares\WindowsAnimation\WindowsAnimation\WindowsGame1\WindowsGame1\obj\x86\Debug\WindowsGame1.pdb
