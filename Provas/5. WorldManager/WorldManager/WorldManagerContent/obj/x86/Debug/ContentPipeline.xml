@@ -7,7 +7,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Provas\5. WorldManager\WorldManager\WorldManager\WorldManager\bin\x86\Debug\Content\Images\bricks.xnb</Output>
+      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Provas\5. WorldManager\WorldManager\WorldManager\bin\x86\Debug\Content\Images\bricks.xnb</Output>
       <Time>2024-08-01T14:06:28.5405585-03:00</Time>
     </Item>
     <Item>
@@ -16,7 +16,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Provas\5. WorldManager\WorldManager\WorldManager\WorldManager\bin\x86\Debug\Content\Images\grass.xnb</Output>
+      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Provas\5. WorldManager\WorldManager\WorldManager\bin\x86\Debug\Content\Images\grass.xnb</Output>
       <Time>2024-08-01T14:06:28.5435577-03:00</Time>
     </Item>
     <Item>
@@ -25,7 +25,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Provas\5. WorldManager\WorldManager\WorldManager\WorldManager\bin\x86\Debug\Content\Images\rocks.xnb</Output>
+      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Provas\5. WorldManager\WorldManager\WorldManager\bin\x86\Debug\Content\Images\rocks.xnb</Output>
       <Time>2024-08-01T14:06:28.546567-03:00</Time>
     </Item>
     <Item>
@@ -34,7 +34,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Provas\5. WorldManager\WorldManager\WorldManager\WorldManager\bin\x86\Debug\Content\Images\wood.xnb</Output>
+      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Provas\5. WorldManager\WorldManager\WorldManager\bin\x86\Debug\Content\Images\wood.xnb</Output>
       <Time>2024-08-01T14:06:28.5485589-03:00</Time>
     </Item>
     <Item>
@@ -43,11 +43,11 @@
       <Importer>XImporter</Importer>
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Provas\5. WorldManager\WorldManager\WorldManager\WorldManager\bin\x86\Debug\Content\Models\blade.xnb</Output>
+      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Provas\5. WorldManager\WorldManager\WorldManager\bin\x86\Debug\Content\Models\blade.xnb</Output>
       <Time>2024-08-02T13:30:50.9870144-03:00</Time>
       <Dependency>
         <Key>obj\x86\Debug\Models\blade_0.xml</Key>
-        <Value>2024-08-02T13:46:46.9538063-03:00</Value>
+        <Value>2024-08-02T14:54:37.8457858-03:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -56,11 +56,11 @@
       <Importer>XImporter</Importer>
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Provas\5. WorldManager\WorldManager\WorldManager\WorldManager\bin\x86\Debug\Content\Models\building.xnb</Output>
+      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Provas\5. WorldManager\WorldManager\WorldManager\bin\x86\Debug\Content\Models\building.xnb</Output>
       <Time>2024-08-02T13:30:51.0026398-03:00</Time>
       <Dependency>
         <Key>obj\x86\Debug\Models\building_0.xml</Key>
-        <Value>2024-08-02T13:46:47.0631889-03:00</Value>
+        <Value>2024-08-02T14:54:37.9239432-03:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -69,11 +69,11 @@
       <Importer>XImporter</Importer>
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Provas\5. WorldManager\WorldManager\WorldManager\WorldManager\bin\x86\Debug\Content\Models\hero.xnb</Output>
+      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Provas\5. WorldManager\WorldManager\WorldManager\bin\x86\Debug\Content\Models\hero.xnb</Output>
       <Time>2024-08-02T13:30:51.0026398-03:00</Time>
       <Dependency>
         <Key>obj\x86\Debug\Models\hero_0.xml</Key>
-        <Value>2024-08-02T13:46:47.2819348-03:00</Value>
+        <Value>2024-08-02T14:54:38.1270718-03:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -82,11 +82,11 @@
       <Importer>XImporter</Importer>
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Provas\5. WorldManager\WorldManager\WorldManager\WorldManager\bin\x86\Debug\Content\Models\tower.xnb</Output>
+      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Provas\5. WorldManager\WorldManager\WorldManager\bin\x86\Debug\Content\Models\tower.xnb</Output>
       <Time>2024-08-02T13:30:51.0026398-03:00</Time>
       <Dependency>
         <Key>obj\x86\Debug\Models\tower_0.xml</Key>
-        <Value>2024-08-02T13:46:47.3600264-03:00</Value>
+        <Value>2024-08-02T14:54:38.1739473-03:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -123,10 +123,10 @@
       <TargetProfile>HiDef</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Provas\5. WorldManager\WorldManager\WorldManager\WorldManagerContent\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Provas\5. WorldManager\WorldManager\WorldManager\WorldManager\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Provas\5. WorldManager\WorldManager\WorldManager\WorldManagerContent\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Provas\5. WorldManager\WorldManager\WorldManager\WorldManager\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Provas\5. WorldManager\WorldManager\WorldManagerContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Provas\5. WorldManager\WorldManager\WorldManager\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Provas\5. WorldManager\WorldManager\WorldManagerContent\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Provas\5. WorldManager\WorldManager\WorldManager\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>

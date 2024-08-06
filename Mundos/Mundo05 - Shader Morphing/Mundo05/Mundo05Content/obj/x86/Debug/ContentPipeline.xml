@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
+  <Asset Type="Pipeline:BuildItemCollection">
+    <Item>
+      <Source>Textures\bricks.png</Source>
+      <Name>Textures\bricks</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos\Mundo05 - Shader Morphing\Mundo05\Mundo05\bin\x86\Debug\Content\Textures\bricks.xnb</Output>
+      <Time>2024-08-06T13:12:49.8836347-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\grass.jpg</Source>
+      <Name>Textures\grass</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos\Mundo05 - Shader Morphing\Mundo05\Mundo05\bin\x86\Debug\Content\Textures\grass.xnb</Output>
+      <Time>2024-08-06T13:12:49.8866345-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\rocks.jpg</Source>
+      <Name>Textures\rocks</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos\Mundo05 - Shader Morphing\Mundo05\Mundo05\bin\x86\Debug\Content\Textures\rocks.xnb</Output>
+      <Time>2024-08-06T13:12:49.8906348-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\wood.png</Source>
+      <Name>Textures\wood</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos\Mundo05 - Shader Morphing\Mundo05\Mundo05\bin\x86\Debug\Content\Textures\wood.xnb</Output>
+      <Time>2024-08-06T13:12:49.8936352-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\snow.png</Source>
+      <Name>Textures\snow</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos\Mundo05 - Shader Morphing\Mundo05\Mundo05\bin\x86\Debug\Content\Textures\snow.xnb</Output>
+      <Time>2024-08-06T13:32:15.497208-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\bricksSnow.jpg</Source>
+      <Name>Textures\bricksSnow</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos\Mundo05 - Shader Morphing\Mundo05\Mundo05\bin\x86\Debug\Content\Textures\bricksSnow.xnb</Output>
+      <Time>2024-08-06T13:34:02.9991224-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\rocksSnow.jpg</Source>
+      <Name>Textures\rocksSnow</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos\Mundo05 - Shader Morphing\Mundo05\Mundo05\bin\x86\Debug\Content\Textures\rocksSnow.xnb</Output>
+      <Time>2024-08-06T13:35:48.7128631-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\woodSnow.jpg</Source>
+      <Name>Textures\woodSnow</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos\Mundo05 - Shader Morphing\Mundo05\Mundo05\bin\x86\Debug\Content\Textures\woodSnow.xnb</Output>
+      <Time>2024-08-06T13:37:54.0180189-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Effects\morphing.fx</Source>
+      <Name>Effects\morphing</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos\Mundo05 - Shader Morphing\Mundo05\Mundo05\bin\x86\Debug\Content\Effects\morphing.xnb</Output>
+      <Time>2024-08-06T14:18:42.6313798-03:00</Time>
+    </Item>
+    <BuildSuccessful>true</BuildSuccessful>
+    <Settings>
+      <TargetPlatform>Windows</TargetPlatform>
+      <TargetProfile>HiDef</TargetProfile>
+      <BuildConfiguration>Debug</BuildConfiguration>
+      <CompressContent>false</CompressContent>
+      <RootDirectory>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos\Mundo05 - Shader Morphing\Mundo05\Mundo05Content\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos\Mundo05 - Shader Morphing\Mundo05\Mundo05\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos\Mundo05 - Shader Morphing\Mundo05\Mundo05Content\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos\Mundo05 - Shader Morphing\Mundo05\Mundo05\bin\x86\Debug\Content\</OutputDirectory>
+    </Settings>
+    <Assemblies>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
+        <Value>2010-08-23T12:41:18-03:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
+        <Value>2010-08-23T12:41:18-03:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
+        <Value>2010-08-23T12:41:18-03:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
+        <Value>2010-08-23T12:41:18-03:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
+        <Value>2010-08-23T12:41:18-03:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
+        <Value>2010-08-23T12:41:18-03:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\WINDOWS\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2023-12-16T18:46:09.1672477-03:00</Value>
+      </Assembly>
+    </Assemblies>
+  </Asset>
+</XnaContent>

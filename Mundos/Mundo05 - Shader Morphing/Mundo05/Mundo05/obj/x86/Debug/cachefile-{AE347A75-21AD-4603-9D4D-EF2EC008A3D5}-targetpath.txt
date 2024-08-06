@@ -1,0 +1,9 @@
+Content\Textures\bricks.xnb
+Content\Textures\grass.xnb
+Content\Textures\rocks.xnb
+Content\Textures\wood.xnb
+Content\Textures\snow.xnb
+Content\Textures\bricksSnow.xnb
+Content\Textures\rocksSnow.xnb
+Content\Textures\woodSnow.xnb
+Content\Effects\morphing.xnb
