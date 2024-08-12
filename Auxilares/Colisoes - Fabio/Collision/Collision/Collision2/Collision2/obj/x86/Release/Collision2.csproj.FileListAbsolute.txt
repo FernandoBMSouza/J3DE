@@ -1,0 +1,6 @@
+C:\Users\Juliana\Documents\Visual Studio 2010\Projects\Collision2\Collision2\Collision2\bin\x86\Release\Collision2.exe
+C:\Users\Juliana\Documents\Visual Studio 2010\Projects\Collision2\Collision2\Collision2\bin\x86\Release\Collision2.pdb
+C:\Users\Juliana\Documents\Visual Studio 2010\Projects\Collision2\Collision2\Collision2\obj\x86\Release\Collision2.csprojResolveAssemblyReference.cache
+C:\Users\Juliana\Documents\Visual Studio 2010\Projects\Collision2\Collision2\Collision2\obj\x86\Release\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Juliana\Documents\Visual Studio 2010\Projects\Collision2\Collision2\Collision2\obj\x86\Release\Collision2.exe
+C:\Users\Juliana\Documents\Visual Studio 2010\Projects\Collision2\Collision2\Collision2\obj\x86\Release\Collision2.pdb

@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Collision2", "Collision2\Collision2\Collision2.csproj", "{B3A81941-1CE0-4D32-97EF-B03AD38F32D6}"
+EndProject
+Project("{96E2B04D-8817-42C6-938A-82C39BA4D311}") = "Collision2Content", "Collision2\Collision2Content\Collision2Content.contentproj", "{7887B968-380E-4547-8006-AAC83D3DF9F5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B3A81941-1CE0-4D32-97EF-B03AD38F32D6}.Debug|x86.ActiveCfg = Debug|x86
+		{B3A81941-1CE0-4D32-97EF-B03AD38F32D6}.Debug|x86.Build.0 = Debug|x86
+		{B3A81941-1CE0-4D32-97EF-B03AD38F32D6}.Release|x86.ActiveCfg = Release|x86
+		{B3A81941-1CE0-4D32-97EF-B03AD38F32D6}.Release|x86.Build.0 = Release|x86
+		{7887B968-380E-4547-8006-AAC83D3DF9F5}.Debug|x86.ActiveCfg = Debug|x86
+		{7887B968-380E-4547-8006-AAC83D3DF9F5}.Release|x86.ActiveCfg = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

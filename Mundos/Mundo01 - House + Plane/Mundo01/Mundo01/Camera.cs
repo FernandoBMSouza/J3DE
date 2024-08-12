@@ -40,7 +40,7 @@ namespace Mundo01
 
             View = Matrix.CreateLookAt(position, target, up);
             Projection = Matrix.CreatePerspectiveFieldOfView(MathHelper.PiOver4,
-                                                             Screen.GetInstance().Width / (float)Screen.GetInstance().Height,
+                                                             Screen.GetInstance().width / (float)Screen.GetInstance().height,
                                                              .001f, 1000);
             size = Vector3.One;
             UpdateBoundingBox();

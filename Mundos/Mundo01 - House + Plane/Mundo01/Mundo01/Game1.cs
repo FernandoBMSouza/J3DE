@@ -40,19 +40,19 @@ namespace Mundo01
         protected override void Initialize()
         {
             screen = Screen.GetInstance();
-            screen.Width = graphics.PreferredBackBufferWidth;
-            screen.Height = graphics.PreferredBackBufferHeight;
+            screen.width = graphics.PreferredBackBufferWidth;
+            screen.height = graphics.PreferredBackBufferHeight;
 
             int seed = (int)DateTime.Now.Ticks % int.MaxValue;
             random = new Random(seed);
 
             camera = new Camera(this);
 
-            plane = new Quad(this, GraphicsDevice);
-            house = new Cube(this, GraphicsDevice);
+            plane = new Quad(this);
+            house = new Cube(this);
 
-            plane.Scale = new Vector3(10, 1, 10);
-            house.Position = new Vector3(0, 1, 0);
+            plane.SetScale(new Vector3(10, 1, 10));
+            house.SetPosition(new Vector3(0, 1, 0));
 
             colliders = new List<GameObject>() { plane, house };
 
@@ -77,7 +77,7 @@ namespace Mundo01
 
             foreach (GameObject obj in colliders)
             {
-                if (camera.IsColliding(obj.BBox))
+                if (camera.IsColliding(obj.GetBoundingBox()))
                 {
                     camera.RestorePosition();
                     obj.SetColliderColor(Color.Red);
@@ -97,8 +97,8 @@ namespace Mundo01
             //rs.FillMode = FillMode.WireFrame;
             // GraphicsDevice.RasterizerState = rs;
 
-            plane.Draw(camera);
-            house.Draw(camera);
+            plane.Draw(camera, true);
+            house.Draw(camera, true);
 
             base.Draw(gameTime);
         }

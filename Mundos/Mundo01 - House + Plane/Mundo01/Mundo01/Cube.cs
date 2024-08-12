@@ -5,11 +5,11 @@ namespace Mundo01
 {
     public class Cube : GameObject
     {
-        public Cube(Game game, GraphicsDevice device)
-            : base(game, device)
+        public Cube(Game game)
+            : base(game)
         {
-            Size = new Vector3(2, 2, 2);
-            Vertices = new VertexPositionColor[]
+            SetSize(new Vector3(2, 2, 2));
+            vertices = new VertexPositionColor[]
             {
                 // RIGHT
                 new VertexPositionColor(new Vector3(1, 1, 1), Color.Green),

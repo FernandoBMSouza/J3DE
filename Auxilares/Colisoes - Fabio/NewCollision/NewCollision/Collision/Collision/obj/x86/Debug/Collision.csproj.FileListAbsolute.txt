@@ -1,0 +1,6 @@
+c:\users\sabio\documents\visual studio 2010\Projects\Collision\Collision\Collision\bin\x86\Debug\Collision.exe
+c:\users\sabio\documents\visual studio 2010\Projects\Collision\Collision\Collision\bin\x86\Debug\Collision.pdb
+c:\users\sabio\documents\visual studio 2010\Projects\Collision\Collision\Collision\obj\x86\Debug\Collision.csprojResolveAssemblyReference.cache
+c:\users\sabio\documents\visual studio 2010\Projects\Collision\Collision\Collision\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+c:\users\sabio\documents\visual studio 2010\Projects\Collision\Collision\Collision\obj\x86\Debug\Collision.exe
+c:\users\sabio\documents\visual studio 2010\Projects\Collision\Collision\Collision\obj\x86\Debug\Collision.pdb

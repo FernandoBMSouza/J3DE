@@ -9,11 +9,11 @@ namespace Mundo01
 {
     public class Quad : GameObject
     {
-        public Quad(Game game, GraphicsDevice device)
-            : base(game, device)
+        public Quad(Game game)
+            : base(game)
         {
-            Size = new Vector3(2, 0, 2);
-            Vertices = new VertexPositionColor[]
+            SetSize(new Vector3(2, 0, 2));
+            vertices = new VertexPositionColor[]
             {
                 new VertexPositionColor(new Vector3(-1, 0, 1), Color.Green),
                 new VertexPositionColor(new Vector3(-1, 0,-1), Color.Green),

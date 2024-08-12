@@ -8,8 +8,8 @@ namespace Mundo01
     class Screen
     {
         static Screen instance;
-        public int Width { get; set; }
-        public int Height { get; set; }
+        public int width;
+        public int height;
 
         public static Screen GetInstance()
         {
