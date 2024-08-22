@@ -1,17 +1,14 @@
-﻿#define USE_TEXTURE
-
-using Microsoft.Xna.Framework.Graphics;
+﻿using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework;
 
 namespace Mundo04
 {
     public class Cube : GameObject
     {
-        public Cube(Game game, GraphicsDevice device)
-            : base(game, device)
+        public Cube(Game game)
+            : base(game)
         {
             Size = new Vector3(2, 2, 2);
-#if USE_TEXTURE
             Texture = game.Content.Load<Texture2D>(@"Images\bricks");
             Vertices = new VertexPositionTexture[] 
             {
@@ -69,64 +66,6 @@ namespace Mundo04
                 new VertexPositionTexture(new Vector3( 1, 1,-1), new Vector2(1,0)),
                 new VertexPositionTexture(new Vector3( 1, 1, 1), new Vector2(1,1)),
             };
-#else
-            Vertices = new VertexPositionColor[]
-            {
-                // RIGHT
-                new VertexPositionColor(new Vector3(1, 1, 1), Color.Green),
-                new VertexPositionColor(new Vector3(1, 1,-1), Color.Blue),
-                new VertexPositionColor(new Vector3(1,-1, 1), Color.Yellow),
-
-                new VertexPositionColor(new Vector3(1,-1, 1), Color.Yellow),
-                new VertexPositionColor(new Vector3(1, 1,-1), Color.Blue),
-                new VertexPositionColor(new Vector3(1,-1,-1), Color.Red),
-
-                // LEFT
-                new VertexPositionColor(new Vector3(-1, 1, 1), Color.Red),
-                new VertexPositionColor(new Vector3(-1,-1, 1), Color.Blue),
-                new VertexPositionColor(new Vector3(-1, 1,-1), Color.Yellow),
-
-                new VertexPositionColor(new Vector3(-1,-1, 1), Color.Blue),
-                new VertexPositionColor(new Vector3(-1,-1,-1), Color.Green),
-                new VertexPositionColor(new Vector3(-1, 1,-1), Color.Yellow),
-                
-                // BACK
-                new VertexPositionColor(new Vector3(-1,-1,-1), Color.Green),
-                new VertexPositionColor(new Vector3( 1,-1,-1), Color.Red),
-                new VertexPositionColor(new Vector3(-1, 1,-1), Color.Yellow),
-
-                new VertexPositionColor(new Vector3(-1, 1,-1), Color.Yellow),
-                new VertexPositionColor(new Vector3( 1,-1,-1), Color.Red),
-                new VertexPositionColor(new Vector3( 1, 1,-1), Color.Blue),
-                
-                // FRONT
-                new VertexPositionColor(new Vector3(-1,-1, 1), Color.Blue),
-                new VertexPositionColor(new Vector3(-1, 1, 1), Color.Red),
-                new VertexPositionColor(new Vector3( 1, 1, 1), Color.Green),
-
-                new VertexPositionColor(new Vector3(-1,-1, 1), Color.Blue),
-                new VertexPositionColor(new Vector3( 1, 1, 1), Color.Green),
-                new VertexPositionColor(new Vector3( 1,-1, 1), Color.Yellow),
-                
-                // BASE
-                new VertexPositionColor(new Vector3(-1,-1, 1), Color.Blue),
-                new VertexPositionColor(new Vector3( 1,-1,-1), Color.Red),
-                new VertexPositionColor(new Vector3(-1,-1,-1), Color.Green),
-
-                new VertexPositionColor(new Vector3(-1,-1, 1), Color.Blue),
-                new VertexPositionColor(new Vector3( 1,-1, 1), Color.Yellow),
-                new VertexPositionColor(new Vector3( 1,-1,-1), Color.Red),
-                
-                // TOP
-                new VertexPositionColor(new Vector3(-1, 1, 1), Color.Red),
-                new VertexPositionColor(new Vector3(-1, 1,-1), Color.Yellow),
-                new VertexPositionColor(new Vector3( 1, 1,-1), Color.Blue),
-
-                new VertexPositionColor(new Vector3(-1, 1, 1), Color.Red),
-                new VertexPositionColor(new Vector3( 1, 1,-1), Color.Blue),
-                new VertexPositionColor(new Vector3( 1, 1, 1), Color.Green),
-            };
-#endif
         }
     }
 }

@@ -40,8 +40,8 @@ namespace Mundo01
         protected override void Initialize()
         {
             screen = Screen.GetInstance();
-            screen.width = graphics.PreferredBackBufferWidth;
-            screen.height = graphics.PreferredBackBufferHeight;
+            screen.Width = graphics.PreferredBackBufferWidth;
+            screen.Height = graphics.PreferredBackBufferHeight;
 
             int seed = (int)DateTime.Now.Ticks % int.MaxValue;
             random = new Random(seed);
@@ -51,8 +51,8 @@ namespace Mundo01
             plane = new Quad(this);
             house = new Cube(this);
 
-            plane.SetScale(new Vector3(10, 1, 10));
-            house.SetPosition(new Vector3(0, 1, 0));
+            plane.Scale = new Vector3(10, 1, 10);
+            house.Position = new Vector3(0, 1, 0);
 
             colliders = new List<GameObject>() { plane, house };
 
@@ -77,7 +77,7 @@ namespace Mundo01
 
             foreach (GameObject obj in colliders)
             {
-                if (camera.IsColliding(obj.GetBoundingBox()))
+                if (camera.IsColliding(obj.BBox))
                 {
                     camera.RestorePosition();
                     obj.SetColliderColor(Color.Red);

@@ -5,8 +5,8 @@ namespace Mundo02
 {
     public class Cube : GameObject
     {
-        public Cube(Game game, GraphicsDevice device)
-            : base(game, device)
+        public Cube(Game game)
+            : base(game)
         {
             Size = new Vector3(2, 2, 2);
             Vertices = new VertexPositionColor[]

@@ -9,8 +9,8 @@ namespace Mundo02
 {
     class Blade : GameObject
     {
-        public Blade(Game1 game, GraphicsDevice device) 
-            : base(game, device)
+        public Blade(Game1 game) 
+            : base(game)
         {
             Size = new Vector3(2, 8, 0);
             Vertices = new VertexPositionColor[]

@@ -49,12 +49,12 @@ namespace Mundo03
 
             camera = new Camera(this);
 
-            plane = new Quad(this, GraphicsDevice);
-            house = new Cube(this, GraphicsDevice);
+            plane = new Quad(this);
+            house = new Cube(this);
             windmills = new Windmill[]
             {
-                new Windmill(this, GraphicsDevice, random.Next(1,10)),
-                new Windmill(this, GraphicsDevice, random.Next(1,10)),
+                new Windmill(this, random.Next(1,10)),
+                new Windmill(this, random.Next(1,10)),
             };
 
             plane.Scale = new Vector3(20, 1, 20);

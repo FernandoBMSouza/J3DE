@@ -6,10 +6,9 @@ namespace Mundo02
 {
     public abstract class GameObject
     {
-        private GraphicsDevice device;
+        private Game game;
         private VertexBuffer buffer;
         protected BasicEffect effect;
-        private Game game;
 
         private Vector3 size;
         private Vector3 position;
@@ -58,15 +57,14 @@ namespace Mundo02
         public BoundingBox BBox { get; private set; }
         protected VertexPositionColor[] Vertices { get; set; }
 
-        public GameObject(Game game, GraphicsDevice device)
+        public GameObject(Game game)
         {
-            this.game = game;
-            this.device = device;
+            this.game = game;;
             Vertices = null;
 
             if (Vertices != null)
             {
-                buffer = new VertexBuffer(device,
+                buffer = new VertexBuffer(game.GraphicsDevice,
                                           typeof(VertexPositionColor),
                                           Vertices.Length,
                                           BufferUsage.None);
@@ -74,7 +72,7 @@ namespace Mundo02
                 buffer.SetData<VertexPositionColor>(Vertices);
             }
 
-            effect = new BasicEffect(device);
+            effect = new BasicEffect(game.GraphicsDevice);
 
             Scale = Vector3.One;
             Rotation = Vector3.Zero;
@@ -96,7 +94,7 @@ namespace Mundo02
         public virtual void Draw(Camera camera, Matrix parentWorld, bool showColliders = false)
         {
             if (Vertices != null)
-                device.SetVertexBuffer(buffer);
+                game.GraphicsDevice.SetVertexBuffer(buffer);
 
             Matrix localMatrix = Matrix.CreateScale(Scale)
                                  * Matrix.CreateFromYawPitchRoll(Rotation.Y, Rotation.X, Rotation.Z)
@@ -113,10 +111,10 @@ namespace Mundo02
             {
                 pass.Apply();
                 if (Vertices != null)
-                    device.DrawUserPrimitives<VertexPositionColor>(PrimitiveType.TriangleList,
-                                                                   Vertices,
-                                                                   0,
-                                                                   Vertices.Length / 3);
+                    game.GraphicsDevice.DrawUserPrimitives<VertexPositionColor>(PrimitiveType.TriangleList,
+                                                                                Vertices,
+                                                                                0,
+                                                                                Vertices.Length / 3);
             }
             effect.VertexColorEnabled = false;
 

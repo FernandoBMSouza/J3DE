@@ -9,8 +9,8 @@ namespace Mundo04
 {
     class Hero : GameObject
     {
-        public Hero(Game1 game, GraphicsDevice device)
-            : base(game, device)
+        public Hero(Game1 game)
+            : base(game)
         {
             Size = new Vector3(6, 15, 3);
             Model = game.Content.Load<Model>(@"Models\hero");

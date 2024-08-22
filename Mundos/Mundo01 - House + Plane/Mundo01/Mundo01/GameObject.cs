@@ -6,102 +6,102 @@ namespace Mundo01
 {
     public abstract class GameObject
     {
-        // ATRIBUTOS
         private Game game;
+        private VertexBuffer buffer;
+        protected BasicEffect effect;
+
         private Vector3 size;
-        private Vector3 scale;
         private Vector3 position;
         private Vector3 rotation;
-        private BoundingBox boundingBox;
-        private BasicEffect effect;
-        private VertexBuffer buffer;
+        private Vector3 scale;
 
-        protected LineBox lineBox;
-        protected VertexPositionColor[] vertices;
+        public Vector3 Size
+        {
+            get { return size; }
+            protected set
+            {
+                size = value;
+                LBox = new LineBox(game, size / scale, Color.Green);
+                UpdateBoundingBox(Position, size);
+            }
+        }
+        public Vector3 Position
+        {
+            get { return position; }
+            set
+            {
+                position = value;
+                UpdateBoundingBox(position, Size);
+            }
+        }
+        public Vector3 Rotation
+        {
+            get { return rotation; }
+            set
+            {
+                rotation = value;
+                UpdateBoundingBox(Position, Size);
+            }
+        }
+        public Vector3 Scale
+        {
+            get { return scale; }
+            set
+            {
+                scale = value;
+                Size *= scale;
+            }
+        }
 
-        // CONSTRUTORES
+        public LineBox LBox { get; protected set; }
+        public BoundingBox BBox { get; private set; }
+        protected VertexPositionColor[] Vertices { get; set; }
+
         public GameObject(Game game)
         {
             this.game = game;
-            InitializeBuffer();
-            scale = Vector3.One;
-            effect = new BasicEffect(game.GraphicsDevice);
-        }
+            Vertices = null;
 
-        // GETTERS E SETTERS
-        public Vector3 GetSize() { return size; }
-        public Vector3 GetPosition() { return position; }
-        public Vector3 GetScale() { return scale; }
-        public Vector3 GetRotation() { return rotation; }
-        public BoundingBox GetBoundingBox() { return boundingBox; }
-
-        public void SetSize(Vector3 value) 
-        {
-            size = value;
-            lineBox = new LineBox(game, size/scale, Color.Green);
-            UpdateBoundingBox(position, size);
-        }
-        public void SetPosition(Vector3 value)
-        {
-            position = value;
-            UpdateBoundingBox(position, size);
-        }
-        public void SetRotation(Vector3 value)
-        {
-            rotation = value;
-            UpdateBoundingBox(position, size);
-        }
-        public void SetScale(Vector3 value)
-        {
-            scale = value;
-            SetSize(size * scale);
-        }
-        
-        // METODOS
-        private void InitializeBuffer()
-        {
-            if (vertices != null)
+            if (Vertices != null)
             {
                 buffer = new VertexBuffer(game.GraphicsDevice,
                                           typeof(VertexPositionColor),
-                                          vertices.Length,
+                                          Vertices.Length,
                                           BufferUsage.None);
 
-                buffer.SetData<VertexPositionColor>(vertices);
+                buffer.SetData<VertexPositionColor>(Vertices);
             }
-        }
-        private Matrix GenerateMatrix(Matrix parentWorld)
-        {
-            Matrix localMatrix = Matrix.CreateScale(scale)
-                                 * Matrix.CreateFromYawPitchRoll(rotation.Y, rotation.X, rotation.Z)
-                                 * Matrix.CreateTranslation(position);
 
-            return localMatrix * parentWorld;
+            effect = new BasicEffect(game.GraphicsDevice);
+
+            Scale = Vector3.One;
+            Rotation = Vector3.Zero;
+            Position = Vector3.Zero;
+
+            Size = Vector3.One;
         }
 
-        public void UpdateBoundingBox(Vector3 position, Vector3 size)
-        {
-            boundingBox = new BoundingBox(position - (size / 2f),
-                                   position + (size / 2f));
-        }
-        public void SetColliderColor(Color color)
-        {
-            lineBox.SetColor(color);
-        }
-        public bool IsColliding(BoundingBox other)
-        {
-            return boundingBox.Intersects(other);
-        }
-        
         public virtual void Update(GameTime gameTime)
-        { 
-            
+        {
+
         }
+
+        public void Draw(Camera camera, bool showColliders = false)
+        {
+            Draw(camera, Matrix.Identity, showColliders);
+        }
+
         public virtual void Draw(Camera camera, Matrix parentWorld, bool showColliders = false)
         {
-            if (vertices != null) game.GraphicsDevice.SetVertexBuffer(buffer);
-            
-            effect.World = GenerateMatrix(parentWorld);
+            if (Vertices != null)
+                game.GraphicsDevice.SetVertexBuffer(buffer);
+
+            Matrix localMatrix = Matrix.CreateScale(Scale)
+                                 * Matrix.CreateFromYawPitchRoll(Rotation.Y, Rotation.X, Rotation.Z)
+                                 * Matrix.CreateTranslation(Position);
+
+            Matrix result = localMatrix * parentWorld;
+            effect.World = result;
             effect.View = camera.View;
             effect.Projection = camera.Projection;
 
@@ -110,19 +110,31 @@ namespace Mundo01
             foreach (EffectPass pass in effect.CurrentTechnique.Passes)
             {
                 pass.Apply();
-                if (vertices != null)
+                if (Vertices != null)
                     game.GraphicsDevice.DrawUserPrimitives<VertexPositionColor>(PrimitiveType.TriangleList,
-                                                                                vertices,
-                                                                                0,
-                                                                                vertices.Length / 3);
+                                                                   Vertices,
+                                                                   0,
+                                                                   Vertices.Length / 3);
             }
             effect.VertexColorEnabled = false;
 
-            if (showColliders) lineBox.Draw(effect);
+            if (showColliders) LBox.Draw(effect);
         }
-        public void Draw(Camera camera, bool showColliders = false)
+
+        public void UpdateBoundingBox(Vector3 position, Vector3 size)
         {
-            Draw(camera, Matrix.Identity, showColliders);
+            BBox = new BoundingBox(position - (size / 2f),
+                                   position + (size / 2f));
+        }
+
+        public bool IsColliding(BoundingBox other)
+        {
+            return BBox.Intersects(other);
+        }
+
+        public void SetColliderColor(Color color)
+        {
+            LBox.SetColor(color);
         }
     }
 }

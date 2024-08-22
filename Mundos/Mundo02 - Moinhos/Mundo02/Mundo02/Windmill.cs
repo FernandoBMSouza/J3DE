@@ -15,14 +15,14 @@ namespace Mundo02
         bool isWorking;
         float speed;
 
-        public Windmill(Game1 game, GraphicsDevice device, float speed, bool isWorking = true)
-            : base(game, device)
+        public Windmill(Game1 game, float speed, bool isWorking = true)
+            : base(game)
         {
-            building = new Building(game, device);
+            building = new Building(game);
             blades = new Blade[2];
 
             for (int i = 0; i < blades.Length; i++) 
-                blades[i] = new Blade(game, device);
+                blades[i] = new Blade(game);
 
             foreach (Blade blade in blades)
             {

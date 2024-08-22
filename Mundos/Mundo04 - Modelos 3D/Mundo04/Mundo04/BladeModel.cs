@@ -9,8 +9,8 @@ namespace Mundo04
 {
     class BladeModel : GameObject
     {
-        public BladeModel(Game1 game, GraphicsDevice device)
-            : base(game, device)
+        public BladeModel(Game1 game)
+            : base(game)
         {
             Size = new Vector3(2, 10, .5f);
             Model = game.Content.Load<Model>(@"Models\blade");

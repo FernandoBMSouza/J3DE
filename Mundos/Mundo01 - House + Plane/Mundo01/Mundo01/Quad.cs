@@ -12,8 +12,8 @@ namespace Mundo01
         public Quad(Game game)
             : base(game)
         {
-            SetSize(new Vector3(2, 0, 2));
-            vertices = new VertexPositionColor[]
+            Size = new Vector3(2, 0, 2);
+            Vertices = new VertexPositionColor[]
             {
                 new VertexPositionColor(new Vector3(-1, 0, 1), Color.Green),
                 new VertexPositionColor(new Vector3(-1, 0,-1), Color.Green),

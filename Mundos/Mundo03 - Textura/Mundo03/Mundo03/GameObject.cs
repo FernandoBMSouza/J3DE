@@ -1,5 +1,4 @@
-﻿#define USE_TEXTURE
-using System;
+﻿using System;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
@@ -7,7 +6,6 @@ namespace Mundo03
 {
     public abstract class GameObject
     {
-        private GraphicsDevice device;
         private VertexBuffer buffer;
         protected BasicEffect effect;
         private Game game;
@@ -57,38 +55,25 @@ namespace Mundo03
 
         public LineBox LBox { get; protected set; }
         public BoundingBox BBox { get; private set; }
-#if USE_TEXTURE
         protected Texture2D Texture { get; set; }
         protected VertexPositionTexture[] Vertices { get; set; }
-#else
-        protected VertexPositionColor[] Vertices { get; set; }
-#endif
 
-        public GameObject(Game game, GraphicsDevice device)
+        public GameObject(Game game)
         {
             this.game = game;
-            this.device = device;
             Vertices = null;
             Texture = null;
 
             if (Vertices != null)
             {
-#if USE_TEXTURE
-                buffer = new VertexBuffer(device,
+                buffer = new VertexBuffer(game.GraphicsDevice,
                                           typeof(VertexPositionTexture),
                                           Vertices.Length,
                                           BufferUsage.None);
                 buffer.SetData<VertexPositionTexture>(Vertices);
-#else
-                buffer = new VertexBuffer(device, 
-                                          typeof(VertexPositionColor), 
-                                          Vertices.Length, 
-                                          BufferUsage.None);
-                buffer.SetData<VertexPositionColor>(Vertices);
-#endif
             }
 
-            effect = new BasicEffect(device);
+            effect = new BasicEffect(game.GraphicsDevice);
 
             Scale = Vector3.One;
             Rotation = Vector3.Zero;
@@ -110,7 +95,7 @@ namespace Mundo03
         public virtual void Draw(Camera camera, Matrix parentWorld, bool showColliders = false)
         {
             if (Vertices != null)
-                device.SetVertexBuffer(buffer);
+                game.GraphicsDevice.SetVertexBuffer(buffer);
 
             Matrix localMatrix = Matrix.CreateScale(Scale)
                                  * Matrix.CreateFromYawPitchRoll(Rotation.Y, Rotation.X, Rotation.Z)
@@ -121,7 +106,6 @@ namespace Mundo03
             effect.View = camera.View;
             effect.Projection = camera.Projection;
 
-#if USE_TEXTURE
             effect.TextureEnabled = true;
             effect.Texture = Texture;
 
@@ -129,25 +113,12 @@ namespace Mundo03
             {
                 pass.Apply();
                 if (Vertices != null)
-                    device.DrawUserPrimitives<VertexPositionTexture>(PrimitiveType.TriangleList,
-                                                                   Vertices,
-                                                                   0,
-                                                                   Vertices.Length / 3);
+                    game.GraphicsDevice.DrawUserPrimitives<VertexPositionTexture>(PrimitiveType.TriangleList,
+                                                                                                Vertices,
+                                                                                                0,
+                                                                                                Vertices.Length / 3);
             }
             effect.TextureEnabled = false;
-#else
-            effect.VertexColorEnabled = true;
-            foreach (EffectPass pass in effect.CurrentTechnique.Passes)
-            {
-                pass.Apply();
-                if (Vertices != null)
-                    device.DrawUserPrimitives<VertexPositionColor>(PrimitiveType.TriangleList,
-                                                                   Vertices,
-                                                                   0,
-                                                                   Vertices.Length / 3);
-            }
-            effect.VertexColorEnabled = false;
-#endif
 
             if (showColliders) LBox.Draw(effect);
         }

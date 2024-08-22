@@ -9,8 +9,8 @@ namespace Mundo02
 {
     public class Building : GameObject
     {
-        public Building(Game1 game, GraphicsDevice device)
-            : base(game, device)
+        public Building(Game1 game)
+            : base(game)
         {
             Size = new Vector3(2, 4, 6);
             Vertices = new VertexPositionColor[]

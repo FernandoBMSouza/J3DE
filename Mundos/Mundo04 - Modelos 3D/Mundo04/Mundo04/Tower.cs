@@ -9,8 +9,8 @@ namespace Mundo04
 {
     class Tower : GameObject
     {
-        public Tower(Game1 game, GraphicsDevice device)
-            : base(game, device)
+        public Tower(Game1 game)
+            : base(game)
         {
             Size = new Vector3(3, 4, 3);
             Model = game.Content.Load<Model>(@"Models\tower");

@@ -8,8 +8,8 @@ namespace Mundo01
         public Cube(Game game)
             : base(game)
         {
-            SetSize(new Vector3(2, 2, 2));
-            vertices = new VertexPositionColor[]
+            Size = new Vector3(2, 2, 2);
+            Vertices = new VertexPositionColor[]
             {
                 // RIGHT
                 new VertexPositionColor(new Vector3(1, 1, 1), Color.Green),
