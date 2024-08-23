@@ -8,7 +8,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Provas\3. Minecraft\Minecraft\Minecraft\bin\x86\Debug\Content\Images\steve.xnb</Output>
-      <Time>2024-08-23T14:08:21.9797048-03:00</Time>
+      <Time>2024-08-23T15:55:46.6815504-03:00</Time>
     </Item>
     <Item>
       <Source>Images\bricks.png</Source>
@@ -17,7 +17,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Provas\3. Minecraft\Minecraft\Minecraft\bin\x86\Debug\Content\Images\bricks.xnb</Output>
-      <Time>2024-08-23T14:08:21.9640942-03:00</Time>
+      <Time>2024-08-23T15:55:46.6815504-03:00</Time>
     </Item>
     <Item>
       <Source>Images\grass.jpg</Source>
@@ -26,7 +26,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Provas\3. Minecraft\Minecraft\Minecraft\bin\x86\Debug\Content\Images\grass.xnb</Output>
-      <Time>2024-08-23T14:08:21.9797048-03:00</Time>
+      <Time>2024-08-23T15:55:46.6815504-03:00</Time>
     </Item>
     <Item>
       <Source>Images\zombie.png</Source>
@@ -35,7 +35,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Provas\3. Minecraft\Minecraft\Minecraft\bin\x86\Debug\Content\Images\zombie.xnb</Output>
-      <Time>2024-08-23T14:08:21.9797048-03:00</Time>
+      <Time>2024-08-23T15:55:46.6815504-03:00</Time>
     </Item>
     <Item>
       <Source>Effects\Effect1.fx</Source>
@@ -44,7 +44,7 @@
       <Processor>EffectProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Provas\3. Minecraft\Minecraft\Minecraft\bin\x86\Debug\Content\Effects\Effect1.xnb</Output>
-      <Time>2024-08-23T14:08:21.9640942-03:00</Time>
+      <Time>2024-08-23T15:55:46.680549-03:00</Time>
     </Item>
     <Item>
       <Source>Effects\RedEffect.fx</Source>
@@ -53,7 +53,7 @@
       <Processor>EffectProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Provas\3. Minecraft\Minecraft\Minecraft\bin\x86\Debug\Content\Effects\RedEffect.xnb</Output>
-      <Time>2024-08-23T14:08:21.9640942-03:00</Time>
+      <Time>2024-08-23T15:55:46.6815504-03:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>

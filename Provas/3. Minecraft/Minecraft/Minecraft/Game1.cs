@@ -57,7 +57,7 @@ namespace Minecraft
 
             characters = new List<Character>() { player };
 
-            enemies = new Enemy[100];
+            enemies = new Enemy[50];
             for (int i = 0; i < enemies.Length; i++)
                 enemies[i] = new Enemy(this);
 
