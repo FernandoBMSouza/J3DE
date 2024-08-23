@@ -7,8 +7,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Provas\3. Minecraft\Minecraft\Minecraft\bin\x86\Debug\Content\Images\steve.xnb</Output>
-      <Time>2024-08-23T15:55:46.6815504-03:00</Time>
+      <Output>C:\Users\ferna\OneDrive\Desktop\3. Minecraft\Minecraft\Minecraft\bin\x86\Debug\Content\Images\steve.xnb</Output>
+      <Time>2024-08-23T18:02:39.7971186-03:00</Time>
     </Item>
     <Item>
       <Source>Images\bricks.png</Source>
@@ -16,17 +16,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Provas\3. Minecraft\Minecraft\Minecraft\bin\x86\Debug\Content\Images\bricks.xnb</Output>
-      <Time>2024-08-23T15:55:46.6815504-03:00</Time>
-    </Item>
-    <Item>
-      <Source>Images\grass.jpg</Source>
-      <Name>Images\grass</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Provas\3. Minecraft\Minecraft\Minecraft\bin\x86\Debug\Content\Images\grass.xnb</Output>
-      <Time>2024-08-23T15:55:46.6815504-03:00</Time>
+      <Output>C:\Users\ferna\OneDrive\Desktop\3. Minecraft\Minecraft\Minecraft\bin\x86\Debug\Content\Images\bricks.xnb</Output>
+      <Time>2024-08-23T18:02:39.7941122-03:00</Time>
     </Item>
     <Item>
       <Source>Images\zombie.png</Source>
@@ -34,8 +25,17 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Provas\3. Minecraft\Minecraft\Minecraft\bin\x86\Debug\Content\Images\zombie.xnb</Output>
-      <Time>2024-08-23T15:55:46.6815504-03:00</Time>
+      <Output>C:\Users\ferna\OneDrive\Desktop\3. Minecraft\Minecraft\Minecraft\bin\x86\Debug\Content\Images\zombie.xnb</Output>
+      <Time>2024-08-23T18:02:39.7981177-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Images\grass.jpg</Source>
+      <Name>Images\grass</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\ferna\OneDrive\Desktop\3. Minecraft\Minecraft\Minecraft\bin\x86\Debug\Content\Images\grass.xnb</Output>
+      <Time>2024-08-23T18:02:39.7971186-03:00</Time>
     </Item>
     <Item>
       <Source>Effects\Effect1.fx</Source>
@@ -43,8 +43,8 @@
       <Importer>EffectImporter</Importer>
       <Processor>EffectProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Provas\3. Minecraft\Minecraft\Minecraft\bin\x86\Debug\Content\Effects\Effect1.xnb</Output>
-      <Time>2024-08-23T15:55:46.680549-03:00</Time>
+      <Output>C:\Users\ferna\OneDrive\Desktop\3. Minecraft\Minecraft\Minecraft\bin\x86\Debug\Content\Effects\Effect1.xnb</Output>
+      <Time>2024-08-23T18:02:39.7918876-03:00</Time>
     </Item>
     <Item>
       <Source>Effects\RedEffect.fx</Source>
@@ -52,8 +52,8 @@
       <Importer>EffectImporter</Importer>
       <Processor>EffectProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Provas\3. Minecraft\Minecraft\Minecraft\bin\x86\Debug\Content\Effects\RedEffect.xnb</Output>
-      <Time>2024-08-23T15:55:46.6815504-03:00</Time>
+      <Output>C:\Users\ferna\OneDrive\Desktop\3. Minecraft\Minecraft\Minecraft\bin\x86\Debug\Content\Effects\RedEffect.xnb</Output>
+      <Time>2024-08-23T18:02:39.7928879-03:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -61,10 +61,10 @@
       <TargetProfile>HiDef</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Provas\3. Minecraft\Minecraft\MinecraftContent\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Provas\3. Minecraft\Minecraft\Minecraft\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Provas\3. Minecraft\Minecraft\MinecraftContent\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Provas\3. Minecraft\Minecraft\Minecraft\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\ferna\OneDrive\Desktop\3. Minecraft\Minecraft\MinecraftContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\ferna\OneDrive\Desktop\3. Minecraft\Minecraft\Minecraft\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\ferna\OneDrive\Desktop\3. Minecraft\Minecraft\MinecraftContent\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\ferna\OneDrive\Desktop\3. Minecraft\Minecraft\Minecraft\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
@@ -93,7 +93,7 @@
       </Assembly>
       <Assembly>
         <Key>C:\WINDOWS\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
-        <Value>2023-12-16T18:46:09.1672477-03:00</Value>
+        <Value>2024-04-16T10:07:08.4397406-03:00</Value>
       </Assembly>
     </Assemblies>
   </Asset>

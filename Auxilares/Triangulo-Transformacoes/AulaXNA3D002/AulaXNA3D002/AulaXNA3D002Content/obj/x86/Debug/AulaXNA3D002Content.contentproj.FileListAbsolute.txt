@@ -1,0 +1,2 @@
+c:\users\fábio\documents\visual studio 2010\Projects\AulaXNA3D002\AulaXNA3D002\AulaXNA3D002Content\obj\x86\Debug\AulaXNA3D002Content.contentprojResolveAssemblyReference.cache
+C:\Users\ferna\OneDrive\Documents\J3DE\Auxilares\Triangulo-Transformacoes\AulaXNA3D002\AulaXNA3D002\AulaXNA3D002Content\obj\x86\Debug\AulaXNA3D002Content.contentprojResolveAssemblyReference.cache

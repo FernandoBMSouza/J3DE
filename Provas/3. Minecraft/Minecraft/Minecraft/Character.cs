@@ -19,6 +19,7 @@ namespace Minecraft
 
     public abstract class Character : GameObject
     {
+        float angle = 0;
         Cube[] cubes;
         protected Vector3 oldPosition;
         protected STATE state;
@@ -73,6 +74,15 @@ namespace Minecraft
             oldPosition = Position;
             UpdateState(gameTime);
             ChangeState(gameTime);
+
+            // Calcula o ângulo de rotação
+            this.angle += 40f * gameTime.ElapsedGameTime.Milliseconds * 0.001f;
+
+            // Rotaciona a cabeça
+            cubes[0].Rotation = new Vector3(0, (float)Math.Sin(MathHelper.ToRadians(this.angle)), 0);
+
+            //cubes[2].Position = new Vector3(cubes[2].Position.X, 1, cubes[2].Position.Z);
+            //cubes[2].Rotation = new Vector3((float)Math.Sin(MathHelper.ToRadians(this.angle)), 0, 0);
         }
 
         protected void UpdateState(GameTime gameTime)

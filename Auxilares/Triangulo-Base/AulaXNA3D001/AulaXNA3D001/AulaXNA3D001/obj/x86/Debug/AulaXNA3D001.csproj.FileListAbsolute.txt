@@ -1,0 +1,12 @@
+c:\users\fábio\documents\visual studio 2010\Projects\AulaXNA3D001\AulaXNA3D001\AulaXNA3D001\bin\x86\Debug\AulaXNA3D001.exe
+c:\users\fábio\documents\visual studio 2010\Projects\AulaXNA3D001\AulaXNA3D001\AulaXNA3D001\bin\x86\Debug\AulaXNA3D001.pdb
+c:\users\fábio\documents\visual studio 2010\Projects\AulaXNA3D001\AulaXNA3D001\AulaXNA3D001\obj\x86\Debug\AulaXNA3D001.csprojResolveAssemblyReference.cache
+c:\users\fábio\documents\visual studio 2010\Projects\AulaXNA3D001\AulaXNA3D001\AulaXNA3D001\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+c:\users\fábio\documents\visual studio 2010\Projects\AulaXNA3D001\AulaXNA3D001\AulaXNA3D001\obj\x86\Debug\AulaXNA3D001.exe
+c:\users\fábio\documents\visual studio 2010\Projects\AulaXNA3D001\AulaXNA3D001\AulaXNA3D001\obj\x86\Debug\AulaXNA3D001.pdb
+C:\Users\ferna\OneDrive\Documents\J3DE\Auxilares\Triangulo-Matrizes\AulaXNA3D001\AulaXNA3D001\AulaXNA3D001\bin\x86\Debug\AulaXNA3D001.exe
+C:\Users\ferna\OneDrive\Documents\J3DE\Auxilares\Triangulo-Matrizes\AulaXNA3D001\AulaXNA3D001\AulaXNA3D001\bin\x86\Debug\AulaXNA3D001.pdb
+C:\Users\ferna\OneDrive\Documents\J3DE\Auxilares\Triangulo-Matrizes\AulaXNA3D001\AulaXNA3D001\AulaXNA3D001\obj\x86\Debug\AulaXNA3D001.csprojResolveAssemblyReference.cache
+C:\Users\ferna\OneDrive\Documents\J3DE\Auxilares\Triangulo-Matrizes\AulaXNA3D001\AulaXNA3D001\AulaXNA3D001\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\ferna\OneDrive\Documents\J3DE\Auxilares\Triangulo-Matrizes\AulaXNA3D001\AulaXNA3D001\AulaXNA3D001\obj\x86\Debug\AulaXNA3D001.exe
+C:\Users\ferna\OneDrive\Documents\J3DE\Auxilares\Triangulo-Matrizes\AulaXNA3D001\AulaXNA3D001\AulaXNA3D001\obj\x86\Debug\AulaXNA3D001.pdb
