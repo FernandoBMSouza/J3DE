@@ -24,6 +24,8 @@ namespace PresentationWorld
         Cube house;
         Ship ship;
         WindmillModel[] windmillModels;
+        KinematicSphere sphere;
+        bool isInSpaceship;
 
         List<GameObject> colliders;
 
@@ -60,9 +62,8 @@ namespace PresentationWorld
             };
 
             ship.Scale = new Vector3(5, 5, 5);
-            ship.Position = new Vector3(-20, 3, 20);
-            ship.Rotation = new Vector3(MathHelper.ToRadians(-90), 0, 0);
-            
+            ship.Position = new Vector3(20, 3, 20);
+            //ship.Rotation = new Vector3(0, MathHelper.ToRadians(-180), 0);
 
             plane.Scale = new Vector3(70, 1, 70);
             house.Position = new Vector3(0, 1, 0);
@@ -75,6 +76,9 @@ namespace PresentationWorld
 
             colliders = new List<GameObject>() { plane, house, ship, windmillModels[0], windmillModels[1] };
 
+            sphere = new KinematicSphere(this, GraphicsDevice);
+            sphere.Position = new Vector3(-20, 3, 20);
+            isInSpaceship = false;
             base.Initialize();
         }
 
@@ -92,7 +96,10 @@ namespace PresentationWorld
             if (Keyboard.GetState().IsKeyDown(Keys.Escape))
                 this.Exit();
 
-            camera.Update(gameTime);
+
+            camera.Update(gameTime, isInSpaceship);
+
+            if(isInSpaceship) ship.Update(gameTime);
 
             foreach (WindmillModel windmillModel in windmillModels)
                 windmillModel.Update(gameTime);
@@ -105,7 +112,26 @@ namespace PresentationWorld
                     obj.SetColliderColor(Color.Red);
                 }
                 else obj.SetColliderColor(Color.Green);
+
+                if (ship.IsColliding(obj) && obj != ship)
+                {
+                    ship.RestorePosition();
+                    obj.SetColliderColor(Color.Red);
+                }
+                else obj.SetColliderColor(Color.Green);
             }
+
+            if (camera.IsColliding(sphere.BSphere))
+            {
+                isInSpaceship = true;
+                camera.UpperCameraPosition();
+                
+            }
+            else if (ship.IsColliding(sphere))
+            {
+                isInSpaceship = false;
+                ship.Position = new Vector3(20, 3, 20);
+            }          
 
             base.Update(gameTime);
         }
@@ -118,12 +144,13 @@ namespace PresentationWorld
             //rs.CullMode = CullMode.None;
             //rs.FillMode = FillMode.WireFrame;
             // GraphicsDevice.RasterizerState = rs;
-            ship.Draw(camera, true);
-            plane.Draw(camera, true);
-            house.Draw(camera, true);
+            ship.Draw(camera);
+            plane.Draw(camera);
+            house.Draw(camera);
             foreach (WindmillModel windmillModel in windmillModels)
-                windmillModel.Draw(camera, true);
+                windmillModel.Draw(camera);
 
+            sphere.Draw(camera, true);
             base.Draw(gameTime);
         }
     }

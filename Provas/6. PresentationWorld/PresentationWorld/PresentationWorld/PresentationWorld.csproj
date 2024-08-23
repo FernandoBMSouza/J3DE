@@ -112,6 +112,7 @@
     <Compile Include="Camera.cs" />
     <Compile Include="Cube.cs" />
     <Compile Include="GameObject.cs" />
+    <Compile Include="KinematicSphere.cs" />
     <Compile Include="LineBox.cs" />
     <Compile Include="LineSphere.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

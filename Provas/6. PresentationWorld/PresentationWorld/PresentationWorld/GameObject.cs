@@ -65,7 +65,7 @@ namespace PresentationWorld
             {
                 scale = value;
                 Size *= scale;
-                UpdateCollider();
+                //UpdateCollider();
             }
         }
 
@@ -173,7 +173,7 @@ namespace PresentationWorld
             }
         }
 
-        private void UpdateCollider()
+        protected void UpdateCollider()
         {
             if (Collider == ColliderType.BoundingBox)
             {

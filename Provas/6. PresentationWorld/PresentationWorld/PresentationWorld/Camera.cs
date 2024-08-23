@@ -46,11 +46,14 @@ namespace PresentationWorld
             UpdateBoundingBox();
         }
 
-        public void Update(GameTime gameTime)
+        public void Update(GameTime gameTime, bool isInSpaceShip)
         {
             oldPosition = position;
-            Rotation(gameTime);
-            Translation(gameTime);
+            if (!isInSpaceShip)
+            {
+                Rotation(gameTime);
+                Translation(gameTime);
+            }
 
             View = Matrix.Identity;
             View *= Matrix.CreateRotationY(MathHelper.ToRadians(angle.Y));
@@ -68,10 +71,10 @@ namespace PresentationWorld
             if (Keyboard.GetState().IsKeyDown(Keys.E))
                 angle.Y -= rotationSpeed * gameTime.ElapsedGameTime.Milliseconds * 0.001f;
 
-            if (Keyboard.GetState().IsKeyDown(Keys.Up))
-                angle.X += rotationSpeed * gameTime.ElapsedGameTime.Milliseconds * 0.001f;
-            if (Keyboard.GetState().IsKeyDown(Keys.Down))
-                angle.X -= rotationSpeed * gameTime.ElapsedGameTime.Milliseconds * 0.001f;
+            //if (Keyboard.GetState().IsKeyDown(Keys.Up))
+            //    angle.X += rotationSpeed * gameTime.ElapsedGameTime.Milliseconds * 0.001f;
+            //if (Keyboard.GetState().IsKeyDown(Keys.Down))
+            //    angle.X -= rotationSpeed * gameTime.ElapsedGameTime.Milliseconds * 0.001f;
         }
 
         private void Translation(GameTime gameTime)
@@ -134,6 +137,12 @@ namespace PresentationWorld
         public void RestorePosition()
         {
             position = oldPosition;
+        }
+
+        public void UpperCameraPosition()
+        {
+            position = new Vector3(-30, 11, 64);
+            angle = new Vector3(0, -36, 0);
         }
     }
 }

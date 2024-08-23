@@ -8,7 +8,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Provas\6. PresentationWorld\PresentationWorld\PresentationWorld\bin\x86\Debug\Content\Images\bricks.xnb</Output>
-      <Time>2024-08-06T18:07:19.0278973-03:00</Time>
+      <Time>2024-08-23T10:20:57.7015221-03:00</Time>
     </Item>
     <Item>
       <Source>Images\grass.jpg</Source>
@@ -17,7 +17,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Provas\6. PresentationWorld\PresentationWorld\PresentationWorld\bin\x86\Debug\Content\Images\grass.xnb</Output>
-      <Time>2024-08-06T18:07:19.0298978-03:00</Time>
+      <Time>2024-08-23T10:20:57.7015221-03:00</Time>
     </Item>
     <Item>
       <Source>Images\rocks.jpg</Source>
@@ -26,7 +26,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Provas\6. PresentationWorld\PresentationWorld\PresentationWorld\bin\x86\Debug\Content\Images\rocks.xnb</Output>
-      <Time>2024-08-06T18:07:19.032899-03:00</Time>
+      <Time>2024-08-23T10:20:57.7015221-03:00</Time>
     </Item>
     <Item>
       <Source>Images\wood.png</Source>
@@ -35,7 +35,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Provas\6. PresentationWorld\PresentationWorld\PresentationWorld\bin\x86\Debug\Content\Images\wood.xnb</Output>
-      <Time>2024-08-06T18:07:19.0408978-03:00</Time>
+      <Time>2024-08-23T10:20:57.7015221-03:00</Time>
     </Item>
     <Item>
       <Source>Images\ShipTexture.png</Source>
@@ -44,7 +44,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Provas\6. PresentationWorld\PresentationWorld\PresentationWorld\bin\x86\Debug\Content\Images\ShipTexture.xnb</Output>
-      <Time>2024-08-06T18:38:01.1964535-03:00</Time>
+      <Time>2024-08-23T10:25:40.8902212-03:00</Time>
     </Item>
     <Item>
       <Source>Images\grass2.jpg</Source>
@@ -53,7 +53,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Provas\6. PresentationWorld\PresentationWorld\PresentationWorld\bin\x86\Debug\Content\Images\grass2.xnb</Output>
-      <Time>2024-08-06T18:46:40.2393102-03:00</Time>
+      <Time>2024-08-23T10:20:57.7015221-03:00</Time>
     </Item>
     <Item>
       <Source>Models\blade.x</Source>
@@ -62,10 +62,10 @@
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Provas\6. PresentationWorld\PresentationWorld\PresentationWorld\bin\x86\Debug\Content\Models\blade.xnb</Output>
-      <Time>2024-08-06T18:07:30.3393694-03:00</Time>
+      <Time>2024-08-23T10:20:57.7015221-03:00</Time>
       <Dependency>
         <Key>obj\x86\Debug\Models\blade_0.xml</Key>
-        <Value>2024-08-06T19:28:21.2178281-03:00</Value>
+        <Value>2024-08-23T10:21:35.7171473-03:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -75,10 +75,10 @@
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Provas\6. PresentationWorld\PresentationWorld\PresentationWorld\bin\x86\Debug\Content\Models\building.xnb</Output>
-      <Time>2024-08-06T18:07:30.3413784-03:00</Time>
+      <Time>2024-08-23T10:20:57.7015221-03:00</Time>
       <Dependency>
         <Key>obj\x86\Debug\Models\building_0.xml</Key>
-        <Value>2024-08-06T19:28:21.2946277-03:00</Value>
+        <Value>2024-08-23T10:21:35.7952724-03:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -88,10 +88,10 @@
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Provas\6. PresentationWorld\PresentationWorld\PresentationWorld\bin\x86\Debug\Content\Models\Ship.xnb</Output>
-      <Time>2024-08-06T18:29:16.4968071-03:00</Time>
+      <Time>2024-08-23T10:44:14.3133147-03:00</Time>
       <Dependency>
         <Key>obj\x86\Debug\Models\Ship_0.xml</Key>
-        <Value>2024-08-06T19:28:21.3526263-03:00</Value>
+        <Value>2024-08-23T10:44:18.3707713-03:00</Value>
       </Dependency>
       <Request>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Provas\6. PresentationWorld\PresentationWorld\PresentationWorld\bin\x86\Debug\Content\Models\ShipTexture_0.xnb</Request>
     </Item>
@@ -100,21 +100,21 @@
       <Importer>XImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
       <Output>obj\x86\Debug\Models\blade_0.xml</Output>
-      <Time>2024-08-06T18:07:30.3393694-03:00</Time>
+      <Time>2024-08-23T10:20:57.7015221-03:00</Time>
     </Item>
     <Item>
       <Source>Models\building.x</Source>
       <Importer>XImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
       <Output>obj\x86\Debug\Models\building_0.xml</Output>
-      <Time>2024-08-06T18:07:30.3413784-03:00</Time>
+      <Time>2024-08-23T10:20:57.7015221-03:00</Time>
     </Item>
     <Item>
       <Source>Models\Ship.fbx</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
       <Output>obj\x86\Debug\Models\Ship_0.xml</Output>
-      <Time>2024-08-06T18:29:16.4968071-03:00</Time>
+      <Time>2024-08-23T10:44:14.3133147-03:00</Time>
     </Item>
     <Item>
       <Source>Models\ShipTexture.png</Source>
@@ -130,7 +130,7 @@
       </Parameters>
       <Options>None</Options>
       <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Provas\6. PresentationWorld\PresentationWorld\PresentationWorld\bin\x86\Debug\Content\Models\ShipTexture_0.xnb</Output>
-      <Time>2024-08-06T18:38:01.1964535-03:00</Time>
+      <Time>2024-08-23T10:20:57.7015221-03:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
