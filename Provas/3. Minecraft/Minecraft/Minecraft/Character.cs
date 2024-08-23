@@ -162,7 +162,7 @@ namespace Minecraft
 
         public void RestorePosition()
         {
-            Position = oldPosition;
+            Position = new Vector3(oldPosition.X, Size.Y / 2, oldPosition.Z);
         }
 
         public void RestoreEffect()

@@ -47,7 +47,6 @@ namespace Minecraft
             int seed = (int)DateTime.Now.Ticks % int.MaxValue;
             random = new Random(seed);
 
-
             plane = new Quad(this);
             plane.Scale = new Vector3(20, 1, 20);
 
@@ -58,16 +57,24 @@ namespace Minecraft
 
             characters = new List<Character>() { player };
 
-            enemies = new Enemy[50];
+            enemies = new Enemy[100];
             for (int i = 0; i < enemies.Length; i++)
                 enemies[i] = new Enemy(this);
 
             foreach (Enemy enemy in enemies)
             {
                 characters.Add(enemy);
-                enemy.Position = new Vector3(random.Next((int)-plane.Size.X / 2, (int)plane.Size.X / 2),
-                                             enemy.Size.Y / 2,
-                                             random.Next((int)-plane.Size.Z / 2, (int)plane.Size.Z / 2));
+                //enemy.Position = new Vector3(MathHelper.Clamp(random.Next((int)(plane.Position.X - (plane.Size.X / 2)), (int)(plane.Position.X + (plane.Size.X / 2))),
+                //                                                          (int)(plane.Position.X - (plane.Size.X / 2)),
+                //                                                          (int)(plane.Position.X + (plane.Size.X / 2))),
+                //                            enemy.Size.Y / 2,
+                //                            MathHelper.Clamp(random.Next((int)(plane.Position.Z - (plane.Size.Z / 2)), (int)(plane.Position.Z + (plane.Size.Z / 2))),
+                //                                                         (int)(plane.Position.Z - (plane.Size.Z / 2)),
+                //                                                         (int)(plane.Position.Z + (plane.Size.Z / 2))));
+
+                enemy.Position = new Vector3(random.Next((int)(plane.Position.X - (plane.Size.X / 2)), (int)(plane.Position.X + (plane.Size.X / 2))) - 2,
+                                            enemy.Size.Y / 2,
+                                            random.Next((int)(plane.Position.Z - (plane.Size.Z / 2)), (int)(plane.Position.Z + (plane.Size.Z / 2))) - 2);
             }
             base.Initialize();
         }
@@ -85,6 +92,16 @@ namespace Minecraft
         {
             if (Keyboard.GetState().IsKeyDown(Keys.Escape))
                 this.Exit();
+
+            // Checa se saiu do cenario
+            foreach (Character character in characters)
+            {
+                if (character.Position.X >= plane.Size.X / 2 || character.Position.X <= -plane.Size.X / 2 ||
+                    character.Position.Z >= plane.Size.Z / 2 || character.Position.Z <= -plane.Size.Z / 2)
+                {
+                    character.RestorePosition();
+                }
+            }
 
             camera.Update(gameTime, player);
             player.Update(gameTime);
@@ -107,16 +124,6 @@ namespace Minecraft
                     player.RestoreEffect();
                     player.SetColliderColor(Color.Green);
                     enemy.SetColliderColor(Color.Green);
-                }
-            }
-
-            // Checa se saiu do cenario
-            foreach (Character character in characters)
-            {
-                if (character.Position.X >= plane.Size.X/2 || character.Position.X <= -plane.Size.X/2 || 
-                    character.Position.Z >= plane.Size.Z/2 || character.Position.Z <= -plane.Size.Z/2)
-                {
-                    character.RestorePosition();
                 }
             }
 
