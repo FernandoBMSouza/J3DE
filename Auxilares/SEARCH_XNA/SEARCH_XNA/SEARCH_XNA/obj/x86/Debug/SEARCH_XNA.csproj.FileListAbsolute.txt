@@ -1,0 +1,7 @@
+C:\Users\ferna\Downloads\SEARCH_XNA\SEARCH_XNA\SEARCH_XNA\bin\x86\Debug\Content\Fonts\Arial.xnb
+C:\Users\ferna\Downloads\SEARCH_XNA\SEARCH_XNA\SEARCH_XNA\bin\x86\Debug\SEARCH_XNA.exe
+C:\Users\ferna\Downloads\SEARCH_XNA\SEARCH_XNA\SEARCH_XNA\bin\x86\Debug\SEARCH_XNA.pdb
+C:\Users\ferna\Downloads\SEARCH_XNA\SEARCH_XNA\SEARCH_XNA\obj\x86\Debug\SEARCH_XNA.csprojResolveAssemblyReference.cache
+C:\Users\ferna\Downloads\SEARCH_XNA\SEARCH_XNA\SEARCH_XNA\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\ferna\Downloads\SEARCH_XNA\SEARCH_XNA\SEARCH_XNA\obj\x86\Debug\SEARCH_XNA.exe
+C:\Users\ferna\Downloads\SEARCH_XNA\SEARCH_XNA\SEARCH_XNA\obj\x86\Debug\SEARCH_XNA.pdb

@@ -1,0 +1,20 @@
+c:\users\juliana\documents\visual studio 2010\Projects\SequentialSearch\SequentialSearch\bin\Debug\SequentialSearch.exe
+c:\users\juliana\documents\visual studio 2010\Projects\SequentialSearch\SequentialSearch\bin\Debug\SequentialSearch.pdb
+c:\users\juliana\documents\visual studio 2010\Projects\SequentialSearch\SequentialSearch\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\users\juliana\documents\visual studio 2010\Projects\SequentialSearch\SequentialSearch\obj\x86\Debug\SequentialSearch.exe
+c:\users\juliana\documents\visual studio 2010\Projects\SequentialSearch\SequentialSearch\obj\x86\Debug\SequentialSearch.pdb
+C:\Fabio\NAVE\2013\00_AULAS\Aulas-3003-PJ2\3oBimestre\aula19\Search\SequentialSearch\SequentialSearch\obj\x86\Debug\SequentialSearch.exe
+C:\Fabio\NAVE\2013\00_AULAS\Aulas-3003-PJ2\3oBimestre\aula19\Search\SequentialSearch\SequentialSearch\obj\x86\Debug\SequentialSearch.pdb
+C:\Fabio\NAVE\2013\00_AULAS\Aulas-3003-PJ2\3oBimestre\aula19\Search\SequentialSearch\SequentialSearch\bin\Debug\SequentialSearch.exe
+C:\Fabio\NAVE\2013\00_AULAS\Aulas-3003-PJ2\3oBimestre\aula19\Search\SequentialSearch\SequentialSearch\bin\Debug\SequentialSearch.pdb
+C:\Fabio\NAVE\2013\00_AULAS\Aulas-3003-PJ2\3oBimestre\aula19\Search\SequentialSearch\SequentialSearch\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Fabio\NAVE\2013\00_AULAS\Aulas-3003-PJ2\3oBimestre\aula19_20\Search\SequentialSearch\SequentialSearch\obj\x86\Debug\SequentialSearch.pdb
+C:\Fabio\NAVE\2013\00_AULAS\Aulas-3003-PJ2\3oBimestre\aula19_20\Search\SequentialSearch\SequentialSearch\bin\Debug\SequentialSearch.exe
+C:\Fabio\NAVE\2013\00_AULAS\Aulas-3003-PJ2\3oBimestre\aula19_20\Search\SequentialSearch\SequentialSearch\bin\Debug\SequentialSearch.pdb
+C:\Fabio\NAVE\2013\00_AULAS\Aulas-3003-PJ2\3oBimestre\aula19_20\Search\SequentialSearch\SequentialSearch\obj\x86\Debug\SequentialSearch.exe
+C:\Fabio\NAVE\2013\00_AULAS\Aulas-3003-PJ2\3oBimestre\aula19_20\Search\SequentialSearch\SequentialSearch\obj\x86\Debug\SequentialSearch.csprojResolveAssemblyReference.cache
+F:\Documentos\Fabio\IFRJ\2020\Disciplinas 2020-1\NAVE2020\Aulas-3003-PJ2\3oBimestre\aula19_20\Search\SequentialSearch\SequentialSearch\obj\x86\Debug\SequentialSearch.exe
+F:\Documentos\Fabio\IFRJ\2020\Disciplinas 2020-1\NAVE2020\Aulas-3003-PJ2\3oBimestre\aula19_20\Search\SequentialSearch\SequentialSearch\obj\x86\Debug\SequentialSearch.pdb
+F:\Documentos\Fabio\IFRJ\2020\Disciplinas 2020-1\NAVE2020\Aulas-3003-PJ2\3oBimestre\aula19_20\Search\SequentialSearch\SequentialSearch\bin\Debug\SequentialSearch.exe
+F:\Documentos\Fabio\IFRJ\2020\Disciplinas 2020-1\NAVE2020\Aulas-3003-PJ2\3oBimestre\aula19_20\Search\SequentialSearch\SequentialSearch\bin\Debug\SequentialSearch.pdb
+F:\Documentos\Fabio\IFRJ\2020\Disciplinas 2020-1\NAVE2020\Aulas-3003-PJ2\3oBimestre\aula19_20\Search\SequentialSearch\SequentialSearch\obj\x86\Debug\SequentialSearch.csprojResolveAssemblyReference.cache

@@ -8,10 +8,10 @@
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Auxilares\SplitScreen\SplitScreen\SplitScreen\bin\x86\Debug\Content\Ship.xnb</Output>
-      <Time>2024-07-23T14:06:31.9133645-03:00</Time>
+      <Time>2024-08-24T10:22:41.4094999-03:00</Time>
       <Dependency>
         <Key>obj\x86\Debug\Ship_0.xml</Key>
-        <Value>2024-07-23T14:06:40.1577539-03:00</Value>
+        <Value>2024-08-24T11:08:29.1081828-03:00</Value>
       </Dependency>
       <Request>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Auxilares\SplitScreen\SplitScreen\SplitScreen\bin\x86\Debug\Content\ShipTexture_0.xnb</Request>
     </Item>
@@ -20,7 +20,7 @@
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
       <Output>obj\x86\Debug\Ship_0.xml</Output>
-      <Time>2024-07-23T14:06:31.9133645-03:00</Time>
+      <Time>2024-08-24T10:22:41.4094999-03:00</Time>
     </Item>
     <Item>
       <Source>ShipTexture.png</Source>
@@ -29,7 +29,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Auxilares\SplitScreen\SplitScreen\SplitScreen\bin\x86\Debug\Content\ShipTexture.xnb</Output>
-      <Time>2024-07-23T14:08:04.1947961-03:00</Time>
+      <Time>2024-08-24T10:22:41.4105002-03:00</Time>
     </Item>
     <Item>
       <Source>ShipTexture.png</Source>
@@ -45,7 +45,7 @@
       </Parameters>
       <Options>None</Options>
       <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Auxilares\SplitScreen\SplitScreen\SplitScreen\bin\x86\Debug\Content\ShipTexture_0.xnb</Output>
-      <Time>2024-07-23T14:08:04.1947961-03:00</Time>
+      <Time>2024-08-24T10:22:41.4105002-03:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>

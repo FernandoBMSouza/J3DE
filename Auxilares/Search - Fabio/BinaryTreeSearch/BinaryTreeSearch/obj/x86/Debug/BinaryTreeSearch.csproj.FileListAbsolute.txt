@@ -1,0 +1,20 @@
+c:\users\juliana\documents\visual studio 2010\Projects\BinaryTreeSearch\BinaryTreeSearch\bin\Debug\BinaryTreeSearch.exe
+c:\users\juliana\documents\visual studio 2010\Projects\BinaryTreeSearch\BinaryTreeSearch\bin\Debug\BinaryTreeSearch.pdb
+c:\users\juliana\documents\visual studio 2010\Projects\BinaryTreeSearch\BinaryTreeSearch\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\users\juliana\documents\visual studio 2010\Projects\BinaryTreeSearch\BinaryTreeSearch\obj\x86\Debug\BinaryTreeSearch.exe
+c:\users\juliana\documents\visual studio 2010\Projects\BinaryTreeSearch\BinaryTreeSearch\obj\x86\Debug\BinaryTreeSearch.pdb
+C:\Fabio\NAVE\2013\00_AULAS\Aulas-3003-PJ2\3oBimestre\aula19\Search\BinaryTreeSearch\BinaryTreeSearch\obj\x86\Debug\BinaryTreeSearch.exe
+C:\Fabio\NAVE\2013\00_AULAS\Aulas-3003-PJ2\3oBimestre\aula19\Search\BinaryTreeSearch\BinaryTreeSearch\obj\x86\Debug\BinaryTreeSearch.pdb
+C:\Fabio\NAVE\2013\00_AULAS\Aulas-3003-PJ2\3oBimestre\aula19\Search\BinaryTreeSearch\BinaryTreeSearch\bin\Debug\BinaryTreeSearch.exe
+C:\Fabio\NAVE\2013\00_AULAS\Aulas-3003-PJ2\3oBimestre\aula19\Search\BinaryTreeSearch\BinaryTreeSearch\bin\Debug\BinaryTreeSearch.pdb
+C:\Fabio\NAVE\2013\00_AULAS\Aulas-3003-PJ2\3oBimestre\aula19\Search\BinaryTreeSearch\BinaryTreeSearch\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Fabio\NAVE\2013\00_AULAS\Aulas-3003-PJ2\3oBimestre\aula19_20\Search\BinaryTreeSearch\BinaryTreeSearch\obj\x86\Debug\BinaryTreeSearch.pdb
+C:\Fabio\NAVE\2013\00_AULAS\Aulas-3003-PJ2\3oBimestre\aula19_20\Search\BinaryTreeSearch\BinaryTreeSearch\bin\Debug\BinaryTreeSearch.exe
+C:\Fabio\NAVE\2013\00_AULAS\Aulas-3003-PJ2\3oBimestre\aula19_20\Search\BinaryTreeSearch\BinaryTreeSearch\bin\Debug\BinaryTreeSearch.pdb
+C:\Fabio\NAVE\2013\00_AULAS\Aulas-3003-PJ2\3oBimestre\aula19_20\Search\BinaryTreeSearch\BinaryTreeSearch\obj\x86\Debug\BinaryTreeSearch.exe
+C:\Fabio\NAVE\2013\00_AULAS\Aulas-3003-PJ2\3oBimestre\aula19_20\Search\BinaryTreeSearch\BinaryTreeSearch\obj\x86\Debug\BinaryTreeSearch.csprojResolveAssemblyReference.cache
+F:\Documentos\Fabio\IFRJ\2020\Disciplinas 2020-1\NAVE2020\Aulas-3003-PJ2\3oBimestre\aula19_20\Search\BinaryTreeSearch\BinaryTreeSearch\obj\x86\Debug\BinaryTreeSearch.exe
+F:\Documentos\Fabio\IFRJ\2020\Disciplinas 2020-1\NAVE2020\Aulas-3003-PJ2\3oBimestre\aula19_20\Search\BinaryTreeSearch\BinaryTreeSearch\obj\x86\Debug\BinaryTreeSearch.pdb
+F:\Documentos\Fabio\IFRJ\2020\Disciplinas 2020-1\NAVE2020\Aulas-3003-PJ2\3oBimestre\aula19_20\Search\BinaryTreeSearch\BinaryTreeSearch\bin\Debug\BinaryTreeSearch.exe
+F:\Documentos\Fabio\IFRJ\2020\Disciplinas 2020-1\NAVE2020\Aulas-3003-PJ2\3oBimestre\aula19_20\Search\BinaryTreeSearch\BinaryTreeSearch\bin\Debug\BinaryTreeSearch.pdb
+F:\Documentos\Fabio\IFRJ\2020\Disciplinas 2020-1\NAVE2020\Aulas-3003-PJ2\3oBimestre\aula19_20\Search\BinaryTreeSearch\BinaryTreeSearch\obj\x86\Debug\BinaryTreeSearch.csprojResolveAssemblyReference.cache

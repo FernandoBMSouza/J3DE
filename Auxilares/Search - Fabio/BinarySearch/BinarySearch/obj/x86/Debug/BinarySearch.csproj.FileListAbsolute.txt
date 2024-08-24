@@ -1,0 +1,25 @@
+c:\users\juliana\documents\visual studio 2010\Projects\BinarySearch\BinarySearch\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\users\juliana\documents\visual studio 2010\Projects\BinarySearch\BinarySearch\bin\Debug\BinarySearch.exe
+c:\users\juliana\documents\visual studio 2010\Projects\BinarySearch\BinarySearch\bin\Debug\BinarySearch.pdb
+c:\users\juliana\documents\visual studio 2010\Projects\BinarySearch\BinarySearch\obj\x86\Debug\BinarySearch.exe
+c:\users\juliana\documents\visual studio 2010\Projects\BinarySearch\BinarySearch\obj\x86\Debug\BinarySearch.pdb
+C:\Fabio\NAVE\2013\00_AULAS\Aulas-3003-PJ2\3oBimestre\aula19\Search\BinarySearch\BinarySearch\obj\x86\Debug\BinarySearch.exe
+C:\Fabio\NAVE\2013\00_AULAS\Aulas-3003-PJ2\3oBimestre\aula19\Search\BinarySearch\BinarySearch\obj\x86\Debug\BinarySearch.pdb
+C:\Fabio\NAVE\2013\00_AULAS\Aulas-3003-PJ2\3oBimestre\aula19\Search\BinarySearch\BinarySearch\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Fabio\NAVE\2013\00_AULAS\Aulas-3003-PJ2\3oBimestre\aula19\Search\BinarySearch\BinarySearch\bin\Debug\BinarySearch.exe
+C:\Fabio\NAVE\2013\00_AULAS\Aulas-3003-PJ2\3oBimestre\aula19\Search\BinarySearch\BinarySearch\bin\Debug\BinarySearch.pdb
+C:\Fabio\NAVE\2013\00_AULAS\Aulas-3003-PJ2\3oBimestre\aula19_20\Search\BinarySearch\BinarySearch\obj\x86\Debug\BinarySearch.pdb
+C:\Fabio\NAVE\2013\00_AULAS\Aulas-3003-PJ2\3oBimestre\aula19_20\Search\BinarySearch\BinarySearch\bin\Debug\BinarySearch.exe
+C:\Fabio\NAVE\2013\00_AULAS\Aulas-3003-PJ2\3oBimestre\aula19_20\Search\BinarySearch\BinarySearch\bin\Debug\BinarySearch.pdb
+C:\Fabio\NAVE\2013\00_AULAS\Aulas-3003-PJ2\3oBimestre\aula19_20\Search\BinarySearch\BinarySearch\obj\x86\Debug\BinarySearch.exe
+C:\Fabio\NAVE\2013\00_AULAS\Aulas-3003-PJ2\3oBimestre\aula19_20\Search\BinarySearch\BinarySearch\obj\x86\Debug\BinarySearch.csprojResolveAssemblyReference.cache
+F:\Documentos\Fabio\IFRJ\2020\Disciplinas 2020-1\NAVE2020\Aulas-3003-PJ2\3oBimestre\aula19_20\Search\BinarySearch\BinarySearch\obj\x86\Debug\BinarySearch.exe
+F:\Documentos\Fabio\IFRJ\2020\Disciplinas 2020-1\NAVE2020\Aulas-3003-PJ2\3oBimestre\aula19_20\Search\BinarySearch\BinarySearch\obj\x86\Debug\BinarySearch.pdb
+F:\Documentos\Fabio\IFRJ\2020\Disciplinas 2020-1\NAVE2020\Aulas-3003-PJ2\3oBimestre\aula19_20\Search\BinarySearch\BinarySearch\bin\Debug\BinarySearch.exe
+F:\Documentos\Fabio\IFRJ\2020\Disciplinas 2020-1\NAVE2020\Aulas-3003-PJ2\3oBimestre\aula19_20\Search\BinarySearch\BinarySearch\bin\Debug\BinarySearch.pdb
+F:\Documentos\Fabio\IFRJ\2020\Disciplinas 2020-1\NAVE2020\Aulas-3003-PJ2\3oBimestre\aula19_20\Search\BinarySearch\BinarySearch\obj\x86\Debug\BinarySearch.csprojResolveAssemblyReference.cache
+C:\Users\ferna\OneDrive\Documents\Jogos 3D com Engines\Aulas\Inteligencia Artificial Aplicada a Jogos\Aulas\Aula 06 - Algoritmos de Busca\Exemplos\Search\BinarySearch\BinarySearch\obj\x86\Debug\BinarySearch.exe
+C:\Users\ferna\OneDrive\Documents\Jogos 3D com Engines\Aulas\Inteligencia Artificial Aplicada a Jogos\Aulas\Aula 06 - Algoritmos de Busca\Exemplos\Search\BinarySearch\BinarySearch\obj\x86\Debug\BinarySearch.pdb
+C:\Users\ferna\OneDrive\Documents\Jogos 3D com Engines\Aulas\Inteligencia Artificial Aplicada a Jogos\Aulas\Aula 06 - Algoritmos de Busca\Exemplos\Search\BinarySearch\BinarySearch\bin\Debug\BinarySearch.exe
+C:\Users\ferna\OneDrive\Documents\Jogos 3D com Engines\Aulas\Inteligencia Artificial Aplicada a Jogos\Aulas\Aula 06 - Algoritmos de Busca\Exemplos\Search\BinarySearch\BinarySearch\bin\Debug\BinarySearch.pdb
+C:\Users\ferna\OneDrive\Documents\Jogos 3D com Engines\Aulas\Inteligencia Artificial Aplicada a Jogos\Aulas\Aula 06 - Algoritmos de Busca\Exemplos\Search\BinarySearch\BinarySearch\obj\x86\Debug\BinarySearch.csprojResolveAssemblyReference.cache
