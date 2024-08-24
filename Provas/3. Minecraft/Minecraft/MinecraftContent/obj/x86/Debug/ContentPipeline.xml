@@ -7,7 +7,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\ferna\OneDrive\Desktop\3. Minecraft\Minecraft\Minecraft\bin\x86\Debug\Content\Images\steve.xnb</Output>
+      <Output>C:\Users\ferna\OneDrive\Documents\J3DE\Provas\3. Minecraft\Minecraft\Minecraft\bin\x86\Debug\Content\Images\steve.xnb</Output>
       <Time>2024-08-23T18:02:39.7971186-03:00</Time>
     </Item>
     <Item>
@@ -16,7 +16,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\ferna\OneDrive\Desktop\3. Minecraft\Minecraft\Minecraft\bin\x86\Debug\Content\Images\bricks.xnb</Output>
+      <Output>C:\Users\ferna\OneDrive\Documents\J3DE\Provas\3. Minecraft\Minecraft\Minecraft\bin\x86\Debug\Content\Images\bricks.xnb</Output>
       <Time>2024-08-23T18:02:39.7941122-03:00</Time>
     </Item>
     <Item>
@@ -25,7 +25,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\ferna\OneDrive\Desktop\3. Minecraft\Minecraft\Minecraft\bin\x86\Debug\Content\Images\zombie.xnb</Output>
+      <Output>C:\Users\ferna\OneDrive\Documents\J3DE\Provas\3. Minecraft\Minecraft\Minecraft\bin\x86\Debug\Content\Images\zombie.xnb</Output>
       <Time>2024-08-23T18:02:39.7981177-03:00</Time>
     </Item>
     <Item>
@@ -34,7 +34,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\ferna\OneDrive\Desktop\3. Minecraft\Minecraft\Minecraft\bin\x86\Debug\Content\Images\grass.xnb</Output>
+      <Output>C:\Users\ferna\OneDrive\Documents\J3DE\Provas\3. Minecraft\Minecraft\Minecraft\bin\x86\Debug\Content\Images\grass.xnb</Output>
       <Time>2024-08-23T18:02:39.7971186-03:00</Time>
     </Item>
     <Item>
@@ -43,7 +43,7 @@
       <Importer>EffectImporter</Importer>
       <Processor>EffectProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\ferna\OneDrive\Desktop\3. Minecraft\Minecraft\Minecraft\bin\x86\Debug\Content\Effects\Effect1.xnb</Output>
+      <Output>C:\Users\ferna\OneDrive\Documents\J3DE\Provas\3. Minecraft\Minecraft\Minecraft\bin\x86\Debug\Content\Effects\Effect1.xnb</Output>
       <Time>2024-08-23T18:02:39.7918876-03:00</Time>
     </Item>
     <Item>
@@ -52,7 +52,7 @@
       <Importer>EffectImporter</Importer>
       <Processor>EffectProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\ferna\OneDrive\Desktop\3. Minecraft\Minecraft\Minecraft\bin\x86\Debug\Content\Effects\RedEffect.xnb</Output>
+      <Output>C:\Users\ferna\OneDrive\Documents\J3DE\Provas\3. Minecraft\Minecraft\Minecraft\bin\x86\Debug\Content\Effects\RedEffect.xnb</Output>
       <Time>2024-08-23T18:02:39.7928879-03:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
@@ -61,10 +61,10 @@
       <TargetProfile>HiDef</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\ferna\OneDrive\Desktop\3. Minecraft\Minecraft\MinecraftContent\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\ferna\OneDrive\Desktop\3. Minecraft\Minecraft\Minecraft\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\ferna\OneDrive\Desktop\3. Minecraft\Minecraft\MinecraftContent\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\ferna\OneDrive\Desktop\3. Minecraft\Minecraft\Minecraft\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\ferna\OneDrive\Documents\J3DE\Provas\3. Minecraft\Minecraft\MinecraftContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\ferna\OneDrive\Documents\J3DE\Provas\3. Minecraft\Minecraft\Minecraft\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\ferna\OneDrive\Documents\J3DE\Provas\3. Minecraft\Minecraft\MinecraftContent\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\ferna\OneDrive\Documents\J3DE\Provas\3. Minecraft\Minecraft\Minecraft\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>

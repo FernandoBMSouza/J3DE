@@ -19,7 +19,8 @@ namespace Minecraft
 
     public abstract class Character : GameObject
     {
-        float angle = 0;
+        float headAngle, membersAngle;
+        float headSpeed, membersSpeed;
         Cube[] cubes;
         protected Vector3 oldPosition;
         protected STATE state;
@@ -40,6 +41,11 @@ namespace Minecraft
 
             defaultEffect = game.Content.Load<Effect>(@"Effects\Effect1");
             redEffect = game.Content.Load<Effect>(@"Effects\RedEffect");
+
+            headAngle = 0f;
+            membersAngle = 0f;
+            headSpeed = 100f;
+            membersSpeed = 400f;
 
             cubes = new Cube[]
             {
@@ -74,15 +80,65 @@ namespace Minecraft
             oldPosition = Position;
             UpdateState(gameTime);
             ChangeState(gameTime);
+        }
 
+        protected void IdleAnimation(GameTime gameTime)
+        {
             // Calcula o ângulo de rotação
-            this.angle += 40f * gameTime.ElapsedGameTime.Milliseconds * 0.001f;
+            headAngle += headSpeed * gameTime.ElapsedGameTime.Milliseconds * 0.001f;
+
+            // Define a amplitude máxima para a rotação
+            float amplitude = 0.5f; // Reduz a amplitude do movimento
 
             // Rotaciona a cabeça
-            cubes[0].Rotation = new Vector3(0, (float)Math.Sin(MathHelper.ToRadians(this.angle)), 0);
+            cubes[0].Rotation = new Vector3(0, amplitude * (float)Math.Sin(MathHelper.ToRadians(headAngle)), 0);
 
-            //cubes[2].Position = new Vector3(cubes[2].Position.X, 1, cubes[2].Position.Z);
-            //cubes[2].Rotation = new Vector3((float)Math.Sin(MathHelper.ToRadians(this.angle)), 0, 0);
+            // Ajusta as rotações dos braços e pernas com a nova amplitude
+            cubes[2].Position2 = new Vector3(cubes[2].Position2.X, -1, cubes[2].Position2.Z);
+            cubes[2].Rotation = new Vector3(0, 0, 0);
+            cubes[2].Position = new Vector3(cubes[2].Position.X, 1.5f, cubes[2].Position.Z);
+
+            cubes[3].Position2 = new Vector3(cubes[3].Position2.X, -1, cubes[3].Position2.Z);
+            cubes[3].Rotation = new Vector3(0, 0, 0);
+            cubes[3].Position = new Vector3(cubes[3].Position.X, 1.5f, cubes[3].Position.Z);
+
+            cubes[4].Position2 = new Vector3(cubes[4].Position2.X, -2, cubes[4].Position2.Z);
+            cubes[4].Rotation = new Vector3(0, 0, 0);
+            cubes[4].Position = new Vector3(cubes[4].Position.X, -.5f, cubes[4].Position.Z);
+
+            cubes[5].Position2 = new Vector3(cubes[5].Position2.X, -2, cubes[5].Position2.Z);
+            cubes[5].Rotation = new Vector3(0, 0, 0);
+            cubes[5].Position = new Vector3(cubes[5].Position.X, -.5f, cubes[5].Position.Z);
+        }
+
+        protected void WalkAnimation(GameTime gameTime)
+        {
+            // Calcula o ângulo de rotação
+            headAngle += headSpeed * gameTime.ElapsedGameTime.Milliseconds * 0.001f;
+            membersAngle += membersSpeed * gameTime.ElapsedGameTime.Milliseconds * 0.001f;
+
+            // Define a amplitude máxima para a rotação
+            float amplitude = 0.5f; // Reduz a amplitude do movimento
+
+            // Rotaciona a cabeça
+            cubes[0].Rotation = new Vector3(0, amplitude * (float)Math.Sin(MathHelper.ToRadians(headAngle)), 0);
+
+            // Ajusta as rotações dos braços e pernas com a nova amplitude
+            cubes[2].Position2 = new Vector3(cubes[2].Position2.X, -1, cubes[2].Position2.Z);
+            cubes[2].Rotation = new Vector3(amplitude * (float)Math.Sin(MathHelper.ToRadians(membersAngle)), 0, 0);
+            cubes[2].Position = new Vector3(cubes[2].Position.X, 1.5f, cubes[2].Position.Z);
+
+            cubes[3].Position2 = new Vector3(cubes[3].Position2.X, -1, cubes[3].Position2.Z);
+            cubes[3].Rotation = new Vector3(amplitude * (float)Math.Sin(MathHelper.ToRadians(-membersAngle)), 0, 0);
+            cubes[3].Position = new Vector3(cubes[3].Position.X, 1.5f, cubes[3].Position.Z);
+
+            cubes[4].Position2 = new Vector3(cubes[4].Position2.X, -2, cubes[4].Position2.Z);
+            cubes[4].Rotation = new Vector3(amplitude * (float)Math.Sin(MathHelper.ToRadians(-membersAngle)), 0, 0);
+            cubes[4].Position = new Vector3(cubes[4].Position.X, -.5f, cubes[4].Position.Z);
+
+            cubes[5].Position2 = new Vector3(cubes[5].Position2.X, -2, cubes[5].Position2.Z);
+            cubes[5].Rotation = new Vector3(amplitude * (float)Math.Sin(MathHelper.ToRadians(membersAngle)), 0, 0);
+            cubes[5].Position = new Vector3(cubes[5].Position.X, -.5f, cubes[5].Position.Z);
         }
 
         protected void UpdateState(GameTime gameTime)
@@ -92,22 +148,27 @@ namespace Minecraft
             switch (state)
             {
                 case STATE.IDLE:
+                    IdleAnimation(gameTime);
                     break;
                 case STATE.FRONT:
                     Rotation = new Vector3(0, 0, 0);
                     Position += new Vector3(0, 0, moveAmount);
+                    WalkAnimation(gameTime);
                     break;
                 case STATE.BACK:
                     Rotation = new Vector3(0, MathHelper.ToRadians(180), 0);
                     Position += new Vector3(0, 0, -moveAmount);
+                    WalkAnimation(gameTime);
                     break;
                 case STATE.RIGHT:
                     Rotation = new Vector3(0, MathHelper.ToRadians(90), 0);
                     Position += new Vector3(moveAmount, 0, 0);
+                    WalkAnimation(gameTime);
                     break;
                 case STATE.LEFT:
                     Rotation = new Vector3(0, MathHelper.ToRadians(-90), 0);
                     Position += new Vector3(-moveAmount, 0, 0);
+                    WalkAnimation(gameTime);
                     break;
             }
         }

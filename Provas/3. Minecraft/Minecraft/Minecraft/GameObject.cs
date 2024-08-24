@@ -6,7 +6,7 @@ namespace Minecraft
 {
     public abstract class GameObject
     {
-        private VertexBuffer buffer;
+        protected VertexBuffer buffer;
         private Game game;
 
         private Vector3 size;
@@ -51,6 +51,8 @@ namespace Minecraft
                 Size *= scale;
             }
         }
+
+        public Vector3 Position2 { get; set; } // Isso esta aqui para funcionar a animacao dos bracos e pernas
 
         public Effect effect { get; set; }
         public LineBox LBox { get; protected set; }
@@ -99,6 +101,7 @@ namespace Minecraft
                 game.GraphicsDevice.SetVertexBuffer(buffer);
 
             Matrix localMatrix = Matrix.CreateScale(Scale)
+                                 * Matrix.CreateTranslation(Position2) // Isso esta aqui para funcionar a animacao dos bracos e pernas
                                  * Matrix.CreateFromYawPitchRoll(Rotation.Y, Rotation.X, Rotation.Z)
                                  * Matrix.CreateTranslation(Position);
 
