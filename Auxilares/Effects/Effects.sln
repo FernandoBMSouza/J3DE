@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Effects", "Effects\Effects\Effects.csproj", "{81776F80-3E40-47AC-8311-FCB3B32B0581}"
+EndProject
+Project("{96E2B04D-8817-42C6-938A-82C39BA4D311}") = "EffectsContent", "Effects\EffectsContent\EffectsContent.contentproj", "{9977E5F1-8C9B-4B71-8444-1B3AC663742E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{81776F80-3E40-47AC-8311-FCB3B32B0581}.Debug|x86.ActiveCfg = Debug|x86
+		{81776F80-3E40-47AC-8311-FCB3B32B0581}.Debug|x86.Build.0 = Debug|x86
+		{81776F80-3E40-47AC-8311-FCB3B32B0581}.Release|x86.ActiveCfg = Release|x86
+		{81776F80-3E40-47AC-8311-FCB3B32B0581}.Release|x86.Build.0 = Release|x86
+		{9977E5F1-8C9B-4B71-8444-1B3AC663742E}.Debug|x86.ActiveCfg = Debug|x86
+		{9977E5F1-8C9B-4B71-8444-1B3AC663742E}.Release|x86.ActiveCfg = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

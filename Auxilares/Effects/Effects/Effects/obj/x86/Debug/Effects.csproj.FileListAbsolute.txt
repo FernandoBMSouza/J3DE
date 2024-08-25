@@ -1,0 +1,9 @@
+C:\Users\ferna\Downloads\Effects\Effects\Effects\bin\x86\Debug\Content\Effects\Ambient.xnb
+C:\Users\ferna\Downloads\Effects\Effects\Effects\bin\x86\Debug\Content\Models\Helicopter.xnb
+C:\Users\ferna\Downloads\Effects\Effects\Effects\bin\x86\Debug\Content\HelicopterTexture_0.xnb
+C:\Users\ferna\Downloads\Effects\Effects\Effects\bin\x86\Debug\Effects.exe
+C:\Users\ferna\Downloads\Effects\Effects\Effects\bin\x86\Debug\Effects.pdb
+C:\Users\ferna\Downloads\Effects\Effects\Effects\obj\x86\Debug\Effects.csprojResolveAssemblyReference.cache
+C:\Users\ferna\Downloads\Effects\Effects\Effects\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\ferna\Downloads\Effects\Effects\Effects\obj\x86\Debug\Effects.exe
+C:\Users\ferna\Downloads\Effects\Effects\Effects\obj\x86\Debug\Effects.pdb
