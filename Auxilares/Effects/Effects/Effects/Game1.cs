@@ -66,7 +66,7 @@ namespace Effects
         {
             GraphicsDevice.Clear(Color.Black);
 
-            helicopter.Draw(camera);
+            helicopter.DrawDiffuse(camera);
 
             base.Draw(gameTime);
         }

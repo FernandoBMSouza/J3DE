@@ -6,7 +6,7 @@ namespace Effects
 {
     public abstract class GameObject
     {
-        private VertexBuffer buffer;
+        protected VertexBuffer buffer;
         protected Effect effect;
         private Game game;
 
@@ -75,7 +75,7 @@ namespace Effects
                 buffer.SetData<VertexPositionTexture>(Vertices);
             }
 
-            effect = game.Content.Load<Effect>(@"Effects\Ambient");
+            effect = game.Content.Load<Effect>(@"Effects\Diffuse");
 
             Scale = Vector3.One;
             Rotation = Vector3.Zero;
@@ -124,29 +124,15 @@ namespace Effects
 
             if (Model != null)
             {
-                //foreach (ModelMesh mesh in Model.Meshes)
-                //{
-                //    foreach (BasicEffect be in mesh.Effects)
-                //    {
-                //        be.EnableDefaultLighting();
-                //        be.PreferPerPixelLighting = true;
-                //        be.World = localMatrix * parentWorld;
-                //        be.View = camera.View;
-                //        be.Projection = camera.Projection;
-                //    }
-                //    mesh.Draw();
-                //}
-
                 foreach (ModelMesh mesh in Model.Meshes)
                 {
-                    foreach (ModelMeshPart part in mesh.MeshParts)
+                    foreach (BasicEffect be in mesh.Effects)
                     {
-                        part.Effect = effect;
-                        effect.Parameters["World"].SetValue(result);
-                        effect.Parameters["View"].SetValue(camera.View);
-                        effect.Parameters["Projection"].SetValue(camera.Projection);
-                        //effect.Parameters["AmbientColor"].SetValue(Color.Green.ToVector4());
-                        //effect.Parameters["AmbientIntensity"].SetValue(0.5f);
+                        be.EnableDefaultLighting();
+                        be.PreferPerPixelLighting = true;
+                        be.World = localMatrix * parentWorld;
+                        be.View = camera.View;
+                        be.Projection = camera.Projection;
                     }
                     mesh.Draw();
                 }

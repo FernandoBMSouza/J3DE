@@ -3,7 +3,7 @@
   <Asset Type="Graphics:NodeContent">
     <Name>RootNode</Name>
     <Identity>
-      <SourceFilename>C:\Users\ferna\Downloads\Effects\Effects\EffectsContent\Models\Helicopter.fbx</SourceFilename>
+      <SourceFilename>C:\Users\ferna\OneDrive\Documents\J3DE\Auxilares\Effects\Effects\EffectsContent\Models\Helicopter.fbx</SourceFilename>
       <SourceTool>FbxImporter</SourceTool>
     </Identity>
     <Transform>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</Transform>
@@ -68,7 +68,7 @@
     <Resource ID="#Resource1" Type="Graphics:BasicMaterialContent">
       <Name>sphere1_auv.002</Name>
       <Identity>
-        <SourceFilename>C:\Users\ferna\Downloads\Effects\Effects\EffectsContent\Models\Helicopter.fbx</SourceFilename>
+        <SourceFilename>C:\Users\ferna\OneDrive\Documents\J3DE\Auxilares\Effects\Effects\EffectsContent\Models\Helicopter.fbx</SourceFilename>
         <SourceTool>FbxImporter</SourceTool>
       </Identity>
       <OpaqueData>
@@ -96,7 +96,7 @@
     <Resource ID="#Resource2" Type="Graphics:BasicMaterialContent">
       <Name>cylinder2_auv.002</Name>
       <Identity>
-        <SourceFilename>C:\Users\ferna\Downloads\Effects\Effects\EffectsContent\Models\Helicopter.fbx</SourceFilename>
+        <SourceFilename>C:\Users\ferna\OneDrive\Documents\J3DE\Auxilares\Effects\Effects\EffectsContent\Models\Helicopter.fbx</SourceFilename>
         <SourceTool>FbxImporter</SourceTool>
       </Identity>
       <OpaqueData>
@@ -124,7 +124,7 @@
     <Resource ID="#Resource3" Type="Graphics:BasicMaterialContent">
       <Name>cylinder4_auv.002</Name>
       <Identity>
-        <SourceFilename>C:\Users\ferna\Downloads\Effects\Effects\EffectsContent\Models\Helicopter.fbx</SourceFilename>
+        <SourceFilename>C:\Users\ferna\OneDrive\Documents\J3DE\Auxilares\Effects\Effects\EffectsContent\Models\Helicopter.fbx</SourceFilename>
         <SourceTool>FbxImporter</SourceTool>
       </Identity>
       <OpaqueData>
@@ -151,6 +151,6 @@
     </Resource>
   </Resources>
   <ExternalReferences>
-    <ExternalReference ID="#External1" TargetType="Graphics:TextureContent">..\..\..\..\..\..\..\Helicopter (1)\HelicopterTexture.png</ExternalReference>
+    <ExternalReference ID="#External1" TargetType="Graphics:TextureContent">..\..\..\..\..\..\..\..\..\..\..\Downloads\Helicopter (1)\HelicopterTexture.png</ExternalReference>
   </ExternalReferences>
 </XnaContent>

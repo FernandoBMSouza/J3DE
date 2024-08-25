@@ -1,3 +1,4 @@
 Content\Effects\Ambient.xnb
+Content\Effects\Diffuse.xnb
 Content\Models\Helicopter.xnb
 Content\HelicopterTexture_0.xnb

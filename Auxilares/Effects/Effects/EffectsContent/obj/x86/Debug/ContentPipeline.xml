@@ -7,8 +7,17 @@
       <Importer>EffectImporter</Importer>
       <Processor>EffectProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\ferna\Downloads\Effects\Effects\Effects\bin\x86\Debug\Content\Effects\Ambient.xnb</Output>
+      <Output>C:\Users\ferna\OneDrive\Documents\J3DE\Auxilares\Effects\Effects\Effects\bin\x86\Debug\Content\Effects\Ambient.xnb</Output>
       <Time>2024-08-25T13:10:33.8521232-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Effects\Diffuse.fx</Source>
+      <Name>Effects\Diffuse</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\ferna\OneDrive\Documents\J3DE\Auxilares\Effects\Effects\Effects\bin\x86\Debug\Content\Effects\Diffuse.xnb</Output>
+      <Time>2024-08-25T14:13:02.0987475-03:00</Time>
     </Item>
     <Item>
       <Source>Models\Helicopter.fbx</Source>
@@ -16,13 +25,13 @@
       <Importer>FbxImporter</Importer>
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\ferna\Downloads\Effects\Effects\Effects\bin\x86\Debug\Content\Models\Helicopter.xnb</Output>
+      <Output>C:\Users\ferna\OneDrive\Documents\J3DE\Auxilares\Effects\Effects\Effects\bin\x86\Debug\Content\Models\Helicopter.xnb</Output>
       <Time>2024-08-25T13:27:55.7262681-03:00</Time>
       <Dependency>
         <Key>obj\x86\Debug\Models\Helicopter_0.xml</Key>
-        <Value>2024-08-25T13:27:57.6439605-03:00</Value>
+        <Value>2024-08-25T14:01:52.4671798-03:00</Value>
       </Dependency>
-      <Request>C:\Users\ferna\Downloads\Effects\Effects\Effects\bin\x86\Debug\Content\HelicopterTexture_0.xnb</Request>
+      <Request>C:\Users\ferna\OneDrive\Documents\J3DE\Auxilares\Effects\Effects\Effects\bin\x86\Debug\Content\HelicopterTexture_0.xnb</Request>
     </Item>
     <Item>
       <Source>Models\Helicopter.fbx</Source>
@@ -44,7 +53,7 @@
         <Data Key="PremultiplyAlpha" Type="bool">true</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\ferna\Downloads\Effects\Effects\Effects\bin\x86\Debug\Content\HelicopterTexture_0.xnb</Output>
+      <Output>C:\Users\ferna\OneDrive\Documents\J3DE\Auxilares\Effects\Effects\Effects\bin\x86\Debug\Content\HelicopterTexture_0.xnb</Output>
       <Time>2024-08-25T13:11:16.2325396-03:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
@@ -53,10 +62,10 @@
       <TargetProfile>HiDef</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\ferna\Downloads\Effects\Effects\EffectsContent\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\ferna\Downloads\Effects\Effects\Effects\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\ferna\Downloads\Effects\Effects\EffectsContent\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\ferna\Downloads\Effects\Effects\Effects\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\ferna\OneDrive\Documents\J3DE\Auxilares\Effects\Effects\EffectsContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\ferna\OneDrive\Documents\J3DE\Auxilares\Effects\Effects\Effects\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\ferna\OneDrive\Documents\J3DE\Auxilares\Effects\Effects\EffectsContent\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\ferna\OneDrive\Documents\J3DE\Auxilares\Effects\Effects\Effects\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
