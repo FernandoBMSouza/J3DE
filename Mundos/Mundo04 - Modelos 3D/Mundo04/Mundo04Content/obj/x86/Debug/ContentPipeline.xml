@@ -8,7 +8,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos\Mundo04 - Modelos 3D\Mundo04\Mundo04\bin\x86\Debug\Content\Images\bricks.xnb</Output>
-      <Time>2024-08-22T18:01:37.3523284-03:00</Time>
+      <Time>2024-08-24T17:10:12.7682576-03:00</Time>
     </Item>
     <Item>
       <Source>Images\grass.jpg</Source>
@@ -17,7 +17,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos\Mundo04 - Modelos 3D\Mundo04\Mundo04\bin\x86\Debug\Content\Images\grass.xnb</Output>
-      <Time>2024-08-22T18:01:37.3543362-03:00</Time>
+      <Time>2024-08-24T17:10:12.7717983-03:00</Time>
     </Item>
     <Item>
       <Source>Images\rocks.jpg</Source>
@@ -26,7 +26,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos\Mundo04 - Modelos 3D\Mundo04\Mundo04\bin\x86\Debug\Content\Images\rocks.xnb</Output>
-      <Time>2024-08-22T18:01:37.356337-03:00</Time>
+      <Time>2024-08-24T17:10:12.773807-03:00</Time>
     </Item>
     <Item>
       <Source>Images\wood.png</Source>
@@ -35,7 +35,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos\Mundo04 - Modelos 3D\Mundo04\Mundo04\bin\x86\Debug\Content\Images\wood.xnb</Output>
-      <Time>2024-08-22T18:01:37.3633374-03:00</Time>
+      <Time>2024-08-24T17:10:12.7798066-03:00</Time>
     </Item>
     <Item>
       <Source>Models\blade.x</Source>
@@ -44,10 +44,10 @@
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos\Mundo04 - Modelos 3D\Mundo04\Mundo04\bin\x86\Debug\Content\Models\blade.xnb</Output>
-      <Time>2024-08-22T18:01:37.3647802-03:00</Time>
+      <Time>2024-08-24T17:10:12.7798066-03:00</Time>
       <Dependency>
         <Key>obj\x86\Debug\Models\blade_0.xml</Key>
-        <Value>2024-08-22T18:29:24.1401247-03:00</Value>
+        <Value>2024-08-30T15:27:00.6699692-03:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -57,10 +57,10 @@
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos\Mundo04 - Modelos 3D\Mundo04\Mundo04\bin\x86\Debug\Content\Models\building.xnb</Output>
-      <Time>2024-08-22T18:01:37.3647802-03:00</Time>
+      <Time>2024-08-24T17:10:12.781311-03:00</Time>
       <Dependency>
         <Key>obj\x86\Debug\Models\building_0.xml</Key>
-        <Value>2024-08-22T18:29:24.2182499-03:00</Value>
+        <Value>2024-08-30T15:27:00.7486332-03:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -70,10 +70,10 @@
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos\Mundo04 - Modelos 3D\Mundo04\Mundo04\bin\x86\Debug\Content\Models\hero.xnb</Output>
-      <Time>2024-08-22T18:01:37.3882693-03:00</Time>
+      <Time>2024-08-24T17:10:12.7988337-03:00</Time>
       <Dependency>
         <Key>obj\x86\Debug\Models\hero_0.xml</Key>
-        <Value>2024-08-22T18:29:24.4526239-03:00</Value>
+        <Value>2024-08-30T15:27:00.9988086-03:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -83,10 +83,10 @@
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos\Mundo04 - Modelos 3D\Mundo04\Mundo04\bin\x86\Debug\Content\Models\tower.xnb</Output>
-      <Time>2024-08-22T18:01:37.3892621-03:00</Time>
+      <Time>2024-08-24T17:10:12.7998321-03:00</Time>
       <Dependency>
         <Key>obj\x86\Debug\Models\tower_0.xml</Key>
-        <Value>2024-08-22T18:29:24.5151245-03:00</Value>
+        <Value>2024-08-30T15:27:01.0588349-03:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -94,28 +94,28 @@
       <Importer>XImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
       <Output>obj\x86\Debug\Models\blade_0.xml</Output>
-      <Time>2024-08-22T18:01:37.3647802-03:00</Time>
+      <Time>2024-08-24T17:10:12.7798066-03:00</Time>
     </Item>
     <Item>
       <Source>Models\building.x</Source>
       <Importer>XImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
       <Output>obj\x86\Debug\Models\building_0.xml</Output>
-      <Time>2024-08-22T18:01:37.3647802-03:00</Time>
+      <Time>2024-08-24T17:10:12.781311-03:00</Time>
     </Item>
     <Item>
       <Source>Models\hero.x</Source>
       <Importer>XImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
       <Output>obj\x86\Debug\Models\hero_0.xml</Output>
-      <Time>2024-08-22T18:01:37.3882693-03:00</Time>
+      <Time>2024-08-24T17:10:12.7988337-03:00</Time>
     </Item>
     <Item>
       <Source>Models\tower.x</Source>
       <Importer>XImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
       <Output>obj\x86\Debug\Models\tower_0.xml</Output>
-      <Time>2024-08-22T18:01:37.3892621-03:00</Time>
+      <Time>2024-08-24T17:10:12.7998321-03:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>

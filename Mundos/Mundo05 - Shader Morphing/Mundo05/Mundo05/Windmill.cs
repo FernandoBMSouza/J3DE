@@ -62,7 +62,7 @@ namespace Mundo05
             //effect.View = camera.View;
             //effect.Projection = camera.Projection;
 
-            building.Draw(camera, localMatrix, gameTime, false);
+            building.Draw(camera, result, gameTime, false);
             foreach (Blade blade in blades) blade.Draw(camera, result, gameTime, false);
             if (showColliders) LBox.Draw(result, camera);
         }
