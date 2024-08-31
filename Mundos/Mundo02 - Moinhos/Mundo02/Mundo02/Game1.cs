@@ -115,7 +115,7 @@ namespace Mundo02
             plane.Draw(camera);
             house.Draw(camera);
             foreach (Windmill windmill in windmills)
-                windmill.Draw(camera);
+                windmill.Draw(camera, true);
 
             base.Draw(gameTime);
         }
