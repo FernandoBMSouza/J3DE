@@ -11,37 +11,31 @@ namespace Helicopter
         static Random random = new Random();
         float speed;
         float angle;
-        Blade[] blades;
+        bool working;
 
-        public Propeller(Game1 game, Color color)
+        public Propeller(Game1 game, Color color, bool working = true)
             : base()
         {
+            this.working = working;
             speed = random.Next(10, 200);
 
-            blades = new Blade[4];
-            for (int i = 0; i < blades.Length; i++)
-                blades[i] = new Blade(game, color);
+            Children = new Blade[4];
+            for (int i = 0; i < Children.Length; i++)
+                Children[i] = new Blade(game, color);
         }
 
         public override void Update(GameTime gameTime)
         {
-            foreach (Blade blade in blades)
-                blade.Update(gameTime);
-
-            angle += speed * gameTime.ElapsedGameTime.Milliseconds * 0.001f;
-            for (int i = 0; i < blades.Length; i++)
+            if(working) angle += speed * gameTime.ElapsedGameTime.Milliseconds * 0.001f;
+            for (int i = 0; i < Children.Length; i++)
             {
-                blades[i].World = Matrix.Identity;
-                blades[i].World *= Matrix.CreateTranslation(new Vector3(0, 1, 0));
-                blades[i].World *= Matrix.CreateRotationZ(MathHelper.ToRadians(angle + i * 90));
-                blades[i].World *= World;
-            }
-        }
+                Children[i].Update(gameTime);
 
-        public override void Draw(Camera camera)
-        {
-            foreach (Blade blade in blades)
-                blade.Draw(camera);
+                Children[i].World = Matrix.Identity;
+                Children[i].World *= Matrix.CreateTranslation(new Vector3(0, 1, 0));
+                Children[i].World *= Matrix.CreateRotationZ(MathHelper.ToRadians(angle + i * 90));
+                Children[i].World *= World;
+            }
         }
     }
 }

@@ -1,0 +1,6 @@
+C:\Users\ferna\OneDrive\Documents\J3DE\Mundos\Remake\Mundo02\Mundo02\Mundo02\bin\x86\Debug\Mundo02.exe
+C:\Users\ferna\OneDrive\Documents\J3DE\Mundos\Remake\Mundo02\Mundo02\Mundo02\bin\x86\Debug\Mundo02.pdb
+C:\Users\ferna\OneDrive\Documents\J3DE\Mundos\Remake\Mundo02\Mundo02\Mundo02\obj\x86\Debug\Mundo02.csprojResolveAssemblyReference.cache
+C:\Users\ferna\OneDrive\Documents\J3DE\Mundos\Remake\Mundo02\Mundo02\Mundo02\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\ferna\OneDrive\Documents\J3DE\Mundos\Remake\Mundo02\Mundo02\Mundo02\obj\x86\Debug\Mundo02.exe
+C:\Users\ferna\OneDrive\Documents\J3DE\Mundos\Remake\Mundo02\Mundo02\Mundo02\obj\x86\Debug\Mundo02.pdb

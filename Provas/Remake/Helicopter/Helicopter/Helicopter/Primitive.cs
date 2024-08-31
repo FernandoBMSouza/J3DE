@@ -52,6 +52,7 @@ namespace Helicopter
                 }
                 effect.VertexColorEnabled = false;
             }
+            base.Draw(camera);
         }
     }
 }

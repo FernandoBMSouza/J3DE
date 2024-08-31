@@ -66,7 +66,7 @@ namespace Helicopter
             plane.World *= Matrix.CreateRotationX(MathHelper.ToRadians(270));
 
             propeller.World = Matrix.Identity;
-            propeller.World *= Matrix.CreateRotationY(MathHelper.ToRadians(45));
+            //propeller.World *= Matrix.CreateRotationY(MathHelper.ToRadians(45));
             propeller.World *= Matrix.CreateTranslation(new Vector3(2, 2, 0));
 
             camera.Update(gameTime);

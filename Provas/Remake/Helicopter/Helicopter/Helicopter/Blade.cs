@@ -8,12 +8,10 @@ namespace Helicopter
 {
     class Blade : GameObject
     {
-        Primitive[] primitives;
-
         public Blade(Game1 game, Color color)
             : base()
         {
-            primitives = new Primitive[] 
+            Children = new Primitive[] 
             { 
                 new Triangle(game, color),
                 new Square(game, color),
@@ -22,21 +20,18 @@ namespace Helicopter
 
         public override void Update(GameTime gameTime)
         {
-            foreach (Primitive primitive in primitives)
-                primitive.World = Matrix.Identity;                
+            foreach (Primitive child in Children)
+            {
+                child.Update(gameTime);
+                child.World = Matrix.Identity;            
+            }
 
-            primitives[0].World *= Matrix.CreateRotationZ(MathHelper.ToRadians(180));
-            primitives[0].World *= Matrix.CreateTranslation(new Vector3(0,-.5f, 0));
-            primitives[1].World *= Matrix.CreateTranslation(new Vector3(0, .5f, 0));
-            
-            foreach (Primitive primitive in primitives)
-                primitive.World *= World;
-        }
+            Children[0].World *= Matrix.CreateRotationZ(MathHelper.ToRadians(180));
+            Children[0].World *= Matrix.CreateTranslation(new Vector3(0,-.5f, 0));
+            Children[1].World *= Matrix.CreateTranslation(new Vector3(0, .5f, 0));
 
-        public override void Draw(Camera camera)
-        {
-            foreach (Primitive primitive in primitives)
-                primitive.Draw(camera);
+            foreach (Primitive child in Children)
+                child.World *= World;
         }
     }
 }
