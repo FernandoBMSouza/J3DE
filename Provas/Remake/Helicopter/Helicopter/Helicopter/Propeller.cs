@@ -8,36 +8,34 @@ namespace Helicopter
 {
     class Propeller : GameObject
     {
+        static Random random = new Random();
+        float speed;
+        float angle;
         Blade[] blades;
 
         public Propeller(Game1 game, Color color)
             : base()
         {
+            speed = random.Next(10, 200);
+
             blades = new Blade[4];
             for (int i = 0; i < blades.Length; i++)
-            {
                 blades[i] = new Blade(game, color);
-                blades[i].Parent = this;
-            }
         }
 
         public override void Update(GameTime gameTime)
         {
             foreach (Blade blade in blades)
-            {
-                blade.World = Matrix.Identity;
-                blade.World *= Matrix.CreateTranslation(new Vector3(0, 1, 0));            
-            }
-
-            blades[0].World *= Matrix.CreateRotationZ(MathHelper.ToRadians(0));
-            blades[1].World *= Matrix.CreateRotationZ(MathHelper.ToRadians(90));
-            blades[2].World *= Matrix.CreateRotationZ(MathHelper.ToRadians(180));
-            blades[3].World *= Matrix.CreateRotationZ(MathHelper.ToRadians(270));
-
-            foreach (Blade blade in blades)
                 blade.Update(gameTime);
 
-            base.Update(gameTime);
+            angle += speed * gameTime.ElapsedGameTime.Milliseconds * 0.001f;
+            for (int i = 0; i < blades.Length; i++)
+            {
+                blades[i].World = Matrix.Identity;
+                blades[i].World *= Matrix.CreateTranslation(new Vector3(0, 1, 0));
+                blades[i].World *= Matrix.CreateRotationZ(MathHelper.ToRadians(angle + i * 90));
+                blades[i].World *= World;
+            }
         }
 
         public override void Draw(Camera camera)

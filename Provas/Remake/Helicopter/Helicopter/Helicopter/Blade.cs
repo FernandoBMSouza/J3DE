@@ -18,26 +18,19 @@ namespace Helicopter
                 new Triangle(game, color),
                 new Square(game, color),
             };
-
-            foreach (Primitive primitive in primitives)
-                primitive.Parent = this;
         }
 
         public override void Update(GameTime gameTime)
         {
             foreach (Primitive primitive in primitives)
-            {
                 primitive.World = Matrix.Identity;                
-            }
 
             primitives[0].World *= Matrix.CreateRotationZ(MathHelper.ToRadians(180));
-            primitives[0].World *= Matrix.CreateTranslation(new Vector3(0, -.5f, 0));
+            primitives[0].World *= Matrix.CreateTranslation(new Vector3(0,-.5f, 0));
             primitives[1].World *= Matrix.CreateTranslation(new Vector3(0, .5f, 0));
-
+            
             foreach (Primitive primitive in primitives)
-                primitive.Update(gameTime);
-
-            base.Update(gameTime);
+                primitive.World *= World;
         }
 
         public override void Draw(Camera camera)
