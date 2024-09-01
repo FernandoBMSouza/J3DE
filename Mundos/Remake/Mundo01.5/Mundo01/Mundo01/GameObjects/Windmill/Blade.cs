@@ -7,17 +7,17 @@ using Mundo01.GameObjects.Primitives;
 
 namespace Mundo01.GameObjects.Windmill
 {
-    class Building : GameObject
+    class Blade : GameObject
     {
-        public Building(Game1 game, Color color)
+        public Blade(Game1 game, Color color)
             : base(game)
         {
+            Size = new Vector3(.5f,1,0);
             Children = new GameObject[] 
             { 
-                new Cube(game, color),
-                new RightTriangle3D(game, color),
+                new Triangle(game, color),
+                new Square(game, color),
             };
-            Size = new Vector3(Children[0].Size.X, Children[0].Size.Y * 2, Children[0].Size.Z + Children[1].Size.Z);
         }
 
         public override void Update(GameTime gameTime)
@@ -26,12 +26,11 @@ namespace Mundo01.GameObjects.Windmill
             {
                 child.Update(gameTime);
                 child.World = Matrix.Identity;
-                child.World *= Matrix.CreateScale(1, child.Size.Y * 2, 1);
+                child.World = Matrix.CreateScale(child.Size / 2f);
             }
-
-            Children[0].World *= Matrix.CreateTranslation(new Vector3(0, 0, Children[0].Size.Z / 2f));
-            Children[1].World *= Matrix.CreateRotationY(MathHelper.ToRadians(90));
-            Children[1].World *= Matrix.CreateTranslation(new Vector3(0, 0, -Children[0].Size.Z / 2f));
+            Children[0].World *= Matrix.CreateRotationZ(MathHelper.ToRadians(180));
+            Children[0].World *= Matrix.CreateTranslation(new Vector3(0, -Children[0].Size.Y / 4f, 0));
+            Children[1].World *= Matrix.CreateTranslation(new Vector3(0, Children[1].Size.Y / 4f, 0));
 
             foreach (GameObject child in Children)
                 child.World *= World;

@@ -45,8 +45,10 @@ namespace Mundo01
 
             gameObjects = new GameObject[]
             {
-                new Quad(this, Color.DarkGreen),
-                new Building(this, Color.Blue),
+                new Quad(this, Color.Green),
+                new Cube(this, Color.Red),
+                new Windmill(this, Color.Blue, Color.Yellow),
+                new Windmill(this, Color.Blue, Color.Yellow),
             };
 
             base.Initialize();
@@ -74,12 +76,18 @@ namespace Mundo01
 
             gameObjects[0].World *= Matrix.CreateScale(20);
             gameObjects[1].World *= Matrix.CreateTranslation(new Vector3(0, gameObjects[1].Size.Y / 2f, 0));
+            
+            gameObjects[2].World *= Matrix.CreateRotationY(MathHelper.ToRadians(-45));
+            gameObjects[3].World *= Matrix.CreateRotationY(MathHelper.ToRadians(45));
+
+            gameObjects[2].World *= Matrix.CreateTranslation(new Vector3(gameObjects[2].Size.X * 4f, gameObjects[2].Size.Y / 2f, 0));
+            gameObjects[3].World *= Matrix.CreateTranslation(new Vector3(-gameObjects[3].Size.X * 4f, gameObjects[3].Size.Y / 2f, 0));
 
             //Window.Title = "Info: " + gameObjects[1].GetPosition() + " - " + gameObjects[1].GetRotation() + " - " + gameObjects[1].GetScale() + " - " + gameObjects[1].Size;
 
             foreach (GameObject go in gameObjects)
             {
-                if (camera.IsColliding(go.BoundingBox))
+                if (camera.IsColliding(go))
                 {
                     camera.RestorePosition();
                     go.SetColliderColor(Color.Red);
@@ -89,6 +97,24 @@ namespace Mundo01
                     go.SetColliderColor(Color.Green);
                 }
             }
+
+            //foreach (GameObject go in gameObjects)
+            //{
+            //    if (go.Children == null) continue;
+
+            //    foreach (GameObject go2 in go.Children)
+            //    {
+            //        if (camera.IsColliding(go2))
+            //        {
+            //            camera.RestorePosition();
+            //            go2.SetColliderColor(Color.Red);
+            //        }
+            //        else
+            //        {
+            //            go2.SetColliderColor(Color.Green);
+            //        }
+            //    }
+            //}
 
             base.Update(gameTime);
         }

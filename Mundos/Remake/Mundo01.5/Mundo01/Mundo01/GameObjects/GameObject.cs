@@ -11,8 +11,8 @@ namespace Mundo01.GameObjects
         public GameObject[] Children { get; set; }
         public Vector3 Size { get; set; }
 
-        public LineBox LineBox { get; protected set; }
-        public BoundingBox BoundingBox { get; private set; }
+        public LineBox ColliderLines { get; protected set; }
+        public BoundingBox Collider { get; private set; }
         protected BasicEffect effect;
         Game1 game;
 
@@ -43,7 +43,9 @@ namespace Mundo01.GameObjects
             if (Children != null)
             {
                 foreach (GameObject child in Children)
+                {
                     child.Visible = false;
+                }
             }
 
             Vector3 currentPosition = GetPosition();
@@ -67,7 +69,7 @@ namespace Mundo01.GameObjects
                     child.Draw(camera);
             }
 
-            if(Visible) LineBox.Draw(effect, camera);
+            if (Visible) ColliderLines.Draw(effect, camera);
         }
 
         public Vector3 GetPosition()
@@ -103,19 +105,19 @@ namespace Mundo01.GameObjects
             Vector3 scale = GetScale();
             Vector3 dimension = scale * Size;
 
-            LineBox = new LineBox(game, position, scale, Size, Color.Green);
-            BoundingBox = new BoundingBox(position - (dimension / 2f),
-                                          position + (dimension / 2f));
+            ColliderLines = new LineBox(game, position, scale, Size, Color.Green);
+            Collider = new BoundingBox(position - (dimension / 2f),
+                                       position + (dimension / 2f));
         }
 
         public bool IsColliding(GameObject other)
         {
-            return BoundingBox.Intersects(other.BoundingBox);
+            return Collider.Intersects(other.Collider);         
         }
 
         public void SetColliderColor(Color color)
         {
-            LineBox.SetColor(color);
+            if (Visible) ColliderLines.SetColor(color);
         }
     }
 }

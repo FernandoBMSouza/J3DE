@@ -1,6 +1,7 @@
 ﻿using System;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Input;
+using Mundo01.GameObjects;
 
 namespace Mundo01.Utilities
 {
@@ -118,9 +119,9 @@ namespace Mundo01.Utilities
 
         }
 
-        public bool IsColliding(BoundingBox other)
+        public bool IsColliding(GameObject other)
         {
-            return BBox.Intersects(other);
+            return BBox.Intersects(other.Collider);
         }
 
         public void RestorePosition()
