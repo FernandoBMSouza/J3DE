@@ -1,8 +1,6 @@
 ﻿using Microsoft.Xna.Framework;
 using Mundo01.Utilities;
-using Mundo01.Utilities.Collision;
 using Microsoft.Xna.Framework.Graphics;
-using System.Diagnostics;
 
 namespace Mundo01.GameObjects
 {
@@ -14,7 +12,6 @@ namespace Mundo01.GameObjects
 
         public LineBox LineBox { get; protected set; }
         public BoundingBox BoundingBox { get; private set; }
-        bool visible;
         protected BasicEffect effect;
         Game1 game;
 
@@ -25,7 +22,6 @@ namespace Mundo01.GameObjects
         public GameObject(Game1 game)
         {
             this.game = game;
-            visible = true;
             effect = new BasicEffect(game.GraphicsDevice);
             Size = Vector3.One;
 
@@ -69,7 +65,7 @@ namespace Mundo01.GameObjects
                     child.Draw(camera);
             }
 
-            if (visible) LineBox.Draw(effect);
+            LineBox.Draw(effect);
         }
 
         public Vector3 GetPosition()
@@ -101,10 +97,13 @@ namespace Mundo01.GameObjects
 
         public void UpdateCollider()
         {
-            Debug.WriteLine("Dimension: " + GetScale() * Size);
+            Vector3 position = GetPosition();
+            Vector3 scale = GetScale();
+            Vector3 dimension = scale * Size;
+
             LineBox = new LineBox(game, Size, Color.Green);
-            BoundingBox = new BoundingBox(GetPosition() - ((GetScale() * Size) / 2f),
-                                          GetPosition() + ((GetScale() * Size) / 2f));
+            BoundingBox = new BoundingBox(position - (dimension / 2f),
+                                          position + (dimension / 2f));
         }
 
         public bool IsColliding(GameObject other)
@@ -116,6 +115,5 @@ namespace Mundo01.GameObjects
         {
             LineBox.SetColor(color);
         }
-
     }
 }

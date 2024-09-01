@@ -5,7 +5,7 @@ using System.Text;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework;
 
-namespace Mundo01.Utilities.Collision
+namespace Mundo01.Utilities
 {
     class LineBox
     {
@@ -112,7 +112,6 @@ namespace Mundo01.Utilities.Collision
                                           indexes,
                                           0,
                                           indexes.Length / 2);
-
             }
             e.VertexColorEnabled = false;
         }
