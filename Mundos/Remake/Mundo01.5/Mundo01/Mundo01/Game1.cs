@@ -46,9 +46,9 @@ namespace Mundo01
             gameObjects = new GameObject[]
             {
                 new Quad(this, Color.Green),
-                new Cube(this, Color.Red),
-                new Windmill(this, Color.Blue, Color.Yellow),
-                new Windmill(this, Color.Blue, Color.Yellow),
+                new Cube(this, Color.DimGray),
+                new Windmill(this, Color.DarkGray, Color.DarkKhaki),
+                new Windmill(this, Color.DarkGray, Color.DarkKhaki),
             };
 
             base.Initialize();
@@ -85,6 +85,7 @@ namespace Mundo01
 
             //Window.Title = "Info: " + gameObjects[1].GetPosition() + " - " + gameObjects[1].GetRotation() + " - " + gameObjects[1].GetScale() + " - " + gameObjects[1].Size;
 
+            // TRATAMENTO DE COLISAO
             foreach (GameObject go in gameObjects)
             {
                 if (camera.IsColliding(go))
@@ -97,24 +98,6 @@ namespace Mundo01
                     go.SetColliderColor(Color.Green);
                 }
             }
-
-            //foreach (GameObject go in gameObjects)
-            //{
-            //    if (go.Children == null) continue;
-
-            //    foreach (GameObject go2 in go.Children)
-            //    {
-            //        if (camera.IsColliding(go2))
-            //        {
-            //            camera.RestorePosition();
-            //            go2.SetColliderColor(Color.Red);
-            //        }
-            //        else
-            //        {
-            //            go2.SetColliderColor(Color.Green);
-            //        }
-            //    }
-            //}
 
             base.Update(gameTime);
         }

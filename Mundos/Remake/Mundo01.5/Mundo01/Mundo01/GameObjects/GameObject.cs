@@ -8,29 +8,24 @@ namespace Mundo01.GameObjects
     abstract class GameObject
     {
         public Matrix World { get; set; }
-        public GameObject[] Children { get; set; }
-        public Vector3 Size { get; set; }
+        public GameObject[] Children { get; protected set; }
+        public Vector3 Size { get; protected set; }
 
         public LineBox ColliderLines { get; protected set; }
         public BoundingBox Collider { get; private set; }
+        public bool Visible { get; set; }
+
         protected BasicEffect effect;
         Game1 game;
-
         Vector3 previousPosition;
         Vector3 previousScale;
         Vector3 previousSize;
-
-        public bool Visible { get; set; }
 
         public GameObject(Game1 game)
         {
             this.game = game;
             effect = new BasicEffect(game.GraphicsDevice);
-            Size = Vector3.One;
-
             Visible = true;
-
-            World = Matrix.Identity;
 
             previousPosition = GetPosition();
             previousScale = GetScale();
@@ -40,6 +35,7 @@ namespace Mundo01.GameObjects
 
         public virtual void Update(GameTime gameTime)
         {
+            // Desativa a Visibilidade do Colisor dos filhos
             if (Children != null)
             {
                 foreach (GameObject child in Children)
@@ -48,6 +44,7 @@ namespace Mundo01.GameObjects
                 }
             }
 
+            //  Atualizar Colisor
             Vector3 currentPosition = GetPosition();
             Vector3 currentScale = GetScale();
             Vector3 currentSize = Size;
