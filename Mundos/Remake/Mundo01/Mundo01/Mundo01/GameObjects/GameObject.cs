@@ -1,5 +1,8 @@
 ﻿using Microsoft.Xna.Framework;
 using Mundo01.Utilities;
+using Mundo01.Utilities.Collision;
+using Microsoft.Xna.Framework.Graphics;
+using System.Diagnostics;
 
 namespace Mundo01.GameObjects
 {
@@ -9,10 +12,29 @@ namespace Mundo01.GameObjects
         public GameObject[] Children { get; set; }
         public Vector3 Size { get; set; }
 
-        public GameObject()
+        public LineBox LineBox { get; protected set; }
+        public BoundingBox BoundingBox { get; private set; }
+        bool visible;
+        protected BasicEffect effect;
+        Game1 game;
+
+        Vector3 previousPosition;
+        Vector3 previousScale;
+        Vector3 previousSize;
+
+        public GameObject(Game1 game)
         {
-            World = Matrix.Identity;
+            this.game = game;
+            visible = true;
+            effect = new BasicEffect(game.GraphicsDevice);
             Size = Vector3.One;
+
+            World = Matrix.Identity;
+
+            previousPosition = GetPosition();
+            previousScale = GetScale();
+
+            UpdateCollider();
         }
 
         public virtual void Update(GameTime gameTime)
@@ -25,6 +47,18 @@ namespace Mundo01.GameObjects
                     child.World *= World;
                 }
             }
+
+            Vector3 currentPosition = GetPosition();
+            Vector3 currentScale = GetScale();
+            Vector3 currentSize = Size;
+
+            if (currentPosition != previousPosition || currentScale != previousScale || currentSize != previousSize)
+            {
+                UpdateCollider();
+                previousPosition = currentPosition;
+                previousScale = currentScale;
+                previousSize = currentSize;
+            }
         }
 
         public virtual void Draw(Camera camera)
@@ -34,7 +68,10 @@ namespace Mundo01.GameObjects
                 foreach (GameObject child in Children)
                     child.Draw(camera);
             }
+
+            if (visible) LineBox.Draw(effect);
         }
+
         public Vector3 GetPosition()
         {
             Vector3 scale, translation;
@@ -60,6 +97,24 @@ namespace Mundo01.GameObjects
 
             World.Decompose(out scale, out rotation, out translation);
             return scale;
+        }
+
+        public void UpdateCollider()
+        {
+            Debug.WriteLine("Dimension: " + GetScale() * Size);
+            LineBox = new LineBox(game, Size, Color.Green);
+            BoundingBox = new BoundingBox(GetPosition() - ((GetScale() * Size) / 2f),
+                                          GetPosition() + ((GetScale() * Size) / 2f));
+        }
+
+        public bool IsColliding(GameObject other)
+        {
+            return BoundingBox.Intersects(other.BoundingBox);
+        }
+
+        public void SetColliderColor(Color color)
+        {
+            LineBox.SetColor(color);
         }
 
     }

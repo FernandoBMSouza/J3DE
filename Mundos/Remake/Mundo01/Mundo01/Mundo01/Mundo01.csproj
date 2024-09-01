@@ -110,11 +110,12 @@
     <Compile Include="GameObjects\GameObject.cs" />
     <Compile Include="GameObjects\Primitives\Cube.cs" />
     <Compile Include="GameObjects\Primitives\Primitive.cs" />
-    <Compile Include="GameObjects\Primitives\Square.cs" />
+    <Compile Include="GameObjects\Primitives\Quad.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Game1.cs" />
     <Compile Include="Utilities\Camera.cs" />
+    <Compile Include="Utilities\Collision\LineBox.cs" />
     <Compile Include="Utilities\QuaternionExtensions.cs" />
     <Compile Include="Utilities\Screen.cs" />
   </ItemGroup>

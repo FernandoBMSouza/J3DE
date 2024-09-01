@@ -24,7 +24,7 @@ namespace Mundo01.Utilities
 
         public Camera(Game game)
         {
-            position = new Vector3(0, 1, 7);
+            position = new Vector3(0, 2, 7);
             oldPosition = position;
             target = Vector3.Zero;
             up = Vector3.Up;

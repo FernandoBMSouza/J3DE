@@ -8,6 +8,7 @@ namespace Mundo01.GameObjects.Primitives
         public Cube(Game1 game, Color color)
             : base(game, color)
         {
+            Size = Vector3.One;
             vertices = new VertexPositionColor[]
             {
                 // FRONT

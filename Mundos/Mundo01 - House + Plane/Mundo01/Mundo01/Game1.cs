@@ -54,7 +54,7 @@ namespace Mundo01
             plane.Scale = new Vector3(10, 1, 10);
             house.Position = new Vector3(0, 1, 0);
 
-            colliders = new List<GameObject>() { plane, house };
+            colliders = new List<GameObject>() { plane, /*house*/ };
 
             base.Initialize();
         }

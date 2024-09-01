@@ -8,15 +8,14 @@ namespace Mundo01.GameObjects.Primitives
     {
         Game1 game;
         VertexBuffer buffer;
-        BasicEffect effect;
         protected VertexPositionColor[] vertices;
         protected Color color;
 
         public Primitive(Game1 game, Color color)
+            : base(game)
         {
             this.game = game;
             this.color = color;
-            effect = new BasicEffect(game.GraphicsDevice);
 
             if (vertices != null)
             {

@@ -44,7 +44,7 @@ namespace Mundo01
 
             gameObjects = new GameObject[]
             {
-                new Square(this, Color.DarkGreen),
+                new Quad(this, Color.DarkGreen),
                 new Cube(this, Color.Blue),
             };
 
@@ -71,9 +71,23 @@ namespace Mundo01
                 go.World = Matrix.Identity;
             }
 
-            gameObjects[0].World *= Matrix.CreateScale(10);
-            gameObjects[0].World *= Matrix.CreateRotationX(MathHelper.ToRadians(270));
+            gameObjects[0].World *= Matrix.CreateScale(20);
             gameObjects[1].World *= Matrix.CreateTranslation(new Vector3(0, gameObjects[1].Size.Y / 2f, 0));
+
+            Window.Title = "Info: " + gameObjects[0].GetPosition() + " - " + gameObjects[0].GetRotation() + " - " + gameObjects[0].GetScale() + " - " + gameObjects[0].Size;
+
+            foreach (GameObject go in gameObjects)
+            {
+                if (camera.IsColliding(go.BoundingBox))
+                {
+                    camera.RestorePosition();
+                    go.SetColliderColor(Color.Red);
+                }
+                else
+                {
+                    go.SetColliderColor(Color.Green);
+                }
+            }
 
             base.Update(gameTime);
         }
