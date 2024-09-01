@@ -8,18 +8,17 @@ namespace Mundo01.GameObjects.Primitives
         public Square(Game1 game, Color color)
             : base(game, color)
         {
-            Vector3 size = new Vector3(1, 1, 0);
-            size /= 2;
+            Size = new Vector3(1, 1, 0);
 
             vertices = new VertexPositionColor[]
             {
-                new VertexPositionColor(new Vector3(-size.X, -size.Y, size.Z), color),
-                new VertexPositionColor(new Vector3(-size.X,  size.Y, size.Z), color),
-                new VertexPositionColor(new Vector3( size.X, -size.Y, size.Z), color),
+                new VertexPositionColor(new Vector3(-Size.X, -Size.Y, Size.Z) / 2f, color),
+                new VertexPositionColor(new Vector3(-Size.X,  Size.Y, Size.Z) / 2f, color),
+                new VertexPositionColor(new Vector3( Size.X, -Size.Y, Size.Z) / 2f, color),
 
-                new VertexPositionColor(new Vector3(-size.X,  size.Y, size.Z), color),
-                new VertexPositionColor(new Vector3( size.X,  size.Y, size.Z), color),
-                new VertexPositionColor(new Vector3( size.X, -size.Y, size.Z), color),
+                new VertexPositionColor(new Vector3(-Size.X,  Size.Y, Size.Z) / 2f, color),
+                new VertexPositionColor(new Vector3( Size.X,  Size.Y, Size.Z) / 2f, color),
+                new VertexPositionColor(new Vector3( Size.X, -Size.Y, Size.Z) / 2f, color),
             };
         }
     }

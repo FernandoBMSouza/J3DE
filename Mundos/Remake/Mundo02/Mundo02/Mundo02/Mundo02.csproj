@@ -121,6 +121,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Game1.cs" />
     <Compile Include="Utilities\Camera.cs" />
+    <Compile Include="Utilities\QuaternionExtensions.cs" />
     <Compile Include="Utilities\Screen.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -1,6 +1,13 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
 using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Audio;
+using Microsoft.Xna.Framework.Content;
+using Microsoft.Xna.Framework.GamerServices;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using Microsoft.Xna.Framework.Media;
 using Mundo01.Utilities;
 using Mundo01.GameObjects;
 using Mundo01.GameObjects.Primitives;
@@ -35,10 +42,10 @@ namespace Mundo01
 
             camera = new Camera(this);
 
-            gameObjects = new Primitive[]
+            gameObjects = new GameObject[]
             {
                 new Square(this, Color.DarkGreen),
-                new Cube(this, Color.DarkRed),
+                new Cube(this, Color.Blue),
             };
 
             base.Initialize();
@@ -59,11 +66,14 @@ namespace Mundo01
             camera.Update(gameTime);
 
             foreach (GameObject go in gameObjects)
+            {
+                go.Update(gameTime);
                 go.World = Matrix.Identity;
+            }
 
             gameObjects[0].World *= Matrix.CreateScale(10);
             gameObjects[0].World *= Matrix.CreateRotationX(MathHelper.ToRadians(270));
-            gameObjects[1].World *= Matrix.CreateTranslation(new Vector3(0,.5f,0));
+            gameObjects[1].World *= Matrix.CreateTranslation(new Vector3(0, gameObjects[1].Size.Y / 2f, 0));
 
             base.Update(gameTime);
         }

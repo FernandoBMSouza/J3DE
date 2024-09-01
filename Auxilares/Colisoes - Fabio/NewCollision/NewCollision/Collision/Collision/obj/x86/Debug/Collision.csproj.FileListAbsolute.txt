@@ -4,3 +4,9 @@ c:\users\sabio\documents\visual studio 2010\Projects\Collision\Collision\Collisi
 c:\users\sabio\documents\visual studio 2010\Projects\Collision\Collision\Collision\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 c:\users\sabio\documents\visual studio 2010\Projects\Collision\Collision\Collision\obj\x86\Debug\Collision.exe
 c:\users\sabio\documents\visual studio 2010\Projects\Collision\Collision\Collision\obj\x86\Debug\Collision.pdb
+C:\Users\ferna\OneDrive\Documents\J3DE\Auxilares\Colisoes - Fabio\NewCollision\NewCollision\Collision\Collision\bin\x86\Debug\Collision.exe
+C:\Users\ferna\OneDrive\Documents\J3DE\Auxilares\Colisoes - Fabio\NewCollision\NewCollision\Collision\Collision\bin\x86\Debug\Collision.pdb
+C:\Users\ferna\OneDrive\Documents\J3DE\Auxilares\Colisoes - Fabio\NewCollision\NewCollision\Collision\Collision\obj\x86\Debug\Collision.csprojResolveAssemblyReference.cache
+C:\Users\ferna\OneDrive\Documents\J3DE\Auxilares\Colisoes - Fabio\NewCollision\NewCollision\Collision\Collision\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\ferna\OneDrive\Documents\J3DE\Auxilares\Colisoes - Fabio\NewCollision\NewCollision\Collision\Collision\obj\x86\Debug\Collision.exe
+C:\Users\ferna\OneDrive\Documents\J3DE\Auxilares\Colisoes - Fabio\NewCollision\NewCollision\Collision\Collision\obj\x86\Debug\Collision.pdb

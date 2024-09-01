@@ -35,5 +35,32 @@ namespace Mundo02.GameObjects
                     child.Draw(camera);
             }
         }
+        public Vector3 GetPosition()
+        {
+            Vector3 scale, translation;
+            Quaternion rotation;
+
+            World.Decompose(out scale, out rotation, out translation);
+            return translation;
+        }
+
+        public Vector3 GetRotation()
+        {
+            Vector3 scale, translation;
+            Quaternion rotation;
+
+            World.Decompose(out scale, out rotation, out translation);
+            return new Vector3(rotation.ToEulerAngles().X, rotation.ToEulerAngles().Y, rotation.ToEulerAngles().Z);
+        }
+
+        public Vector3 GetScale()
+        {
+            Vector3 scale, translation;
+            Quaternion rotation;
+
+            World.Decompose(out scale, out rotation, out translation);
+            return scale;
+        }
+
     }
 }

@@ -8,64 +8,61 @@ namespace Mundo01.GameObjects.Primitives
         public Cube(Game1 game, Color color)
             : base(game, color)
         {
-            Vector3 size = new Vector3(1, 1, 1);
-            size /= 2;
-
             vertices = new VertexPositionColor[]
             {
                 // FRONT
-                new VertexPositionColor(new Vector3(-size.X,-size.Y, size.Z), color),
-                new VertexPositionColor(new Vector3(-size.X, size.Y, size.Z), color),
-                new VertexPositionColor(new Vector3( size.X,-size.Y, size.Z), color),
+                new VertexPositionColor(new Vector3(-Size.X,-Size.Y, Size.Z) / 2f, color),
+                new VertexPositionColor(new Vector3(-Size.X, Size.Y, Size.Z) / 2f, color),
+                new VertexPositionColor(new Vector3( Size.X,-Size.Y, Size.Z) / 2f, color),
 
-                new VertexPositionColor(new Vector3(-size.X, size.Y, size.Z), color),
-                new VertexPositionColor(new Vector3( size.X, size.Y, size.Z), color),
-                new VertexPositionColor(new Vector3( size.X,-size.Y, size.Z), color),
+                new VertexPositionColor(new Vector3(-Size.X, Size.Y, Size.Z) / 2f, color),
+                new VertexPositionColor(new Vector3( Size.X, Size.Y, Size.Z) / 2f, color),
+                new VertexPositionColor(new Vector3( Size.X,-Size.Y, Size.Z) / 2f, color),
 
                 // REAR
-                new VertexPositionColor(new Vector3(-size.X,-size.Y,-size.Z), color),
-                new VertexPositionColor(new Vector3( size.X,-size.Y,-size.Z), color),
-                new VertexPositionColor(new Vector3(-size.X, size.Y,-size.Z), color),
+                new VertexPositionColor(new Vector3(-Size.X,-Size.Y,-Size.Z) / 2f, color),
+                new VertexPositionColor(new Vector3( Size.X,-Size.Y,-Size.Z) / 2f, color),
+                new VertexPositionColor(new Vector3(-Size.X, Size.Y,-Size.Z) / 2f, color),
 
-                new VertexPositionColor(new Vector3(-size.X, size.Y,-size.Z), color),
-                new VertexPositionColor(new Vector3( size.X,-size.Y,-size.Z), color),
-                new VertexPositionColor(new Vector3( size.X, size.Y,-size.Z), color),
+                new VertexPositionColor(new Vector3(-Size.X, Size.Y,-Size.Z) / 2f, color),
+                new VertexPositionColor(new Vector3( Size.X,-Size.Y,-Size.Z) / 2f, color),
+                new VertexPositionColor(new Vector3( Size.X, Size.Y,-Size.Z) / 2f, color),
 
                 // RIGHT
-                new VertexPositionColor(new Vector3( size.X,-size.Y, size.Z), color),
-                new VertexPositionColor(new Vector3( size.X, size.Y, size.Z), color),
-                new VertexPositionColor(new Vector3( size.X,-size.Y,-size.Z), color),
+                new VertexPositionColor(new Vector3( Size.X,-Size.Y, Size.Z) / 2f, color),
+                new VertexPositionColor(new Vector3( Size.X, Size.Y, Size.Z) / 2f, color),
+                new VertexPositionColor(new Vector3( Size.X,-Size.Y,-Size.Z) / 2f, color),
 
-                new VertexPositionColor(new Vector3( size.X, size.Y, size.Z), color),
-                new VertexPositionColor(new Vector3( size.X, size.Y,-size.Z), color),
-                new VertexPositionColor(new Vector3( size.X,-size.Y,-size.Z), color),
+                new VertexPositionColor(new Vector3( Size.X, Size.Y, Size.Z) / 2f, color),
+                new VertexPositionColor(new Vector3( Size.X, Size.Y,-Size.Z) / 2f, color),
+                new VertexPositionColor(new Vector3( Size.X,-Size.Y,-Size.Z) / 2f, color),
 
                 // LEFT
-                new VertexPositionColor(new Vector3(-size.X, size.Y, size.Z), color),
-                new VertexPositionColor(new Vector3(-size.X,-size.Y, size.Z), color),
-                new VertexPositionColor(new Vector3(-size.X,-size.Y,-size.Z), color),
+                new VertexPositionColor(new Vector3(-Size.X, Size.Y, Size.Z) / 2f, color),
+                new VertexPositionColor(new Vector3(-Size.X,-Size.Y, Size.Z) / 2f, color),
+                new VertexPositionColor(new Vector3(-Size.X,-Size.Y,-Size.Z) / 2f, color),
 
-                new VertexPositionColor(new Vector3(-size.X, size.Y, size.Z), color),
-                new VertexPositionColor(new Vector3(-size.X,-size.Y,-size.Z), color),
-                new VertexPositionColor(new Vector3(-size.X, size.Y,-size.Z), color),
+                new VertexPositionColor(new Vector3(-Size.X, Size.Y, Size.Z) / 2f, color),
+                new VertexPositionColor(new Vector3(-Size.X,-Size.Y,-Size.Z) / 2f, color),
+                new VertexPositionColor(new Vector3(-Size.X, Size.Y,-Size.Z) / 2f, color),
 
                 // TOP
-                new VertexPositionColor(new Vector3(-size.X, size.Y, size.Z), color),
-                new VertexPositionColor(new Vector3(-size.X, size.Y,-size.Z), color),
-                new VertexPositionColor(new Vector3( size.X, size.Y, size.Z), color),
+                new VertexPositionColor(new Vector3(-Size.X, Size.Y, Size.Z) / 2f, color),
+                new VertexPositionColor(new Vector3(-Size.X, Size.Y,-Size.Z) / 2f, color),
+                new VertexPositionColor(new Vector3( Size.X, Size.Y, Size.Z) / 2f, color),
 
-                new VertexPositionColor(new Vector3(-size.X, size.Y,-size.Z), color),
-                new VertexPositionColor(new Vector3( size.X, size.Y,-size.Z), color),
-                new VertexPositionColor(new Vector3( size.X, size.Y, size.Z), color),
+                new VertexPositionColor(new Vector3(-Size.X, Size.Y,-Size.Z) / 2f, color),
+                new VertexPositionColor(new Vector3( Size.X, Size.Y,-Size.Z) / 2f, color),
+                new VertexPositionColor(new Vector3( Size.X, Size.Y, Size.Z) / 2f, color),
 
                 // BOT
-                new VertexPositionColor(new Vector3(-size.X,-size.Y, size.Z), color),
-                new VertexPositionColor(new Vector3( size.X,-size.Y, size.Z), color),
-                new VertexPositionColor(new Vector3(-size.X,-size.Y,-size.Z), color),
+                new VertexPositionColor(new Vector3(-Size.X,-Size.Y, Size.Z) / 2f, color),
+                new VertexPositionColor(new Vector3( Size.X,-Size.Y, Size.Z) / 2f, color),
+                new VertexPositionColor(new Vector3(-Size.X,-Size.Y,-Size.Z) / 2f, color),
 
-                new VertexPositionColor(new Vector3(-size.X,-size.Y,-size.Z), color),
-                new VertexPositionColor(new Vector3( size.X,-size.Y, size.Z), color),
-                new VertexPositionColor(new Vector3( size.X,-size.Y,-size.Z), color),
+                new VertexPositionColor(new Vector3(-Size.X,-Size.Y,-Size.Z) / 2f, color),
+                new VertexPositionColor(new Vector3( Size.X,-Size.Y, Size.Z) / 2f, color),
+                new VertexPositionColor(new Vector3( Size.X,-Size.Y,-Size.Z) / 2f, color),
             };
         }
     }

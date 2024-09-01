@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace Mundo01.Utilities
+﻿namespace Mundo01.Utilities
 {
     class Screen
     {
