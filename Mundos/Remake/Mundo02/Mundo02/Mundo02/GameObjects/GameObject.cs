@@ -1,30 +1,42 @@
 ﻿using Microsoft.Xna.Framework;
 using Mundo02.Utilities;
+using Microsoft.Xna.Framework.Graphics;
+using Mundo02.Utilities.Collision;
+using Microsoft.Xna.Framework.Input;
 
 namespace Mundo02.GameObjects
 {
     abstract class GameObject
     {
         public Matrix World { get; set; }
-        public GameObject[] Children { get; set; }
-        public Vector3 Size { get; set; }
+        public Vector3 Size { get; protected set; }
+        public Collider BoxCollider { get; private set; }
+        public GameObject[] Children { get; protected set; }
 
-        public GameObject()
+        protected BasicEffect effect;
+        Game1 game;
+
+        public GameObject(Game1 game, bool showColliderLines = false)
         {
-            World = Matrix.Identity;
-            Size = Vector3.One;
+            this.game = game;
+            effect = new BasicEffect(game.GraphicsDevice);
+            BoxCollider = new Collider(game, this);
+            BoxCollider.IsVisible = showColliderLines;
         }
 
         public virtual void Update(GameTime gameTime)
         {
+            // Desativa o colisor dos filhos, se deixar ativo o jogo trava por causa das helices que ficam atualizando direto
             if (Children != null)
             {
                 foreach (GameObject child in Children)
                 {
-                    child.Update(gameTime);
-                    child.World *= World;
+                    child.BoxCollider.IsVisible = false;
+                    child.BoxCollider.IsActive = false;
                 }
             }
+
+            BoxCollider.Update();
         }
 
         public virtual void Draw(Camera camera)
@@ -34,7 +46,10 @@ namespace Mundo02.GameObjects
                 foreach (GameObject child in Children)
                     child.Draw(camera);
             }
+
+            if (BoxCollider.IsVisible) BoxCollider.Lines.Draw(effect, camera);
         }
+
         public Vector3 GetPosition()
         {
             Vector3 scale, translation;
@@ -62,5 +77,9 @@ namespace Mundo02.GameObjects
             return scale;
         }
 
+        public bool IsColliding(GameObject other)
+        {
+            return BoxCollider.BoundingBox.Intersects(other.BoxCollider.BoundingBox);         
+        }
     }
 }

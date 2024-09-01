@@ -8,19 +8,18 @@ namespace Mundo02.GameObjects.Primitives
     {
         Game1 game;
         VertexBuffer buffer;
-        BasicEffect effect;
         protected VertexPositionColor[] vertices;
         protected Color color;
 
-        public Primitive(Game1 game, Color color)
+        public Primitive(Game1 game, Color color, bool showColliderLines = false)
+            : base(game, showColliderLines)
         {
             this.game = game;
             this.color = color;
-            effect = new BasicEffect(game.GraphicsDevice);
 
             if (vertices != null)
             {
-                buffer = new VertexBuffer(game.GraphicsDevice,
+                buffer = new VertexBuffer(this.game.GraphicsDevice,
                                           typeof(VertexPositionColor),
                                           vertices.Length,
                                           BufferUsage.None);

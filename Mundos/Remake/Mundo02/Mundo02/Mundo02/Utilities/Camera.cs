@@ -1,6 +1,7 @@
 ﻿using System;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Input;
+using Mundo02.GameObjects;
 
 namespace Mundo02.Utilities
 {
@@ -24,7 +25,7 @@ namespace Mundo02.Utilities
 
         public Camera(Game game)
         {
-            position = new Vector3(0, 1, 7);
+            position = new Vector3(0, 2, 10);
             oldPosition = position;
             target = Vector3.Zero;
             up = Vector3.Up;
@@ -118,9 +119,9 @@ namespace Mundo02.Utilities
 
         }
 
-        public bool IsColliding(BoundingBox other)
+        public bool IsColliding(GameObject other)
         {
-            return BBox.Intersects(other);
+            return BBox.Intersects(other.BoxCollider.BoundingBox);
         }
 
         public void RestorePosition()

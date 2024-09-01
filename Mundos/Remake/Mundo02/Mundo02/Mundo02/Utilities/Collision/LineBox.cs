@@ -1,8 +1,8 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Mundo01.Utilities;
+using Mundo02.Utilities;
 
-namespace Mundo01.GameObjects.Primitives
+namespace Mundo02.Utilities.Collision
 {
     class LineBox
     {

@@ -5,9 +5,10 @@ namespace Mundo02.GameObjects.Primitives
 {
     class Cube : Primitive
     {
-        public Cube(Game1 game, Color color)
-            : base(game, color)
+        public Cube(Game1 game, Color color, bool showColliderLines = false)
+            : base(game, color, showColliderLines)
         {
+            Size = Vector3.One;
             vertices = new VertexPositionColor[]
             {
                 // FRONT

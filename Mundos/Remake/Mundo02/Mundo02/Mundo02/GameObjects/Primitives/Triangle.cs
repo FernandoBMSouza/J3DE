@@ -9,8 +9,8 @@ namespace Mundo02.GameObjects.Primitives
 {
     class Triangle : Primitive
     {
-        public Triangle(Game1 game, Color color)
-            : base(game, color)
+        public Triangle(Game1 game, Color color, bool showColliderLines = false)
+            : base(game, color, showColliderLines)
         {
             Size = new Vector3(1, 1, 0);
 

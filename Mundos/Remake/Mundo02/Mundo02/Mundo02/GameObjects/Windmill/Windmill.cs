@@ -8,8 +8,8 @@ namespace Mundo02.GameObjects.Windmill
 {
     class Windmill : GameObject
     {
-        public Windmill(Game1 game, Color buildingColor, Color propellerColor)
-            : base()
+        public Windmill(Game1 game, Color buildingColor, Color propellerColor, bool showColliderLines = false)
+            : base(game, showColliderLines)
         {
             Children = new GameObject[]
             {
@@ -28,10 +28,12 @@ namespace Mundo02.GameObjects.Windmill
                 child.World = Matrix.Identity;
             }
 
-            Children[1].World *= Matrix.CreateTranslation(new Vector3(0,Children[1].Size.Y/4f,Children[0].Size.Z/2 + .07f));
+            Children[1].World *= Matrix.CreateTranslation(new Vector3(0, Children[1].Size.Y / 4f, Children[0].Size.Z / 2 + .07f));
 
             foreach (GameObject child in Children)
                 child.World *= World;
+
+            base.Update(gameTime);
         }
     }
 }

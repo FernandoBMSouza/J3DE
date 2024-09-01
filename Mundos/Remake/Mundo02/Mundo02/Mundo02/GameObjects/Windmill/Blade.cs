@@ -9,9 +9,10 @@ namespace Mundo02.GameObjects.Windmill
 {
     class Blade : GameObject
     {
-        public Blade(Game1 game, Color color)
-            : base()
+        public Blade(Game1 game, Color color, bool showColliderLines = false)
+            : base(game, showColliderLines)
         {
+            Size = new Vector3(.5f,1,0);
             Children = new GameObject[] 
             { 
                 new Triangle(game, color),
@@ -25,14 +26,16 @@ namespace Mundo02.GameObjects.Windmill
             {
                 child.Update(gameTime);
                 child.World = Matrix.Identity;
-                child.World = Matrix.CreateScale(child.Size/2f);
+                child.World = Matrix.CreateScale(child.Size / 2f);
             }
             Children[0].World *= Matrix.CreateRotationZ(MathHelper.ToRadians(180));
-            Children[0].World *= Matrix.CreateTranslation(new Vector3(0,-Children[0].Size.Y / 4f, 0));
+            Children[0].World *= Matrix.CreateTranslation(new Vector3(0, -Children[0].Size.Y / 4f, 0));
             Children[1].World *= Matrix.CreateTranslation(new Vector3(0, Children[1].Size.Y / 4f, 0));
 
             foreach (GameObject child in Children)
                 child.World *= World;
+
+            base.Update(gameTime);
         }
     }
 }

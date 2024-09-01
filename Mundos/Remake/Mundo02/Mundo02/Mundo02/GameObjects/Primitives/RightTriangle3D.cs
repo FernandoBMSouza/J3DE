@@ -5,9 +5,10 @@ namespace Mundo02.GameObjects.Primitives
 {
     class RightTriangle3D : Primitive
     {
-        public RightTriangle3D(Game1 game, Color color)
-            : base(game, color)
+        public RightTriangle3D(Game1 game, Color color, bool showColliderLines = false)
+            : base(game, color, showColliderLines)
         {
+            Size = Vector3.One;
             vertices = new VertexPositionColor[] 
             { 
                 // FRONT

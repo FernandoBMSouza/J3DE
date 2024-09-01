@@ -5,8 +5,8 @@ namespace Mundo02.GameObjects.Primitives
 {
     class Square : Primitive
     {
-        public Square(Game1 game, Color color)
-            : base(game, color)
+        public Square(Game1 game, Color color, bool showColliderLines = false)
+            : base(game, color, showColliderLines)
         {
             Size = new Vector3(1, 1, 0);
 

@@ -1,12 +1,12 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
-namespace Mundo01.GameObjects.Primitives
+namespace Mundo02.GameObjects.Primitives
 {
     class Quad : Primitive
     {
-        public Quad(Game1 game, Color color)
-            : base(game, color)
+        public Quad(Game1 game, Color color, bool showColliderLines = false)
+            : base(game, color, showColliderLines)
         {
             Size = new Vector3(1, 0, 1);
             vertices = new VertexPositionColor[]

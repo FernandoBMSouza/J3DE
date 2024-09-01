@@ -13,11 +13,12 @@ namespace Mundo02.GameObjects.Windmill
         float angle;
         bool working;
 
-        public Propeller(Game1 game, Color color, bool working = true)
-            : base()
+        public Propeller(Game1 game, Color color, bool working = true, bool showColliderLines = false)
+            : base(game, showColliderLines)
         {
             this.working = working;
             speed = random.Next(50, 500);
+            //speed = 0;
 
             Children = new GameObject[]
             {
@@ -27,7 +28,7 @@ namespace Mundo02.GameObjects.Windmill
                 new Blade(game, color),
             };
 
-            Size = Children[0].Size * 2;
+            Size = new Vector3(Children[0].Size.X * 4, Children[0].Size.Y * 2, 0) ;
         }
 
         public override void Update(GameTime gameTime)
@@ -37,10 +38,11 @@ namespace Mundo02.GameObjects.Windmill
             {
                 Children[i].Update(gameTime);
                 Children[i].World = Matrix.Identity;
-                Children[i].World *= Matrix.CreateTranslation(new Vector3(0, Children[i].Size.Y/2f, 0));
+                Children[i].World *= Matrix.CreateTranslation(new Vector3(0, Children[i].Size.Y / 2f, 0));
                 Children[i].World *= Matrix.CreateRotationZ(MathHelper.ToRadians(angle + i * 90));
                 Children[i].World *= World;
             }
+            base.Update(gameTime);
         }
     }
 }

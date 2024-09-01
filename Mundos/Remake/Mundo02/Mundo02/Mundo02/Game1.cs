@@ -1,6 +1,13 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
 using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Audio;
+using Microsoft.Xna.Framework.Content;
+using Microsoft.Xna.Framework.GamerServices;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using Microsoft.Xna.Framework.Media;
 using Mundo02.Utilities;
 using Mundo02.GameObjects;
 using Mundo02.GameObjects.Primitives;
@@ -16,6 +23,8 @@ namespace Mundo02
         Camera camera;
 
         GameObject[] gameObjects;
+
+        bool showCollidersLines = true;
 
         public Game1()
         {
@@ -38,10 +47,10 @@ namespace Mundo02
 
             gameObjects = new GameObject[]
             {
-                new Square(this, Color.DarkGreen),
-                new Cube(this, Color.Blue),
-                new Windmill(this, Color.DarkRed, Color.Yellow),
-                new Windmill(this, Color.DarkRed, Color.Yellow),
+                new Quad(this, Color.Green, showCollidersLines),
+                new Cube(this, Color.DimGray, showCollidersLines),
+                new Windmill(this, Color.DarkGray, Color.DarkKhaki, showCollidersLines),
+                new Windmill(this, Color.DarkGray, Color.DarkKhaki, showCollidersLines),
             };
 
             base.Initialize();
@@ -64,18 +73,33 @@ namespace Mundo02
             foreach (GameObject go in gameObjects)
             {
                 go.Update(gameTime);
-                go.World = Matrix.Identity;                
+                go.World = Matrix.Identity;
             }
 
             gameObjects[0].World *= Matrix.CreateScale(20);
-            gameObjects[0].World *= Matrix.CreateRotationX(MathHelper.ToRadians(270));
             gameObjects[1].World *= Matrix.CreateTranslation(new Vector3(0, gameObjects[1].Size.Y / 2f, 0));
-
+            
             gameObjects[2].World *= Matrix.CreateRotationY(MathHelper.ToRadians(-45));
-            gameObjects[3].World *= Matrix.CreateRotationY(MathHelper.ToRadians( 45));
+            gameObjects[3].World *= Matrix.CreateRotationY(MathHelper.ToRadians(45));
 
-            gameObjects[2].World *= Matrix.CreateTranslation(new Vector3( gameObjects[2].Size.X * 4f, gameObjects[2].Size.Y / 2f, 0));
+            gameObjects[2].World *= Matrix.CreateTranslation(new Vector3(gameObjects[2].Size.X * 4f, gameObjects[2].Size.Y / 2f, 0));
             gameObjects[3].World *= Matrix.CreateTranslation(new Vector3(-gameObjects[3].Size.X * 4f, gameObjects[3].Size.Y / 2f, 0));
+
+            //Window.Title = "Info: " + gameObjects[0].GetPosition() + " - " + gameObjects[0].GetRotation() + " - " + gameObjects[0].GetScale() + " - " + gameObjects[0].Size;
+
+            // TRATAMENTO DE COLISAO
+            foreach (GameObject go in gameObjects)
+            {
+                if (camera.IsColliding(go))
+                {
+                    camera.RestorePosition();
+                    go.BoxCollider.SetColor(Color.Red);
+                }
+                else
+                {
+                    go.BoxCollider.SetColor(Color.Green);
+                }
+            }
 
             base.Update(gameTime);
         }
