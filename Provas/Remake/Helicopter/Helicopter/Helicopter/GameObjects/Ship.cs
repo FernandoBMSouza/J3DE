@@ -5,22 +5,25 @@ using System.Text;
 using Microsoft.Xna.Framework;
 using Helicopter.GameObjects.Primitives;
 using Helicopter.GameObjects.Windmill;
+using System.Diagnostics;
 
 namespace Helicopter.GameObjects
 {
     public enum STATE
     { 
-        TRAVEL,
-        BACK_HOME,
+        TAKE_OFF,
+        FLY,
+        LAND,
+        STOP,
     }
 
     class Ship : GameObject
     {
-        STATE state = STATE.TRAVEL;
+        STATE state = STATE.TAKE_OFF;
         GameObject destination;
         GameObject home;
         float speed;
-        float acceleration;
+        Vector3 position;
 
         public Ship(Game1 game, Color bodyColor, Color propellerColor, GameObject home, GameObject destination, bool showColliderLines = false)
             : base(game, showColliderLines)
@@ -33,15 +36,19 @@ namespace Helicopter.GameObjects
                 new Propeller(game, propellerColor, true, showColliderLines),
             };
             Size = Children[0].Size;
-            state = STATE.TRAVEL;
+            state = STATE.TAKE_OFF;
             this.home = home;
             this.destination = destination;
-            speed = 10;
+            speed = 0.1f;
+            position = this.GetPosition();
+            Debug.WriteLine("Destinhation Size = " + destination.Size * destination.GetScale());
         }
 
         public override void Update(GameTime gameTime)
         {
-            acceleration += speed * gameTime.ElapsedGameTime.Milliseconds * 0.001f;
+            UpdateState();
+            ChangeState();
+            World *= Matrix.CreateTranslation(position);
 
             foreach (GameObject child in Children)
             {
@@ -56,7 +63,7 @@ namespace Helicopter.GameObjects
 
             Children[2].World *= Matrix.CreateScale(new Vector3(1.3f, 1.3f, 1));
             Children[2].World *= Matrix.CreateRotationX(MathHelper.ToRadians(90));
-            Children[2].World *= Matrix.CreateTranslation(new Vector3(0, Children[0].Size.Y / 2 + .05f, 0));
+            Children[2].World *= Matrix.CreateTranslation(new Vector3(0, .6f, 0));
 
             Children[3].World *= Matrix.CreateScale(new Vector3(.4f,.4f,1));
             Children[3].World *= Matrix.CreateRotationY(MathHelper.ToRadians(90));
@@ -66,56 +73,42 @@ namespace Helicopter.GameObjects
                 child.World *= World;
 
             base.Update(gameTime);
-
-            UpdateState();
-            ChangeState();
+            Debug.WriteLine("Destinhation Size = " + destination.Size * destination.GetScale());
         }
 
         public void UpdateState()
         {
-            if (state == STATE.TRAVEL)
+            switch (state)
             {
-                if (this.GetPosition().Y < destination.GetPosition().Y + destination.Size.Y)
-                {
-                    World *= Matrix.CreateTranslation(new Vector3(0, acceleration, 0));
-                }
-                else if (this.GetPosition().X < destination.GetPosition().X)
-                {
-                    World *= Matrix.CreateTranslation(new Vector3(acceleration, 0, 0));
-                }
-                else if (this.GetPosition().Y > destination.GetPosition().Y)
-                {
-                    World *= Matrix.CreateTranslation(new Vector3(0, -acceleration, 0));
-                }
-            }
-            else if (state == STATE.BACK_HOME)
-            {
-                if (this.GetPosition().Y <= destination.GetPosition().Y + destination.Size.Y)
-                {
-                    World *= Matrix.CreateTranslation(new Vector3(0, acceleration, 0));
-                }
-                else if (this.GetPosition().X > home.GetPosition().X)
-                {
-                    World *= Matrix.CreateTranslation(new Vector3(-acceleration, 0, 0));
-                }
-                else if (this.GetPosition().Y > home.GetPosition().Y)
-                {
-                    World *= Matrix.CreateTranslation(new Vector3(0, -acceleration, 0));
-                }
+                case STATE.TAKE_OFF:
+                    position.Y += speed;
+                    break;
+                case STATE.FLY:
+                    position.X += speed;
+                    break;
+                case STATE.LAND:
+                    position.Y -= speed;
+                    break;
+                case STATE.STOP:
+                    break;
             }
         }
 
         public void ChangeState()
         {
-            if (state == STATE.TRAVEL)
+            switch (state)
             {
-                if(this.IsColliding(destination))
-                    state = STATE.BACK_HOME;
-            }
-            else if (state == STATE.BACK_HOME)
-            {
-                if(this.IsColliding(home))
-                    state = STATE.TRAVEL;
+                case STATE.TAKE_OFF:
+                    if (position.Y > destination.Size.Y * destination.GetScale().Y) state = STATE.FLY;
+                    break;
+                case STATE.FLY:
+                    if (position.X >= 30) state = STATE.LAND;
+                    break;
+                case STATE.LAND:
+                    if (IsColliding(destination)) state = STATE.STOP;
+                    break;
+                case STATE.STOP:
+                    break;
             }
         }
     }
