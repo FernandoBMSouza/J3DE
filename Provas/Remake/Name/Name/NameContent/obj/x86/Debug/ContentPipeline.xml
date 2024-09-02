@@ -7,10 +7,10 @@
       <TargetProfile>HiDef</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\ferna\OneDrive\Documents\J3DE\Provas\1. Name\Name\NameContent\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\ferna\OneDrive\Documents\J3DE\Provas\1. Name\Name\Name\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\ferna\OneDrive\Documents\J3DE\Provas\1. Name\Name\NameContent\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\ferna\OneDrive\Documents\J3DE\Provas\1. Name\Name\Name\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\ferna\OneDrive\Documents\J3DE\Provas\Remake\Name\Name\NameContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\ferna\OneDrive\Documents\J3DE\Provas\Remake\Name\Name\Name\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\ferna\OneDrive\Documents\J3DE\Provas\Remake\Name\Name\NameContent\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\ferna\OneDrive\Documents\J3DE\Provas\Remake\Name\Name\Name\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
