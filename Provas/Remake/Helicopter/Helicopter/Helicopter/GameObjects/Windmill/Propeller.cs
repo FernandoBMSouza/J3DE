@@ -44,5 +44,7 @@ namespace Helicopter.GameObjects.Windmill
             }
             base.Update(gameTime);
         }
+
+        public void SetOnAndOff(bool value) { working = value; }
     }
 }

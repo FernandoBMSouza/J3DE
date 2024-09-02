@@ -80,9 +80,10 @@ namespace Helicopter
             gameObjects[1].World *= Matrix.CreateTranslation(new Vector3(gameObjects[1].Size.X * -15, (gameObjects[1].Size.Y * gameObjects[1].GetScale().Y) / 2, 0));
             gameObjects[2].World *= Matrix.CreateTranslation(new Vector3(gameObjects[2].Size.X * 15, (gameObjects[2].Size.Y * gameObjects[2].GetScale().Y) / 2, 0));
 
-            gameObjects[3].World *= Matrix.CreateTranslation(gameObjects[1].GetPosition() + new Vector3(0, (gameObjects[1].Size.Y * gameObjects[1].GetScale().Y) / 2 + (gameObjects[3].Size.Y * gameObjects[3].GetScale().Y) / 2, 0));
+            //gameObjects[3].World *= Matrix.CreateTranslation(gameObjects[1].GetPosition() + new Vector3(0, (gameObjects[1].Size.Y * gameObjects[1].GetScale().Y) / 2 + (gameObjects[3].Size.Y * gameObjects[3].GetScale().Y) / 2, 0));
+            //foreach (GameObject go in gameObjects) go.Update(gameTime);
 
-            //Window.Title = "Info: " + gameObjects[0].GetPosition() + " - " + gameObjects[0].GetRotation() + " - " + gameObjects[0].GetScale() + " - " + gameObjects[0].Size;
+            Window.Title = "Info: " + gameObjects[1].GetPosition() + " - " + gameObjects[1].GetRotation() + " - " + gameObjects[1].GetScale() + " - " + gameObjects[1].Size;
 
             // TRATAMENTO DE COLISAO
             foreach (GameObject go in gameObjects)

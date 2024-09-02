@@ -4,3 +4,9 @@ C:\Users\ferna\OneDrive\Documents\J3DE\Provas\Remake\Helicopter\Helicopter\Helic
 C:\Users\ferna\OneDrive\Documents\J3DE\Provas\Remake\Helicopter\Helicopter\Helicopter\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\Users\ferna\OneDrive\Documents\J3DE\Provas\Remake\Helicopter\Helicopter\Helicopter\obj\x86\Debug\Helicopter.exe
 C:\Users\ferna\OneDrive\Documents\J3DE\Provas\Remake\Helicopter\Helicopter\Helicopter\obj\x86\Debug\Helicopter.pdb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Provas\Remake\Helicopter\Helicopter\Helicopter\bin\x86\Debug\Helicopter.exe
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Provas\Remake\Helicopter\Helicopter\Helicopter\bin\x86\Debug\Helicopter.pdb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Provas\Remake\Helicopter\Helicopter\Helicopter\obj\x86\Debug\Helicopter.csprojResolveAssemblyReference.cache
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Provas\Remake\Helicopter\Helicopter\Helicopter\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Provas\Remake\Helicopter\Helicopter\Helicopter\obj\x86\Debug\Helicopter.exe
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Provas\Remake\Helicopter\Helicopter\Helicopter\obj\x86\Debug\Helicopter.pdb
