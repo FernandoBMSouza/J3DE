@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Helicopter.Game1" Collapsed="true">
+    <Position X="29" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAEEAAAgAABwAAAAAAAAQAAAAAAAgAAAAAAEAAAAQ=</HashCode>
+      <FileName>Game1.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Helicopter.Program" Collapsed="true">
+    <Position X="27.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Helicopter.GameObjects.GameObject" Collapsed="true">
+    <Position X="11.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQACAAAADCAggAAAAAEAAAAACAAAAAIIAAAAAIAAAA=</HashCode>
+      <FileName>GameObjects\GameObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Helicopter.GameObjects.Ship" Collapsed="true">
+    <Position X="20.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAABAAAAAAAAAAAAAAAAQQEAAAABAAAAAA=</HashCode>
+      <FileName>GameObjects\Ship.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Helicopter.GameObjects.Primitives.Cube" Collapsed="true">
+    <Position X="2.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameObjects\Primitives\Cube.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Helicopter.GameObjects.Primitives.Primitive" Collapsed="true">
+    <Position X="8.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAAAAQAACIAABAAAAAAAA=</HashCode>
+      <FileName>GameObjects\Primitives\Primitive.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Helicopter.GameObjects.Primitives.Quad" Collapsed="true">
+    <Position X="9.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameObjects\Primitives\Quad.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Helicopter.GameObjects.Primitives.RightTriangle3D" Collapsed="true">
+    <Position X="11.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameObjects\Primitives\RightTriangle3D.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Helicopter.GameObjects.Primitives.Square" Collapsed="true">
+    <Position X="14" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameObjects\Primitives\Square.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Helicopter.GameObjects.Primitives.Triangle" Collapsed="true">
+    <Position X="5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameObjects\Primitives\Triangle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Helicopter.GameObjects.Primitives.Triangle3D" Collapsed="true">
+    <Position X="7.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameObjects\Primitives\Triangle3D.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Helicopter.GameObjects.Windmill.Blade" Collapsed="true">
+    <Position X="16.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameObjects\Windmill\Blade.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Helicopter.GameObjects.Windmill.Building" Collapsed="true">
+    <Position X="18.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameObjects\Windmill\Building.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Helicopter.GameObjects.Windmill.Propeller" Collapsed="true">
+    <Position X="23" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAQAAABACAA=</HashCode>
+      <FileName>GameObjects\Windmill\Propeller.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Helicopter.GameObjects.Windmill.Windmill" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameObjects\Windmill\Windmill.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Helicopter.Utilities.Camera" Collapsed="true">
+    <Position X="25.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAQAAAAAgAAIACIIAAIAAAAAABAAABAABQAgJQAAA=</HashCode>
+      <FileName>Utilities\Camera.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Helicopter.Utilities.QuaternionExtensions" Collapsed="true">
+    <Position X="29" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAA=</HashCode>
+      <FileName>Utilities\QuaternionExtensions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Helicopter.Utilities.Screen" Collapsed="true">
+    <Position X="25.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAAAAAAAAEAABABAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Utilities\Screen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Helicopter.Utilities.Collision.Collider" Collapsed="true">
+    <Position X="27.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAEAAAAAEgAAEAAAABAAADAAAAALAggAAAAAAAA=</HashCode>
+      <FileName>Utilities\Collision\Collider.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Helicopter.Utilities.Collision.LineBox" Collapsed="true">
+    <Position X="25.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAQAAAAAAAAAgAAAAAAAAEAAAAQAACIAAgAAAAAAAA=</HashCode>
+      <FileName>Utilities\Collision\LineBox.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="Helicopter.GameObjects.STATE" Collapsed="true">
+    <Position X="25.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameObjects\Ship.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

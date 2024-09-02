@@ -49,7 +49,7 @@ namespace Name
 
             gameObjects = new GameObject[]
             {
-                new Fernando(this, Color.DarkBlue, Color.LightSkyBlue, showCollidersLines),
+                new Fernando(this, Color.Blue, Color.LightBlue, showCollidersLines),
             };
 
             speed = 100;

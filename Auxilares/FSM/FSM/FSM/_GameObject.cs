@@ -15,7 +15,6 @@ namespace FSM
         RIGHT
     };
 
-
     public class _GameObject
     {
         Vector2 position;
