@@ -13,30 +13,37 @@ namespace Helicopter.GameObjects
     { 
         UP,
         DOWN,
-        ROTATE,
+        ROTATE_RIGHT,
+        ROTATE_LEFT,
+        RIGHT,
+        LEFT,
         IDLE,
     }
 
     class Ship : GameObject
     {
-        STATE state;
+        STATE state, previousState;
         Vector3 position;
-        float angle, rotationSpeed, speed;
+        float angle, rotationSpeed, speed, timer;
+        const float GAP = 2f;
+        GameObject building1, building2, destination;
 
-        public Ship(Game1 game, Color bodyColor, Color propellerColor, bool showColliderLines = false)
+        public Ship(Game1 game, Color bodyColor, Color propellerColor, GameObject building1, GameObject building2, bool showColliderLines = false)
             : base(game, showColliderLines)
         {
             Children = new GameObject[]
             {
                 new Cube(game, bodyColor, showColliderLines),
                 new Cube(game, bodyColor, showColliderLines),
-                new Propeller(game, propellerColor, true, showColliderLines),
-                new Propeller(game, propellerColor, true, showColliderLines),
+                new Propeller(game, propellerColor, false, showColliderLines),
+                new Propeller(game, propellerColor, false, showColliderLines),
             };
             Size = Children[0].Size;
-            state = STATE.IDLE;
+            previousState = state = STATE.IDLE;
             rotationSpeed = 50f;
             speed = 2f;
+            this.building1 = destination = building1;
+            this.building2 = building2;
         }
 
         public override void Update(GameTime gameTime)
@@ -60,12 +67,10 @@ namespace Helicopter.GameObjects
             Children[3].World *= Matrix.CreateTranslation(new Vector3(-.35f, 0, -2));
             
             UpdateState(gameTime);
-            ChangeState();
+            ChangeState(gameTime);
 
             foreach (GameObject child in Children)
-                child.World *= World;                
-
-            Debug.WriteLine("Position: " + GetPosition());
+                child.World *= World;
 
             base.Update(gameTime);
         }
@@ -81,8 +86,17 @@ namespace Helicopter.GameObjects
                 case STATE.DOWN:
                     position.Y -= speed * gt.ElapsedGameTime.Milliseconds * 0.001f;
                     break;
-                case STATE.ROTATE:
+                case STATE.RIGHT:
+                    position.X += speed * gt.ElapsedGameTime.Milliseconds * 0.001f;
+                    break;
+                case STATE.LEFT:
+                    position.X -= speed * gt.ElapsedGameTime.Milliseconds * 0.001f;
+                    break;
+                case STATE.ROTATE_RIGHT:
                     angle += rotationSpeed * gt.ElapsedGameTime.Milliseconds * 0.001f;
+                    break;
+                case STATE.ROTATE_LEFT:
+                    angle -= rotationSpeed * gt.ElapsedGameTime.Milliseconds * 0.001f;
                     break;
                 case STATE.IDLE:
                     break;
@@ -105,21 +119,77 @@ namespace Helicopter.GameObjects
             World *= Matrix.CreateTranslation(position);
         }
 
-        void ChangeState()
+        void ChangeState(GameTime gt)
         {
             switch (state)
             {
                 case STATE.UP:
-                    if (GetPosition().Y > 10) state = STATE.ROTATE;
+                    if (GetPosition().Y > (building2.Size.Y * building2.GetScale().Y) * 2)
+                    {
+                        if (destination == building1) state = STATE.ROTATE_LEFT;
+                        else if (destination == building2) state = STATE.ROTATE_RIGHT;
+                        previousState = STATE.UP;
+                    }
                     break;
                 case STATE.DOWN:
+                    if (IsColliding(destination))
+                    {
+                        state = STATE.IDLE;
+                        previousState = STATE.DOWN;
+                    }
                     break;
-                case STATE.ROTATE:
+                case STATE.RIGHT:
+                    if (previousState == STATE.ROTATE_RIGHT && GetPosition().X >= destination.GetPosition().X)
+                    {
+                        state = STATE.ROTATE_LEFT;
+                        previousState = STATE.RIGHT;
+                    }
+                    break;
+                case STATE.LEFT:
+                    if (previousState == STATE.ROTATE_LEFT && GetPosition().X <= destination.GetPosition().X)
+                    {
+                        state = STATE.ROTATE_RIGHT;
+                        previousState = STATE.LEFT;
+                    }
+                    break;
+                case STATE.ROTATE_RIGHT:
+                    if (previousState == STATE.UP && MathHelper.ToRadians(angle) >= MathHelper.ToRadians(90))
+                    {
+                        state = STATE.RIGHT;
+                        previousState = STATE.ROTATE_RIGHT;
+                    }
+                    if (previousState == STATE.LEFT && MathHelper.ToRadians(angle) >= MathHelper.ToRadians(0))
+                    {
+                        state = STATE.DOWN;
+                        previousState = STATE.ROTATE_RIGHT;
+                    }
+                    break;
+                case STATE.ROTATE_LEFT:
+                    if (previousState == STATE.RIGHT && MathHelper.ToRadians(angle) <= MathHelper.ToRadians(0))
+                    {
+                        state = STATE.DOWN;
+                        previousState = STATE.ROTATE_LEFT;
+                    }
+                    else if (previousState == STATE.UP && MathHelper.ToRadians(angle) <= MathHelper.ToRadians(-90))
+                    {
+                        state = STATE.LEFT;
+                        previousState = STATE.ROTATE_LEFT;
+                    }
                     break;
                 case STATE.IDLE:
-                    state = STATE.UP;
-                    break;
-                default:
+                    ((Propeller)Children[2]).SetOnAndOff(false);
+                    ((Propeller)Children[3]).SetOnAndOff(false);
+                    timer += gt.ElapsedGameTime.Milliseconds * 0.001f;
+                    if (timer >= GAP)
+                    {
+                        timer = 0;
+                        state = STATE.UP;
+                        previousState = STATE.IDLE;
+                        ((Propeller)Children[2]).SetOnAndOff(true);
+                        ((Propeller)Children[3]).SetOnAndOff(true);
+                        if (destination == building1) destination = building2;
+                        else if (destination == building2) destination = building1;
+                    }
                     break;
             }
         }

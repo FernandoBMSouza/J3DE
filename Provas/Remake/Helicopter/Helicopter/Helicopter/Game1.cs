@@ -49,7 +49,7 @@ namespace Helicopter
             gameObjects.Add(new Quad(this, Color.Green, showCollidersLines));
             gameObjects.Add(new Cube(this, Color.DarkGray, showCollidersLines));
             gameObjects.Add(new Cube(this, Color.DarkGray, showCollidersLines));
-            gameObjects.Add(new Ship(this, Color.Blue, Color.DarkGoldenrod, showCollidersLines));
+            gameObjects.Add(new Ship(this, Color.Blue, Color.DarkGoldenrod, gameObjects[1], gameObjects[2], showCollidersLines));
 
             base.Initialize();
         }
@@ -86,11 +86,12 @@ namespace Helicopter
                                                                           (gameObjects[1].Size.Y * gameObjects[1].GetScale().Y) / 2 +
                                                                           (gameObjects[3].Size.Y * gameObjects[3].GetScale().Y) / 2, 0));
 
+            foreach (GameObject go in gameObjects)
+                go.Update(gameTime);
+
             // Atualizar e tratar colisões
             for (int i = 0; i < gameObjects.Count; i++)
             {
-                gameObjects[i].Update(gameTime);
-
                 if (camera.IsColliding(gameObjects[i]))
                 {
                     camera.RestorePosition();
