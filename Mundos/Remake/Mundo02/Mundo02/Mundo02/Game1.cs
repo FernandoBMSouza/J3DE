@@ -71,10 +71,7 @@ namespace Mundo02
             camera.Update(gameTime);
 
             foreach (GameObject go in gameObjects)
-            {
-                go.Update(gameTime);
                 go.World = Matrix.Identity;
-            }
 
             gameObjects[0].World *= Matrix.CreateScale(20);
             gameObjects[1].World *= Matrix.CreateTranslation(new Vector3(0, gameObjects[1].Size.Y / 2f, 0));
@@ -86,6 +83,8 @@ namespace Mundo02
             gameObjects[3].World *= Matrix.CreateTranslation(new Vector3(-gameObjects[3].Size.X * 4f, gameObjects[3].Size.Y / 2f, 0));
 
             //Window.Title = "Info: " + gameObjects[0].GetPosition() + " - " + gameObjects[0].GetRotation() + " - " + gameObjects[0].GetScale() + " - " + gameObjects[0].Size;
+            foreach (GameObject go in gameObjects)
+                go.Update(gameTime);
 
             // TRATAMENTO DE COLISAO
             foreach (GameObject go in gameObjects)
