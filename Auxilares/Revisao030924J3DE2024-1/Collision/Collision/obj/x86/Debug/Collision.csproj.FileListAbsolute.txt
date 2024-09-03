@@ -1,0 +1,24 @@
+c:\users\sabio\documents\visual studio 2010\Projects\Collision\Collision\Collision\bin\x86\Debug\Collision.exe
+c:\users\sabio\documents\visual studio 2010\Projects\Collision\Collision\Collision\bin\x86\Debug\Collision.pdb
+c:\users\sabio\documents\visual studio 2010\Projects\Collision\Collision\Collision\obj\x86\Debug\Collision.csprojResolveAssemblyReference.cache
+c:\users\sabio\documents\visual studio 2010\Projects\Collision\Collision\Collision\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+c:\users\sabio\documents\visual studio 2010\Projects\Collision\Collision\Collision\obj\x86\Debug\Collision.exe
+c:\users\sabio\documents\visual studio 2010\Projects\Collision\Collision\Collision\obj\x86\Debug\Collision.pdb
+C:\Users\fabio\Downloads\NewCollision\NewCollision\Collision\Collision\bin\x86\Debug\Collision.exe
+C:\Users\fabio\Downloads\NewCollision\NewCollision\Collision\Collision\bin\x86\Debug\Collision.pdb
+C:\Users\fabio\Downloads\NewCollision\NewCollision\Collision\Collision\obj\x86\Debug\Collision.csprojResolveAssemblyReference.cache
+C:\Users\fabio\Downloads\NewCollision\NewCollision\Collision\Collision\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\fabio\Downloads\NewCollision\NewCollision\Collision\Collision\obj\x86\Debug\Collision.exe
+C:\Users\fabio\Downloads\NewCollision\NewCollision\Collision\Collision\obj\x86\Debug\Collision.pdb
+C:\Users\fabio\Downloads\Revisao030924J3DE2024-1\NewCollision\Collision\Collision\bin\x86\Debug\Collision.exe
+C:\Users\fabio\Downloads\Revisao030924J3DE2024-1\NewCollision\Collision\Collision\bin\x86\Debug\Collision.pdb
+C:\Users\fabio\Downloads\Revisao030924J3DE2024-1\NewCollision\Collision\Collision\obj\x86\Debug\Collision.csprojResolveAssemblyReference.cache
+C:\Users\fabio\Downloads\Revisao030924J3DE2024-1\NewCollision\Collision\Collision\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\fabio\Downloads\Revisao030924J3DE2024-1\NewCollision\Collision\Collision\obj\x86\Debug\Collision.exe
+C:\Users\fabio\Downloads\Revisao030924J3DE2024-1\NewCollision\Collision\Collision\obj\x86\Debug\Collision.pdb
+C:\Users\fabio\Downloads\Revisao030924J3DE2024-1\Revisao030924J3DE2024-1\Collision\Collision\bin\x86\Debug\Collision.exe
+C:\Users\fabio\Downloads\Revisao030924J3DE2024-1\Revisao030924J3DE2024-1\Collision\Collision\bin\x86\Debug\Collision.pdb
+C:\Users\fabio\Downloads\Revisao030924J3DE2024-1\Revisao030924J3DE2024-1\Collision\Collision\obj\x86\Debug\Collision.csprojResolveAssemblyReference.cache
+C:\Users\fabio\Downloads\Revisao030924J3DE2024-1\Revisao030924J3DE2024-1\Collision\Collision\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\fabio\Downloads\Revisao030924J3DE2024-1\Revisao030924J3DE2024-1\Collision\Collision\obj\x86\Debug\Collision.exe
+C:\Users\fabio\Downloads\Revisao030924J3DE2024-1\Revisao030924J3DE2024-1\Collision\Collision\obj\x86\Debug\Collision.pdb
