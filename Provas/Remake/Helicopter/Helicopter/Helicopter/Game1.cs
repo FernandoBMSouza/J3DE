@@ -68,34 +68,37 @@ namespace Helicopter
             if (Keyboard.GetState().IsKeyDown(Keys.Escape)) this.Exit();
             camera.Update(gameTime);
 
-            foreach (GameObject go in gameObjects)
+            // Resetar a matriz World e aplicar transformações iniciais
+            for (int i = 0; i < gameObjects.Count; i++)
             {
-                go.Update(gameTime);
-                go.World = Matrix.Identity;
+                gameObjects[i].World = Matrix.Identity;
             }
 
-            gameObjects[0].World *= Matrix.CreateScale(50);
-            gameObjects[1].World *= Matrix.CreateScale(new Vector3(3));
-            gameObjects[2].World *= Matrix.CreateScale(new Vector3(3, 6, 3));
+            gameObjects[0].World *= Matrix.CreateScale(50); // Quad como plano de fundo
+            gameObjects[1].World *= Matrix.CreateScale(new Vector3(3)); // Primeiro cubo
+            gameObjects[2].World *= Matrix.CreateScale(new Vector3(3, 6, 3)); // Segundo cubo
             gameObjects[1].World *= Matrix.CreateTranslation(new Vector3(gameObjects[1].Size.X * -15, (gameObjects[1].Size.Y * gameObjects[1].GetScale().Y) / 2, 0));
             gameObjects[2].World *= Matrix.CreateTranslation(new Vector3(gameObjects[2].Size.X * 15, (gameObjects[2].Size.Y * gameObjects[2].GetScale().Y) / 2, 0));
 
-            gameObjects[3].World *= Matrix.CreateTranslation(gameObjects[1].GetPosition() + new Vector3(0, (gameObjects[1].Size.Y * gameObjects[1].GetScale().Y) / 2 + (gameObjects[3].Size.Y * gameObjects[3].GetScale().Y) / 2, 0));
-            
-            //foreach (GameObject go in gameObjects) go.Update(gameTime);
-            //Window.Title = "Info: " + gameObjects[1].GetPosition() + " - " + gameObjects[1].GetRotation() + " - " + gameObjects[1].GetScale() + " - " + gameObjects[1].Size;
+            // Aplicar as transformações do Game1 ao helicóptero após o UpdateState
+            gameObjects[3].World *= Matrix.CreateTranslation(gameObjects[1].GetPosition() +
+                                                              new Vector3(0,
+                                                                          (gameObjects[1].Size.Y * gameObjects[1].GetScale().Y) / 2 +
+                                                                          (gameObjects[3].Size.Y * gameObjects[3].GetScale().Y) / 2, 0));
 
-            // TRATAMENTO DE COLISAO
-            foreach (GameObject go in gameObjects)
+            // Atualizar e tratar colisões
+            for (int i = 0; i < gameObjects.Count; i++)
             {
-                if (camera.IsColliding(go))
+                gameObjects[i].Update(gameTime);
+
+                if (camera.IsColliding(gameObjects[i]))
                 {
                     camera.RestorePosition();
-                    go.BoxCollider.SetColor(Color.Red);
+                    gameObjects[i].BoxCollider.SetColor(Color.Red);
                 }
                 else
                 {
-                    go.BoxCollider.SetColor(Color.Green);
+                    gameObjects[i].BoxCollider.SetColor(Color.Green);
                 }
             }
 
