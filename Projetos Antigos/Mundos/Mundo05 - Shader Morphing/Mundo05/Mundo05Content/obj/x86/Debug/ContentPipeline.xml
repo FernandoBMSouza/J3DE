@@ -7,8 +7,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos\Mundo05 - Shader Morphing\Mundo05\Mundo05\bin\x86\Debug\Content\Textures\bricks.xnb</Output>
-      <Time>2024-08-24T17:10:12.8935932-03:00</Time>
+      <Output>C:\Users\ferna\OneDrive\Documents\J3DE\Projetos Antigos\Mundos\Mundo05 - Shader Morphing\Mundo05\Mundo05\bin\x86\Debug\Content\Textures\bricks.xnb</Output>
+      <Time>2024-09-04T13:52:08.5412403-03:00</Time>
     </Item>
     <Item>
       <Source>Textures\grass.jpg</Source>
@@ -16,8 +16,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos\Mundo05 - Shader Morphing\Mundo05\Mundo05\bin\x86\Debug\Content\Textures\grass.xnb</Output>
-      <Time>2024-08-24T17:10:12.8965922-03:00</Time>
+      <Output>C:\Users\ferna\OneDrive\Documents\J3DE\Projetos Antigos\Mundos\Mundo05 - Shader Morphing\Mundo05\Mundo05\bin\x86\Debug\Content\Textures\grass.xnb</Output>
+      <Time>2024-09-04T13:52:08.5448693-03:00</Time>
     </Item>
     <Item>
       <Source>Textures\rocks.jpg</Source>
@@ -25,8 +25,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos\Mundo05 - Shader Morphing\Mundo05\Mundo05\bin\x86\Debug\Content\Textures\rocks.xnb</Output>
-      <Time>2024-08-24T17:10:12.898593-03:00</Time>
+      <Output>C:\Users\ferna\OneDrive\Documents\J3DE\Projetos Antigos\Mundos\Mundo05 - Shader Morphing\Mundo05\Mundo05\bin\x86\Debug\Content\Textures\rocks.xnb</Output>
+      <Time>2024-09-04T13:52:08.5468737-03:00</Time>
     </Item>
     <Item>
       <Source>Textures\wood.png</Source>
@@ -34,8 +34,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos\Mundo05 - Shader Morphing\Mundo05\Mundo05\bin\x86\Debug\Content\Textures\wood.xnb</Output>
-      <Time>2024-08-24T17:10:12.9091137-03:00</Time>
+      <Output>C:\Users\ferna\OneDrive\Documents\J3DE\Projetos Antigos\Mundos\Mundo05 - Shader Morphing\Mundo05\Mundo05\bin\x86\Debug\Content\Textures\wood.xnb</Output>
+      <Time>2024-09-04T13:52:08.5567481-03:00</Time>
     </Item>
     <Item>
       <Source>Textures\snow.png</Source>
@@ -43,8 +43,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos\Mundo05 - Shader Morphing\Mundo05\Mundo05\bin\x86\Debug\Content\Textures\snow.xnb</Output>
-      <Time>2024-08-24T17:10:12.9031145-03:00</Time>
+      <Output>C:\Users\ferna\OneDrive\Documents\J3DE\Projetos Antigos\Mundos\Mundo05 - Shader Morphing\Mundo05\Mundo05\bin\x86\Debug\Content\Textures\snow.xnb</Output>
+      <Time>2024-09-04T13:52:08.5508765-03:00</Time>
     </Item>
     <Item>
       <Source>Textures\bricksSnow.jpg</Source>
@@ -52,8 +52,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos\Mundo05 - Shader Morphing\Mundo05\Mundo05\bin\x86\Debug\Content\Textures\bricksSnow.xnb</Output>
-      <Time>2024-08-24T17:10:12.8945935-03:00</Time>
+      <Output>C:\Users\ferna\OneDrive\Documents\J3DE\Projetos Antigos\Mundos\Mundo05 - Shader Morphing\Mundo05\Mundo05\bin\x86\Debug\Content\Textures\bricksSnow.xnb</Output>
+      <Time>2024-09-04T13:52:08.5422407-03:00</Time>
     </Item>
     <Item>
       <Source>Textures\rocksSnow.jpg</Source>
@@ -61,8 +61,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos\Mundo05 - Shader Morphing\Mundo05\Mundo05\bin\x86\Debug\Content\Textures\rocksSnow.xnb</Output>
-      <Time>2024-08-24T17:10:12.8995931-03:00</Time>
+      <Output>C:\Users\ferna\OneDrive\Documents\J3DE\Projetos Antigos\Mundos\Mundo05 - Shader Morphing\Mundo05\Mundo05\bin\x86\Debug\Content\Textures\rocksSnow.xnb</Output>
+      <Time>2024-09-04T13:52:08.5468737-03:00</Time>
     </Item>
     <Item>
       <Source>Textures\woodSnow.jpg</Source>
@@ -70,8 +70,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos\Mundo05 - Shader Morphing\Mundo05\Mundo05\bin\x86\Debug\Content\Textures\woodSnow.xnb</Output>
-      <Time>2024-08-24T17:10:12.9101173-03:00</Time>
+      <Output>C:\Users\ferna\OneDrive\Documents\J3DE\Projetos Antigos\Mundos\Mundo05 - Shader Morphing\Mundo05\Mundo05\bin\x86\Debug\Content\Textures\woodSnow.xnb</Output>
+      <Time>2024-09-04T13:52:08.5577792-03:00</Time>
     </Item>
     <Item>
       <Source>Effects\morphing.fx</Source>
@@ -79,8 +79,8 @@
       <Importer>EffectImporter</Importer>
       <Processor>EffectProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos\Mundo05 - Shader Morphing\Mundo05\Mundo05\bin\x86\Debug\Content\Effects\morphing.xnb</Output>
-      <Time>2024-08-24T17:10:12.892589-03:00</Time>
+      <Output>C:\Users\ferna\OneDrive\Documents\J3DE\Projetos Antigos\Mundos\Mundo05 - Shader Morphing\Mundo05\Mundo05\bin\x86\Debug\Content\Effects\morphing.xnb</Output>
+      <Time>2024-09-04T13:52:08.5402412-03:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -88,10 +88,10 @@
       <TargetProfile>HiDef</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos\Mundo05 - Shader Morphing\Mundo05\Mundo05Content\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos\Mundo05 - Shader Morphing\Mundo05\Mundo05\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos\Mundo05 - Shader Morphing\Mundo05\Mundo05Content\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos\Mundo05 - Shader Morphing\Mundo05\Mundo05\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\ferna\OneDrive\Documents\J3DE\Projetos Antigos\Mundos\Mundo05 - Shader Morphing\Mundo05\Mundo05Content\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\ferna\OneDrive\Documents\J3DE\Projetos Antigos\Mundos\Mundo05 - Shader Morphing\Mundo05\Mundo05\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\ferna\OneDrive\Documents\J3DE\Projetos Antigos\Mundos\Mundo05 - Shader Morphing\Mundo05\Mundo05Content\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\ferna\OneDrive\Documents\J3DE\Projetos Antigos\Mundos\Mundo05 - Shader Morphing\Mundo05\Mundo05\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
@@ -120,7 +120,7 @@
       </Assembly>
       <Assembly>
         <Key>C:\WINDOWS\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
-        <Value>2023-12-16T18:46:09.1672477-03:00</Value>
+        <Value>2024-04-16T10:07:08.4397406-03:00</Value>
       </Assembly>
     </Assemblies>
   </Asset>

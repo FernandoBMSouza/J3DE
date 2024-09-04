@@ -67,7 +67,7 @@ namespace Mundo01.GameObjects
             return collider.GetBoundingBox().Intersects(other);
         }
 
-        protected Matrix GetWorld() 
+        protected Matrix GetWorld()
         { 
             return world; 
         }
@@ -81,6 +81,11 @@ namespace Mundo01.GameObjects
         { 
             this.size = size;
             collider = new Collider(game, position, scale, this.size, Color.Green, colliderVisible);
+        }
+
+        public void SetColliderColor(Color color)
+        {
+            collider.SetColor(color);
         }
     }
 }

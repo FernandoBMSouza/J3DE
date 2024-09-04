@@ -25,7 +25,7 @@ namespace Mundo01
 
         List<GameObject> go;
 
-        bool showCollidersLines = false;
+        bool colliderVisible = true;
 
         public Game1()
         {
@@ -46,10 +46,10 @@ namespace Mundo01
 
             camera = new Camera(this);
             go = new List<GameObject>();
-            go.Add(new Quad(this, Vector3.Zero, Vector3.Zero, new Vector3(15), Color.Green, showCollidersLines));
-            go.Add(new Cube(this, new Vector3(0, .5f, 0), Vector3.Zero, Vector3.One, Color.Salmon, showCollidersLines));
-            go.Add(new Windmill(this, new Vector3(-5, 1, 0), new Vector3(0,  45, 0), Vector3.One, Color.Blue, Color.Yellow, showCollidersLines));
-            go.Add(new Windmill(this, new Vector3( 5, 1, 0), new Vector3(0, -45, 0), Vector3.One, Color.Blue, Color.Yellow, showCollidersLines));
+            go.Add(new Quad(this, Vector3.Zero, Vector3.Zero, new Vector3(15), Color.Green, colliderVisible));
+            go.Add(new Cube(this, new Vector3(0, .5f, 0), Vector3.Zero, Vector3.One, Color.Salmon, colliderVisible));
+            go.Add(new Windmill(this, new Vector3(-5, 1, 0), new Vector3(0,  45, 0), Vector3.One, Color.Blue, Color.Yellow, colliderVisible));
+            go.Add(new Windmill(this, new Vector3( 5, 1, 0), new Vector3(0, -45, 0), Vector3.One, Color.Blue, Color.Yellow, colliderVisible));
 
             base.Initialize();
         }
@@ -77,11 +77,11 @@ namespace Mundo01
                 if (g.IsColliding(camera.BBox))
                 {
                     camera.RestorePosition();
-                    //g.BoxCollider.SetColor(Color.Red);
+                    g.SetColliderColor(Color.Red);
                 }
                 else
                 {
-                    //g.BoxCollider.SetColor(Color.Green);
+                    g.SetColliderColor(Color.Green);
                 }
             }
 

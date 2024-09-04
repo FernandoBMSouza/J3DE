@@ -6,3 +6,4 @@ C:\Users\ferna\OneDrive\Documents\J3DE\Mundos Novos\Mundo01 - House + Plane\Mund
 C:\Users\ferna\OneDrive\Documents\J3DE\Mundos Novos\Mundo01 - House + Plane - Copia\Mundo01\Mundo01Content\obj\x86\Debug\Mundo01Content.contentprojResolveAssemblyReference.cache
 C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos\Mundo01 - House + Plane\Mundo01\Mundo01Content\obj\x86\Debug\Mundo01Content.contentprojResolveAssemblyReference.cache
 C:\Users\ferna\OneDrive\Documents\J3DE\Mundos\Mundo01 - House + Plane\Mundo01\Mundo01Content\obj\x86\Debug\Mundo01Content.contentprojResolveAssemblyReference.cache
+C:\Users\ferna\OneDrive\Documents\J3DE\Projetos Antigos\Mundos\Mundo01 - House + Plane\Mundo01\Mundo01Content\obj\x86\Debug\Mundo01Content.contentprojResolveAssemblyReference.cache

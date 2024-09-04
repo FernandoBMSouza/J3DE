@@ -51,6 +51,11 @@ namespace Mundo01.Utilities.Collision
             Update();
         }
 
+        public void SetColor(Color color)
+        {
+            lineBox.SetColor(color);
+        }
+
         public BoundingBox GetBoundingBox()
         {
             return boundingBox;
