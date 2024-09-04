@@ -1,2 +1,3 @@
 C:\Users\ferna\OneDrive\Documents\J3DE\Mundos\Remake\Mundo02\Mundo02\Mundo02Content\obj\x86\Debug\Mundo02Content.contentprojResolveAssemblyReference.cache
 C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos\Remake\Mundo02 - Helices3D\Mundo02\Mundo02Content\obj\x86\Debug\Mundo02Content.contentprojResolveAssemblyReference.cache
+C:\Users\ferna\OneDrive\Documents\J3DE\Mundos\Remake\Mundo02 - Helices3D\Mundo02\Mundo02Content\obj\x86\Debug\Mundo02Content.contentprojResolveAssemblyReference.cache
