@@ -9,10 +9,10 @@ namespace Mundo01.GameObjects.Primitives
 {
     public class Quad : Shape
     {
-        public Quad(Game1 game, Vector3 position, Vector3 rotation, Vector3 scale, Color color, bool colliderVisible = true)
-            : base(game, position, rotation, new Vector3(scale.X, 0, scale.Z), colliderVisible)
+        public Quad(Game1 game, Vector3 position, Vector3 rotation, Vector3 scale, Vector3 size, Color color, bool colliderVisible = true)
+            : base(game, position, rotation, new Vector3(scale.X, 0, scale.Z), new Vector3(size.X, 0, size.Z), colliderVisible)
         {
-            Vector3 size = new Vector3(1, 0, 1);
+            size.Y = 0;
 
             vertices = new VertexPositionColor[]
             {

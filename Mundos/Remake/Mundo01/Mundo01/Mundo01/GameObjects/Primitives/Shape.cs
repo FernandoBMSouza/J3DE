@@ -14,8 +14,8 @@ namespace Mundo01.GameObjects.Primitives
         VertexBuffer buffer;
         protected VertexPositionColor[] vertices;
 
-        public Shape(Game1 game, Vector3 position, Vector3 rotation, Vector3 scale, bool colliderVisible = true)
-            : base(game, position, rotation, scale, colliderVisible)
+        public Shape(Game1 game, Vector3 position, Vector3 rotation, Vector3 scale, Vector3 size, bool colliderVisible = true)
+            : base(game, position, rotation, scale, size, colliderVisible)
         {
             this.game = game;
 

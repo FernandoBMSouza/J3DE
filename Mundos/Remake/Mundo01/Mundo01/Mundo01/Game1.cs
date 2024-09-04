@@ -45,8 +45,8 @@ namespace Mundo01
 
             camera = new Camera(this);
             go = new List<GameObject>();
-            go.Add(new Quad(this, new Vector3(0, 0, 0), new Vector3(0, 0, 0), new Vector3(5), Color.Green, showCollidersLines));
-            go.Add(new Building(this, new Vector3(0, 0, 0), new Vector3(0, 0, 0), new Vector3(1), Color.Blue, showCollidersLines));
+            go.Add(new Quad(this, new Vector3(0, 0, 0), new Vector3(0, 0, 0), new Vector3(5), new Vector3(1), Color.Green, showCollidersLines));
+            go.Add(new Blade(this, new Vector3(0, 0, 0), new Vector3(0, 0, 0), new Vector3(1), Color.Blue, showCollidersLines));
 
             base.Initialize();
         }
@@ -65,7 +65,7 @@ namespace Mundo01
             if (Keyboard.GetState().IsKeyDown(Keys.Escape)) this.Exit();
             camera.Update(gameTime);
 
-            foreach (GameObject g in go) g.Update();
+            //foreach (GameObject g in go) g.Update();
 
             base.Update(gameTime);
         }

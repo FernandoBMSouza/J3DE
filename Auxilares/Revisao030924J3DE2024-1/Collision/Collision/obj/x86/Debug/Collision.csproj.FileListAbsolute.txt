@@ -22,3 +22,9 @@ C:\Users\fabio\Downloads\Revisao030924J3DE2024-1\Revisao030924J3DE2024-1\Collisi
 C:\Users\fabio\Downloads\Revisao030924J3DE2024-1\Revisao030924J3DE2024-1\Collision\Collision\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\Users\fabio\Downloads\Revisao030924J3DE2024-1\Revisao030924J3DE2024-1\Collision\Collision\obj\x86\Debug\Collision.exe
 C:\Users\fabio\Downloads\Revisao030924J3DE2024-1\Revisao030924J3DE2024-1\Collision\Collision\obj\x86\Debug\Collision.pdb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Auxilares\Revisao030924J3DE2024-1\Collision\Collision\bin\x86\Debug\Collision.exe
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Auxilares\Revisao030924J3DE2024-1\Collision\Collision\bin\x86\Debug\Collision.pdb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Auxilares\Revisao030924J3DE2024-1\Collision\Collision\obj\x86\Debug\Collision.csprojResolveAssemblyReference.cache
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Auxilares\Revisao030924J3DE2024-1\Collision\Collision\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Auxilares\Revisao030924J3DE2024-1\Collision\Collision\obj\x86\Debug\Collision.exe
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Auxilares\Revisao030924J3DE2024-1\Collision\Collision\obj\x86\Debug\Collision.pdb

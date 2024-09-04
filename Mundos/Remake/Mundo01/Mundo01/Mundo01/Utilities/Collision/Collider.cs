@@ -15,26 +15,28 @@ namespace Mundo01.Utilities.Collision
 
         Vector3 position;
         Vector3 scale;
+        Vector3 size;
 
-        public Collider(Game1 game, Vector3 position, Vector3 scale, Color color, bool visible = true)
+        public Collider(Game1 game, Vector3 position, Vector3 scale, Vector3 size, Color color, bool visible = true)
         {
             this.position = position;
             this.scale = scale;
+            this.size = size;
             this.visible = visible;
 
             Update();
-            lineBox = new LineBox(game, position, scale, color);
+            lineBox = new LineBox(game, position, scale, size, color);
         }
 
         public void Update()
         {
-            this.boundingBox = new BoundingBox(position - scale / 2f,
-                                               position + scale / 2f);
+            this.boundingBox = new BoundingBox(position - (size * scale) / 2f,
+                                               position + (size * scale) / 2f);
         }
 
-        public void Draw(BasicEffect effect)
+        public void Draw(BasicEffect effect, Camera camera)
         {
-            if (visible) lineBox.Draw(effect);
+            if (visible) lineBox.Draw(effect, camera);
         }
 
         public void SetPosition(Vector3 position)

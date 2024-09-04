@@ -18,7 +18,7 @@ namespace Mundo01.Utilities.Collision
         Color color;
         Game game;
 
-        public LineBox(Game game, Vector3 position, Vector3 scale, Color color)
+        public LineBox(Game game, Vector3 position, Vector3 scale, Vector3 size, Color color)
         {
             this.game = game;
             this.position = position;
@@ -26,7 +26,7 @@ namespace Mundo01.Utilities.Collision
             this.color = color;
 
             CreateMatrix();
-            CreateVertex();
+            CreateVertex(size);
             CreateVBuffer();
             CreateIndexes();
             CreateIBuffer();
@@ -39,21 +39,21 @@ namespace Mundo01.Utilities.Collision
             this.world *= Matrix.CreateTranslation(this.position);
         }
 
-        private void CreateVertex()
+        private void CreateVertex(Vector3 size)
         {
-            float v = .5f;
+            Vector3 v = size / 2f;
 
             this.verts = new VertexPositionColor[]
             {
-                new VertexPositionColor(new Vector3(-v, v,-v), this.color),//0
-                new VertexPositionColor(new Vector3( v, v,-v), this.color),//1
-                new VertexPositionColor(new Vector3(-v, v, v), this.color),//2
-                new VertexPositionColor(new Vector3( v, v, v), this.color),//3
+                new VertexPositionColor(new Vector3(-v.X, v.Y,-v.Z), this.color),//0
+                new VertexPositionColor(new Vector3( v.X, v.Y,-v.Z), this.color),//1
+                new VertexPositionColor(new Vector3(-v.X, v.Y, v.Z), this.color),//2
+                new VertexPositionColor(new Vector3( v.X, v.Y, v.Z), this.color),//3
 
-                new VertexPositionColor(new Vector3(-v,-v,-v), this.color),//4
-                new VertexPositionColor(new Vector3( v,-v,-v), this.color),//5
-                new VertexPositionColor(new Vector3(-v,-v, v), this.color),//6
-                new VertexPositionColor(new Vector3( v,-v, v), this.color),//7
+                new VertexPositionColor(new Vector3(-v.X,-v.Y,-v.Z), this.color),//4
+                new VertexPositionColor(new Vector3( v.X,-v.Y,-v.Z), this.color),//5
+                new VertexPositionColor(new Vector3(-v.X,-v.Y, v.Z), this.color),//6
+                new VertexPositionColor(new Vector3( v.X,-v.Y, v.Z), this.color),//7
             };
         }
 
@@ -99,9 +99,13 @@ namespace Mundo01.Utilities.Collision
             this.iBuffer.SetData<short>(this.indexes);
         }
 
-        public void Draw(BasicEffect e)
+        public void Draw(BasicEffect e, Camera camera)
         {
             e.World = this.world;
+            e.World = world;
+            e.View = camera.View;
+            e.Projection = camera.Projection;
+
             e.VertexColorEnabled = true;
 
             this.game.GraphicsDevice.SetVertexBuffer(this.vBuffer);

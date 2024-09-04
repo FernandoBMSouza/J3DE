@@ -5,11 +5,9 @@ namespace Mundo01.GameObjects.Primitives
 {
     public class Cube : Shape
     {
-        public Cube(Game1 game, Vector3 position, Vector3 rotation, Vector3 scale, Color color, bool colliderVisible = true)
-            : base(game, position, rotation, scale, colliderVisible)
+        public Cube(Game1 game, Vector3 position, Vector3 rotation, Vector3 scale, Vector3 size, Color color, bool colliderVisible = true)
+            : base(game, position, rotation, scale, size, colliderVisible)
         {
-            Vector3 size = Vector3.One;
-
             vertices = new VertexPositionColor[]
             {
                 // FRONT
