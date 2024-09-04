@@ -1,0 +1,6 @@
+C:\Users\ferna\OneDrive\Documents\J3DE\Mundos\3. Logica Nova - Vespera\Minecraft\Minecraft\Minecraft\bin\x86\Debug\Minecraft.exe
+C:\Users\ferna\OneDrive\Documents\J3DE\Mundos\3. Logica Nova - Vespera\Minecraft\Minecraft\Minecraft\bin\x86\Debug\Minecraft.pdb
+C:\Users\ferna\OneDrive\Documents\J3DE\Mundos\3. Logica Nova - Vespera\Minecraft\Minecraft\Minecraft\obj\x86\Debug\Minecraft.csprojResolveAssemblyReference.cache
+C:\Users\ferna\OneDrive\Documents\J3DE\Mundos\3. Logica Nova - Vespera\Minecraft\Minecraft\Minecraft\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\ferna\OneDrive\Documents\J3DE\Mundos\3. Logica Nova - Vespera\Minecraft\Minecraft\Minecraft\obj\x86\Debug\Minecraft.exe
+C:\Users\ferna\OneDrive\Documents\J3DE\Mundos\3. Logica Nova - Vespera\Minecraft\Minecraft\Minecraft\obj\x86\Debug\Minecraft.pdb
