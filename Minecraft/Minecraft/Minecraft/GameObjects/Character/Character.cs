@@ -3,9 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Microsoft.Xna.Framework;
-using Minecraft.GameObjects.Primitives;
+using Minecraft.GameObjects.Shapes;
 using Microsoft.Xna.Framework.Input;
-using System.Diagnostics;
 
 namespace Minecraft.GameObjects.Character
 {
@@ -26,72 +25,76 @@ namespace Minecraft.GameObjects.Character
         float angle;
         float rotationSpeed;
 
-        public Character(Game1 game, Vector3 position, Vector3 rotation, Vector3 scale, Color color, bool colliderVisible = true) 
-            : base(game, position, rotation, scale, new Vector3(1, 3, 1), colliderVisible)
+        private Vector3 oldPosition;
+
+        public Character(Game1 game, Vector3 position, Vector3 rotation, Vector3 scale, Color color, bool colliderVisible = true)
+            : base(game, position, rotation, scale, colliderVisible)
         {
-            children.Add(new Cube(game, new Vector3(0, 1.25f, 0), Vector3.Zero, new Vector3(1, 1, 1), Vector3.One, Color.DarkRed, false));
-            children.Add(new Cube(game, new Vector3(0, 0, 0),    Vector3.Zero, new Vector3(1, 1.5f, .7f), Vector3.One, color, false));
-            children.Add(new Cube(game, new Vector3(-.78f, 0, 0), Vector3.Zero, new Vector3(.5f, 1.5f, .5f), Vector3.One, Color.DarkOliveGreen, false));
-            children.Add(new Cube(game, new Vector3( .78f, 0, 0), Vector3.Zero, new Vector3(.5f, 1.5f, .5f), Vector3.One, Color.DarkOliveGreen, false));
-            children.Add(new Cube(game, new Vector3(-.25f, -1.75f, 0), Vector3.Zero, new Vector3(.5f, 2f, .5f), Vector3.One, Color.DarkBlue, false));
-            children.Add(new Cube(game, new Vector3(.25f, -1.75f, 0), Vector3.Zero, new Vector3(.5f, 2f, .5f), Vector3.One, Color.DarkBlue, false));
+            SetSize(new Vector3(1, 3, 1));
+
+            children.Add(new Cube(game, new Vector3(0, 1.25f, 0), Vector3.Zero, new Vector3(1, 1, 1), color, false));
+            children.Add(new Cube(game, new Vector3(0, 0, 0), Vector3.Zero, new Vector3(1, 1.5f, .7f), Color.LightBlue, false));
+            children.Add(new Cube(game, new Vector3(-.78f, 0, 0), Vector3.Zero, new Vector3(.5f, 1.5f, .5f), Color.DarkOliveGreen, false));
+            children.Add(new Cube(game, new Vector3(.78f, 0, 0), Vector3.Zero, new Vector3(.5f, 1.5f, .5f), Color.DarkOliveGreen, false));
+            children.Add(new Cube(game, new Vector3(-.25f, -1.75f, 0), Vector3.Zero, new Vector3(.5f, 2f, .5f), Color.DarkBlue, false));
+            children.Add(new Cube(game, new Vector3(.25f, -1.75f, 0), Vector3.Zero, new Vector3(.5f, 2f, .5f), Color.DarkBlue, false));
+
 
             state = STATE.IDLE;
             speed = 2f;
             rotationSpeed = speed * 100f;
-            children[2].pivot = new Vector3(0, .7f, 0);
-            children[3].pivot = new Vector3(0, .7f, 0);
-            children[4].pivot = new Vector3(0, .7f, 0);
-            children[5].pivot = new Vector3(0, .7f, 0);
+            children[2].SetPivot(new Vector3(0, .7f, 0));
+            children[3].SetPivot(new Vector3(0, .7f, 0));
+            children[4].SetPivot(new Vector3(0, .7f, 0));
+            children[5].SetPivot(new Vector3(0, .7f, 0));
 
+            oldPosition = GetPosition();
         }
 
         public override void Update(GameTime gameTime)
         {
+            oldPosition = GetPosition();
+
             if (state != STATE.IDLE) angle += rotationSpeed * gameTime.ElapsedGameTime.Milliseconds * 0.001f;
-            // Rotacao da cabeca
-            children[0].SetRotationY(45f * (float)Math.Sin(MathHelper.ToRadians(angle)));
+            // rotacao da cabeca
+            children[0].SetRotation(new Vector3(0, 30f * (float)Math.Sin(MathHelper.ToRadians(angle)), 0));
             // rotacao dos membros
-            children[2].SetRotationX(45f * (float)Math.Sin(MathHelper.ToRadians(angle)));
-            children[3].SetRotationX(45f * (float)Math.Sin(MathHelper.ToRadians(-angle)));
-            children[4].SetRotationX(45f * (float)Math.Sin(MathHelper.ToRadians(-angle)));
-            children[5].SetRotationX(45f * (float)Math.Sin(MathHelper.ToRadians(angle)));
+            children[2].SetRotation(new Vector3(45f * (float)Math.Sin(MathHelper.ToRadians(angle)), 0, 0));
+            children[3].SetRotation(new Vector3(-(45f * (float)Math.Sin(MathHelper.ToRadians(angle))), 0, 0));
+            children[4].SetRotation(new Vector3(-(45f * (float)Math.Sin(MathHelper.ToRadians(angle))), 0, 0));
+            children[5].SetRotation(new Vector3(45f * (float)Math.Sin(MathHelper.ToRadians(angle)), 0, 0));
 
             UpdateState(gameTime);
             ChangeState(gameTime);
             base.Update(gameTime);
         }
 
-        // CASO QUEIRA INTENCIONALMENTE FAZER O HELICOPTERO GIRAR COM O PIVOT FORA DELE MESMO, BASTA DAR UM OVERRIDE NO CREATEMATRIX() E ALTERAR A ORDEM DAS TRANSFORMACOES COM A ROTACAO APOS A TRANSLACAO
-        //protected override void CreateMatrix()
-        //{
-        //    world = Matrix.Identity;
-        //    //world *= Matrix.CreateScale(scale);
-        //    world *= Matrix.CreateTranslation(position);
-        //    world *= Matrix.CreateFromYawPitchRoll(MathHelper.ToRadians(rotation.Y), MathHelper.ToRadians(rotation.X), MathHelper.ToRadians(rotation.Z));
+        public void RestorePosition()
+        {
+            SetPosition(oldPosition);
+            angle = 0;
+        }
 
-        //    //base.CreateMatrix();
-        //}
 
         void UpdateState(GameTime gt)
         {
             switch (state)
             {
                 case STATE.FRONT:
-                    rotation = new Vector3(0, 0, 0);
-                    position.Z += speed * gt.ElapsedGameTime.Milliseconds * 0.001f;
+                    SetRotation(Vector3.Zero);
+                    AddPosition(new Vector3(0,0, speed * gt.ElapsedGameTime.Milliseconds * 0.001f));
                     break;
                 case STATE.BACK:
-                    rotation = new Vector3(0, 180, 0);
-                    position.Z -= speed * gt.ElapsedGameTime.Milliseconds * 0.001f;
+                    SetRotation(new Vector3(0, 180, 0));
+                    AddPosition(new Vector3(0, 0, -(speed * gt.ElapsedGameTime.Milliseconds * 0.001f)));
                     break;
                 case STATE.LEFT:
-                    rotation = new Vector3(0, 270, 0);
-                    position.X -= speed * gt.ElapsedGameTime.Milliseconds * 0.001f;
+                    SetRotation(new Vector3(0, 270, 0));
+                    AddPosition(new Vector3((speed * gt.ElapsedGameTime.Milliseconds * 0.001f), 0, 0));
                     break;
                 case STATE.RIGHT:
-                    rotation = new Vector3(0, 90, 0);
-                    position.X += speed * gt.ElapsedGameTime.Milliseconds * 0.001f;
+                    SetRotation(new Vector3(0, 90, 0));
+                    AddPosition(new Vector3(-(speed * gt.ElapsedGameTime.Milliseconds * 0.001f), 0, 0));
                     break;
                 case STATE.IDLE:
                     angle = 0;
@@ -101,10 +104,10 @@ namespace Minecraft.GameObjects.Character
 
         protected virtual void ChangeState(GameTime gt)
         {
-            if (Keyboard.GetState().IsKeyDown(Keys.U)) state = STATE.FRONT;
-            else if (Keyboard.GetState().IsKeyDown(Keys.J)) state = STATE.BACK;
-            else if (Keyboard.GetState().IsKeyDown(Keys.H)) state = STATE.LEFT;
-            else if (Keyboard.GetState().IsKeyDown(Keys.K)) state = STATE.RIGHT;
+            if (Keyboard.GetState().IsKeyDown(Keys.W)) state = STATE.FRONT;
+            else if (Keyboard.GetState().IsKeyDown(Keys.S)) state = STATE.BACK;
+            else if (Keyboard.GetState().IsKeyDown(Keys.A)) state = STATE.LEFT;
+            else if (Keyboard.GetState().IsKeyDown(Keys.D)) state = STATE.RIGHT;
             else state = STATE.IDLE;
         }
     }

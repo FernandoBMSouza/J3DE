@@ -9,32 +9,26 @@ namespace Minecraft.GameObjects
 {
     public abstract class GameObject
     {
-        Game1 game;
-        Matrix world;
-        protected Vector3 position, rotation, scale, size;
-        Collider collider;
-        protected BasicEffect effect;
+        private Game1 game;
+        private Matrix world;
+        private Vector3 size;
+        private bool colliderVisible;
+        private Vector3 position, rotation, scale, pivot;
+        private Collider collider;
+
         protected List<GameObject> children;
 
-        public Vector3 pivot;
-
-        public GameObject(Game1 game, Vector3 position, Vector3 rotation, Vector3 scale, Vector3 size, bool colliderVisible = true)
+        public GameObject(Game1 game, Vector3 position, Vector3 rotation, Vector3 scale, bool colliderVisible = true)
         {
             this.game = game;
-
             this.position = position;
             this.rotation = rotation;
             this.scale = scale;
-            this.size = size;
-
-            //this.pivot = Vector3.Zero;
-
-            CreateMatrix();
-
+            this.colliderVisible = colliderVisible;
+            pivot = Vector3.Zero;
+            SetSize(Vector3.One);
+            SetupMatrix();
             children = new List<GameObject>();
-
-            collider = new Collider(this.game, this.position, this.scale, this.size, Color.Green, colliderVisible);
-            effect = new BasicEffect(game.GraphicsDevice);
         }
 
         public virtual void Update(GameTime gameTime)
@@ -45,21 +39,18 @@ namespace Minecraft.GameObjects
                 child.world *= world;
             }
 
-            collider.SetPosition(Vector3.Transform(Vector3.Zero, world));
-            collider.SetScale(scale);
-
-            CreateMatrix();
+            SetupMatrix();
         }
 
-        public virtual void Draw(Camera camera)
+        public virtual void Draw(ThirdPersonCamera camera, BasicEffect effect)
         {
             foreach (GameObject child in children)
-                child.Draw(camera);
+                child.Draw(camera, effect);
 
             collider.Draw(effect, camera);
         }
 
-        protected virtual void CreateMatrix()
+        protected virtual void SetupMatrix()
         {
             world = Matrix.Identity;
             world *= Matrix.CreateScale(scale);
@@ -68,11 +59,65 @@ namespace Minecraft.GameObjects
             world *= Matrix.CreateTranslation(position + pivot);
         }
 
+        public bool IsColliding(BoundingBox other)
+        {
+            return collider.GetBoundingBox().Intersects(other);
+        }
+
         public BoundingBox GetCollider() { return collider.GetBoundingBox(); }
-        public Matrix GetWorld() { return world; }
-        public Vector3 GetDimension()    { return size * scale; }
+        protected Matrix GetWorld()         { return world; }
+        protected Game1 GetGame1()          { return game; }
+        public Vector3 GetDimension() { return size * scale; }
+        protected Vector3 GetSize()         { return size; }
         public Vector3 GetPosition()     { return position; }
-        public void SetRotationY(float value) { rotation.Y = value; }
-        public void SetRotationX(float value) { rotation.X = value; }
+        protected Vector3 GetRotation()     { return rotation; }
+        protected Vector3 GetScale()        { return scale; }
+        protected Vector3 GetPivot()        { return pivot; }
+        
+        protected void SetSize(Vector3 size)
+        {
+            this.size = size;
+            collider = new Collider(game, position, scale, this.size, Color.Green, colliderVisible);
+        }
+        protected void SetPosition(Vector3 position)
+        {
+            this.position = position;
+            collider.SetPosition(Vector3.Transform(Vector3.Zero, world));
+        }
+        protected void SetScale(Vector3 scale)
+        {
+            this.scale = scale;
+            collider.SetScale(this.scale);
+        }
+        public void SetRotation(Vector3 rotation)
+        {
+            this.rotation = rotation;
+        }
+        public void SetPivot(Vector3 pivot)
+        {
+            this.pivot = pivot;
+        }
+        protected void AddPosition(Vector3 position)
+        {
+            this.position += position;
+            collider.SetPosition(Vector3.Transform(Vector3.Zero, world));
+        }
+        protected void AddScale(Vector3 scale)
+        {
+            this.scale += scale;
+            collider.SetScale(this.scale);
+        }
+        protected void AddRotation(Vector3 rotation)
+        {
+            this.rotation += rotation;
+        }
+        protected void AddPivot(Vector3 pivot)
+        {
+            this.pivot += pivot;
+        }
+        public void SetColliderColor(Color color)
+        {
+            collider.SetColor(color);
+        }
     }
 }

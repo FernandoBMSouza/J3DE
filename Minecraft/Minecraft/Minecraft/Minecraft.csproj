@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <ProjectGuid>{1F217FF6-2257-4ECE-83A4-9B676FD7B67F}</ProjectGuid>
+    <ProjectGuid>{B2E84C1F-36DD-4654-B51C-CDEE7BD1A82E}</ProjectGuid>
     <ProjectTypeGuids>{6D335F3A-9D43-41b4-9D22-F6F17C4BE596};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
@@ -14,7 +14,7 @@
     <XnaFrameworkVersion>v4.0</XnaFrameworkVersion>
     <XnaPlatform>Windows</XnaPlatform>
     <XnaProfile>HiDef</XnaProfile>
-    <XnaCrossPlatformGroupID>53e32682-8e31-47bb-8d16-ac6299335c1b</XnaCrossPlatformGroupID>
+    <XnaCrossPlatformGroupID>290aee3f-a3e7-4550-b5a0-9661f7756261</XnaCrossPlatformGroupID>
     <XnaOutputType>Game</XnaOutputType>
     <ApplicationIcon>Game.ico</ApplicationIcon>
     <Thumbnail>GameThumbnail.png</Thumbnail>
@@ -112,14 +112,13 @@
     <Compile Include="GameObjects\Character\Enemy.cs" />
     <Compile Include="GameObjects\Character\Player.cs" />
     <Compile Include="GameObjects\GameObject.cs" />
-    <Compile Include="GameObjects\Helicopter.cs" />
-    <Compile Include="GameObjects\Primitives\Cube.cs" />
-    <Compile Include="GameObjects\Primitives\Quad.cs" />
-    <Compile Include="GameObjects\Primitives\RightTriangle3D.cs" />
-    <Compile Include="GameObjects\Primitives\Shape.cs" />
-    <Compile Include="GameObjects\Primitives\Square.cs" />
-    <Compile Include="GameObjects\Primitives\Triangle.cs" />
-    <Compile Include="GameObjects\Primitives\Triangle3D.cs" />
+    <Compile Include="GameObjects\Shapes\Cube.cs" />
+    <Compile Include="GameObjects\Shapes\Quad.cs" />
+    <Compile Include="GameObjects\Shapes\RightTriangle3D.cs" />
+    <Compile Include="GameObjects\Shapes\Shape.cs" />
+    <Compile Include="GameObjects\Shapes\Square.cs" />
+    <Compile Include="GameObjects\Shapes\Triangle.cs" />
+    <Compile Include="GameObjects\Shapes\Triangle3D.cs" />
     <Compile Include="GameObjects\Windmill\Blade.cs" />
     <Compile Include="GameObjects\Windmill\Building.cs" />
     <Compile Include="GameObjects\Windmill\Propeller.cs" />
@@ -130,6 +129,7 @@
     <Compile Include="Utilities\Collision\Collider.cs" />
     <Compile Include="Utilities\Collision\LineBox.cs" />
     <Compile Include="Utilities\Screen.cs" />
+    <Compile Include="Utilities\ThirdPersonCamera.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Game.ico" />

@@ -1,13 +1,16 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
-namespace Minecraft.GameObjects.Primitives
+namespace Minecraft.GameObjects.Shapes
 {
     public class Cube : Shape
     {
-        public Cube(Game1 game, Vector3 position, Vector3 rotation, Vector3 scale, Vector3 size, Color color, bool colliderVisible = true)
-            : base(game, position, rotation, scale, size, colliderVisible)
+        public Cube(Game1 game, Vector3 position, Vector3 rotation, Vector3 scale, Color color, bool colliderVisible = true)
+            : base(game, position, rotation, scale, colliderVisible)
         {
+            Vector3 size = Vector3.One;
+            SetSize(size);
+
             vertices = new VertexPositionColor[]
             {
                 // FRONT

@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Minecraft", "Minecraft\Minecraft\Minecraft.csproj", "{1F217FF6-2257-4ECE-83A4-9B676FD7B67F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Minecraft", "Minecraft\Minecraft\Minecraft.csproj", "{B2E84C1F-36DD-4654-B51C-CDEE7BD1A82E}"
 EndProject
-Project("{96E2B04D-8817-42C6-938A-82C39BA4D311}") = "MinecraftContent", "Minecraft\MinecraftContent\MinecraftContent.contentproj", "{B5D47B8A-645C-4F75-880E-CC8A4DC13DE9}"
+Project("{96E2B04D-8817-42C6-938A-82C39BA4D311}") = "MinecraftContent", "Minecraft\MinecraftContent\MinecraftContent.contentproj", "{D0181594-4137-4E58-BA03-DD28FF53F7BD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,12 +11,12 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{1F217FF6-2257-4ECE-83A4-9B676FD7B67F}.Debug|x86.ActiveCfg = Debug|x86
-		{1F217FF6-2257-4ECE-83A4-9B676FD7B67F}.Debug|x86.Build.0 = Debug|x86
-		{1F217FF6-2257-4ECE-83A4-9B676FD7B67F}.Release|x86.ActiveCfg = Release|x86
-		{1F217FF6-2257-4ECE-83A4-9B676FD7B67F}.Release|x86.Build.0 = Release|x86
-		{B5D47B8A-645C-4F75-880E-CC8A4DC13DE9}.Debug|x86.ActiveCfg = Debug|x86
-		{B5D47B8A-645C-4F75-880E-CC8A4DC13DE9}.Release|x86.ActiveCfg = Release|x86
+		{B2E84C1F-36DD-4654-B51C-CDEE7BD1A82E}.Debug|x86.ActiveCfg = Debug|x86
+		{B2E84C1F-36DD-4654-B51C-CDEE7BD1A82E}.Debug|x86.Build.0 = Debug|x86
+		{B2E84C1F-36DD-4654-B51C-CDEE7BD1A82E}.Release|x86.ActiveCfg = Release|x86
+		{B2E84C1F-36DD-4654-B51C-CDEE7BD1A82E}.Release|x86.Build.0 = Release|x86
+		{D0181594-4137-4E58-BA03-DD28FF53F7BD}.Debug|x86.ActiveCfg = Debug|x86
+		{D0181594-4137-4E58-BA03-DD28FF53F7BD}.Release|x86.ActiveCfg = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

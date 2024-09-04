@@ -16,9 +16,9 @@ namespace Minecraft.Utilities.Collision
         short[] indexes;
         IndexBuffer iBuffer;
         Color color;
-        Game game;
+        Game1 game;
 
-        public LineBox(Game game, Vector3 position, Vector3 scale, Vector3 size, Color color)
+        public LineBox(Game1 game, Vector3 position, Vector3 scale, Vector3 size, Color color)
         {
             this.game = game;
             this.position = position;
@@ -99,7 +99,7 @@ namespace Minecraft.Utilities.Collision
             this.iBuffer.SetData<short>(this.indexes);
         }
 
-        public void Draw(BasicEffect e, Camera camera)
+        public void Draw(BasicEffect e, ThirdPersonCamera camera)
         {
             e.World = this.world;
             e.World = world;

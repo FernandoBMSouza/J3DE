@@ -13,9 +13,7 @@ namespace Minecraft.Utilities.Collision
         LineBox lineBox;
         bool visible;
 
-        Vector3 position;
-        Vector3 scale;
-        Vector3 size;
+        Vector3 position, scale, size;
 
         public Collider(Game1 game, Vector3 position, Vector3 scale, Vector3 size, Color color, bool visible = true)
         {
@@ -34,7 +32,7 @@ namespace Minecraft.Utilities.Collision
                                                position + (size * scale) / 2f);
         }
 
-        public void Draw(BasicEffect effect, Camera camera)
+        public void Draw(BasicEffect effect, ThirdPersonCamera camera)
         {
             if (visible) lineBox.Draw(effect, camera);
         }
@@ -51,6 +49,11 @@ namespace Minecraft.Utilities.Collision
             this.scale = scale;
             lineBox.SetScale(this.scale);
             Update();
+        }
+
+        public void SetColor(Color color)
+        {
+            lineBox.SetColor(color);
         }
 
         public BoundingBox GetBoundingBox()
