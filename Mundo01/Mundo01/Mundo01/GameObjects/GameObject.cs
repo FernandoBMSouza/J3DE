@@ -13,9 +13,9 @@ namespace Mundo01.GameObjects
         private Matrix world;
         private Vector3 size;
         private bool colliderVisible;
-        protected Vector3 position, rotation, scale, pivot;
+        private Vector3 position, rotation, scale, pivot;
+        private Collider collider;
 
-        protected Collider collider;
         protected List<GameObject> children;
 
         public GameObject(Game1 game, Vector3 position, Vector3 rotation, Vector3 scale, bool colliderVisible = true)
@@ -38,9 +38,6 @@ namespace Mundo01.GameObjects
                 child.Update(gameTime);
                 child.world *= world;
             }
-
-            collider.SetPosition(Vector3.Transform(Vector3.Zero, world));
-            collider.SetScale(scale);
 
             SetupMatrix();
         }
@@ -67,22 +64,56 @@ namespace Mundo01.GameObjects
             return collider.GetBoundingBox().Intersects(other);
         }
 
-        protected Matrix GetWorld()
-        { 
-            return world; 
-        }
-
-        protected Game1 GetGame1()
-        {
-            return game;
-        }
+        protected Matrix GetWorld()         { return world; }
+        protected Game1 GetGame1()          { return game; }
+        protected Vector3 GetDimension()    { return size * scale; }
+        protected Vector3 GetSize()         { return size; }
+        protected Vector3 GetPosition()     { return position; }
+        protected Vector3 GetRotation()     { return rotation; }
+        protected Vector3 GetScale()        { return scale; }
+        protected Vector3 GetPivot()        { return pivot; }
         
-        protected void SetSize(Vector3 size) 
-        { 
+        protected void SetSize(Vector3 size)
+        {
             this.size = size;
             collider = new Collider(game, position, scale, this.size, Color.Green, colliderVisible);
         }
-
+        protected void SetPosition(Vector3 position)
+        {
+            this.position = position;
+            collider.SetPosition(Vector3.Transform(Vector3.Zero, world));
+        }
+        protected void SetScale(Vector3 scale)
+        {
+            this.scale = scale;
+            collider.SetScale(this.scale);
+        }
+        protected void SetRotation(Vector3 rotation)
+        {
+            this.rotation = rotation;
+        }
+        protected void SetPivot(Vector3 pivot)
+        {
+            this.pivot = pivot;
+        }
+        protected void AddPosition(Vector3 position)
+        {
+            this.position += position;
+            collider.SetPosition(Vector3.Transform(Vector3.Zero, world));
+        }
+        protected void AddScale(Vector3 scale)
+        {
+            this.scale += scale;
+            collider.SetScale(this.scale);
+        }
+        protected void AddRotation(Vector3 rotation)
+        {
+            this.rotation += rotation;
+        }
+        protected void AddPivot(Vector3 pivot)
+        {
+            this.pivot += pivot;
+        }
         public void SetColliderColor(Color color)
         {
             collider.SetColor(color);

@@ -27,7 +27,8 @@ namespace Mundo01.GameObjects.Windmill
 
         public override void Update(GameTime gameTime)
         {
-            if (working) rotation.Z += rotationSpeed * gameTime.ElapsedGameTime.Milliseconds * 0.001f;
+            if (working) //rotation.Z += rotationSpeed * gameTime.ElapsedGameTime.Milliseconds * 0.001f;
+                AddRotation(new Vector3(0,0,rotationSpeed * gameTime.ElapsedGameTime.Milliseconds * 0.001f));
             base.Update(gameTime);
         }
     }
