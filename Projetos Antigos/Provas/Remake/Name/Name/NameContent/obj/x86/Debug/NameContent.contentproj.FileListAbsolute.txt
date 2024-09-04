@@ -1,1 +1,2 @@
 C:\Users\ferna\OneDrive\Documents\J3DE\Provas\Remake\Name\Name\NameContent\obj\x86\Debug\NameContent.contentprojResolveAssemblyReference.cache
+C:\Users\ferna\OneDrive\Documents\J3DE\Projetos Antigos\Provas\Remake\Name\Name\NameContent\obj\x86\Debug\NameContent.contentprojResolveAssemblyReference.cache

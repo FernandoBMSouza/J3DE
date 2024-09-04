@@ -13,21 +13,21 @@ namespace Mundo01.GameObjects.Windmill
         static Random random = new Random();
 
         public Propeller(Game1 game, Vector3 position, Vector3 rotation, Vector3 scale, Color color, bool working = true, bool colliderVisible = true)
-            : base(game, position, rotation, scale, new Vector3(2,2,.1f), colliderVisible)
+            : base(game, position, rotation, scale, colliderVisible)
         {
-
+            SetSize(new Vector3(2, 2, .1f));
             this.working = working;
             rotationSpeed = random.Next(50, 500);
 
-            children.Add(new Blade(game, new Vector3(0, .5f, 0), new Vector3(0, 0, 0), new Vector3(1, 1, 1), color, colliderVisible));
-            children.Add(new Blade(game, new Vector3(0, -.5f, 0), new Vector3(0, 0, 180), new Vector3(1, 1, 1), color, colliderVisible));
-            children.Add(new Blade(game, new Vector3(-.5f, 0, 0), new Vector3(0, 0, 90), new Vector3(1, 1, 1), color, colliderVisible));
-            children.Add(new Blade(game, new Vector3(.5f, 0, 0), new Vector3(0, 0, 270), new Vector3(1, 1, 1), color, colliderVisible));
+            children.Add(new Blade(game, new Vector3(0, .5f, 0), new Vector3(0, 0, 0), new Vector3(1, 1, 1), color, false));
+            children.Add(new Blade(game, new Vector3(0, -.5f, 0), new Vector3(0, 0, 180), new Vector3(1, 1, 1), color, false));
+            children.Add(new Blade(game, new Vector3(-.5f, 0, 0), new Vector3(0, 0, 90), new Vector3(1, 1, 1), color, false));
+            children.Add(new Blade(game, new Vector3(.5f, 0, 0), new Vector3(0, 0, 270), new Vector3(1, 1, 1), color, false));
         }
 
         public override void Update(GameTime gameTime)
         {
-            if(working) rotation.Z += rotationSpeed * gameTime.ElapsedGameTime.Milliseconds * 0.001f;
+            if (working) rotation.Z += rotationSpeed * gameTime.ElapsedGameTime.Milliseconds * 0.001f;
             base.Update(gameTime);
         }
     }

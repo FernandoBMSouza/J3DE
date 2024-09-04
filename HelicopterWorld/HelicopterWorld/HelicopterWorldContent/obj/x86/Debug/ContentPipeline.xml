@@ -7,10 +7,10 @@
       <TargetProfile>HiDef</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\ferna\OneDrive\Documents\J3DE\Mundos\3. Logica Nova - Vespera\HelicopterWorld\HelicopterWorld\HelicopterWorldContent\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\ferna\OneDrive\Documents\J3DE\Mundos\3. Logica Nova - Vespera\HelicopterWorld\HelicopterWorld\HelicopterWorld\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\ferna\OneDrive\Documents\J3DE\Mundos\3. Logica Nova - Vespera\HelicopterWorld\HelicopterWorld\HelicopterWorldContent\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\ferna\OneDrive\Documents\J3DE\Mundos\3. Logica Nova - Vespera\HelicopterWorld\HelicopterWorld\HelicopterWorld\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\ferna\OneDrive\Documents\J3DE\HelicopterWorld\HelicopterWorld\HelicopterWorldContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\ferna\OneDrive\Documents\J3DE\HelicopterWorld\HelicopterWorld\HelicopterWorld\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\ferna\OneDrive\Documents\J3DE\HelicopterWorld\HelicopterWorld\HelicopterWorldContent\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\ferna\OneDrive\Documents\J3DE\HelicopterWorld\HelicopterWorld\HelicopterWorld\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>

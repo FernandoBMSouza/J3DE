@@ -49,7 +49,7 @@ namespace Minecraft
             go.Add(new Quad(this, new Vector3(0, 0, 0), new Vector3(0, 0, 0), new Vector3(100), new Vector3(1), Color.Green, showCollidersLines));
             go.Add(new Player(this, new Vector3(0, 2.6f, 0), new Vector3(0, 0, 0), new Vector3(1), Color.DarkGoldenrod, showCollidersLines));
 
-            for (int i = 0; i < 50; i++)
+            for (int i = 0; i < 10; i++)
                 go.Add(new Enemy(this, new Vector3(0, 2.6f, 0), Vector3.Zero, Vector3.One, Color.Black, showCollidersLines));
 
             base.Initialize();

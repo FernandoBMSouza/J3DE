@@ -9,28 +9,26 @@ namespace Mundo01.GameObjects
 {
     public abstract class GameObject
     {
-        Game1 game;
-        protected Matrix world;
-        protected Vector3 position, rotation, scale, size;
-        Collider collider;
-        protected BasicEffect effect;
+        private Game1 game;
+        private Matrix world;
+        private Vector3 size;
+        private bool colliderVisible;
+        protected Vector3 position, rotation, scale, pivot;
+
+        protected Collider collider;
         protected List<GameObject> children;
 
-        public GameObject(Game1 game, Vector3 position, Vector3 rotation, Vector3 scale, Vector3 size, bool colliderVisible = true)
+        public GameObject(Game1 game, Vector3 position, Vector3 rotation, Vector3 scale, bool colliderVisible = true)
         {
             this.game = game;
-
             this.position = position;
             this.rotation = rotation;
             this.scale = scale;
-            this.size = size;
-
-            CreateMatrix();
-
+            this.colliderVisible = colliderVisible;
+            pivot = Vector3.Zero;
+            SetSize(Vector3.One);
+            SetupMatrix();
             children = new List<GameObject>();
-
-            collider = new Collider(this.game, this.position, this.scale, this.size, Color.Green, colliderVisible);
-            effect = new BasicEffect(game.GraphicsDevice);
         }
 
         public virtual void Update(GameTime gameTime)
@@ -44,28 +42,45 @@ namespace Mundo01.GameObjects
             collider.SetPosition(Vector3.Transform(Vector3.Zero, world));
             collider.SetScale(scale);
 
-            CreateMatrix();
+            SetupMatrix();
         }
 
-        public virtual void Draw(Camera camera)
+        public virtual void Draw(Camera camera, BasicEffect effect)
         {
             foreach (GameObject child in children)
-                child.Draw(camera);
+                child.Draw(camera, effect);
 
             collider.Draw(effect, camera);
         }
 
-        protected virtual void CreateMatrix()
+        protected virtual void SetupMatrix()
         {
             world = Matrix.Identity;
             world *= Matrix.CreateScale(scale);
+            world *= Matrix.CreateTranslation(-pivot);
             world *= Matrix.CreateFromYawPitchRoll(MathHelper.ToRadians(rotation.Y), MathHelper.ToRadians(rotation.X), MathHelper.ToRadians(rotation.Z));
-            world *= Matrix.CreateTranslation(position);
+            world *= Matrix.CreateTranslation(position + pivot);
         }
 
-        public BoundingBox GetCollider()
+        public bool IsColliding(BoundingBox other)
         {
-            return collider.GetBoundingBox();
+            return collider.GetBoundingBox().Intersects(other);
+        }
+
+        protected Matrix GetWorld() 
+        { 
+            return world; 
+        }
+
+        protected Game1 GetGame1()
+        {
+            return game;
+        }
+        
+        protected void SetSize(Vector3 size) 
+        { 
+            this.size = size;
+            collider = new Collider(game, position, scale, this.size, Color.Green, colliderVisible);
         }
     }
 }

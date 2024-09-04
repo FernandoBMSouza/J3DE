@@ -13,9 +13,7 @@ namespace Mundo01.Utilities.Collision
         LineBox lineBox;
         bool visible;
 
-        Vector3 position;
-        Vector3 scale;
-        Vector3 size;
+        Vector3 position, scale, size;
 
         public Collider(Game1 game, Vector3 position, Vector3 scale, Vector3 size, Color color, bool visible = true)
         {

@@ -7,8 +7,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\ferna\OneDrive\Documents\J3DE\Provas\3. Minecraft\Minecraft\Minecraft\bin\x86\Debug\Content\Images\steve.xnb</Output>
-      <Time>2024-08-23T18:02:39.7971186-03:00</Time>
+      <Output>C:\Users\ferna\OneDrive\Documents\J3DE\Projetos Antigos\Provas\3. Minecraft\Minecraft\Minecraft\bin\x86\Debug\Content\Images\steve.xnb</Output>
+      <Time>2024-09-04T13:52:09.0053739-03:00</Time>
     </Item>
     <Item>
       <Source>Images\bricks.png</Source>
@@ -16,8 +16,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\ferna\OneDrive\Documents\J3DE\Provas\3. Minecraft\Minecraft\Minecraft\bin\x86\Debug\Content\Images\bricks.xnb</Output>
-      <Time>2024-08-23T18:02:39.7941122-03:00</Time>
+      <Output>C:\Users\ferna\OneDrive\Documents\J3DE\Projetos Antigos\Provas\3. Minecraft\Minecraft\Minecraft\bin\x86\Debug\Content\Images\bricks.xnb</Output>
+      <Time>2024-09-04T13:52:09.0023738-03:00</Time>
     </Item>
     <Item>
       <Source>Images\zombie.png</Source>
@@ -25,8 +25,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\ferna\OneDrive\Documents\J3DE\Provas\3. Minecraft\Minecraft\Minecraft\bin\x86\Debug\Content\Images\zombie.xnb</Output>
-      <Time>2024-08-23T18:02:39.7981177-03:00</Time>
+      <Output>C:\Users\ferna\OneDrive\Documents\J3DE\Projetos Antigos\Provas\3. Minecraft\Minecraft\Minecraft\bin\x86\Debug\Content\Images\zombie.xnb</Output>
+      <Time>2024-09-04T13:52:09.0063754-03:00</Time>
     </Item>
     <Item>
       <Source>Images\grass.jpg</Source>
@@ -34,8 +34,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\ferna\OneDrive\Documents\J3DE\Provas\3. Minecraft\Minecraft\Minecraft\bin\x86\Debug\Content\Images\grass.xnb</Output>
-      <Time>2024-08-23T18:02:39.7971186-03:00</Time>
+      <Output>C:\Users\ferna\OneDrive\Documents\J3DE\Projetos Antigos\Provas\3. Minecraft\Minecraft\Minecraft\bin\x86\Debug\Content\Images\grass.xnb</Output>
+      <Time>2024-09-04T13:52:09.0053739-03:00</Time>
     </Item>
     <Item>
       <Source>Effects\Effect1.fx</Source>
@@ -43,8 +43,8 @@
       <Importer>EffectImporter</Importer>
       <Processor>EffectProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\ferna\OneDrive\Documents\J3DE\Provas\3. Minecraft\Minecraft\Minecraft\bin\x86\Debug\Content\Effects\Effect1.xnb</Output>
-      <Time>2024-08-23T18:02:39.7918876-03:00</Time>
+      <Output>C:\Users\ferna\OneDrive\Documents\J3DE\Projetos Antigos\Provas\3. Minecraft\Minecraft\Minecraft\bin\x86\Debug\Content\Effects\Effect1.xnb</Output>
+      <Time>2024-09-04T13:52:09.000374-03:00</Time>
     </Item>
     <Item>
       <Source>Effects\RedEffect.fx</Source>
@@ -52,8 +52,8 @@
       <Importer>EffectImporter</Importer>
       <Processor>EffectProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\ferna\OneDrive\Documents\J3DE\Provas\3. Minecraft\Minecraft\Minecraft\bin\x86\Debug\Content\Effects\RedEffect.xnb</Output>
-      <Time>2024-08-23T18:02:39.7928879-03:00</Time>
+      <Output>C:\Users\ferna\OneDrive\Documents\J3DE\Projetos Antigos\Provas\3. Minecraft\Minecraft\Minecraft\bin\x86\Debug\Content\Effects\RedEffect.xnb</Output>
+      <Time>2024-09-04T13:52:09.0013737-03:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -61,10 +61,10 @@
       <TargetProfile>HiDef</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\ferna\OneDrive\Documents\J3DE\Provas\3. Minecraft\Minecraft\MinecraftContent\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\ferna\OneDrive\Documents\J3DE\Provas\3. Minecraft\Minecraft\Minecraft\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\ferna\OneDrive\Documents\J3DE\Provas\3. Minecraft\Minecraft\MinecraftContent\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\ferna\OneDrive\Documents\J3DE\Provas\3. Minecraft\Minecraft\Minecraft\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\ferna\OneDrive\Documents\J3DE\Projetos Antigos\Provas\3. Minecraft\Minecraft\MinecraftContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\ferna\OneDrive\Documents\J3DE\Projetos Antigos\Provas\3. Minecraft\Minecraft\Minecraft\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\ferna\OneDrive\Documents\J3DE\Projetos Antigos\Provas\3. Minecraft\Minecraft\MinecraftContent\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\ferna\OneDrive\Documents\J3DE\Projetos Antigos\Provas\3. Minecraft\Minecraft\Minecraft\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>

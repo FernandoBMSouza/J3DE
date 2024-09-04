@@ -16,9 +16,9 @@ namespace Mundo01.Utilities.Collision
         short[] indexes;
         IndexBuffer iBuffer;
         Color color;
-        Game game;
+        Game1 game;
 
-        public LineBox(Game game, Vector3 position, Vector3 scale, Vector3 size, Color color)
+        public LineBox(Game1 game, Vector3 position, Vector3 scale, Vector3 size, Color color)
         {
             this.game = game;
             this.position = position;

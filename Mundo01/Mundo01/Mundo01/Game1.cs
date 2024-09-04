@@ -10,7 +10,7 @@ using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
 using Mundo01.Utilities;
 using Mundo01.GameObjects;
-using Mundo01.GameObjects.Primitives;
+using Mundo01.GameObjects.Shapes;
 using Mundo01.GameObjects.Windmill;
 
 namespace Mundo01
@@ -21,16 +21,17 @@ namespace Mundo01
         SpriteBatch spriteBatch;
         Screen screen;
         Camera camera;
+        BasicEffect effect;
 
         List<GameObject> go;
 
-        bool showCollidersLines = true;
+        bool showCollidersLines = false;
 
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
-            Window.Title = "MUNDO 02";
+            Window.Title = "MUNDO";
             IsMouseVisible = true;
 
             graphics.PreferredBackBufferWidth = 800;
@@ -45,10 +46,10 @@ namespace Mundo01
 
             camera = new Camera(this);
             go = new List<GameObject>();
-            go.Add(new Quad(this, new Vector3(0, 0, 0), new Vector3(0, 0, 0), new Vector3(25), new Vector3(1), Color.Green, showCollidersLines));
-            go.Add(new Cube(this, new Vector3(0, .5f, 0), new Vector3(0, 0, 0), new Vector3(1), new Vector3(1), Color.Salmon, showCollidersLines));
-            go.Add(new Windmill(this, new Vector3(-5, 1, 0), new Vector3(0, 45, 0), new Vector3(1), Color.Blue, Color.Yellow, showCollidersLines));
-            go.Add(new Windmill(this, new Vector3(5, 1, 0), new Vector3(0,-45, 0), new Vector3(1), Color.Blue, Color.Yellow, showCollidersLines));
+            go.Add(new Quad(this, Vector3.Zero, Vector3.Zero, new Vector3(15), Color.Green, showCollidersLines));
+            go.Add(new Cube(this, new Vector3(0, .5f, 0), Vector3.Zero, Vector3.One, Color.Salmon, showCollidersLines));
+            go.Add(new Windmill(this, new Vector3(-5, 1, 0), new Vector3(0,  45, 0), Vector3.One, Color.Blue, Color.Yellow, showCollidersLines));
+            go.Add(new Windmill(this, new Vector3( 5, 1, 0), new Vector3(0, -45, 0), Vector3.One, Color.Blue, Color.Yellow, showCollidersLines));
 
             base.Initialize();
         }
@@ -56,6 +57,7 @@ namespace Mundo01
         protected override void LoadContent()
         {
             spriteBatch = new SpriteBatch(GraphicsDevice);
+            effect = new BasicEffect(GraphicsDevice);
         }
 
         protected override void UnloadContent()
@@ -72,7 +74,7 @@ namespace Mundo01
             // TRATAMENTO DE COLISAO
             foreach (GameObject g in go)
             {
-                if (camera.IsColliding(g.GetCollider()))
+                if (g.IsColliding(camera.BBox))
                 {
                     camera.RestorePosition();
                     //g.BoxCollider.SetColor(Color.Red);
@@ -90,7 +92,7 @@ namespace Mundo01
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
-            foreach (GameObject g in go) g.Draw(camera);
+            foreach (GameObject g in go) g.Draw(camera, effect);
 
             base.Draw(gameTime);
         }

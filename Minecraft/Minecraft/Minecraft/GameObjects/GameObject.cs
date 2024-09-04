@@ -61,7 +61,6 @@ namespace Minecraft.GameObjects
 
         protected virtual void CreateMatrix()
         {
-
             world = Matrix.Identity;
             world *= Matrix.CreateScale(scale);
             world *= Matrix.CreateTranslation(-pivot);
