@@ -7,10 +7,10 @@
       <TargetProfile>HiDef</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\ferna\OneDrive\Documents\J3DE\Mundos\Remake\Mundo01\Mundo01\Mundo01Content\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\ferna\OneDrive\Documents\J3DE\Mundos\Remake\Mundo01\Mundo01\Mundo01\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\ferna\OneDrive\Documents\J3DE\Mundos\Remake\Mundo01\Mundo01\Mundo01Content\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\ferna\OneDrive\Documents\J3DE\Mundos\Remake\Mundo01\Mundo01\Mundo01\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\ferna\OneDrive\Documents\J3DE\Mundos\3. Logica Nova - Vespera\Mundo01\Mundo01\Mundo01Content\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\ferna\OneDrive\Documents\J3DE\Mundos\3. Logica Nova - Vespera\Mundo01\Mundo01\Mundo01\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\ferna\OneDrive\Documents\J3DE\Mundos\3. Logica Nova - Vespera\Mundo01\Mundo01\Mundo01Content\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\ferna\OneDrive\Documents\J3DE\Mundos\3. Logica Nova - Vespera\Mundo01\Mundo01\Mundo01\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
