@@ -16,6 +16,8 @@ namespace Minecraft.GameObjects
         protected BasicEffect effect;
         protected List<GameObject> children;
 
+        public Vector3 pivot;
+
         public GameObject(Game1 game, Vector3 position, Vector3 rotation, Vector3 scale, Vector3 size, bool colliderVisible = true)
         {
             this.game = game;
@@ -24,6 +26,8 @@ namespace Minecraft.GameObjects
             this.rotation = rotation;
             this.scale = scale;
             this.size = size;
+
+            //this.pivot = Vector3.Zero;
 
             CreateMatrix();
 
@@ -57,10 +61,12 @@ namespace Minecraft.GameObjects
 
         protected virtual void CreateMatrix()
         {
+
             world = Matrix.Identity;
             world *= Matrix.CreateScale(scale);
+            world *= Matrix.CreateTranslation(-pivot);
             world *= Matrix.CreateFromYawPitchRoll(MathHelper.ToRadians(rotation.Y), MathHelper.ToRadians(rotation.X), MathHelper.ToRadians(rotation.Z));
-            world *= Matrix.CreateTranslation(position);
+            world *= Matrix.CreateTranslation(position + pivot);
         }
 
         public BoundingBox GetCollider() { return collider.GetBoundingBox(); }

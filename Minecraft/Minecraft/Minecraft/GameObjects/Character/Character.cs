@@ -38,14 +38,25 @@ namespace Minecraft.GameObjects.Character
 
             state = STATE.IDLE;
             speed = 2f;
-            rotationSpeed = 50f;
+            rotationSpeed = speed * 100f;
+            children[2].pivot = new Vector3(0, .7f, 0);
+            children[3].pivot = new Vector3(0, .7f, 0);
+            children[4].pivot = new Vector3(0, .7f, 0);
+            children[5].pivot = new Vector3(0, .7f, 0);
+
         }
 
         public override void Update(GameTime gameTime)
         {
-            angle += rotationSpeed * gameTime.ElapsedGameTime.Milliseconds * 0.001f;
+            if (state != STATE.IDLE) angle += rotationSpeed * gameTime.ElapsedGameTime.Milliseconds * 0.001f;
+            // Rotacao da cabeca
             children[0].SetRotationY(45f * (float)Math.Sin(MathHelper.ToRadians(angle)));
+            // rotacao dos membros
             children[2].SetRotationX(45f * (float)Math.Sin(MathHelper.ToRadians(angle)));
+            children[3].SetRotationX(45f * (float)Math.Sin(MathHelper.ToRadians(-angle)));
+            children[4].SetRotationX(45f * (float)Math.Sin(MathHelper.ToRadians(-angle)));
+            children[5].SetRotationX(45f * (float)Math.Sin(MathHelper.ToRadians(angle)));
+
             UpdateState(gameTime);
             ChangeState(gameTime);
             base.Update(gameTime);
@@ -83,6 +94,7 @@ namespace Minecraft.GameObjects.Character
                     position.X += speed * gt.ElapsedGameTime.Milliseconds * 0.001f;
                     break;
                 case STATE.IDLE:
+                    angle = 0;
                     break;
             }
         }
