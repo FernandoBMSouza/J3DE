@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prova01", "Prova01\Prova01\Prova01.csproj", "{7A7374F5-60DD-4397-8F06-E0CAA3C3714F}"
+EndProject
+Project("{96E2B04D-8817-42C6-938A-82C39BA4D311}") = "Prova01Content", "Prova01\Prova01Content\Prova01Content.contentproj", "{D07CD1C3-4A4E-47B8-A269-FAE9FC088E94}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7A7374F5-60DD-4397-8F06-E0CAA3C3714F}.Debug|x86.ActiveCfg = Debug|x86
+		{7A7374F5-60DD-4397-8F06-E0CAA3C3714F}.Debug|x86.Build.0 = Debug|x86
+		{7A7374F5-60DD-4397-8F06-E0CAA3C3714F}.Release|x86.ActiveCfg = Release|x86
+		{7A7374F5-60DD-4397-8F06-E0CAA3C3714F}.Release|x86.Build.0 = Release|x86
+		{D07CD1C3-4A4E-47B8-A269-FAE9FC088E94}.Debug|x86.ActiveCfg = Debug|x86
+		{D07CD1C3-4A4E-47B8-A269-FAE9FC088E94}.Release|x86.ActiveCfg = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
