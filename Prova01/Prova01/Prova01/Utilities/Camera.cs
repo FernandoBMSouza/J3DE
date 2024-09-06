@@ -25,16 +25,14 @@ namespace Prova01.Utilities
 
         public Camera(Game game)
         {
-            position = new Vector3(0, 5, 10);
+            position = new Vector3(0, 25, 75);
             oldPosition = position;
             target = Vector3.Zero;
             up = Vector3.Up;
 
             translationSpeed = 10;
             rotationSpeed = 100;
-            angle = new Vector3(MathHelper.ToRadians(0),
-                                MathHelper.ToRadians(0),
-                                MathHelper.ToRadians(0));
+            angle = new Vector3(-20,0,0);
 
             View = Matrix.CreateLookAt(position, target, up);
             Projection = Matrix.CreatePerspectiveFieldOfView(MathHelper.PiOver4,
@@ -95,9 +93,9 @@ namespace Prova01.Utilities
                 position.Z += (float)Math.Cos(MathHelper.ToRadians(angle.Y + 90)) * gameTime.ElapsedGameTime.Milliseconds * 0.001f * translationSpeed;
             }
 
-            if (Keyboard.GetState().IsKeyDown(Keys.Space))
-                position.Y += gameTime.ElapsedGameTime.Milliseconds * 0.001f * translationSpeed;
             if (Keyboard.GetState().IsKeyDown(Keys.LeftShift))
+                position.Y += gameTime.ElapsedGameTime.Milliseconds * 0.001f * translationSpeed;
+            if (Keyboard.GetState().IsKeyDown(Keys.LeftControl))
                 position.Y -= gameTime.ElapsedGameTime.Milliseconds * 0.001f * translationSpeed;
 
             //if (Keyboard.GetState().IsKeyDown(Keys.Space))

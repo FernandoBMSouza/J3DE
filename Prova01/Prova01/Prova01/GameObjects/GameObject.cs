@@ -78,14 +78,14 @@ namespace Prova01.GameObjects
             return angle;
         }
 
-        protected Matrix GetWorld()         { return world; }
-        protected Game1 GetGame1()          { return game; }
-        protected Vector3 GetDimension()    { return size * scale; }
-        protected Vector3 GetSize()         { return size; }
-        public Vector3 GetPosition()     { return position; }
-        public Vector3 GetRotation() { return rotation; }
-        protected Vector3 GetScale()        { return scale; }
-        protected Vector3 GetPivot()        { return pivot; }
+        protected Matrix GetWorld()     { return world; }
+        protected Game1 GetGame1()      { return game; }
+        public Vector3 GetDimension()   { return size * scale; }
+        protected Vector3 GetSize()     { return size; }
+        public Vector3 GetPosition()    { return position; }
+        public Vector3 GetRotation()    { return rotation; }
+        protected Vector3 GetScale()    { return scale; }
+        protected Vector3 GetPivot()    { return pivot; }
         
         protected void SetSize(Vector3 size)
         {
@@ -137,6 +137,10 @@ namespace Prova01.GameObjects
         public void SetColliderColor(Color color)
         {
             collider.SetColor(color);
+        }
+        public BoundingBox GetBoundingBox()
+        {
+            return collider.GetBoundingBox();
         }
     }
 }

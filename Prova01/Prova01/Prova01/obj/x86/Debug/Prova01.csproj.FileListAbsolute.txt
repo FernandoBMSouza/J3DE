@@ -4,3 +4,9 @@ C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE (AQUI PRA PROVA - 2024)\Prova01\P
 C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE (AQUI PRA PROVA - 2024)\Prova01\Prova01\Prova01\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE (AQUI PRA PROVA - 2024)\Prova01\Prova01\Prova01\obj\x86\Debug\Prova01.exe
 C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE (AQUI PRA PROVA - 2024)\Prova01\Prova01\Prova01\obj\x86\Debug\Prova01.pdb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Prova01\Prova01\Prova01\bin\x86\Debug\Prova01.exe
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Prova01\Prova01\Prova01\bin\x86\Debug\Prova01.pdb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Prova01\Prova01\Prova01\obj\x86\Debug\Prova01.csprojResolveAssemblyReference.cache
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Prova01\Prova01\Prova01\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Prova01\Prova01\Prova01\obj\x86\Debug\Prova01.exe
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Prova01\Prova01\Prova01\obj\x86\Debug\Prova01.pdb

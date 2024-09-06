@@ -9,8 +9,9 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace Prova01.GameObjects.Prova01
 {
-    class Track : GameObject
+    public class Track : GameObject
     {
+        List<GameObject> colliders;
         public Track(Game1 game, Vector3 position, Vector3 rotation, Vector3 scale, Color color, bool colliderVisible = true)
             : base(game, position, rotation, scale, colliderVisible)
         {
@@ -28,9 +29,20 @@ namespace Prova01.GameObjects.Prova01
             children.Add(new RightTriangle3D(game, new Vector3(-6.5f,0,-3), new Vector3(90, 0, 180), new Vector3(3, 3, 1), color, false));
             children.Add(new RightTriangle3D(game, new Vector3( 6.5f,0,-3), new Vector3(90, 0, 270), new Vector3(3, 3, 1), color, false));
 
-            children.Add(new GameObject(game, new Vector3( 0,0,-3), new Vector3(0,0,0), new Vector3(1,3,3), true));
+            // Colliders
+            children.Add(new GameObject(game, new Vector3( 1,0,-3), new Vector3(0,0,0), new Vector3(1,3,3), true));
             children.Add(new GameObject(game, new Vector3(-4,0, 3), new Vector3(0,0,0), new Vector3(1,3,3), true));
             children.Add(new GameObject(game, new Vector3( 4,0, 3), new Vector3(0,0,0), new Vector3(1,3,3), true));
+
+            colliders = new List<GameObject>();
+            colliders.Add(children[8]);
+            colliders.Add(children[9]);
+            colliders.Add(children[10]);
+        }
+
+        public List<GameObject> GetColliders()
+        {
+            return colliders;
         }
     }
 }

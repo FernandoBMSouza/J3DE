@@ -109,6 +109,8 @@
   <ItemGroup>
     <Compile Include="Game1.cs" />
     <Compile Include="GameObjects\GameObject.cs" />
+    <Compile Include="GameObjects\Prova01\NPC.cs" />
+    <Compile Include="GameObjects\Prova01\Player.cs" />
     <Compile Include="GameObjects\Prova01\Snail.cs" />
     <Compile Include="GameObjects\Prova01\Track.cs" />
     <Compile Include="GameObjects\Shapes\Cube.cs" />
