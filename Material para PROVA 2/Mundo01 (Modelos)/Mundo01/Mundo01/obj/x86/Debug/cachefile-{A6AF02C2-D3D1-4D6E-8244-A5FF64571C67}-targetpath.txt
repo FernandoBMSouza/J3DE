@@ -1,0 +1,8 @@
+Content\Images\bricks.xnb
+Content\Images\grass.xnb
+Content\Images\rocks.xnb
+Content\Images\wood.xnb
+Content\3DModels\blade.xnb
+Content\3DModels\building.xnb
+Content\3DModels\hero.xnb
+Content\3DModels\tower.xnb

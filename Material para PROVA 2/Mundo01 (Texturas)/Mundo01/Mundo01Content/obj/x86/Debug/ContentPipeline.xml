@@ -7,8 +7,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Mundo01 (Texturas)\Mundo01\Mundo01\bin\x86\Debug\Content\Images\bricks.xnb</Output>
-      <Time>2024-09-07T12:00:30.6945594-03:00</Time>
+      <Output>C:\Users\ferna\OneDrive\Documents\J3DE\Material para PROVA 2\Mundo01 (Texturas)\Mundo01\Mundo01\bin\x86\Debug\Content\Images\bricks.xnb</Output>
+      <Time>2024-09-07T19:32:27.8207683-03:00</Time>
     </Item>
     <Item>
       <Source>Images\grass.jpg</Source>
@@ -16,8 +16,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Mundo01 (Texturas)\Mundo01\Mundo01\bin\x86\Debug\Content\Images\grass.xnb</Output>
-      <Time>2024-09-07T12:00:30.6965609-03:00</Time>
+      <Output>C:\Users\ferna\OneDrive\Documents\J3DE\Material para PROVA 2\Mundo01 (Texturas)\Mundo01\Mundo01\bin\x86\Debug\Content\Images\grass.xnb</Output>
+      <Time>2024-09-07T19:32:27.8237737-03:00</Time>
     </Item>
     <Item>
       <Source>Images\rocks.jpg</Source>
@@ -25,8 +25,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Mundo01 (Texturas)\Mundo01\Mundo01\bin\x86\Debug\Content\Images\rocks.xnb</Output>
-      <Time>2024-09-07T12:00:30.6985597-03:00</Time>
+      <Output>C:\Users\ferna\OneDrive\Documents\J3DE\Material para PROVA 2\Mundo01 (Texturas)\Mundo01\Mundo01\bin\x86\Debug\Content\Images\rocks.xnb</Output>
+      <Time>2024-09-07T19:32:27.8248382-03:00</Time>
     </Item>
     <Item>
       <Source>Images\wood.png</Source>
@@ -34,8 +34,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Mundo01 (Texturas)\Mundo01\Mundo01\bin\x86\Debug\Content\Images\wood.xnb</Output>
-      <Time>2024-09-07T12:00:30.7065604-03:00</Time>
+      <Output>C:\Users\ferna\OneDrive\Documents\J3DE\Material para PROVA 2\Mundo01 (Texturas)\Mundo01\Mundo01\bin\x86\Debug\Content\Images\wood.xnb</Output>
+      <Time>2024-09-07T19:32:27.8324022-03:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -43,10 +43,10 @@
       <TargetProfile>HiDef</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Mundo01 (Texturas)\Mundo01\Mundo01Content\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Mundo01 (Texturas)\Mundo01\Mundo01\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Mundo01 (Texturas)\Mundo01\Mundo01Content\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Mundo01 (Texturas)\Mundo01\Mundo01\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\ferna\OneDrive\Documents\J3DE\Material para PROVA 2\Mundo01 (Texturas)\Mundo01\Mundo01Content\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\ferna\OneDrive\Documents\J3DE\Material para PROVA 2\Mundo01 (Texturas)\Mundo01\Mundo01\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\ferna\OneDrive\Documents\J3DE\Material para PROVA 2\Mundo01 (Texturas)\Mundo01\Mundo01Content\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\ferna\OneDrive\Documents\J3DE\Material para PROVA 2\Mundo01 (Texturas)\Mundo01\Mundo01\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
@@ -75,7 +75,7 @@
       </Assembly>
       <Assembly>
         <Key>C:\WINDOWS\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
-        <Value>2023-12-16T18:46:09.1672477-03:00</Value>
+        <Value>2024-04-16T10:07:08.4397406-03:00</Value>
       </Assembly>
     </Assemblies>
   </Asset>
