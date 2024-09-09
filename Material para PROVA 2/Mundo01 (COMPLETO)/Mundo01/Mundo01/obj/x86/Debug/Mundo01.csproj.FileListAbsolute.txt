@@ -1,0 +1,105 @@
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos\Remake\Mundo01\Mundo01\Mundo01\bin\x86\Debug\Mundo01.exe
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos\Remake\Mundo01\Mundo01\Mundo01\bin\x86\Debug\Mundo01.pdb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos\Remake\Mundo01\Mundo01\Mundo01\obj\x86\Debug\Mundo01.csprojResolveAssemblyReference.cache
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos\Remake\Mundo01\Mundo01\Mundo01\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos\Remake\Mundo01\Mundo01\Mundo01\obj\x86\Debug\Mundo01.exe
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundos\Remake\Mundo01\Mundo01\Mundo01\obj\x86\Debug\Mundo01.pdb
+C:\Users\ferna\OneDrive\Documents\J3DE\Mundos\Remake\Mundo01\Mundo01\Mundo01\bin\x86\Debug\Mundo01.exe
+C:\Users\ferna\OneDrive\Documents\J3DE\Mundos\Remake\Mundo01\Mundo01\Mundo01\bin\x86\Debug\Mundo01.pdb
+C:\Users\ferna\OneDrive\Documents\J3DE\Mundos\Remake\Mundo01\Mundo01\Mundo01\obj\x86\Debug\Mundo01.csprojResolveAssemblyReference.cache
+C:\Users\ferna\OneDrive\Documents\J3DE\Mundos\Remake\Mundo01\Mundo01\Mundo01\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\ferna\OneDrive\Documents\J3DE\Mundos\Remake\Mundo01\Mundo01\Mundo01\obj\x86\Debug\Mundo01.exe
+C:\Users\ferna\OneDrive\Documents\J3DE\Mundos\Remake\Mundo01\Mundo01\Mundo01\obj\x86\Debug\Mundo01.pdb
+C:\Users\ferna\OneDrive\Documents\J3DE\Mundos\3. Logica Nova - Vespera\Mundo01\Mundo01\Mundo01\bin\x86\Debug\Mundo01.exe
+C:\Users\ferna\OneDrive\Documents\J3DE\Mundos\3. Logica Nova - Vespera\Mundo01\Mundo01\Mundo01\bin\x86\Debug\Mundo01.pdb
+C:\Users\ferna\OneDrive\Documents\J3DE\Mundos\3. Logica Nova - Vespera\Mundo01\Mundo01\Mundo01\obj\x86\Debug\Mundo01.csprojResolveAssemblyReference.cache
+C:\Users\ferna\OneDrive\Documents\J3DE\Mundos\3. Logica Nova - Vespera\Mundo01\Mundo01\Mundo01\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\ferna\OneDrive\Documents\J3DE\Mundos\3. Logica Nova - Vespera\Mundo01\Mundo01\Mundo01\obj\x86\Debug\Mundo01.exe
+C:\Users\ferna\OneDrive\Documents\J3DE\Mundos\3. Logica Nova - Vespera\Mundo01\Mundo01\Mundo01\obj\x86\Debug\Mundo01.pdb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundo01\Mundo01\Mundo01\bin\x86\Debug\Mundo01.exe
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundo01\Mundo01\Mundo01\bin\x86\Debug\Mundo01.pdb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundo01\Mundo01\Mundo01\obj\x86\Debug\Mundo01.csprojResolveAssemblyReference.cache
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundo01\Mundo01\Mundo01\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundo01\Mundo01\Mundo01\obj\x86\Debug\Mundo01.exe
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Mundo01\Mundo01\Mundo01\obj\x86\Debug\Mundo01.pdb
+C:\Users\ferna\OneDrive\Documents\J3DE\Mundo01\Mundo01\Mundo01\bin\x86\Debug\Mundo01.exe
+C:\Users\ferna\OneDrive\Documents\J3DE\Mundo01\Mundo01\Mundo01\bin\x86\Debug\Mundo01.pdb
+C:\Users\ferna\OneDrive\Documents\J3DE\Mundo01\Mundo01\Mundo01\obj\x86\Debug\Mundo01.csprojResolveAssemblyReference.cache
+C:\Users\ferna\OneDrive\Documents\J3DE\Mundo01\Mundo01\Mundo01\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\ferna\OneDrive\Documents\J3DE\Mundo01\Mundo01\Mundo01\obj\x86\Debug\Mundo01.exe
+C:\Users\ferna\OneDrive\Documents\J3DE\Mundo01\Mundo01\Mundo01\obj\x86\Debug\Mundo01.pdb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Mundo01 (Texturas)\Mundo01\Mundo01\bin\x86\Debug\Mundo01.exe
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Mundo01 (Texturas)\Mundo01\Mundo01\bin\x86\Debug\Mundo01.pdb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Mundo01 (Texturas)\Mundo01\Mundo01\obj\x86\Debug\Mundo01.csprojResolveAssemblyReference.cache
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Mundo01 (Texturas)\Mundo01\Mundo01\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Mundo01 (Texturas)\Mundo01\Mundo01\obj\x86\Debug\Mundo01.exe
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Mundo01 (Texturas)\Mundo01\Mundo01\obj\x86\Debug\Mundo01.pdb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Mundo01 (Texturas)\Mundo01\Mundo01\bin\x86\Debug\Content\Images\bricks.xnb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Mundo01 (Texturas)\Mundo01\Mundo01\bin\x86\Debug\Content\Images\grass.xnb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Mundo01 (Texturas)\Mundo01\Mundo01\bin\x86\Debug\Content\Images\rocks.xnb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Mundo01 (Texturas)\Mundo01\Mundo01\bin\x86\Debug\Content\Images\wood.xnb
+C:\Users\ferna\OneDrive\Documents\J3DE\Material para PROVA 2\Mundo01 (Texturas)\Mundo01\Mundo01\bin\x86\Debug\Content\Images\bricks.xnb
+C:\Users\ferna\OneDrive\Documents\J3DE\Material para PROVA 2\Mundo01 (Texturas)\Mundo01\Mundo01\bin\x86\Debug\Content\Images\grass.xnb
+C:\Users\ferna\OneDrive\Documents\J3DE\Material para PROVA 2\Mundo01 (Texturas)\Mundo01\Mundo01\bin\x86\Debug\Content\Images\rocks.xnb
+C:\Users\ferna\OneDrive\Documents\J3DE\Material para PROVA 2\Mundo01 (Texturas)\Mundo01\Mundo01\bin\x86\Debug\Content\Images\wood.xnb
+C:\Users\ferna\OneDrive\Documents\J3DE\Material para PROVA 2\Mundo01 (Texturas)\Mundo01\Mundo01\bin\x86\Debug\Mundo01.exe
+C:\Users\ferna\OneDrive\Documents\J3DE\Material para PROVA 2\Mundo01 (Texturas)\Mundo01\Mundo01\bin\x86\Debug\Mundo01.pdb
+C:\Users\ferna\OneDrive\Documents\J3DE\Material para PROVA 2\Mundo01 (Texturas)\Mundo01\Mundo01\obj\x86\Debug\Mundo01.csprojResolveAssemblyReference.cache
+C:\Users\ferna\OneDrive\Documents\J3DE\Material para PROVA 2\Mundo01 (Texturas)\Mundo01\Mundo01\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\ferna\OneDrive\Documents\J3DE\Material para PROVA 2\Mundo01 (Texturas)\Mundo01\Mundo01\obj\x86\Debug\Mundo01.exe
+C:\Users\ferna\OneDrive\Documents\J3DE\Material para PROVA 2\Mundo01 (Texturas)\Mundo01\Mundo01\obj\x86\Debug\Mundo01.pdb
+C:\Users\ferna\OneDrive\Documents\J3DE\Material para PROVA 2\Mundo01 (Modelos)\Mundo01\Mundo01\bin\x86\Debug\Content\Images\bricks.xnb
+C:\Users\ferna\OneDrive\Documents\J3DE\Material para PROVA 2\Mundo01 (Modelos)\Mundo01\Mundo01\bin\x86\Debug\Content\Images\grass.xnb
+C:\Users\ferna\OneDrive\Documents\J3DE\Material para PROVA 2\Mundo01 (Modelos)\Mundo01\Mundo01\bin\x86\Debug\Content\Images\rocks.xnb
+C:\Users\ferna\OneDrive\Documents\J3DE\Material para PROVA 2\Mundo01 (Modelos)\Mundo01\Mundo01\bin\x86\Debug\Content\Images\wood.xnb
+C:\Users\ferna\OneDrive\Documents\J3DE\Material para PROVA 2\Mundo01 (Modelos)\Mundo01\Mundo01\bin\x86\Debug\Mundo01.exe
+C:\Users\ferna\OneDrive\Documents\J3DE\Material para PROVA 2\Mundo01 (Modelos)\Mundo01\Mundo01\bin\x86\Debug\Mundo01.pdb
+C:\Users\ferna\OneDrive\Documents\J3DE\Material para PROVA 2\Mundo01 (Modelos)\Mundo01\Mundo01\obj\x86\Debug\Mundo01.csprojResolveAssemblyReference.cache
+C:\Users\ferna\OneDrive\Documents\J3DE\Material para PROVA 2\Mundo01 (Modelos)\Mundo01\Mundo01\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\ferna\OneDrive\Documents\J3DE\Material para PROVA 2\Mundo01 (Modelos)\Mundo01\Mundo01\obj\x86\Debug\Mundo01.exe
+C:\Users\ferna\OneDrive\Documents\J3DE\Material para PROVA 2\Mundo01 (Modelos)\Mundo01\Mundo01\obj\x86\Debug\Mundo01.pdb
+C:\Users\ferna\OneDrive\Documents\J3DE\Material para PROVA 2\Mundo01 (Modelos)\Mundo01\Mundo01\bin\x86\Debug\Content\3DModels\blade.xnb
+C:\Users\ferna\OneDrive\Documents\J3DE\Material para PROVA 2\Mundo01 (Modelos)\Mundo01\Mundo01\bin\x86\Debug\Content\3DModels\building.xnb
+C:\Users\ferna\OneDrive\Documents\J3DE\Material para PROVA 2\Mundo01 (Modelos)\Mundo01\Mundo01\bin\x86\Debug\Content\3DModels\hero.xnb
+C:\Users\ferna\OneDrive\Documents\J3DE\Material para PROVA 2\Mundo01 (Modelos)\Mundo01\Mundo01\bin\x86\Debug\Content\3DModels\tower.xnb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Mundo01 (Shader)\Mundo01\Mundo01\bin\x86\Debug\Content\Images\bricks.xnb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Mundo01 (Shader)\Mundo01\Mundo01\bin\x86\Debug\Content\Images\grass.xnb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Mundo01 (Shader)\Mundo01\Mundo01\bin\x86\Debug\Content\Images\rocks.xnb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Mundo01 (Shader)\Mundo01\Mundo01\bin\x86\Debug\Content\Images\wood.xnb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Mundo01 (Shader)\Mundo01\Mundo01\bin\x86\Debug\Content\3DModels\blade.xnb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Mundo01 (Shader)\Mundo01\Mundo01\bin\x86\Debug\Content\3DModels\building.xnb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Mundo01 (Shader)\Mundo01\Mundo01\bin\x86\Debug\Content\3DModels\hero.xnb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Mundo01 (Shader)\Mundo01\Mundo01\bin\x86\Debug\Content\3DModels\tower.xnb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Mundo01 (Shader)\Mundo01\Mundo01\bin\x86\Debug\Mundo01.exe
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Mundo01 (Shader)\Mundo01\Mundo01\bin\x86\Debug\Mundo01.pdb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Mundo01 (Shader)\Mundo01\Mundo01\obj\x86\Debug\Mundo01.csprojResolveAssemblyReference.cache
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Mundo01 (Shader)\Mundo01\Mundo01\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Mundo01 (Shader)\Mundo01\Mundo01\obj\x86\Debug\Mundo01.exe
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Mundo01 (Shader)\Mundo01\Mundo01\obj\x86\Debug\Mundo01.pdb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Mundo01 (Shader)\Mundo01\Mundo01\bin\x86\Debug\Content\Effects\basic.xnb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Mundo01 (Shader)\Mundo01\Mundo01\bin\x86\Debug\Content\Images\bricksSnow.xnb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Mundo01 (Shader)\Mundo01\Mundo01\bin\x86\Debug\Content\Images\rocksSnow.xnb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Mundo01 (Shader)\Mundo01\Mundo01\bin\x86\Debug\Content\Images\snow.xnb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Mundo01 (Shader)\Mundo01\Mundo01\bin\x86\Debug\Content\Images\woodSnow.xnb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Mundo01 (Shader)\Mundo01\Mundo01\bin\x86\Debug\Content\Effects\morphing.xnb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Mundo01 (COMPLETO)\Mundo01\Mundo01\obj\x86\Debug\Mundo01.csprojResolveAssemblyReference.cache
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Mundo01 (COMPLETO)\Mundo01\Mundo01\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Mundo01 (COMPLETO)\Mundo01\Mundo01\obj\x86\Debug\Mundo01.exe
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Mundo01 (COMPLETO)\Mundo01\Mundo01\obj\x86\Debug\Mundo01.pdb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Mundo01 (COMPLETO)\Mundo01\Mundo01\bin\x86\Debug\Content\Images\bricks.xnb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Mundo01 (COMPLETO)\Mundo01\Mundo01\bin\x86\Debug\Content\Images\grass.xnb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Mundo01 (COMPLETO)\Mundo01\Mundo01\bin\x86\Debug\Content\Images\rocks.xnb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Mundo01 (COMPLETO)\Mundo01\Mundo01\bin\x86\Debug\Content\Images\wood.xnb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Mundo01 (COMPLETO)\Mundo01\Mundo01\bin\x86\Debug\Content\Images\bricksSnow.xnb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Mundo01 (COMPLETO)\Mundo01\Mundo01\bin\x86\Debug\Content\Images\rocksSnow.xnb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Mundo01 (COMPLETO)\Mundo01\Mundo01\bin\x86\Debug\Content\Images\snow.xnb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Mundo01 (COMPLETO)\Mundo01\Mundo01\bin\x86\Debug\Content\Images\woodSnow.xnb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Mundo01 (COMPLETO)\Mundo01\Mundo01\bin\x86\Debug\Content\3DModels\blade.xnb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Mundo01 (COMPLETO)\Mundo01\Mundo01\bin\x86\Debug\Content\3DModels\building.xnb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Mundo01 (COMPLETO)\Mundo01\Mundo01\bin\x86\Debug\Content\3DModels\hero.xnb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Mundo01 (COMPLETO)\Mundo01\Mundo01\bin\x86\Debug\Content\3DModels\tower.xnb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Mundo01 (COMPLETO)\Mundo01\Mundo01\bin\x86\Debug\Content\Effects\basic.xnb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Mundo01 (COMPLETO)\Mundo01\Mundo01\bin\x86\Debug\Content\Effects\morphing.xnb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Mundo01 (COMPLETO)\Mundo01\Mundo01\bin\x86\Debug\Mundo01.exe
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Mundo01 (COMPLETO)\Mundo01\Mundo01\bin\x86\Debug\Mundo01.pdb
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Mundo01 (COMPLETO)\Mundo01\Mundo01\bin\x86\Debug\Content\Effects\basicColor.xnb

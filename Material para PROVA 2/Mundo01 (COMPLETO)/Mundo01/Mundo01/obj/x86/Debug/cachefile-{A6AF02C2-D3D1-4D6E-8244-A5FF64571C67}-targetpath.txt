@@ -1,0 +1,15 @@
+Content\Images\bricks.xnb
+Content\Images\grass.xnb
+Content\Images\rocks.xnb
+Content\Images\wood.xnb
+Content\Images\bricksSnow.xnb
+Content\Images\rocksSnow.xnb
+Content\Images\snow.xnb
+Content\Images\woodSnow.xnb
+Content\3DModels\blade.xnb
+Content\3DModels\building.xnb
+Content\3DModels\hero.xnb
+Content\3DModels\tower.xnb
+Content\Effects\basic.xnb
+Content\Effects\morphing.xnb
+Content\Effects\basicColor.xnb
