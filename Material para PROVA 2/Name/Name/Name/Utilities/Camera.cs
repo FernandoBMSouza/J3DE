@@ -25,16 +25,14 @@ namespace Name.Utilities
 
         public Camera(Game game)
         {
-            position = new Vector3(0, 2, 10);
+            position = new Vector3(0, 5, 50);
             oldPosition = position;
             target = Vector3.Zero;
             up = Vector3.Up;
 
             translationSpeed = 10;
             rotationSpeed = 100;
-            angle = new Vector3(MathHelper.ToRadians(0),
-                                MathHelper.ToRadians(0),
-                                MathHelper.ToRadians(0));
+            angle = new Vector3(0,0,0);
 
             View = Matrix.CreateLookAt(position, target, up);
             Projection = Matrix.CreatePerspectiveFieldOfView(MathHelper.PiOver4,

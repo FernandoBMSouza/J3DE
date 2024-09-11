@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Mundo01.Game1" Collapsed="true">
+    <Position X="43.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAEEAAAkAAAwAAAAQQAAQEAAAAAAgAAAAAAAAAAAQ=</HashCode>
+      <FileName>Game1.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mundo01.Program" Collapsed="true">
+    <Position X="42" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mundo01.GameObjects.GameObject" Collapsed="true">
+    <Position X="17.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAEAAABCCAAgSAgIaIIAACBABEAggIIAABEgIAQRA=</HashCode>
+      <FileName>GameObjects\GameObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mundo01.GameObjects.Models.BladeModel" Collapsed="true">
+    <Position X="7.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameObjects\Models\BladeModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mundo01.GameObjects.Models.BuildingModel" Collapsed="true">
+    <Position X="11.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameObjects\Models\BuildingModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mundo01.GameObjects.Models.Hero" Collapsed="true">
+    <Position X="2.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameObjects\Models\Hero.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mundo01.GameObjects.Models.Model3D" Collapsed="true">
+    <Position X="8.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAIAAA=</HashCode>
+      <FileName>GameObjects\Models\Model3D.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mundo01.GameObjects.Models.PropellerModel" Collapsed="true">
+    <Position X="5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARAAAAACAA=</HashCode>
+      <FileName>GameObjects\Models\PropellerModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mundo01.GameObjects.Models.Tower" Collapsed="true">
+    <Position X="9.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameObjects\Models\Tower.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mundo01.GameObjects.Models.WindmillModel" Collapsed="true">
+    <Position X="14" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameObjects\Models\WindmillModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mundo01.GameObjects.Shapes.Cube" Collapsed="true">
+    <Position X="18.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameObjects\Shapes\Cube.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mundo01.GameObjects.Shapes.Quad" Collapsed="true">
+    <Position X="23" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameObjects\Shapes\Quad.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mundo01.GameObjects.Shapes.RightTriangle3D" Collapsed="true">
+    <Position X="27.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameObjects\Shapes\RightTriangle3D.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mundo01.GameObjects.Shapes.Shape" Collapsed="true">
+    <Position X="24.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAgAAAAAAAAEAAAAQAgAAAABAAAAAAAA=</HashCode>
+      <FileName>GameObjects\Shapes\Shape.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mundo01.GameObjects.Shapes.Square" Collapsed="true">
+    <Position X="29.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameObjects\Shapes\Square.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mundo01.GameObjects.Shapes.Triangle" Collapsed="true">
+    <Position X="20.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameObjects\Shapes\Triangle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mundo01.GameObjects.Shapes.Triangle3D" Collapsed="true">
+    <Position X="25.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameObjects\Shapes\Triangle3D.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mundo01.GameObjects.Windmill.Blade" Collapsed="true">
+    <Position X="32" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameObjects\Windmill\Blade.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mundo01.GameObjects.Windmill.Building" Collapsed="true">
+    <Position X="35.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameObjects\Windmill\Building.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mundo01.GameObjects.Windmill.Propeller" Collapsed="true">
+    <Position X="37.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARAAAAACAA=</HashCode>
+      <FileName>GameObjects\Windmill\Propeller.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mundo01.GameObjects.Windmill.Windmill" Collapsed="true">
+    <Position X="33.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameObjects\Windmill\Windmill.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mundo01.Utilities.Camera" Collapsed="true">
+    <Position X="40.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAQAAAAAgAAIACIIAAIAAAAAABAAABAABQAgJQAAA=</HashCode>
+      <FileName>Utilities\Camera.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mundo01.Utilities.Screen" Collapsed="true">
+    <Position X="43.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAAAAAAAAEAABABAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Utilities\Screen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mundo01.Utilities.Collision.Collider" Collapsed="true">
+    <Position X="42" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAgAAAIAAIAAiAAAAAgAgAAgACgAAAAQ=</HashCode>
+      <FileName>Utilities\Collision\Collider.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mundo01.Utilities.Collision.LineBox" Collapsed="true">
+    <Position X="40.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAGAIAAAAAAwAACAAQIAACAAAAAgCIAAgAIkAAEgI=</HashCode>
+      <FileName>Utilities\Collision\LineBox.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

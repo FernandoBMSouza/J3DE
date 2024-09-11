@@ -7,7 +7,7 @@
       <Importer>EffectImporter</Importer>
       <Processor>EffectProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\ferna\Downloads\Minecraft\Minecraft\Minecraft\bin\x86\Debug\Content\Effects\basic.xnb</Output>
+      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Minecraft (textura + efeitos)\Minecraft\Minecraft\bin\x86\Debug\Content\Effects\basic.xnb</Output>
       <Time>2024-09-09T14:40:57.8643835-03:00</Time>
     </Item>
     <Item>
@@ -16,7 +16,7 @@
       <Importer>EffectImporter</Importer>
       <Processor>EffectProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\ferna\Downloads\Minecraft\Minecraft\Minecraft\bin\x86\Debug\Content\Effects\basicColor.xnb</Output>
+      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Minecraft (textura + efeitos)\Minecraft\Minecraft\bin\x86\Debug\Content\Effects\basicColor.xnb</Output>
       <Time>2024-09-09T13:48:54.3958389-03:00</Time>
     </Item>
     <Item>
@@ -25,8 +25,17 @@
       <Importer>EffectImporter</Importer>
       <Processor>EffectProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\ferna\Downloads\Minecraft\Minecraft\Minecraft\bin\x86\Debug\Content\Effects\morphing.xnb</Output>
+      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Minecraft (textura + efeitos)\Minecraft\Minecraft\bin\x86\Debug\Content\Effects\morphing.xnb</Output>
       <Time>2024-09-09T13:48:54.3978387-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Effects\red.fx</Source>
+      <Name>Effects\red</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Minecraft (textura + efeitos)\Minecraft\Minecraft\bin\x86\Debug\Content\Effects\red.xnb</Output>
+      <Time>2024-09-09T16:09:49.1835152-03:00</Time>
     </Item>
     <Item>
       <Source>Images\bricks.png</Source>
@@ -34,7 +43,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\ferna\Downloads\Minecraft\Minecraft\Minecraft\bin\x86\Debug\Content\Images\bricks.xnb</Output>
+      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Minecraft (textura + efeitos)\Minecraft\Minecraft\bin\x86\Debug\Content\Images\bricks.xnb</Output>
       <Time>2024-09-09T13:48:57.3926366-03:00</Time>
     </Item>
     <Item>
@@ -43,7 +52,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\ferna\Downloads\Minecraft\Minecraft\Minecraft\bin\x86\Debug\Content\Images\bricksSnow.xnb</Output>
+      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Minecraft (textura + efeitos)\Minecraft\Minecraft\bin\x86\Debug\Content\Images\bricksSnow.xnb</Output>
       <Time>2024-09-09T13:48:57.3956362-03:00</Time>
     </Item>
     <Item>
@@ -52,7 +61,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\ferna\Downloads\Minecraft\Minecraft\Minecraft\bin\x86\Debug\Content\Images\grass.xnb</Output>
+      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Minecraft (textura + efeitos)\Minecraft\Minecraft\bin\x86\Debug\Content\Images\grass.xnb</Output>
       <Time>2024-09-09T13:48:57.398638-03:00</Time>
     </Item>
     <Item>
@@ -61,7 +70,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\ferna\Downloads\Minecraft\Minecraft\Minecraft\bin\x86\Debug\Content\Images\rocks.xnb</Output>
+      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Minecraft (textura + efeitos)\Minecraft\Minecraft\bin\x86\Debug\Content\Images\rocks.xnb</Output>
       <Time>2024-09-09T13:48:57.3996388-03:00</Time>
     </Item>
     <Item>
@@ -70,7 +79,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\ferna\Downloads\Minecraft\Minecraft\Minecraft\bin\x86\Debug\Content\Images\rocksSnow.xnb</Output>
+      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Minecraft (textura + efeitos)\Minecraft\Minecraft\bin\x86\Debug\Content\Images\rocksSnow.xnb</Output>
       <Time>2024-09-09T13:48:57.4016354-03:00</Time>
     </Item>
     <Item>
@@ -79,7 +88,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\ferna\Downloads\Minecraft\Minecraft\Minecraft\bin\x86\Debug\Content\Images\snow.xnb</Output>
+      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Minecraft (textura + efeitos)\Minecraft\Minecraft\bin\x86\Debug\Content\Images\snow.xnb</Output>
       <Time>2024-09-09T13:48:57.4046364-03:00</Time>
     </Item>
     <Item>
@@ -88,7 +97,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\ferna\Downloads\Minecraft\Minecraft\Minecraft\bin\x86\Debug\Content\Images\wood.xnb</Output>
+      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Minecraft (textura + efeitos)\Minecraft\Minecraft\bin\x86\Debug\Content\Images\wood.xnb</Output>
       <Time>2024-09-09T13:48:57.4066362-03:00</Time>
     </Item>
     <Item>
@@ -97,8 +106,26 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\ferna\Downloads\Minecraft\Minecraft\Minecraft\bin\x86\Debug\Content\Images\woodSnow.xnb</Output>
+      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Minecraft (textura + efeitos)\Minecraft\Minecraft\bin\x86\Debug\Content\Images\woodSnow.xnb</Output>
       <Time>2024-09-09T13:48:57.4079709-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Images\steve.png</Source>
+      <Name>Images\steve</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Minecraft (textura + efeitos)\Minecraft\Minecraft\bin\x86\Debug\Content\Images\steve.xnb</Output>
+      <Time>2024-09-09T14:20:48.0873606-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Images\zombie.png</Source>
+      <Name>Images\zombie</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Minecraft (textura + efeitos)\Minecraft\Minecraft\bin\x86\Debug\Content\Images\zombie.xnb</Output>
+      <Time>2024-09-09T14:20:55.0849434-03:00</Time>
     </Item>
     <Item>
       <Source>3DModels\blade.x</Source>
@@ -106,11 +133,11 @@
       <Importer>XImporter</Importer>
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\ferna\Downloads\Minecraft\Minecraft\Minecraft\bin\x86\Debug\Content\3DModels\blade.xnb</Output>
+      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Minecraft (textura + efeitos)\Minecraft\Minecraft\bin\x86\Debug\Content\3DModels\blade.xnb</Output>
       <Time>2024-09-09T13:49:00.0880043-03:00</Time>
       <Dependency>
         <Key>obj\x86\Debug\3DModels\blade_0.xml</Key>
-        <Value>2024-09-09T13:49:05.2626114-03:00</Value>
+        <Value>2024-09-11T16:01:00.193222-03:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -119,11 +146,11 @@
       <Importer>XImporter</Importer>
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\ferna\Downloads\Minecraft\Minecraft\Minecraft\bin\x86\Debug\Content\3DModels\building.xnb</Output>
+      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Minecraft (textura + efeitos)\Minecraft\Minecraft\bin\x86\Debug\Content\3DModels\building.xnb</Output>
       <Time>2024-09-09T13:49:00.092015-03:00</Time>
       <Dependency>
         <Key>obj\x86\Debug\3DModels\building_0.xml</Key>
-        <Value>2024-09-09T13:49:05.3513422-03:00</Value>
+        <Value>2024-09-11T16:01:00.2805079-03:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -132,11 +159,11 @@
       <Importer>XImporter</Importer>
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\ferna\Downloads\Minecraft\Minecraft\Minecraft\bin\x86\Debug\Content\3DModels\hero.xnb</Output>
+      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Minecraft (textura + efeitos)\Minecraft\Minecraft\bin\x86\Debug\Content\3DModels\hero.xnb</Output>
       <Time>2024-09-09T13:49:00.0950041-03:00</Time>
       <Dependency>
         <Key>obj\x86\Debug\3DModels\hero_0.xml</Key>
-        <Value>2024-09-09T13:49:05.5690619-03:00</Value>
+        <Value>2024-09-11T16:01:00.494936-03:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -145,11 +172,11 @@
       <Importer>XImporter</Importer>
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\ferna\Downloads\Minecraft\Minecraft\Minecraft\bin\x86\Debug\Content\3DModels\tower.xnb</Output>
+      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Minecraft (textura + efeitos)\Minecraft\Minecraft\bin\x86\Debug\Content\3DModels\tower.xnb</Output>
       <Time>2024-09-09T13:49:00.0960043-03:00</Time>
       <Dependency>
         <Key>obj\x86\Debug\3DModels\tower_0.xml</Key>
-        <Value>2024-09-09T13:49:05.6409909-03:00</Value>
+        <Value>2024-09-11T16:01:00.5518636-03:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -180,43 +207,16 @@
       <Output>obj\x86\Debug\3DModels\tower_0.xml</Output>
       <Time>2024-09-09T13:49:00.0960043-03:00</Time>
     </Item>
-    <Item>
-      <Source>Images\steve.png</Source>
-      <Name>Images\steve</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\ferna\Downloads\Minecraft\Minecraft\Minecraft\bin\x86\Debug\Content\Images\steve.xnb</Output>
-      <Time>2024-09-09T14:20:48.0873606-03:00</Time>
-    </Item>
-    <Item>
-      <Source>Images\zombie.png</Source>
-      <Name>Images\zombie</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\ferna\Downloads\Minecraft\Minecraft\Minecraft\bin\x86\Debug\Content\Images\zombie.xnb</Output>
-      <Time>2024-09-09T14:20:55.0849434-03:00</Time>
-    </Item>
-    <Item>
-      <Source>Effects\red.fx</Source>
-      <Name>Effects\red</Name>
-      <Importer>EffectImporter</Importer>
-      <Processor>EffectProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\ferna\Downloads\Minecraft\Minecraft\Minecraft\bin\x86\Debug\Content\Effects\red.xnb</Output>
-      <Time>2024-09-09T16:09:49.1835152-03:00</Time>
-    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>
       <TargetProfile>HiDef</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\ferna\Downloads\Minecraft\Minecraft\MinecraftContent\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\ferna\Downloads\Minecraft\Minecraft\Minecraft\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\ferna\Downloads\Minecraft\Minecraft\MinecraftContent\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\ferna\Downloads\Minecraft\Minecraft\Minecraft\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Minecraft (textura + efeitos)\Minecraft\MinecraftContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Minecraft (textura + efeitos)\Minecraft\Minecraft\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Minecraft (textura + efeitos)\Minecraft\MinecraftContent\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Minecraft (textura + efeitos)\Minecraft\Minecraft\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>

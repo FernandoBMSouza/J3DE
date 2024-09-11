@@ -2,3 +2,4 @@ c:\users\sabio\documents\visual studio 2010\Projects\Collision\Collision\Collisi
 C:\Users\fabio\Downloads\NewCollision\NewCollision\Collision\CollisionContent\obj\x86\Debug\CollisionContent.contentprojResolveAssemblyReference.cache
 C:\Users\fabio\Downloads\Revisao030924J3DE2024-1\NewCollision\Collision\CollisionContent\obj\x86\Debug\CollisionContent.contentprojResolveAssemblyReference.cache
 C:\Users\fabio\Downloads\Revisao030924J3DE2024-1\Revisao030924J3DE2024-1\Collision\CollisionContent\obj\x86\Debug\CollisionContent.contentprojResolveAssemblyReference.cache
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Revisao100924J3DE2024-1\Revisao100924J3DE2024-1\Collision\CollisionContent\obj\x86\Debug\CollisionContent.contentprojResolveAssemblyReference.cache

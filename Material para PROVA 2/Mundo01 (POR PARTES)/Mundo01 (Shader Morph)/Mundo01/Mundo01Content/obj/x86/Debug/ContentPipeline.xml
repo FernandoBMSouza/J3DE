@@ -7,7 +7,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Mundo01 (Shader)\Mundo01\Mundo01\bin\x86\Debug\Content\Images\bricks.xnb</Output>
+      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Mundo01 (por partes)\Mundo01 (Shader Morph)\Mundo01\Mundo01\bin\x86\Debug\Content\Images\bricks.xnb</Output>
       <Time>2024-09-09T08:46:15.7254268-03:00</Time>
     </Item>
     <Item>
@@ -16,7 +16,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Mundo01 (Shader)\Mundo01\Mundo01\bin\x86\Debug\Content\Images\grass.xnb</Output>
+      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Mundo01 (por partes)\Mundo01 (Shader Morph)\Mundo01\Mundo01\bin\x86\Debug\Content\Images\grass.xnb</Output>
       <Time>2024-09-09T08:46:15.7284672-03:00</Time>
     </Item>
     <Item>
@@ -25,7 +25,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Mundo01 (Shader)\Mundo01\Mundo01\bin\x86\Debug\Content\Images\rocks.xnb</Output>
+      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Mundo01 (por partes)\Mundo01 (Shader Morph)\Mundo01\Mundo01\bin\x86\Debug\Content\Images\rocks.xnb</Output>
       <Time>2024-09-09T08:46:15.730708-03:00</Time>
     </Item>
     <Item>
@@ -34,8 +34,44 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Mundo01 (Shader)\Mundo01\Mundo01\bin\x86\Debug\Content\Images\wood.xnb</Output>
+      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Mundo01 (por partes)\Mundo01 (Shader Morph)\Mundo01\Mundo01\bin\x86\Debug\Content\Images\wood.xnb</Output>
       <Time>2024-09-09T08:46:15.7362175-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Images\bricksSnow.jpg</Source>
+      <Name>Images\bricksSnow</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Mundo01 (por partes)\Mundo01 (Shader Morph)\Mundo01\Mundo01\bin\x86\Debug\Content\Images\bricksSnow.xnb</Output>
+      <Time>2024-09-09T09:27:26.114997-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Images\rocksSnow.jpg</Source>
+      <Name>Images\rocksSnow</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Mundo01 (por partes)\Mundo01 (Shader Morph)\Mundo01\Mundo01\bin\x86\Debug\Content\Images\rocksSnow.xnb</Output>
+      <Time>2024-09-09T09:27:26.1169959-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Images\snow.png</Source>
+      <Name>Images\snow</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Mundo01 (por partes)\Mundo01 (Shader Morph)\Mundo01\Mundo01\bin\x86\Debug\Content\Images\snow.xnb</Output>
+      <Time>2024-09-09T09:27:26.1199942-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Images\woodSnow.jpg</Source>
+      <Name>Images\woodSnow</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Mundo01 (por partes)\Mundo01 (Shader Morph)\Mundo01\Mundo01\bin\x86\Debug\Content\Images\woodSnow.xnb</Output>
+      <Time>2024-09-09T09:27:26.1219953-03:00</Time>
     </Item>
     <Item>
       <Source>3DModels\blade.x</Source>
@@ -43,11 +79,11 @@
       <Importer>XImporter</Importer>
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Mundo01 (Shader)\Mundo01\Mundo01\bin\x86\Debug\Content\3DModels\blade.xnb</Output>
+      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Mundo01 (por partes)\Mundo01 (Shader Morph)\Mundo01\Mundo01\bin\x86\Debug\Content\3DModels\blade.xnb</Output>
       <Time>2024-09-09T08:46:15.7074276-03:00</Time>
       <Dependency>
         <Key>obj\x86\Debug\3DModels\blade_0.xml</Key>
-        <Value>2024-09-09T08:47:09.7291028-03:00</Value>
+        <Value>2024-09-11T16:33:24.0197175-03:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -56,11 +92,11 @@
       <Importer>XImporter</Importer>
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Mundo01 (Shader)\Mundo01\Mundo01\bin\x86\Debug\Content\3DModels\building.xnb</Output>
+      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Mundo01 (por partes)\Mundo01 (Shader Morph)\Mundo01\Mundo01\bin\x86\Debug\Content\3DModels\building.xnb</Output>
       <Time>2024-09-09T08:46:15.7084275-03:00</Time>
       <Dependency>
         <Key>obj\x86\Debug\3DModels\building_0.xml</Key>
-        <Value>2024-09-09T08:47:09.7998799-03:00</Value>
+        <Value>2024-09-11T16:33:24.1048263-03:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -69,11 +105,11 @@
       <Importer>XImporter</Importer>
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Mundo01 (Shader)\Mundo01\Mundo01\bin\x86\Debug\Content\3DModels\hero.xnb</Output>
+      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Mundo01 (por partes)\Mundo01 (Shader Morph)\Mundo01\Mundo01\bin\x86\Debug\Content\3DModels\hero.xnb</Output>
       <Time>2024-09-09T08:46:15.7234655-03:00</Time>
       <Dependency>
         <Key>obj\x86\Debug\3DModels\hero_0.xml</Key>
-        <Value>2024-09-09T08:47:10.0069575-03:00</Value>
+        <Value>2024-09-11T16:33:24.3409743-03:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -82,12 +118,30 @@
       <Importer>XImporter</Importer>
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Mundo01 (Shader)\Mundo01\Mundo01\bin\x86\Debug\Content\3DModels\tower.xnb</Output>
+      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Mundo01 (por partes)\Mundo01 (Shader Morph)\Mundo01\Mundo01\bin\x86\Debug\Content\3DModels\tower.xnb</Output>
       <Time>2024-09-09T08:46:15.7244307-03:00</Time>
       <Dependency>
         <Key>obj\x86\Debug\3DModels\tower_0.xml</Key>
-        <Value>2024-09-09T08:47:10.0559489-03:00</Value>
+        <Value>2024-09-11T16:33:24.3993644-03:00</Value>
       </Dependency>
+    </Item>
+    <Item>
+      <Source>Effects\basic.fx</Source>
+      <Name>Effects\basic</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Mundo01 (por partes)\Mundo01 (Shader Morph)\Mundo01\Mundo01\bin\x86\Debug\Content\Effects\basic.xnb</Output>
+      <Time>2024-09-11T16:42:01.9715811-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Effects\morphing.fx</Source>
+      <Name>Effects\morphing</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Mundo01 (por partes)\Mundo01 (Shader Morph)\Mundo01\Mundo01\bin\x86\Debug\Content\Effects\morphing.xnb</Output>
+      <Time>2024-09-11T16:44:21.987429-03:00</Time>
     </Item>
     <Item>
       <Source>3DModels\blade.x</Source>
@@ -117,70 +171,16 @@
       <Output>obj\x86\Debug\3DModels\tower_0.xml</Output>
       <Time>2024-09-09T08:46:15.7244307-03:00</Time>
     </Item>
-    <Item>
-      <Source>Effects\basic.fx</Source>
-      <Name>Effects\basic</Name>
-      <Importer>EffectImporter</Importer>
-      <Processor>EffectProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Mundo01 (Shader)\Mundo01\Mundo01\bin\x86\Debug\Content\Effects\basic.xnb</Output>
-      <Time>2024-09-09T09:18:57.2862642-03:00</Time>
-    </Item>
-    <Item>
-      <Source>Images\bricksSnow.jpg</Source>
-      <Name>Images\bricksSnow</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Mundo01 (Shader)\Mundo01\Mundo01\bin\x86\Debug\Content\Images\bricksSnow.xnb</Output>
-      <Time>2024-09-09T09:27:26.114997-03:00</Time>
-    </Item>
-    <Item>
-      <Source>Images\rocksSnow.jpg</Source>
-      <Name>Images\rocksSnow</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Mundo01 (Shader)\Mundo01\Mundo01\bin\x86\Debug\Content\Images\rocksSnow.xnb</Output>
-      <Time>2024-09-09T09:27:26.1169959-03:00</Time>
-    </Item>
-    <Item>
-      <Source>Images\snow.png</Source>
-      <Name>Images\snow</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Mundo01 (Shader)\Mundo01\Mundo01\bin\x86\Debug\Content\Images\snow.xnb</Output>
-      <Time>2024-09-09T09:27:26.1199942-03:00</Time>
-    </Item>
-    <Item>
-      <Source>Images\woodSnow.jpg</Source>
-      <Name>Images\woodSnow</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Mundo01 (Shader)\Mundo01\Mundo01\bin\x86\Debug\Content\Images\woodSnow.xnb</Output>
-      <Time>2024-09-09T09:27:26.1219953-03:00</Time>
-    </Item>
-    <Item>
-      <Source>Effects\morphing.fx</Source>
-      <Name>Effects\morphing</Name>
-      <Importer>EffectImporter</Importer>
-      <Processor>EffectProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Mundo01 (Shader)\Mundo01\Mundo01\bin\x86\Debug\Content\Effects\morphing.xnb</Output>
-      <Time>2024-09-09T09:26:35.7742662-03:00</Time>
-    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>
       <TargetProfile>HiDef</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Mundo01 (Shader)\Mundo01\Mundo01Content\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Mundo01 (Shader)\Mundo01\Mundo01\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Mundo01 (Shader)\Mundo01\Mundo01Content\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Mundo01 (Shader)\Mundo01\Mundo01\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Mundo01 (por partes)\Mundo01 (Shader Morph)\Mundo01\Mundo01Content\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Mundo01 (por partes)\Mundo01 (Shader Morph)\Mundo01\Mundo01\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Mundo01 (por partes)\Mundo01 (Shader Morph)\Mundo01\Mundo01Content\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Material para PROVA 2\Mundo01 (por partes)\Mundo01 (Shader Morph)\Mundo01\Mundo01\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>

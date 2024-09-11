@@ -1,6 +1,7 @@
 Content\Effects\basic.xnb
 Content\Effects\basicColor.xnb
 Content\Effects\morphing.xnb
+Content\Effects\red.xnb
 Content\Images\bricks.xnb
 Content\Images\bricksSnow.xnb
 Content\Images\grass.xnb
@@ -9,10 +10,9 @@ Content\Images\rocksSnow.xnb
 Content\Images\snow.xnb
 Content\Images\wood.xnb
 Content\Images\woodSnow.xnb
+Content\Images\steve.xnb
+Content\Images\zombie.xnb
 Content\3DModels\blade.xnb
 Content\3DModels\building.xnb
 Content\3DModels\hero.xnb
 Content\3DModels\tower.xnb
-Content\Images\steve.xnb
-Content\Images\zombie.xnb
-Content\Effects\red.xnb
