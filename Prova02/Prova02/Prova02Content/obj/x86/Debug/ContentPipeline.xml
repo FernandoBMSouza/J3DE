@@ -1,0 +1,324 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
+  <Asset Type="Pipeline:BuildItemCollection">
+    <Item>
+      <Source>3DModels\blade.x</Source>
+      <Name>3DModels\blade</Name>
+      <Importer>XImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Prova02\Prova02\Prova02\bin\x86\Debug\Content\3DModels\blade.xnb</Output>
+      <Time>2024-09-11T18:50:09.4674887-03:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug\3DModels\blade_0.xml</Key>
+        <Value>2024-09-11T18:51:40.9693008-03:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>3DModels\building.x</Source>
+      <Name>3DModels\building</Name>
+      <Importer>XImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Prova02\Prova02\Prova02\bin\x86\Debug\Content\3DModels\building.xnb</Output>
+      <Time>2024-09-11T18:50:09.4704893-03:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug\3DModels\building_0.xml</Key>
+        <Value>2024-09-11T18:51:41.0946924-03:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>3DModels\hero.x</Source>
+      <Name>3DModels\hero</Name>
+      <Importer>XImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Prova02\Prova02\Prova02\bin\x86\Debug\Content\3DModels\hero.xnb</Output>
+      <Time>2024-09-11T18:50:09.4774048-03:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug\3DModels\hero_0.xml</Key>
+        <Value>2024-09-11T18:51:41.3136584-03:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>3DModels\tower.x</Source>
+      <Name>3DModels\tower</Name>
+      <Importer>XImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Prova02\Prova02\Prova02\bin\x86\Debug\Content\3DModels\tower.xnb</Output>
+      <Time>2024-09-11T18:50:09.4794057-03:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug\3DModels\tower_0.xml</Key>
+        <Value>2024-09-11T18:51:41.3837454-03:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>Effects\basic.fx</Source>
+      <Name>Effects\basic</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Prova02\Prova02\Prova02\bin\x86\Debug\Content\Effects\basic.xnb</Output>
+      <Time>2024-09-11T18:50:14.6509516-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Effects\basicColor.fx</Source>
+      <Name>Effects\basicColor</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Prova02\Prova02\Prova02\bin\x86\Debug\Content\Effects\basicColor.xnb</Output>
+      <Time>2024-09-11T18:50:14.6539512-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Effects\morphing.fx</Source>
+      <Name>Effects\morphing</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Prova02\Prova02\Prova02\bin\x86\Debug\Content\Effects\morphing.xnb</Output>
+      <Time>2024-09-11T18:50:14.6559532-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Effects\red.fx</Source>
+      <Name>Effects\red</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Prova02\Prova02\Prova02\bin\x86\Debug\Content\Effects\red.xnb</Output>
+      <Time>2024-09-11T18:50:14.6569538-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Effects\blue.fx</Source>
+      <Name>Effects\blue</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Prova02\Prova02\Prova02\bin\x86\Debug\Content\Effects\blue.xnb</Output>
+      <Time>2024-09-11T18:51:04.5719707-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Effects\embacado.fx</Source>
+      <Name>Effects\embacado</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Prova02\Prova02\Prova02\bin\x86\Debug\Content\Effects\embacado.xnb</Output>
+      <Time>2024-09-11T18:51:07.4841715-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Effects\grayscale.fx</Source>
+      <Name>Effects\grayscale</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Prova02\Prova02\Prova02\bin\x86\Debug\Content\Effects\grayscale.xnb</Output>
+      <Time>2024-09-11T18:51:09.7628974-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Effects\invert.fx</Source>
+      <Name>Effects\invert</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Prova02\Prova02\Prova02\bin\x86\Debug\Content\Effects\invert.xnb</Output>
+      <Time>2024-09-11T18:51:13.7802452-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Effects\yellow.fx</Source>
+      <Name>Effects\yellow</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Prova02\Prova02\Prova02\bin\x86\Debug\Content\Effects\yellow.xnb</Output>
+      <Time>2024-09-11T18:51:23.1640314-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Images\bricks.png</Source>
+      <Name>Images\bricks</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Prova02\Prova02\Prova02\bin\x86\Debug\Content\Images\bricks.xnb</Output>
+      <Time>2024-09-11T18:50:17.7022448-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Images\bricksSnow.jpg</Source>
+      <Name>Images\bricksSnow</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Prova02\Prova02\Prova02\bin\x86\Debug\Content\Images\bricksSnow.xnb</Output>
+      <Time>2024-09-11T18:50:17.7052451-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Images\grass.jpg</Source>
+      <Name>Images\grass</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Prova02\Prova02\Prova02\bin\x86\Debug\Content\Images\grass.xnb</Output>
+      <Time>2024-09-11T18:50:17.7062448-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Images\rocks.jpg</Source>
+      <Name>Images\rocks</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Prova02\Prova02\Prova02\bin\x86\Debug\Content\Images\rocks.xnb</Output>
+      <Time>2024-09-11T18:50:17.7082465-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Images\rocksSnow.jpg</Source>
+      <Name>Images\rocksSnow</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Prova02\Prova02\Prova02\bin\x86\Debug\Content\Images\rocksSnow.xnb</Output>
+      <Time>2024-09-11T18:50:17.7092446-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Images\snow.png</Source>
+      <Name>Images\snow</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Prova02\Prova02\Prova02\bin\x86\Debug\Content\Images\snow.xnb</Output>
+      <Time>2024-09-11T18:50:17.710244-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Images\steve.png</Source>
+      <Name>Images\steve</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Prova02\Prova02\Prova02\bin\x86\Debug\Content\Images\steve.xnb</Output>
+      <Time>2024-09-11T18:50:17.7112453-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Images\wood.png</Source>
+      <Name>Images\wood</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Prova02\Prova02\Prova02\bin\x86\Debug\Content\Images\wood.xnb</Output>
+      <Time>2024-09-11T18:50:17.7162446-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Images\woodSnow.jpg</Source>
+      <Name>Images\woodSnow</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Prova02\Prova02\Prova02\bin\x86\Debug\Content\Images\woodSnow.xnb</Output>
+      <Time>2024-09-11T18:50:17.7172447-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Images\zombie.png</Source>
+      <Name>Images\zombie</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Prova02\Prova02\Prova02\bin\x86\Debug\Content\Images\zombie.xnb</Output>
+      <Time>2024-09-11T18:50:17.7182448-03:00</Time>
+    </Item>
+    <Item>
+      <Source>3DModels\blade.x</Source>
+      <Importer>XImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug\3DModels\blade_0.xml</Output>
+      <Time>2024-09-11T18:50:09.4674887-03:00</Time>
+    </Item>
+    <Item>
+      <Source>3DModels\building.x</Source>
+      <Importer>XImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug\3DModels\building_0.xml</Output>
+      <Time>2024-09-11T18:50:09.4704893-03:00</Time>
+    </Item>
+    <Item>
+      <Source>3DModels\hero.x</Source>
+      <Importer>XImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug\3DModels\hero_0.xml</Output>
+      <Time>2024-09-11T18:50:09.4774048-03:00</Time>
+    </Item>
+    <Item>
+      <Source>3DModels\tower.x</Source>
+      <Importer>XImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug\3DModels\tower_0.xml</Output>
+      <Time>2024-09-11T18:50:09.4794057-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Images\azul.png</Source>
+      <Name>Images\azul</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Prova02\Prova02\Prova02\bin\x86\Debug\Content\Images\azul.xnb</Output>
+      <Time>2024-09-12T08:52:23.3043257-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Images\branco.png</Source>
+      <Name>Images\branco</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Prova02\Prova02\Prova02\bin\x86\Debug\Content\Images\branco.xnb</Output>
+      <Time>2024-09-12T08:52:23.3043257-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Images\amarelo.png</Source>
+      <Name>Images\amarelo</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Prova02\Prova02\Prova02\bin\x86\Debug\Content\Images\amarelo.xnb</Output>
+      <Time>2024-09-12T08:53:59.2327868-03:00</Time>
+    </Item>
+    <BuildSuccessful>true</BuildSuccessful>
+    <Settings>
+      <TargetPlatform>Windows</TargetPlatform>
+      <TargetProfile>HiDef</TargetProfile>
+      <BuildConfiguration>Debug</BuildConfiguration>
+      <CompressContent>false</CompressContent>
+      <RootDirectory>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Prova02\Prova02\Prova02Content\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Prova02\Prova02\Prova02\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Prova02\Prova02\Prova02Content\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\Prova02\Prova02\Prova02\bin\x86\Debug\Content\</OutputDirectory>
+    </Settings>
+    <Assemblies>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
+        <Value>2010-08-23T12:41:18-03:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
+        <Value>2010-08-23T12:41:18-03:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
+        <Value>2010-08-23T12:41:18-03:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
+        <Value>2010-08-23T12:41:18-03:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
+        <Value>2010-08-23T12:41:18-03:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
+        <Value>2010-08-23T12:41:18-03:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\WINDOWS\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2023-12-16T18:46:09.1672477-03:00</Value>
+      </Assembly>
+    </Assemblies>
+  </Asset>
+</XnaContent>

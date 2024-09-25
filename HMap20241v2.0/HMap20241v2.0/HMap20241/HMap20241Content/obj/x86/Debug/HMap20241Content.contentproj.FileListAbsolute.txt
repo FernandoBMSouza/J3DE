@@ -1,0 +1,3 @@
+c:\users\fabio.andrade\documents\visual studio 2010\Projects\HMap20241\HMap20241\HMap20241Content\obj\x86\Debug\HMap20241Content.contentprojResolveAssemblyReference.cache
+F:\J3DE2024-1\HMap20241v2.0\HMap20241\HMap20241Content\obj\x86\Debug\HMap20241Content.contentprojResolveAssemblyReference.cache
+C:\Users\ferna\OneDrive\Desktop\J3DE 2024\J3DE\HMap20241v2.0\HMap20241v2.0\HMap20241\HMap20241Content\obj\x86\Debug\HMap20241Content.contentprojResolveAssemblyReference.cache

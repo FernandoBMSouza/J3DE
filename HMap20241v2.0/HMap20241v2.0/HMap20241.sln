@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual C# Express 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HMap20241", "HMap20241\HMap20241\HMap20241.csproj", "{1BF6990B-853C-49DD-AE5D-D67E4AB464D7}"
+EndProject
+Project("{96E2B04D-8817-42C6-938A-82C39BA4D311}") = "HMap20241Content", "HMap20241\HMap20241Content\HMap20241Content.contentproj", "{15E6952D-6646-48FB-83A6-E8C3CF85E197}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1BF6990B-853C-49DD-AE5D-D67E4AB464D7}.Debug|x86.ActiveCfg = Debug|x86
+		{1BF6990B-853C-49DD-AE5D-D67E4AB464D7}.Debug|x86.Build.0 = Debug|x86
+		{1BF6990B-853C-49DD-AE5D-D67E4AB464D7}.Release|x86.ActiveCfg = Release|x86
+		{1BF6990B-853C-49DD-AE5D-D67E4AB464D7}.Release|x86.Build.0 = Release|x86
+		{15E6952D-6646-48FB-83A6-E8C3CF85E197}.Debug|x86.ActiveCfg = Debug|x86
+		{15E6952D-6646-48FB-83A6-E8C3CF85E197}.Release|x86.ActiveCfg = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
