@@ -1,0 +1,6 @@
+C:\Users\ferna\Downloads\MundoHeightmap\MundoHeightmap\MundoHeightmap\bin\x86\Debug\MundoHeightmap.exe
+C:\Users\ferna\Downloads\MundoHeightmap\MundoHeightmap\MundoHeightmap\bin\x86\Debug\MundoHeightmap.pdb
+C:\Users\ferna\Downloads\MundoHeightmap\MundoHeightmap\MundoHeightmap\obj\x86\Debug\MundoHeightmap.csprojResolveAssemblyReference.cache
+C:\Users\ferna\Downloads\MundoHeightmap\MundoHeightmap\MundoHeightmap\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\ferna\Downloads\MundoHeightmap\MundoHeightmap\MundoHeightmap\obj\x86\Debug\MundoHeightmap.exe
+C:\Users\ferna\Downloads\MundoHeightmap\MundoHeightmap\MundoHeightmap\obj\x86\Debug\MundoHeightmap.pdb
